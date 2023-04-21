@@ -1,0 +1,46 @@
+html {
+	box-sizing: border-box;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	color: $dark;
+	font-family: $font-family-sans;
+	margin: 0;
+	min-height: 100vh;
+	position: relative;
+}
+
+.container {
+	max-width: 1220px;
+	padding: 0 1rem;
+	margin: 2rem auto;
+}
+
+.navigation-header {
+	background: $light;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	padding-left: 20px;
+	font-size: 2rem;
+}
+
+footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: $light;
+	height: 100px;
+	font-size: 2rem;
+	// position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+.d-block {
+	display: block;
+}
