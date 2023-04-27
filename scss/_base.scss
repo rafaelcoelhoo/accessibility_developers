@@ -20,13 +20,31 @@ body {
 	margin: 2rem auto;
 }
 
-.navigation-header {
+header {
 	background: $light;
 	height: 75px;
-	display: flex;
-	align-items: center;
-	padding-left: 20px;
-	font-size: 2rem;
+
+	div {
+		max-width: 1200px;
+		display: flex;
+		align-items: center;
+		padding-left: 30px;
+		padding-right: 30px;
+		font-size: 1.5rem;
+		text-align: center;
+		justify-content: space-between;
+		margin: auto;
+	}
+}
+
+.navigation-header {
+
+	ul {
+		list-style-type: none;
+		display: flex;
+		gap: 20px;
+	}
+
 }
 
 footer {
@@ -35,7 +53,7 @@ footer {
 	justify-content: center;
 	background: $light;
 	height: 100px;
-	font-size: 2rem;
+	font-size: 1rem;
 	// position: absolute;
 	bottom: 0;
 	width: 100%;
@@ -43,4 +61,9 @@ footer {
 
 .d-block {
 	display: block;
+}
+
+:focus {
+	outline: 3px solid var(--THEME_COLOR_HOVER,#d33a2c)!important;
+	outline-offset: 2px;
 }
