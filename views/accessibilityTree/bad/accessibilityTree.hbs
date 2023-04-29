@@ -1,15 +1,66 @@
 <div class="container accessibility-tree">
-    <h1>Árvore de acessibilidade Divs passed!</h1>
+    <div class="page-title">Árvore de acessibilidade</div>
 
-    <img src="https://www.reliablesoft.net/wp-content/uploads/2019/06/beagle-dog.jpg" alt="Cão beagle a tentar apanhar a bola no ar.">
+    <div class="image-decorative"></div>
+    <div class="d-block register-account">Registar conta</div>
 
-    <button class="d-block">Registar conta</button>
-
-    <div class="terms">
-        <input type="checkbox" id="termos">
-        <label for="termos">Aceitar termos em condições</label>
+    <div class="custom-checkbox" tabindex="0">
+        Aceitar termos e condições
     </div>
 
-
-    <a href="https://www.w3.org/WAI/standards-guidelines/wcag/">Web Content Accessibility Guidelines (WCAG)</a>
+    <div onclick="window.location = 'https://www.w3.org/WAI/standards-guidelines/wcag/'" class="wcag-page">Web Content
+        Accessibility Guidelines (WCAG)
+    </div>
+    <div class="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/20SHvU2PKsM" title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+    </div>
 </div>
+
+<script>
+    (function () {
+        'use strict';
+
+        /** Define values for keycodes */
+        var VK_ENTER = 13;
+        var VK_SPACE = 32;
+
+        /** Helper function to convert NodeLists to Arrays */
+        function slice(nodes) {
+            return Array.prototype.slice.call(nodes);
+        }
+
+        function Checkbox(el) {
+            this.el = el;
+
+            this.el.addEventListener('keydown', this.handleKeyDown.bind(this));
+            this.el.addEventListener('click', this.toggle.bind(this));
+
+            // Any other set-up we want to do here?
+        }
+
+        Checkbox.prototype.handleKeyDown = function (e) {
+            switch (e.keyCode) {
+                case VK_ENTER:
+                case VK_SPACE: {
+                    this.toggle();
+                    break;
+                }
+            }
+        };
+
+        Checkbox.prototype.toggle = function () {
+            if (this.el.hasAttribute('checked')) {
+                this.el.removeAttribute('checked');
+            } else {
+                this.el.setAttribute('checked', '');
+            }
+        };
+
+        var checkboxes = slice(document.querySelectorAll('.custom-checkbox'));
+        for (var checkbox of checkboxes)
+            checkbox.logic = new Checkbox(checkbox);
+
+    }());
+</script>
