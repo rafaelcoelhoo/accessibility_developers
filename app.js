@@ -6,6 +6,7 @@ import morgan from 'morgan';
 
 import {indexRouter} from './routes/index.js';
 import {accessibilityTreeRouter} from './routes/accessibilityTree.js';
+import {showAndHideElementsRouter} from "./routes/showAndHideElements.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -23,6 +24,7 @@ app.use(cookieParser());
 app.use(express.static(join(__dirname, 'public')));
 
 app.use('/accessibility-tree', accessibilityTreeRouter);
+app.use('/show-and-hide-elements', showAndHideElementsRouter);
 
 app.use('/', indexRouter);
 
