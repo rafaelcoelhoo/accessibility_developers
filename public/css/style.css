@@ -61,6 +61,16 @@ ul {
   outline-offset: 2px;
 }
 
+.visually-hidden-custom:not(:focus):not(:active), .show-and-hide [aria-expanded=false] + #visually_hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 h1,
 h2,
 h3,
@@ -185,20 +195,20 @@ h4 {
   margin-bottom: 30px;
 }
 
-.show-and-hide button {
+.show-and-hide .toogle {
   border: 1px solid;
-  background: #fafafa;
+  background: #FCC303;
   color: #222;
   padding: 8px 12px;
 }
-.show-and-hide button:hover, .show-and-hide button:focus {
+.show-and-hide .toogle:hover, .show-and-hide .toogle:focus {
   background: #000;
   color: #fff;
 }
-.show-and-hide button[aria-expanded=true] {
-  background: #fff;
+.show-and-hide .toogle[aria-expanded=true] {
+  background: #000;
   border-color: blue;
-  color: #000;
+  color: #fff;
 }
 .show-and-hide #off_screen {
   visibility: hidden;
@@ -210,11 +220,18 @@ h4 {
   visibility: visible;
   max-height: 500px;
 }
+.show-and-hide [aria-expanded=false] + #off_screen_absolute {
+  top: -100vw;
+  position: absolute;
+}
 .show-and-hide .content-d-none {
   display: none;
 }
 .show-and-hide [aria-expanded=true] + .content-d-none {
   display: block;
+}
+.show-and-hide .star {
+  width: 30px;
 }
 
 /*# sourceMappingURL=style.css.map */

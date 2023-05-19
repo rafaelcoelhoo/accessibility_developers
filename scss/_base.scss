@@ -67,3 +67,15 @@ ul {
 	outline: 3px solid var(--THEME_COLOR_HOVER,#d33a2c)!important;
 	outline-offset: 2px;
 }
+
+.visually-hidden-custom:not(:focus):not(:active) {
+	clip: rect(0 0 0 0);
+	clip-path: inset(50%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
+
