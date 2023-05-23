@@ -1,0 +1,117 @@
+.focus-management {
+  .options {
+    ul {
+      display: flex;
+      justify-content: space-around;
+      height: 50px;
+      background-color: #f4f4f4;
+      align-items: center;
+      font-size: 18px;
+      list-style: none;
+      box-shadow: 0 0 8px #BBB;
+      border-bottom: 1px solid #AAA;
+    }
+  }
+
+  .bad-dropdown {
+    position: relative;
+
+    .dropdown-content {
+      position: absolute;
+      top: -150vh;
+      left: 0;
+      background: #FFFFFF;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      border: 1px solid rgba(0, 0, 0, .15);
+      border-radius: 4px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+      list-style: none;
+      padding: 20px !important;
+      &.open {
+        top: 50px;
+      }
+
+      a {
+        color: black;
+      }
+    }
+  }
+
+  /*Form*/
+
+  form{
+    display: flex;
+    flex-direction: column;
+  }
+  .card {
+    display: inline-block;
+    background: white;
+    border: 5px solid black;
+    padding: 18px;
+  }
+
+  .line {
+    display: flex;
+    margin: 10px;
+  }
+
+  .line > * {
+    margin: 4px;
+  }
+
+  .line-1 {
+    order: 3;
+  }
+  .line-2 {
+    order: 2;
+  }
+  .line-3 {
+    order: 1;
+  }
+  button {
+    order: 4;
+  }
+
+
+
+  .modal-1 {
+    width: 50%;
+    border-radius: 4px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 24px;
+    background-color: #fff;
+    z-index: 3; /* places the modal on top of everything */
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    display: none;
+  }
+
+  .modal-overlay {
+    width: 100%;
+    height: 100%;
+    z-index: 2; /* places the modalOverlay between the main page and the modal dialog */
+    background-color: #000;
+    opacity: 0.5;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .field {
+    display: inline-block;
+    vertical-align: bottom;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 4px;
+  }
+
+}
