@@ -345,4 +345,9 @@ h4 {
   margin-bottom: 4px;
 }
 
+.index-page .list-links {
+  line-height: 3;
+  list-style: none;
+}
+
 /*# sourceMappingURL=style.css.map */
