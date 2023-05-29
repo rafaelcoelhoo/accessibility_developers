@@ -45,4 +45,31 @@
     align-items: center;
     gap: 5px;
   }
+
+
+  .bad-dropdown {
+    position: relative;
+
+    .dropdown-content {
+      position: absolute;
+      top: -150vh;
+      left: 0;
+      background: #FFFFFF;
+      display: flex;
+      gap: 10px;
+      flex-direction: column;
+      border: 1px solid rgba(0, 0, 0, .15);
+      border-radius: 4px;
+      box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+      list-style: none;
+      padding: 20px !important;
+      &.open {
+        top: 50px;
+      }
+
+      a {
+        color: black;
+      }
+    }
+  }
 }

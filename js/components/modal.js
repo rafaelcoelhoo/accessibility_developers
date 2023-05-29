@@ -7,7 +7,7 @@ export const modal = () => {
     var modalOverlay = document.querySelector('.modal-overlay');
 
     var modalToggle = document.querySelector('.modal-toggle');
-    modalToggle.addEventListener('click', openModal);
+    if (modalToggle) modalToggle.addEventListener('click', openModal);
 
     function openModal() {
         // Save current focus

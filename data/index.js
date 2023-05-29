@@ -4,11 +4,11 @@ export const index = {
         {
             title: "Accessibility Tree",
             options: [{
-                link: "#",
+                link: "/accessibility-tree/bad",
                 label: "Accessibility Tree - Mau exemplo"
             },
                 {
-                    link: "#",
+                    link: "/accessibility-tree/good",
                     label: "Accessibility Tree - Bom exemplo"
                 }]
         },
@@ -16,38 +16,46 @@ export const index = {
             title: "Técnicas para esconder/mostrar elemenos",
             options: [
                 {
-                    link: "/hide-from-all",
+                    link: "/show-and-hide-elements/hide-from-all",
                     label: "Esconder de todos os utilizadores"
                 },
                 {
-                    link: "/hide-visually",
+                    link: "/show-and-hide-elements/hide-visually",
                     label: "Esconder visualmente"
                 },
                 {
-                    link: "/hide-from-all",
+                    link: "/show-and-hide-elements/hide-from-at",
                     label: "Esconder das tecnologias de apoio"
                 }]
         }, {
             title: "Focus Management",
             options: [
                 {
-                    link: "#",
+                    link: "/focus-management/keyboard",
                     label: "Keyboard accessibility"
                 },
                 {
-                    link: "#",
+                    link: "/focus-management/focus-indicator",
                     label: "Indicação visual do focus"
                 },
                 {
-                    link: "#",
+                    link: "/focus-management/tabindex",
+                    label: "Tabindex"
+                },
+                {
+                    link: "/focus-management/tabindex-example",
+                    label: "Exemplo Tabindex -1"
+                },
+                {
+                    link: "/focus-management/content-order",
                     label: "Ordem de navegação"
                 },
                 {
-                    link: "#",
+                    link: "/focus-management/focus-on-modals",
                     label: "Gestão do focus em modais"
                 },
                 {
-                    link: "#",
+                    link: "/focus-management/keyboard-trap",
                     label: "Como involuntariamente podemos bloquear um utilizador de teclado"
                 },
             ]

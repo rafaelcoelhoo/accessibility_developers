@@ -57,7 +57,7 @@ ul {
 }
 
 :focus {
-  outline: 3px solid var(--THEME_COLOR_HOVER, #d33a2c) !important;
+  outline: 3px solid #d33a2c;
   outline-offset: 2px;
 }
 
@@ -85,6 +85,11 @@ ul {
   background: #000;
   border-color: blue;
   color: #fff;
+}
+
+hr {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
 }
 
 h1,
@@ -198,7 +203,7 @@ h4 {
   top: 0;
 }
 .accessibility-tree .custom-checkbox:focus::before {
-  outline: 3px solid var(--THEME_COLOR_HOVER, #d33a2c) !important;
+  outline: 3px solid #d33a2c !important;
   outline-offset: 2px;
 }
 .accessibility-tree .custom-checkbox:focus {
@@ -241,6 +246,29 @@ h4 {
   align-items: center;
   gap: 5px;
 }
+.show-and-hide .bad-dropdown {
+  position: relative;
+}
+.show-and-hide .bad-dropdown .dropdown-content {
+  position: absolute;
+  top: -150vh;
+  left: 0;
+  background: #FFFFFF;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+  list-style: none;
+  padding: 20px !important;
+}
+.show-and-hide .bad-dropdown .dropdown-content.open {
+  top: 50px;
+}
+.show-and-hide .bad-dropdown .dropdown-content a {
+  color: black;
+}
 
 .focus-management {
   /*Form*/
@@ -255,29 +283,6 @@ h4 {
   list-style: none;
   box-shadow: 0 0 8px #BBB;
   border-bottom: 1px solid #AAA;
-}
-.focus-management .bad-dropdown {
-  position: relative;
-}
-.focus-management .bad-dropdown .dropdown-content {
-  position: absolute;
-  top: -150vh;
-  left: 0;
-  background: #FFFFFF;
-  display: flex;
-  gap: 10px;
-  flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.15);
-  border-radius: 4px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-  list-style: none;
-  padding: 20px !important;
-}
-.focus-management .bad-dropdown .dropdown-content.open {
-  top: 50px;
-}
-.focus-management .bad-dropdown .dropdown-content a {
-  color: black;
 }
 .focus-management form {
   display: flex;
@@ -343,6 +348,43 @@ h4 {
 .focus-management label {
   display: block;
   margin-bottom: 4px;
+}
+.focus-management :focus {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+.focus-management .btn-yellow:hover, .focus-management .show-and-hide .toogle:hover, .show-and-hide .focus-management .toogle:hover, .focus-management .btn-yellow:focus, .focus-management .show-and-hide .toogle:focus, .show-and-hide .focus-management .toogle:focus {
+  background: #FCC303;
+  color: #222;
+}
+.focus-management.tab-index-example .wrapper {
+  height: 100%;
+  display: flex;
+}
+.focus-management.tab-index-example #side-nav-label {
+  display: block;
+  border-bottom: 1px solid #e0e0e0;
+  padding: 15px 0 15px 22px;
+  font-weight: 700;
+}
+.focus-management.tab-index-example nav {
+  background: white;
+  min-width: 200px;
+  border-right: 1px solid #e0e0e0;
+}
+.focus-management.tab-index-example nav ul {
+  list-style: none;
+}
+.focus-management.tab-index-example nav a {
+  display: block;
+  padding: 15px 0 15px 22px;
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: 700;
+}
+.focus-management.tab-index-example nav a:hover {
+  background: black;
+  color: white;
 }
 
 .index-page .list-links {

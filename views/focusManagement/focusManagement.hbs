@@ -1,20 +1,8 @@
-<section class="container m-5 focus-management">
-    Ter um link para cada secção talvez, basicamente ter uma lista com as várias opções para o focus e depois ter
-    secções individualuzadas.
-
+<section class="container mt-4 focus-management">
     <div class="options">
         <ul class="mb-4">
             <li><a href="#">Home</a></li>
             <li><a href="#" tabindex="-1">Sobre</a></li>
-            <li><a href="#">Serviços</a></li>
-            <li><a href="#">Produtos</a></li>
-        </ul>
-
-        <hr/>
-
-        <ul class="flex-row-reverse mt-4 mb-4">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Sobre</a></li>
             <li><a href="#">Serviços</a></li>
             <li><a href="#">Produtos</a></li>
         </ul>
@@ -28,34 +16,7 @@
             <li><a href="#" tabindex="2">Produtos</a></li>
         </ul>
     </div>
-    <div>
-        <p tabindex="0">Sou um parágrafo que recebe focus incorretamente</p>
-        <p tabindex="-1">Sou um parágrafo que recebe focus por javascript</p>
-        <p>Sou um parágrafo quem não recebe nenhum focus</p>
-    </div>
 
-    <hr/>
-
-    <div class="d-flex align-items-center">
-        <div class="me-5">
-            <button type="button" tabindex="0" class="btn-yellow">Botão com tabindex 0</button>
-        </div>
-        <div class="me-5">
-            <a href="#">Hiperligação com tabindex 0</a>
-        </div>
-        <div class="bad-dropdown">
-            <button aria-haspopup="true" aria-expanded="false" id="bad_dropdown_btn" type="button"
-                    class="btn-yellow">Dropdown
-            </button>
-            <ul class="dropdown-content" id="bad_dropdown_content">
-                <li><a href="#" class="option-dropdown">Option 1</a></li>
-                <li><a href="#" class="option-dropdown">Option 2</a></li>
-                <li><a href="#" class="option-dropdown">Option 3</a></li>
-            </ul>
-        </div>
-    </div>
-
-    <hr/>
     Propriedade order
     <div class="d-flex align-items-center justify-content-center">
         <div class="card">
@@ -100,15 +61,3 @@
     <div class="modal-overlay"></div>
 </section>
 
-<script>
-    (function () {
-        const dropdown = document.getElementById("bad_dropdown_btn");
-        const dropdownContent = document.getElementById("bad_dropdown_content");
-
-        dropdown.addEventListener('click', function () {
-            const expanded = this.getAttribute("aria-expanded");
-            expanded === "true" ? this.setAttribute("aria-expanded", "false") : this.setAttribute("aria-expanded", "true");
-            dropdownContent.classList.toggle("open");
-        });
-    })()
-</script>

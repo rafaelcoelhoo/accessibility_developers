@@ -64,7 +64,7 @@ ul {
 }
 
 :focus {
-	outline: 3px solid var(--THEME_COLOR_HOVER,#d33a2c)!important;
+	outline: 3px solid #d33a2c;
 	outline-offset: 2px;
 }
 
@@ -97,4 +97,7 @@ ul {
 	}
 }
 
-
+hr {
+	margin-top: 2rem !important;
+	margin-bottom: 2rem !important;
+}
