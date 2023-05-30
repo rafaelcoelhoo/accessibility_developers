@@ -1,0 +1,114 @@
+<section class="container focus-management modal-focus-content">
+    Modal?
+    Meter só uma modal com texto e depois ter um fechar como imagem, para falar do keyboard trap
+
+    <button class="modal-toggle">Open Modal</button>
+    <button class="modal-toggle-2">Open Modal 2</button>
+
+    <div class="modal-1" role="dialog" aria-modal="true" aria-labelledby="title-modal">
+        <h1 class="title-modal"> Adicionar dados pessoais</h1>
+        <div class="d-flex flex-column gap-3">
+            <div class="field">
+                <label for="fullname">Nome Completo</label>
+                <input id="fullname" type="text">
+            </div>
+            <div class="field">
+                <label for="profissao">Profissão</label>
+                <input id="profissao" type="text">
+            </div>
+            <button id="signup" class="btn-yellow">Registar</button>
+        </div>
+    </div>
+
+    <div class="modal-2" role="dialog" aria-modal="true" aria-labelledby="title-modal">
+        <h1 class="title-modal">Detalhe da oferta</h1>
+        <p>oalaanan</p>
+    </div>
+
+    <div class="modal-overlay"></div>
+</section>
+
+<script>
+    const modal = (id, triggerElement) => {
+// Will hold previously focused element
+        let focusedElementBeforeModal;
+
+        // Find the modal and its overlay
+        let modal = document.querySelector(id);
+        let modalOverlay = document.querySelector('.modal-overlay');
+
+        let modalToggle = document.querySelector(triggerElement);
+        if (modalToggle) modalToggle.addEventListener('click', openModal);
+
+        function openModal() {
+            // Save current focus
+            focusedElementBeforeModal = document.activeElement;
+
+            // Listen for and trap the keyboard
+            modal.addEventListener('keydown', trapTabKey);
+
+            // Listen for indicators to close the modal
+            // uncomment
+            // modalOverlay.addEventListener('click', closeModal);
+
+            // Sign-Up button
+            let signUpBtn = modal.querySelector('#signup');
+            if (signUpBtn) signUpBtn.addEventListener('click', closeModal);
+
+            // Find all focusable children
+            let focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+            let focusableElements = modal.querySelectorAll(focusableElementsString);
+            // Convert NodeList to Array
+            focusableElements = Array.prototype.slice.call(focusableElements);
+
+            let firstTabStop = focusableElements[0];
+            let lastTabStop = focusableElements[focusableElements.length - 1];
+
+            // Show the modal and overlay
+            modal.style.display = 'block';
+            modalOverlay.style.display = 'block';
+
+            // Focus first child
+            firstTabStop.focus();
+
+            function trapTabKey(e) {
+                // Check for TAB key press
+                if (e.keyCode === 9) {
+
+                    // SHIFT + TAB
+                    if (e.shiftKey) {
+                        if (document.activeElement === firstTabStop) {
+                            e.preventDefault();
+                            lastTabStop.focus();
+                        }
+
+                        // TAB
+                    } else {
+                        if (document.activeElement === lastTabStop) {
+                            e.preventDefault();
+                            firstTabStop.focus();
+                        }
+                    }
+                }
+
+                // ESCAPE
+                if (e.keyCode === 27) {
+                    // uncomment
+                    // closeModal();
+                }
+            }
+        }
+
+        function closeModal() {
+            // Hide the modal and overlay
+            modal.style.display = 'none';
+            modalOverlay.style.display = 'none';
+
+            // Set focus back to element that had it before the modal was opened
+            focusedElementBeforeModal.focus();
+        }
+
+    }
+modal('.modal-1', '.modal-toggle');
+modal('.modal-2', '.modal-toggle-2');
+</script>

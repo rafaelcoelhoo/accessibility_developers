@@ -1,8 +1,50 @@
-<div class="container">
-    <ul class="flex-row-reverse mt-4 mb-4">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Sobre</a></li>
-        <li><a href="#">Serviços</a></li>
-        <li><a href="#">Produtos</a></li>
-    </ul>
+<div class="container content-order">
+    <div class="mt-4">
+        <h2>Ordem natural</h2>
+        <ul class="mt-4">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Produtos</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div>
+        <h2>Ordem alterada visualmente com flex-column-reverse</h2>
+        <ul class="d-flex flex-column-reverse mt-4 mb-4">
+            <li><a href="#">Produtos</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Home</a></li>
+        </ul>
+    </div><hr>
+    <div>
+        <h2>Ordem alterada visualmente com order</h2>
+        <ul class="d-flex gap-4 mt-4">
+            <li><a href="#">Home</a></li>
+            <li class="order-4"><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Produtos</a></li>
+        </ul>
+    </div>
+    <hr>
+    <div class="d-flex align-items-center">
+        <div class="card">
+            <form>
+                <button class="btn-yellow">Submeter</button>
+                <div class="line line-1">
+                    <label for="input-1">Profissão:</label>
+                    <input id="input-1" type="text">
+                </div>
+                <div class="line line-2">
+                    <label for="input-2">Morada:</label>
+                    <input id="input-2" type="text">
+                </div>
+                <div class="line line-3">
+                    <label for="input-3">Nome:</label>
+                    <input id="input-3" type="text">
+                </div>
+            </form>
+        </div>
+    </div>
 </div>

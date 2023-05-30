@@ -89,7 +89,7 @@
 	}
 
 	.custom-checkbox:focus::before {
-		outline: 3px solid var(--THEME_COLOR_HOVER,#d33a2c)!important;
+		outline: 3px solid #d33a2c !important;
 		outline-offset: 2px;
 	}
 

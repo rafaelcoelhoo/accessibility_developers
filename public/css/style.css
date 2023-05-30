@@ -270,9 +270,6 @@ h4 {
   color: black;
 }
 
-.focus-management {
-  /*Form*/
-}
 .focus-management .options ul {
   display: flex;
   justify-content: space-around;
@@ -284,75 +281,10 @@ h4 {
   box-shadow: 0 0 8px #BBB;
   border-bottom: 1px solid #AAA;
 }
-.focus-management form {
-  display: flex;
-  flex-direction: column;
-}
-.focus-management .card {
-  display: inline-block;
-  background: white;
-  border: 5px solid black;
-  padding: 18px;
-}
-.focus-management .line {
-  display: flex;
-  margin: 10px;
-}
-.focus-management .line > * {
-  margin: 4px;
-}
-.focus-management .line-1 {
-  order: 3;
-}
-.focus-management .line-2 {
-  order: 2;
-}
-.focus-management .line-3 {
-  order: 1;
-}
-.focus-management button {
-  order: 4;
-}
-.focus-management .modal-1 {
-  width: 50%;
-  border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 24px;
-  background-color: #fff;
-  z-index: 3;
-  /* places the modal on top of everything */
-  position: fixed;
-  top: 25%;
-  left: 25%;
-  display: none;
-}
-.focus-management .modal-overlay {
-  width: 100%;
-  height: 100%;
-  z-index: 2;
-  /* places the modalOverlay between the main page and the modal dialog */
-  background-color: #000;
-  opacity: 0.5;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: none;
-  margin: 0;
-  padding: 0;
-}
-.focus-management .field {
-  display: inline-block;
-  vertical-align: bottom;
-}
-.focus-management label {
-  display: block;
-  margin-bottom: 4px;
-}
-.focus-management :focus {
+.focus-management.focus-outline :focus {
   outline: -webkit-focus-ring-color auto 1px;
 }
-.focus-management .btn-yellow:hover, .focus-management .show-and-hide .toogle:hover, .show-and-hide .focus-management .toogle:hover, .focus-management .btn-yellow:focus, .focus-management .show-and-hide .toogle:focus, .show-and-hide .focus-management .toogle:focus {
+.focus-management.focus-outline .btn-yellow:hover, .focus-management.focus-outline .show-and-hide .toogle:hover, .show-and-hide .focus-management.focus-outline .toogle:hover, .focus-management.focus-outline .btn-yellow:focus, .focus-management.focus-outline .show-and-hide .toogle:focus, .show-and-hide .focus-management.focus-outline .toogle:focus {
   background: #FCC303;
   color: #222;
 }
@@ -385,6 +317,75 @@ h4 {
 .focus-management.tab-index-example nav a:hover {
   background: black;
   color: white;
+}
+.focus-management.modal-focus-content .modal-1, .focus-management.modal-focus-content .modal-2 {
+  width: 50%;
+  border-radius: 4px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 24px;
+  background-color: #fff;
+  z-index: 3;
+  /* places the modal on top of everything */
+  position: fixed;
+  top: 25%;
+  left: 25%;
+  display: none;
+}
+.focus-management.modal-focus-content .modal-overlay {
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  /* places the modalOverlay between the main page and the modal dialog */
+  background-color: #000;
+  opacity: 0.5;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+.focus-management.modal-focus-content .field {
+  display: inline-block;
+  vertical-align: bottom;
+}
+.focus-management.modal-focus-content label {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.content-order {
+  /*Form*/
+}
+.content-order form {
+  display: flex;
+  flex-direction: column;
+}
+.content-order .card {
+  display: inline-block;
+  background: white;
+  border: 5px solid black;
+  padding: 18px;
+}
+.content-order .line {
+  display: flex;
+  margin: 10px;
+}
+.content-order .line > * {
+  margin: 4px;
+}
+.content-order .line-1 {
+  order: 3;
+}
+.content-order .line-2 {
+  order: 2;
+}
+.content-order .line-3 {
+  order: 1;
+}
+.content-order button {
+  order: 4;
 }
 
 .index-page .list-links {
