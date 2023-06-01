@@ -31,16 +31,16 @@ export const index = {
             title: "Focus Management",
             options: [
                 {
-                    link: "/focus-management/keyboard",
-                    label: "Keyboard accessibility"
-                },
-                {
                     link: "/focus-management/focus-indicator",
                     label: "Indicação visual do focus"
                 },
                 {
                     link: "/focus-management/tabindex",
                     label: "Tabindex"
+                },
+                {
+                    link: "/focus-management/keyboard",
+                    label: "Keyboard accessibility"
                 },
                 {
                     link: "/focus-management/tabindex-example",

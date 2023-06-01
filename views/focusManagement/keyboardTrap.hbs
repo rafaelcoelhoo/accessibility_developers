@@ -1,1 +1,108 @@
+<section class="container focus-management modal-focus-content">
+    <div class="mt-4">
+        <a href="/" class="d-block">Hiperligação para a página ínicial</a>
+        <button class="modal-toggle-2 mt-4 btn-yellow">Abrir modal</button>
+        <a href="/" class="d-block mt-4">Hiperligação para a página ínicial</a>
+    </div>
 
+    <div class="modal-2" role="dialog" aria-modal="true" aria-labelledby="title-modal" tabindex="-1">
+        <div class="d-flex justify-content-between align-items-center">
+            <h1 class="title-modal">Detalhe da oferta</h1>
+            <svg id="close-modal" tabindex="0" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
+        </div>
+        <p>Lorem ipsum dolor sit amet. Aut temporibus architecto qui distinctio asperiores et voluptatem debitis. Vel rerum asperiores sit exercitationem perspiciatis id culpa beatae. Quo obcaecati cumque est magnam voluptas hic ipsam quia a quidem consequatur!
+            Qui omnis sunt rem itaque placeat ea consectetur enim cum magnam libero. In quisquam fugiat et voluptatem delectus ut eius iusto et libero eius in dolores recusandae est cumque ullam.
+            Aut aperiam quod qui repudiandae facilis ut eligendi fuga qui tempora nulla eum doloremque galisum aut mollitia illo eum quos minus? Ex galisum magnam et repellat vitae eum suscipit quaerat sed quia dicta in illum blanditiis vel blanditiis sequi.
+        </p>
+    </div>
+
+    <div class="modal-overlay"></div>
+</section>
+
+<script>
+    const modal = (id, triggerElement) => {
+// Will hold previously focused element
+        let focusedElementBeforeModal;
+
+        // Find the modal and its overlay
+        let closeModalButton = document.querySelector('#close-modal');
+        let modal = document.querySelector(id);
+        let modalOverlay = document.querySelector('.modal-overlay');
+
+        let modalToggle = document.querySelector(triggerElement);
+        if (modalToggle) modalToggle.addEventListener('click', openModal);
+
+        function openModal() {
+            // Save current focus
+            focusedElementBeforeModal = document.activeElement;
+
+            // Listen for and trap the keyboard
+            modal.addEventListener('keydown', trapTabKey);
+
+            // Listen for indicators to close the modal
+            // uncomment
+             modalOverlay.addEventListener('click', closeModal);
+             closeModalButton.addEventListener('click', closeModal);
+
+
+            // Sign-Up button
+            let signUpBtn = modal.querySelector('#signup');
+            if (signUpBtn) signUpBtn.addEventListener('click', closeModal);
+
+            // Find all focusable children
+            let focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable], [tabindex="-1"]';
+            let focusableElements = modal.querySelectorAll(focusableElementsString);
+            // Convert NodeList to Array
+            focusableElements = Array.prototype.slice.call(focusableElements);
+
+            let firstTabStop = focusableElements[0];
+            let lastTabStop = focusableElements[focusableElements.length - 1];
+
+            // Show the modal and overlay
+            modal.style.display = 'block';
+            modalOverlay.style.display = 'block';
+
+            // Focus first child
+            modal.focus();
+
+            function trapTabKey(e) {
+                // Check for TAB key press
+                if (e.keyCode === 9) {
+
+                    // SHIFT + TAB
+                    if (e.shiftKey) {
+                        if (document.activeElement === firstTabStop) {
+                            e.preventDefault();
+                            lastTabStop.focus();
+                        }
+
+                        // TAB
+                    } else {
+                        if (document.activeElement === lastTabStop) {
+                            e.preventDefault();
+                            firstTabStop.focus();
+                        }
+                    }
+                }
+
+                // ESCAPE
+                if (e.keyCode === 27) {
+                    // uncomment
+                    // closeModal();
+                }
+            }
+        }
+
+        function closeModal() {
+            // Hide the modal and overlay
+            modal.style.display = 'none';
+            modalOverlay.style.display = 'none';
+
+            // Set focus back to element that had it before the modal was opened
+            focusedElementBeforeModal.focus();
+        }
+
+    }
+    modal('.modal-1', '.modal-toggle');
+    modal('.modal-2', '.modal-toggle-2');
+</script>

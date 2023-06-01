@@ -2,11 +2,6 @@ import express from 'express';
 
 const router = express.Router();
 
-/* GET Accessibility Tree page. */
-router.get('/', function (req, res) {
-  res.render('focusManagement/focusManagement', {title: "Gestão do focus"});
-});
-
 router.get('/keyboard', function (req, res) {
   res.render('focusManagement/keyboardAccessibility', {title: "Acessibilidade teclado"});
 });
