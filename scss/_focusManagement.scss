@@ -14,8 +14,8 @@
   }
 
   &.focus-outline {
-    :focus {
-      outline: -webkit-focus-ring-color auto 1px;
+    :focus-visible {
+      outline: -webkit-focus-ring-color auto 5px;
       //outline: 0;
     }
 

@@ -1,4 +1,5 @@
 import express from 'express';
+import fs from 'fs';
 
 const router = express.Router();
 
@@ -15,7 +16,9 @@ router.get('/content-order', function (req, res) {
 });
 
 router.get('/focus-on-modals', function (req, res) {
-  res.render('focusManagement/focusOnModals', {title: "Focus em modais"});
+  const modalCode = fs.readFileSync('./views/partials/modal-focus-on-modals.hbs', 'utf8');
+
+  res.render('focusManagement/focusOnModals', {title: "Focus em modais", modal: modalCode});
 });
 
 router.get('/keyboard-trap', function (req, res) {
