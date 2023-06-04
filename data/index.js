@@ -64,12 +64,44 @@ export const index = {
             title: "ARIA",
             options: [
                 {
-                    link: "#",
+                    link: "/aria/accessible-names",
+                    label: "Accessible names"
+                },
+                {
+                    link: "/aria/practical-accessible-names",
+                    label: "Exemplo real"
+                },
+                {
+                    link: "/aria/button",
                     label: "Botões"
                 },
                 {
-                    link: "#",
+                    link: "/aria/link",
                     label: "Links"
+                },
+                {
+                    link: "/aria/checkbox",
+                    label: "Checkbox"
+                },
+                {
+                    link: "/aria/tabs",
+                    label: "Tabs"
+                },
+                {
+                    link: "/aria/switch-control",
+                    label: "Switch control"
+                },
+                {
+                    link: "/aria/modal",
+                    label: "Modal"
+                },
+                {
+                    link: "/aria/aria-live",
+                    label: "aria-live"
+                },
+                {
+                    link: "/aria/aria-expanded",
+                    label: "aria-expanded"
                 },
             ]
         }
