@@ -64,8 +64,19 @@ export const index = {
             title: "ARIA",
             options: [
                 {
-                    link: "/aria/accessible-names",
-                    label: "Accessible names"
+                    hasMultipleLinks: true,
+                    label: "Accessible names",
+                    id: "accessible_names",
+                    options: [
+                        {
+                            link: "/aria/accessible-names",
+                            label: "Inicio"
+                        },
+                        {
+                            link: "/aria/accessible-names",
+                            label: "Solução"
+                        }
+                    ],
                 },
                 {
                     link: "/aria/practical-accessible-names",

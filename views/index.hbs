@@ -3,7 +3,22 @@
         <h2 class="mt-5">{{title}}</h2>
         <ul class="ms-5">
             {{#each options}}
-                <li class="border-bottom border-dark list-links"><a href="{{link}}">{{label}}</a></li>
+                {{#if hasMultipleLinks}}
+                <li class="list-links">
+                    <h3>{{label}}</h3>
+                    <ul class="ms-5">
+                        {{#each options}}
+                            <li class="border-bottom border-dark list-links">
+                                <a href="{{link}}">{{label}}</a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </li>
+                {{else}}
+                    <li class="border-bottom border-dark list-links">
+                        <a href="{{link}}">{{label}}</a>
+                    </li>
+                {{/if}}
             {{/each}}
         </ul>
     {{/each}}

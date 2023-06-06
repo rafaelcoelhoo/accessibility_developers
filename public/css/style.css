@@ -423,6 +423,9 @@ h4 {
   line-height: 3;
   list-style: none;
 }
+.index-page h3 {
+  font-size: 1.2rem;
+}
 
 .switch-control .toggle-switch, .switch-control .toggle-switch .toggle-knob {
   transition: all 0.2s ease-in;
