@@ -1,1 +1,44 @@
-Switch
+<section class="container switch-control" lang="en">
+
+    <div id="container">
+        <span>Dark mode</span>
+        <span class="toggle-switch">
+		    <span class="toggle-knob"></span>
+	    </span>
+        <span class="status">off</span>
+    </div>
+    <!---------Correto em baixo----------->
+    <div id="container" class="d-flex align-items-center">
+        <span>Dark mode</span>
+            <span aria-label="Use dark mode" role="switch" aria-checked="false" tabindex="0" class="toggle-switch">
+		    <span class="toggle-knob"></span>
+	    </span>
+        <span class="status" aria-hidden="true">off</span>
+    </div>
+</section>
+
+
+Mostar depois que se tivermos uma checkbox já não precisamos do aria-checked
+
+<script>
+    const toggler = document.querySelector('.toggle-switch');
+    const switchStatus = document.querySelector('.status');
+    let switchIsActive = false;
+
+    function handleClick() {
+        document.body.classList.toggle('dark-mode');
+        toggler.classList.toggle('active');
+        switchIsActive = !switchIsActive;
+        switchStatus.innerHTML = switchIsActive ? 'on' : 'off';
+        toggler.setAttribute('aria-checked', switchIsActive);
+    }
+
+    // Adds keyboard events to the toggle
+    toggler.addEventListener('keydown', function (event) {
+        if (event.key === ' ') {
+            event.preventDefault();
+            handleClick();
+        }
+    });
+    toggler.onclick = handleClick;
+</script>

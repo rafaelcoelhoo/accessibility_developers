@@ -424,4 +424,36 @@ h4 {
   list-style: none;
 }
 
+.switch-control .toggle-switch, .switch-control .toggle-switch .toggle-knob {
+  transition: all 0.2s ease-in;
+}
+.switch-control .toggle-switch {
+  height: 90px;
+  width: 165px;
+  display: inline-block;
+  background-color: #333333;
+  margin: 6px;
+  margin-bottom: 15px;
+  border-radius: 90px;
+  cursor: pointer;
+  text-align: left;
+}
+.switch-control .toggle-switch .toggle-knob {
+  width: 84px;
+  height: 78px;
+  display: inline-block;
+  background-color: #ffffff;
+  border-radius: 78px;
+  margin: 6px 9px;
+}
+.switch-control .toggle-switch.active {
+  background-color: #f31455;
+}
+.switch-control .toggle-switch.active .toggle-knob {
+  margin-left: 72px;
+}
+.switch-control .toggle-switch:focus .toggle-knob {
+  box-shadow: 0px 0px 5px 5px #229abf;
+}
+
 /*# sourceMappingURL=style.css.map */
