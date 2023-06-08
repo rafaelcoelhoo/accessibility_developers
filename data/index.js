@@ -69,11 +69,11 @@ export const index = {
                     id: "accessible_names",
                     options: [
                         {
-                            link: "/aria/accessible-names",
-                            label: "Inicio"
+                            link: "/aria/accessible-names/initial",
+                            label: "Início"
                         },
                         {
-                            link: "/aria/accessible-names",
+                            link: "/aria/accessible-names/solution",
                             label: "Solução"
                         }
                     ],
@@ -99,8 +99,19 @@ export const index = {
                     label: "Tabs"
                 },
                 {
-                    link: "/aria/switch-control",
-                    label: "Switch control"
+                    label: "Switch control",
+                    hasMultipleLinks: true,
+                    id: "switch_control",
+                    options: [
+                        {
+                            link: "/aria/switch-control/initial",
+                            label: "Início"
+                        },
+                        {
+                            link: "/aria/switch-control/solution",
+                            label: "Solução"
+                        }
+                    ],
                 },
                 {
                     link: "/aria/modal",

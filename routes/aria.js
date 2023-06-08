@@ -16,8 +16,12 @@ router.get('/checkbox', function (req, res) {
 });
 
 
-router.get('/switch-control', function (req, res) {
-  res.render('aria/switchControl', {title: "Switch - Aria"});
+router.get('/switch-control/initial', function (req, res) {
+  res.render('aria/switchControl/initial', {title: "Switch - Aria"});
+});
+
+router.get('/switch-control/solution', function (req, res) {
+  res.render('aria/switchControl/solution', {title: "Switch - Aria"});
 });
 
 router.get('/tabs', function (req, res) {
@@ -28,8 +32,12 @@ router.get('/modal', function (req, res) {
   res.render('aria/modal-aria', {title: "Modal - Aria"});
 });
 
-router.get('/accessible-names', function (req, res) {
-  res.render('aria/accessibleNames', {title: "Nomes acessiveis - Aria"});
+router.get('/accessible-names/initial', function (req, res) {
+  res.render('aria/accessibleNames/initial', {title: "Nomes acessiveis - Aria"});
+});
+
+router.get('/accessible-names/solution', function (req, res) {
+  res.render('aria/accessibleNames/solution', {title: "Nomes acessiveis - Aria"});
 });
 
 router.get('/practical-accessible-names', function (req, res) {

@@ -427,12 +427,17 @@ h4 {
   font-size: 1.2rem;
 }
 
+.switch-control {
+  /*  .toggle-switch:focus .toggle-knob {
+      box-shadow: 0 0 5px 5px #229abf;
+    }*/
+}
 .switch-control .toggle-switch, .switch-control .toggle-switch .toggle-knob {
   transition: all 0.2s ease-in;
 }
 .switch-control .toggle-switch {
-  height: 90px;
-  width: 165px;
+  height: 40px;
+  width: 82px;
   display: inline-block;
   background-color: #333333;
   margin: 6px;
@@ -442,21 +447,18 @@ h4 {
   text-align: left;
 }
 .switch-control .toggle-switch .toggle-knob {
-  width: 84px;
-  height: 78px;
+  width: 42px;
+  height: 38px;
   display: inline-block;
   background-color: #ffffff;
   border-radius: 78px;
-  margin: 6px 9px;
+  margin: 1px 5px;
 }
 .switch-control .toggle-switch.active {
-  background-color: #f31455;
+  background-color: green;
 }
 .switch-control .toggle-switch.active .toggle-knob {
-  margin-left: 72px;
-}
-.switch-control .toggle-switch:focus .toggle-knob {
-  box-shadow: 0px 0px 5px 5px #229abf;
+  margin-left: 36px;
 }
 
 /*# sourceMappingURL=style.css.map */
