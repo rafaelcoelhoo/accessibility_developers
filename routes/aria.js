@@ -33,11 +33,11 @@ router.get('/modal', function (req, res) {
 });
 
 router.get('/accessible-names/initial', function (req, res) {
-  res.render('aria/accessibleNames/initial', {title: "Nomes acessiveis - Aria"});
+  res.render('aria/accessibleNames/initial', {title: "Nomes acessíveis - Aria"});
 });
 
 router.get('/accessible-names/solution', function (req, res) {
-  res.render('aria/accessibleNames/solution', {title: "Nomes acessiveis - Aria"});
+  res.render('aria/accessibleNames/solution', {title: "Nomes acessíveis - Aria"});
 });
 
 router.get('/practical-accessible-names', function (req, res) {

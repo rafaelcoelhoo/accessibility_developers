@@ -97,6 +97,10 @@ hr {
   margin-bottom: 2rem !important;
 }
 
+input {
+  border: 1px solid;
+}
+
 h1,
 h2,
 h3,
@@ -427,11 +431,6 @@ h4 {
   font-size: 1.2rem;
 }
 
-.switch-control {
-  /*  .toggle-switch:focus .toggle-knob {
-      box-shadow: 0 0 5px 5px #229abf;
-    }*/
-}
 .switch-control .toggle-switch, .switch-control .toggle-switch .toggle-knob {
   transition: all 0.2s ease-in;
 }
@@ -459,6 +458,15 @@ h4 {
 }
 .switch-control .toggle-switch.active .toggle-knob {
   margin-left: 36px;
+}
+
+.accessible-names .feather-external-link {
+  margin-left: 5px;
+  vertical-align: top;
+}
+.accessible-names #pwd-detail {
+  display: inline-block;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */

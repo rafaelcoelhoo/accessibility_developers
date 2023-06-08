@@ -27,8 +27,16 @@
   .toggle-switch.active .toggle-knob {
     margin-left: 36px;
   }
+}
 
-/*  .toggle-switch:focus .toggle-knob {
-    box-shadow: 0 0 5px 5px #229abf;
-  }*/
+.accessible-names {
+  .feather-external-link {
+    margin-left: 5px;
+    vertical-align: top;
+  }
+
+  #pwd-detail {
+    display: inline-block;
+    font-size: 14px;
+  }
 }

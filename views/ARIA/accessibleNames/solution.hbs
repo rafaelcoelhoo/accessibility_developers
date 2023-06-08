@@ -1,1 +1,75 @@
-accessible names
+<div class="accessible-names" lang="en">
+    <h2>aria-label</h2>
+    <button class="btn-transparent mb-4 d-block" aria-label="Menu">
+        <svg viewBox="0 0 100 80" width="40" height="40" role="img" aria-hidden="true">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+        </svg>
+    </button>
+
+    <a href="https://lisbondigitalschool.com/" target="_blank">Lisbon Digital School
+        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             class="feather feather-external-link" aria-label="Open in a new window">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+    </a>
+    <hr>
+
+    <h2>Content</h2>
+    <button class="btn-transparent">
+        <span class="visually-hidden-custom">Menu</span>
+        <svg viewBox="0 0 100 80" width="40" height="40" role="img" aria-hidden="true">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+        </svg>
+    </button>
+
+    <hr>
+
+    <h2>label</h2>
+    <h3 id="title" class="mt-5">Personal data</h3>
+    <form>
+        <label for="name">Name</label>
+        <input type="text" id="name">
+        <button class="btn-yellow ml-2">Save</button>
+    </form>
+
+    <hr>
+
+
+    <h2>aria-labelledby</h2>
+    <h3 id="title-1" class="mt-5">Personal data</h3>
+    <form>
+        <label for="labelName">Name</label>
+        <input type="text" id="labelName">
+        <button lang="pt" class="btn-yellow ml-2" id="guardar" aria-labelledby="guardar title-1">Save</button>
+    </form>
+
+
+    <hr>
+
+    <h2>aria-describedby</h2>
+    <form class="mt-5">
+        <label for="pwd">Password</label>
+        <input type="text" id="pwd" aria-describedby="pwd-detail">
+        <p id="pwd-detail">The password must have 10 characters</p>
+    </form>
+
+    <hr>
+    <h2>All mixed</h2>
+
+    <button class="btn-transparent" aria-label="Menu aria-label" aria-labelledby="menu-id">
+        <span class="visually-hidden-custom" id="menu-id">Menu visually hidden</span>
+        <svg viewBox="0 0 100 80" width="40" height="40" role="img" aria-hidden="true">
+            <rect width="100" height="20"></rect>
+            <rect y="30" width="100" height="20"></rect>
+            <rect y="60" width="100" height="20"></rect>
+        </svg>
+    </button>
+
+</div>
