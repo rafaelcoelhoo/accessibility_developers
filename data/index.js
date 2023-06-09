@@ -70,17 +70,28 @@ export const index = {
                     options: [
                         {
                             link: "/aria/accessible-names/initial",
-                            label: "Início"
+                            label: "Initial"
                         },
                         {
                             link: "/aria/accessible-names/solution",
-                            label: "Solução"
+                            label: "Solution"
                         }
                     ],
                 },
                 {
-                    link: "/aria/practical-accessible-names",
-                    label: "Exemplo real"
+                    label: "Real example",
+                    hasMultipleLinks: true,
+                    id: "accessible_names",
+                    options: [
+                        {
+                            link: "/aria/practical-accessible-names/initial",
+                            label: "Initial"
+                        },
+                        {
+                            link: "/aria/practical-accessible-names/initial",
+                            label: "Solution"
+                        }
+                    ],
                 },
                 {
                     link: "/aria/button",
@@ -105,11 +116,11 @@ export const index = {
                     options: [
                         {
                             link: "/aria/switch-control/initial",
-                            label: "Início"
+                            label: "Initial"
                         },
                         {
                             link: "/aria/switch-control/solution",
-                            label: "Solução"
+                            label: "Solution"
                         }
                     ],
                 },

@@ -40,8 +40,12 @@ router.get('/accessible-names/solution', function (req, res) {
   res.render('aria/accessibleNames/solution', {title: "Nomes acessíveis - Aria"});
 });
 
-router.get('/practical-accessible-names', function (req, res) {
-  res.render('aria/practicalAccessibleNames', {title: "Exemplo nomes acessiveis - Aria"});
+router.get('/practical-accessible-names/initial', function (req, res) {
+  res.render('aria/practicalAccessibleNames', {title: "Real example - Aria"});
+});
+
+router.get('/practical-accessible-names/solution', function (req, res) {
+  res.render('aria/practicalAccessibleNames', {title: "Real example - Aria"});
 });
 
 router.get('/aria-live', function (req, res) {

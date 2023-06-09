@@ -12,7 +12,7 @@ router.get('/accessibility-tree', function (req, res) {
 router.get('/', function (req, res) {
   const parameter = req.query.id;
   let renderView = "index";
-  let options = null;
+  let optionsDetails = [];
 
   if (parameter) {
     const data = index.content.find(item => {
@@ -20,12 +20,13 @@ router.get('/', function (req, res) {
     });
 
     if (data) {
-      options = data.options.find(option => option.id === parameter);
+      optionsDetails = data.options.filter(option => option.id === parameter);
       renderView = "topicDetail";
     }
   }
+  const response = optionsDetails && optionsDetails.length ? {optionsDetails} : index;
 
-  res.render(renderView, options || index);
+  res.render(renderView, response);
 });
 
 export {router as indexRouter};
