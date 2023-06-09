@@ -1,0 +1,28 @@
+<section class="aria-links">
+    <h2>Non semantic element</h2>
+    <div tabindex="0" role="link" onclick="window.location.href = 'https://lisbondigitalschool.com/'" class="fake-link">Lisbon Digital School</div>
+
+    <hr>
+
+    <h2>Semantic, but missing attributes</h2>
+    <a href="https://lisbondigitalschool.com/" class="fake-link">Lisbon Digital School</a>
+
+    <hr>
+
+    <p>Note: Please note that while ARIA can be used as a solution in certain cases, it is always preferable to prioritize the use of native HTML elements whenever possible. Native HTML provides built-in accessibility features and semantic meaning, ensuring better accessibility without relying heavily on ARIA attributes</p>
+
+</section>
+
+
+
+<script>
+    var links = document.querySelectorAll('[role="link"]');
+
+    links.forEach(function(link) {
+        link.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter') {
+                link.click();
+            }
+        });
+    });
+</script>

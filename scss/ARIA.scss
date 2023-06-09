@@ -40,3 +40,17 @@
     font-size: 14px;
   }
 }
+
+.aria-buttons {
+  .btn-yellow {
+    width: fit-content;
+  }
+}
+
+.aria-links {
+  .fake-link {
+    color: #0d6efd;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+}

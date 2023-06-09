@@ -1,0 +1,20 @@
+<section class="aria-buttons">
+    <div tabindex="0" role="button" onclick="console.log('click')" class="btn-yellow">Save</div>
+</section>
+
+<hr>
+
+<p>Note: Please note that while ARIA can be used as a solution in certain cases, it is always preferable to prioritize the use of native HTML elements whenever possible. Native HTML provides built-in accessibility features and semantic meaning, ensuring better accessibility without relying heavily on ARIA attributes</p>
+
+
+<script>
+    var buttons = document.querySelectorAll('[role="button"]');
+
+    buttons.forEach(function(button) {
+        button.addEventListener('keydown', function(event) {
+            if (event.key === 'Enter' || event.key === ' ') {
+                button.click();
+            }
+        });
+    });
+</script>

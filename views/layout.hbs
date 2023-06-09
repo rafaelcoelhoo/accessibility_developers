@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt">
+<html lang="en">
 	<head>
 		<title>{{{title}}}</title>
 		<link rel="icon" href="/img/favicon.ico">
@@ -8,27 +8,18 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 	</head>
 	<body>
-    <header>
-        <div class="container">
-            <span>Accessibilidade para developers</span>
-            <nav class="navigation-header">
-                <ul>
-                    <li><a href="#">Sobre</a></li>
-                    <li><a href="#">Contactos</a></li>
-                </ul>
-            </nav>
-        </div>
+    <header class="container">
+        <h1 class="text-center mt-5">Accessibility for developers</h1>
     </header>
     <main class="container mt-5 mb-5">
 		{{{body}}}
-        <div class="m-4 text-center">
-            <a href="/">Voltar ao ínicio</a>
-        </div>
 		<script src="/js/main.js"></script>
     </main>
     {{{modal}}}
-    <footer>
-        © 2023 Curso acessibilidade para developers
+    <footer class="container">
+        <p class="text-center border-top border-dark">
+            <a href="/" class="pt-3 d-block">Back to homepage</a>
+        </p>
     </footer>
 	</body>
 </html>

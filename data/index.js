@@ -69,37 +69,73 @@ export const index = {
                     id: "accessible_names",
                     options: [
                         {
-                            link: "/aria/accessible-names/initial",
-                            label: "Initial"
+                            label: "Accessible names",
+                            topics: [
+                                    {
+                                        link: "/aria/accessible-names/initial",
+                                        label: "Initial"
+                                    },
+                                    {
+                                        link: "/aria/accessible-names/solution",
+                                        label: "Solution"
+                                    }
+                                ]
                         },
                         {
-                            link: "/aria/accessible-names/solution",
-                            label: "Solution"
-                        }
+                            label: "Real example",
+                            topics: [
+                                    {
+                                        link: "/aria/practical-accessible-names/initial",
+                                        label: "Initial"
+                                    },
+                                    {
+                                        link: "/aria/practical-accessible-names/solution",
+                                        label: "Solution"
+                                    }
+                                ]
+                        },
+
                     ],
                 },
                 {
-                    label: "Real example",
+                    label: "Buttons",
                     hasMultipleLinks: true,
-                    id: "accessible_names",
+                    id: "aria_buttons",
                     options: [
                         {
-                            link: "/aria/practical-accessible-names/initial",
-                            label: "Initial"
-                        },
-                        {
-                            link: "/aria/practical-accessible-names/initial",
-                            label: "Solution"
+                            label: "Buttons",
+                            topics: [
+                                {
+                                    link: "/aria/buttons/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/buttons/solution",
+                                    label: "Solution"
+                                }
+                            ]
                         }
-                    ],
+                    ]
                 },
                 {
-                    link: "/aria/button",
-                    label: "Botões"
-                },
-                {
-                    link: "/aria/link",
-                    label: "Links"
+                    label: "Links",
+                    hasMultipleLinks: true,
+                    id: "aria_links",
+                    options: [
+                        {
+                            label: "Links",
+                            topics: [
+                                {
+                                    link: "/aria/links/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/links/solution",
+                                    label: "Solution"
+                                }
+                            ]
+                        }
+                        ]
                 },
                 {
                     link: "/aria/checkbox",
@@ -115,14 +151,19 @@ export const index = {
                     id: "switch_control",
                     options: [
                         {
-                            link: "/aria/switch-control/initial",
-                            label: "Initial"
-                        },
-                        {
-                            link: "/aria/switch-control/solution",
-                            label: "Solution"
+                            label: "Switch control",
+                            topics: [
+                                {
+                                    link: "/aria/switch-control/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/switch-control/solution",
+                                    label: "Solution"
+                                }
+                            ]
                         }
-                    ],
+                    ]
                 },
                 {
                     link: "/aria/modal",

@@ -2,13 +2,20 @@ import express from 'express';
 
 const router = express.Router();
 
-/* GET Accessibility Tree page. */
-router.get('/link', function (req, res) {
-  res.render('aria/links', {title: "Links - Aria"});
+router.get('/links/initial', function (req, res) {
+  res.render('aria/links/initial', {title: "Links - Aria"});
 });
 
-router.get('/button', function (req, res) {
-  res.render('aria/buttons', {title: "Botões - Aria"});
+router.get('/links/solution', function (req, res) {
+  res.render('aria/links/solution', {title: "Links - Aria"});
+});
+
+router.get('/buttons/initial', function (req, res) {
+  res.render('aria/buttons/initial', {title: "Buttons - Aria"});
+});
+
+router.get('/buttons/solution', function (req, res) {
+  res.render('aria/buttons/solution', {title: "Buttons - Aria"});
 });
 
 router.get('/checkbox', function (req, res) {
@@ -41,11 +48,11 @@ router.get('/accessible-names/solution', function (req, res) {
 });
 
 router.get('/practical-accessible-names/initial', function (req, res) {
-  res.render('aria/practicalAccessibleNames', {title: "Real example - Aria"});
+  res.render('aria/accessibleNamesExercise/initial', {title: "Real example - Aria"});
 });
 
 router.get('/practical-accessible-names/solution', function (req, res) {
-  res.render('aria/practicalAccessibleNames', {title: "Real example - Aria"});
+  res.render('aria/accessibleNamesExercise/solution', {title: "Real example - Aria"});
 });
 
 router.get('/aria-live', function (req, res) {
