@@ -1,0 +1,34 @@
+<div class="aria-checkbox">
+    <h2>Checkboxes</h2>
+
+    <div class="checkbox" aria-checked="false">
+        Dog
+    </div>
+    <div class="checkbox" aria-checked="false">
+        Cat
+    </div>
+
+</div>
+
+<script>
+
+    (function () {
+        const checkboxes = document.querySelectorAll('.checkbox');
+
+        checkboxes.forEach(check => {
+            check.addEventListener('click', function () {
+                const expanded = this.getAttribute("aria-checked");
+                expanded === "true" ? this.setAttribute("aria-checked", "false") : this.setAttribute("aria-checked", "true");
+            });
+
+            check.addEventListener('keyup', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (e.keyCode === 32) {
+                const expanded = this.getAttribute("aria-checked");
+                expanded === "true" ? this.setAttribute("aria-checked", "false") : this.setAttribute("aria-checked", "true");
+                }
+            });
+        })
+    })()
+</script>

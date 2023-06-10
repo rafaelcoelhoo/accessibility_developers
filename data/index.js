@@ -138,8 +138,24 @@ export const index = {
                         ]
                 },
                 {
-                    link: "/aria/checkbox",
-                    label: "Checkbox"
+                    hasMultipleLinks: true,
+                    id: "aria_checkbox",
+                    label: "Checkbox",
+                    options: [
+                        {
+                            label: "Checkbox",
+                            topics: [
+                                {
+                                    link: "/aria/checkbox/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/checkbox/solution",
+                                    label: "Solution"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     link: "/aria/tabs",

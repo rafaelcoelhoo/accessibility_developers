@@ -18,8 +18,12 @@ router.get('/buttons/solution', function (req, res) {
   res.render('aria/buttons/solution', {title: "Buttons - Aria"});
 });
 
-router.get('/checkbox', function (req, res) {
-  res.render('aria/checkbox', {title: "Checkbox - Aria"});
+router.get('/checkbox/initial', function (req, res) {
+  res.render('aria/checkbox/initial', {title: "Checkbox - Aria"});
+});
+
+router.get('/checkbox/solution', function (req, res) {
+  res.render('aria/checkbox/solution', {title: "Checkbox - Aria"});
 });
 
 
