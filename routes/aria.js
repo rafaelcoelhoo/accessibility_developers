@@ -35,12 +35,20 @@ router.get('/switch-control/solution', function (req, res) {
   res.render('aria/switchControl/solution', {title: "Switch - Aria"});
 });
 
-router.get('/tabs', function (req, res) {
-  res.render('aria/tabs', {title: "Tabs - Aria"});
+router.get('/tabs/initial', function (req, res) {
+  res.render('aria/tabs/initial', {title: "Tabs - Aria"});
 });
 
-router.get('/modal', function (req, res) {
-  res.render('aria/modal-aria', {title: "Modal - Aria"});
+router.get('/tabs/solution', function (req, res) {
+  res.render('aria/tabs/solution', {title: "Tabs - Aria"});
+});
+
+router.get('/modal/solution', function (req, res) {
+  res.render('aria/modal/solution', {title: "Modal - Aria"});
+});
+
+router.get('/modal/initial', function (req, res) {
+  res.render('aria/modal/initial', {title: "Modal - Aria"});
 });
 
 router.get('/accessible-names/initial', function (req, res) {
@@ -59,11 +67,19 @@ router.get('/practical-accessible-names/solution', function (req, res) {
   res.render('aria/accessibleNamesExercise/solution', {title: "Real example - Aria"});
 });
 
-router.get('/aria-live', function (req, res) {
-  res.render('aria/aria-live', {title: "Conteúdo dinâmico - Aria"});
+router.get('/aria-live/initial', function (req, res) {
+  res.render('aria/aria-live/initial', {title: "aria-live - Aria"});
 });
 
-router.get('/aria-expanded', function (req, res) {
-  res.render('aria/aria-expanded', {title: "Conteúdo dinâmico - Aria"});
+router.get('/aria-live/solution', function (req, res) {
+  res.render('aria/aria-live/solution', {title: "aria-live - Aria"});
+});
+
+router.get('/aria-expanded/initial', function (req, res) {
+  res.render('aria/aria-expanded/initial', {title: "aria-expanded - Aria"});
+});
+
+router.get('/aria-expanded/solution', function (req, res) {
+  res.render('aria/aria-expanded/solution', {title: "aria-expanded - Aria"});
 });
 export {router as ariaRouter};

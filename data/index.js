@@ -1,62 +1,88 @@
 export const index = {
-    title: 'Acessibilidade para developers',
+    title: 'Accessibility for developers',
     content: [
         {
             title: "Accessibility Tree",
-            options: [{
-                link: "/accessibility-tree/bad",
-                label: "Accessibility Tree - Mau exemplo"
-            },
+            options: [
                 {
-                    link: "/accessibility-tree/good",
-                    label: "Accessibility Tree - Bom exemplo"
-                }]
+                    hasMultipleLinks: true,
+                    id: "accessibility_tree",
+                    label: "Accessibility Tree",
+                    options: [
+                        {
+                            label: "Accessibility Tree",
+                            topics: [
+                                {
+                                    link: "/accessibility-tree/bad",
+                                    label: "Problem"
+                                },
+                                {
+                                    link: "/accessibility-tree/good",
+                                    label: "Solution"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
         },
         {
-            title: "Técnicas para esconder/mostrar elemenos",
+            title: "Show and hide techniques",
             options: [
                 {
                     link: "/show-and-hide-elements/hide-from-all",
-                    label: "Esconder de todos os utilizadores"
+                    label: "Hid from all"
                 },
                 {
                     link: "/show-and-hide-elements/hide-visually",
-                    label: "Esconder visualmente"
+                    label: "Hide from sight"
                 },
                 {
                     link: "/show-and-hide-elements/hide-from-at",
-                    label: "Esconder das tecnologias de apoio"
+                    label: "Hide from screen readers"
                 }]
         }, {
             title: "Focus Management",
             options: [
                 {
                     link: "/focus-management/focus-indicator",
-                    label: "Indicação visual do focus"
+                    label: "Focus indicator"
                 },
                 {
-                    link: "/focus-management/tabindex",
-                    label: "Tabindex"
+                    label: "Tabindex",
+                    hasMultipleLinks: true,
+                    id: "focus_management_tabindex",
+                    options: [
+                        {
+                            label: "Tabindex",
+                            topics: [
+                                {
+                                    link: "/focus-management/tabindex",
+                                    label: "tabindex attribute"
+                                },
+                                {
+                                    link: "/focus-management/tabindex-example",
+                                    label: "Tabindex -1 example"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     link: "/focus-management/keyboard",
                     label: "Keyboard accessibility"
                 },
                 {
-                    link: "/focus-management/tabindex-example",
-                    label: "Exemplo Tabindex -1"
-                },
-                {
                     link: "/focus-management/content-order",
-                    label: "Ordem de navegação"
+                    label: "Tab order"
                 },
                 {
                     link: "/focus-management/focus-on-modals",
-                    label: "Gestão do focus em modais"
+                    label: "Focus management on modals"
                 },
                 {
                     link: "/focus-management/keyboard-trap",
-                    label: "Como involuntariamente podemos bloquear um utilizador de teclado"
+                    label: "Keyboard trap"
                 },
             ]
         },
@@ -71,28 +97,28 @@ export const index = {
                         {
                             label: "Accessible names",
                             topics: [
-                                    {
-                                        link: "/aria/accessible-names/initial",
-                                        label: "Initial"
-                                    },
-                                    {
-                                        link: "/aria/accessible-names/solution",
-                                        label: "Solution"
-                                    }
-                                ]
+                                {
+                                    link: "/aria/accessible-names/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/accessible-names/solution",
+                                    label: "Solution"
+                                }
+                            ]
                         },
                         {
                             label: "Real example",
                             topics: [
-                                    {
-                                        link: "/aria/practical-accessible-names/initial",
-                                        label: "Initial"
-                                    },
-                                    {
-                                        link: "/aria/practical-accessible-names/solution",
-                                        label: "Solution"
-                                    }
-                                ]
+                                {
+                                    link: "/aria/practical-accessible-names/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/practical-accessible-names/solution",
+                                    label: "Solution"
+                                }
+                            ]
                         },
 
                     ],
@@ -135,7 +161,7 @@ export const index = {
                                 }
                             ]
                         }
-                        ]
+                    ]
                 },
                 {
                     hasMultipleLinks: true,
@@ -158,8 +184,24 @@ export const index = {
                     ]
                 },
                 {
-                    link: "/aria/tabs",
-                    label: "Tabs"
+                    hasMultipleLinks: true,
+                    id: "aria_tabs",
+                    label: "Tabs",
+                    options: [
+                        {
+                            label: "Tabs",
+                            topics: [
+                                {
+                                    link: "/aria/tabs/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/tabs/solution",
+                                    label: "Solution"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     label: "Switch control",
@@ -182,16 +224,64 @@ export const index = {
                     ]
                 },
                 {
-                    link: "/aria/modal",
-                    label: "Modal"
+                    hasMultipleLinks: true,
+                    id: "aria_modal",
+                    label: "Modal",
+                    options: [
+                        {
+                            label: "Modal",
+                            topics: [
+                                {
+                                    link: "/aria/modal/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/modal/solution",
+                                    label: "Solution"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    link: "/aria/aria-live",
-                    label: "aria-live"
+                    hasMultipleLinks: true,
+                    id: "aria_live",
+                    label: "aria-live",
+                    options: [
+                        {
+                            label: "aria-live",
+                            topics: [
+                                {
+                                    link: "/aria/aria-live/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/aria-live/solution",
+                                    label: "Solution"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
-                    link: "/aria/aria-expanded",
-                    label: "aria-expanded"
+                    hasMultipleLinks: true,
+                    id: "aria_expanded",
+                    label: "aria-expanded",
+                    options: [
+                        {
+                            label: "aria-expanded",
+                            topics: [
+                                {
+                                    link: "/aria/aria-expanded/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/aria-expanded/solution",
+                                    label: "Solution"
+                                }
+                            ]
+                        }
+                    ]
                 },
             ]
         }
