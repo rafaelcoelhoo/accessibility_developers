@@ -10,7 +10,6 @@
 </div>
 
 <script>
-
     (function () {
         const checkboxes = document.querySelectorAll('.checkbox');
 
@@ -20,7 +19,9 @@
                 expanded === "true" ? this.setAttribute("aria-checked", "false") : this.setAttribute("aria-checked", "true");
             });
 
-            check.addEventListener('keydown', function (e) { e.preventDefault();});
+            check.addEventListener('keydown', function (e) {
+                    if (e.keyCode === 32) e.preventDefault();
+                });
             check.addEventListener('keyup', function (e) {
                 e.preventDefault();
                 e.stopPropagation();
@@ -29,9 +30,6 @@
                     expanded === "true" ? this.setAttribute("aria-checked", "false") : this.setAttribute("aria-checked", "true");
                 }
             });
-
         })
-
     })()
-
 </script>

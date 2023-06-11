@@ -258,6 +258,10 @@ export const index = {
                                 {
                                     link: "/aria/aria-live/solution",
                                     label: "Solution"
+                                },
+                                {
+                                    link: "/aria/aria-live/examples",
+                                    label: "Examples"
                                 }
                             ]
                         }

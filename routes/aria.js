@@ -75,6 +75,10 @@ router.get('/aria-live/solution', function (req, res) {
   res.render('aria/aria-live/solution', {title: "aria-live - Aria"});
 });
 
+router.get('/aria-live/examples', function (req, res) {
+  res.render('aria/aria-live/examples', {title: "aria-live - Aria"});
+});
+
 router.get('/aria-expanded/initial', function (req, res) {
   res.render('aria/aria-expanded/initial', {title: "aria-expanded - Aria"});
 });

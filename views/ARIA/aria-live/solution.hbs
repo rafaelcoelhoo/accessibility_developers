@@ -1,1 +1,48 @@
-aria-live
+<section>
+    <h2 class="mb-3">Polite</h2>
+    <div id="polite-live-region" role="status" class="alert alert-success d-none"></div>
+    <button class="polite-button btn-yellow">
+        Show success message
+    </button>
+
+    <hr>
+
+    <h2 class="mb-3">Assertive</h2>
+    <div id="assertive-live-region" role="alert" class="alert alert-danger d-none"></div>
+    <button class="assertive-button btn-yellow">
+        Show error message
+    </button>
+
+</section>
+
+
+<script>
+    (function () {
+        function politeExample(id) {
+            const liveContainer = document.getElementById(id);
+            liveContainer.innerHTML = '';
+            liveContainer.append('Congratulations! You clicked the button successfully.');
+            liveContainer.classList.toggle('d-none');
+        }
+
+        const politeButton = document.querySelector('.polite-button');
+        politeButton.addEventListener('click', function () {
+            politeExample('polite-live-region');
+        });
+
+
+        // Assertive example
+        function assertiveExample(id) {
+            const liveContainer = document.getElementById(id);
+            liveContainer.innerHTML = '';
+            liveContainer.append('Error: You did something wrong.');
+            liveContainer.classList.toggle('d-none');
+        }
+
+        const assertiveButton = document.querySelector('.assertive-button');
+        assertiveButton.addEventListener('click', function () {
+            assertiveExample('assertive-live-region');
+        });
+    })();
+</script>
+

@@ -1,0 +1,58 @@
+<section>
+    <h2>Example - Search</h2>
+    <form id="formResults" role="search" method="post" action="">
+        <label for="searchImput">Search for courses</label>
+        <input type="text" name="searchImput" id="searchImput" value="Accessibility">
+        <button class="btn-yellow" type="submit">Search</button>
+    </form>
+    <div class="d-none" id="results_message_container" role="status">
+        <h3>Results</h3>
+        <p id="results_message"></p>
+    </div>
+
+    <hr>
+    <h2>Example - Add item to shopping card</h2>
+
+    <div role="status" class="text-end">
+        <svg role="img" aria-label="Shopping Cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span id="cart">0</span> items
+    </div>
+
+    <h3 class="mt-5">Courses</h3>
+    <ul>
+        <li class="mb-3 list-group-item">
+            <span>Accessibility for developers</span>
+            <button class="btn-yellow" onclick="addToCart()">Add to cart</button>
+        </li>
+        <li class="list-group-item">
+            <span>Accessibility for designers</span>
+            <button class="btn-yellow" onclick="addToCart()">Add to cart</button>
+        </li>
+    </ul>
+
+</section>
+
+
+<script>
+    document.getElementById("formResults").addEventListener("submit", (e) => {
+        e.preventDefault();
+        document.getElementById("results_message").innerHTML = '';
+        document.getElementById("results_message").append('3 available courses');
+        document.getElementById("results_message_container").classList.toggle('d-none');
+    });
+</script>
+
+
+<script>
+        let counter = 0;
+        function addToCart () {
+        counter += 1;
+        document.getElementById("cart").innerHTML = counter;
+    }
+
+</script>

@@ -1,1 +1,66 @@
-aria-live
+<section>
+    <h2 class="mb-3">Polite</h2>
+    <div id="polite-live-region" class="alert alert-success d-none"></div>
+    <button class="polite-button btn-yellow">
+        Show success message
+    </button>
+
+    <hr>
+
+    <h2 class="mb-3">Assertive</h2>
+    <div id="assertive-live-region" class="alert alert-danger d-none"></div>
+    <button class="assertive-button btn-yellow">
+        Show error message
+    </button>
+
+    <hr>
+    <h2>Example</h2>
+    <form id="formResults" role="search" method="post" action="">
+        <label for="searchImput">Search for courses</label>
+        <input type="text" name="searchImput" id="searchImput" value="Accessibility">
+        <button class="btn-yellow" type="submit">Search</button>
+    </form>
+    <div class="d-none" id="results_message_container">
+        <h3>Results</h3>
+        <p id="results_message"></p>
+    </div>
+</section>
+
+
+<script>
+    (function () {
+        function politeExample(id) {
+            const liveContainer = document.getElementById(id);
+            liveContainer.innerHTML = '';
+            liveContainer.append('Congratulations! You clicked the button successfully.');
+            liveContainer.classList.toggle('d-none');
+        }
+
+        const politeButton = document.querySelector('.polite-button');
+        politeButton.addEventListener('click', function () {
+            politeExample('polite-live-region');
+        });
+
+
+        // Assertive example
+        function assertiveExample(id) {
+            const liveContainer = document.getElementById(id);
+            liveContainer.innerHTML = '';
+            liveContainer.append('Error: You did something wrong.');
+            liveContainer.classList.toggle('d-none');
+        }
+
+        const assertiveButton = document.querySelector('.assertive-button');
+        assertiveButton.addEventListener('click', function () {
+            assertiveExample('assertive-live-region');
+        });
+    })();
+
+
+    document.getElementById("formResults").addEventListener("submit", (e) => {
+        e.preventDefault();
+        document.getElementById("results_message").innerHTML = '';
+        document.getElementById("results_message").append('3 available courses');
+        document.getElementById("results_message_container").classList.toggle('d-none');
+    });
+</script>
