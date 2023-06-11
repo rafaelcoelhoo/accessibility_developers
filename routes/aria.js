@@ -1,4 +1,5 @@
 import express from 'express';
+import fs from "fs";
 
 const router = express.Router();
 
@@ -44,11 +45,15 @@ router.get('/tabs/solution', function (req, res) {
 });
 
 router.get('/modal/solution', function (req, res) {
-  res.render('aria/modal/solution', {title: "Modal - Aria"});
+  const modalCode = fs.readFileSync('./views/partials/aria-modals.hbs', 'utf8');
+
+  res.render('aria/modal/solution', {title: "Modal - Aria", modal: modalCode});
 });
 
 router.get('/modal/initial', function (req, res) {
-  res.render('aria/modal/initial', {title: "Modal - Aria"});
+  const modalCode = fs.readFileSync('./views/partials/aria-modals.hbs', 'utf8');
+
+  res.render('aria/modal/initial', {title: "Modal - Aria", modal: modalCode});
 });
 
 router.get('/accessible-names/initial', function (req, res) {

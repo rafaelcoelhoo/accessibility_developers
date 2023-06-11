@@ -16,7 +16,7 @@ router.get('/content-order', function (req, res) {
 });
 
 router.get('/focus-on-modals', function (req, res) {
-  const modalCode = fs.readFileSync('./views/partials/modal-focus-on-modals.hbs', 'utf8');
+  const modalCode = fs.readFileSync('./views/partials/modal-focus-on-aria-modals.hbs', 'utf8');
 
   res.render('focusManagement/focusOnModals', {title: "Focus em modais", modal: modalCode});
 });

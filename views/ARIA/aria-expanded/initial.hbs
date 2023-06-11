@@ -1,1 +1,21 @@
-aria-expanded
+<div>
+    <button class="btn-yellow" id="menu-button">Menu</button>
+</div>
+
+<div class="panel-aria-expanded d-none" id="panel-options">
+    <ul class="list-group list-group-flush">
+        <li class="list-group-item"><a href="#">About</a></li>
+        <li class="list-group-item"><a href="#">Courses</a></li>
+        <li class="list-group-item"><a href="#">Location</a></li>
+    </ul>
+</div>
+
+<script>
+    document.addEventListener('click', ()=> {
+        /*const button = document.getElementById('menu-button');
+        const expanded = button.getAttribute("aria-expanded");
+        expanded === "true" ? button.setAttribute("aria-expanded", "false") : button.setAttribute("aria-expanded", "true");
+        */document.getElementById('panel-options').classList.toggle('d-none');
+
+    })
+</script>

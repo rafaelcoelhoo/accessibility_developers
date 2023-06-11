@@ -298,7 +298,7 @@ h4 {
   background: black;
   color: white;
 }
-.focus-management.modal-focus-content .modal-1, .focus-management.modal-focus-content .modal-2 {
+.focus-management.modal-focus-content .modal-1, .focus-management.modal-focus-content .modal-2, .focus-management.modal-focus-content .modal-initial, .focus-management.modal-focus-content .modal-solution {
   width: 50%;
   border-radius: 4px;
   margin-left: auto;

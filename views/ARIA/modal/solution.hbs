@@ -1,1 +1,97 @@
-modal
+<section class="focus-management modal-focus-content">
+    <div id="controls">
+        <button class="modal-toggle-2 mt-4 btn-yellow d-block">Open modal</button>
+    </div>
+</section>
+<script>
+
+    const modal = (id, triggerElement, closeElement, inert) => {
+        // Will hold previously focused element
+        let focusedElementBeforeModal;
+
+        // Find the modal and its overlay
+        let closeModalButton = document.getElementById(closeElement);
+        const modal = document.querySelector(id);
+        let modalOverlay = document.querySelector('.modal-overlay');
+
+        let modalToggle = document.querySelector(triggerElement);
+        if (modalToggle) modalToggle.addEventListener('click', openModal);
+
+        function openModal() {
+            // Save current focus
+            focusedElementBeforeModal = document.activeElement;
+
+            // Listen for and trap the keyboard
+            modal.addEventListener('keydown', trapTabKey);
+
+            // Listen for indicators to close the modal
+            // uncomment
+            modalOverlay.addEventListener('click', closeModal);
+            closeModalButton.addEventListener('click', closeModal);
+
+            // Sign-Up button
+            let signUpBtn = modal.querySelector('#signup');
+            if (signUpBtn) signUpBtn.addEventListener('click', closeModal);
+
+            // Find all focusable children
+            let focusableElementsString = 'a[href], area[href], input:not([disabled]), select:not([disabled]), textarea:not([disabled]), button:not([disabled]), iframe, object, embed, [tabindex="0"], [contenteditable]';
+            let focusableElements = modal.querySelectorAll(focusableElementsString);
+            // Convert NodeList to Array
+            focusableElements = Array.prototype.slice.call(focusableElements);
+
+            let firstTabStop = focusableElements[0];
+            let lastTabStop = focusableElements[focusableElements.length - 1];
+
+            // Show the modal and overlay
+            modal.style.display = 'block';
+            modalOverlay.style.display = 'block';
+
+            // Focus first child
+            modal.focus();
+
+            function trapTabKey(e) {
+                if (!inert) {
+                    // Check for TAB key press
+                    if (e.keyCode === 9) {
+
+                        // SHIFT + TAB
+                        if (e.shiftKey) {
+                            if (document.activeElement === firstTabStop) {
+                                e.preventDefault();
+                                lastTabStop.focus();
+                            }
+
+                            // TAB
+                        } else {
+                            if (document.activeElement === lastTabStop) {
+                                e.preventDefault();
+                                firstTabStop.focus();
+                            }
+                        }
+                    }
+                } else {
+                    document.querySelector('main').inert = true;
+                }
+
+                // ESCAPE
+                if (e.keyCode === 27) {
+                    closeModal();
+                }
+            }
+        }
+
+        function closeModal() {
+            // Hide the modal and overlay
+            modal.style.display = 'none';
+            modalOverlay.style.display = 'none';
+
+            // Set focus back to element that had it before the modal was opened
+            focusedElementBeforeModal.focus();
+        }
+
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+        modal('.modal-solution', '.modal-toggle-2', 'close-modal-2', false);
+    });
+
+</script>
