@@ -1,15 +1,15 @@
 <section class="aria-tabs">
     <h2 id="title">Tabs for cities</h2>
     <div id="tabs">
-        <button id="tab1" onclick="changeTabs(this);">Porto
+        <button id="tab1" class="tab-option active" onclick="changeTabs(this);" aria-controls="panel1">Porto
         </button>
-        <button id="tab2" onclick="changeTabs(this);">Lisbon
+        <button id="tab2" class="tab-option" onclick="changeTabs(this);" aria-controls="panel2">Lisbon
         </button>
-        <button id="tab3" onclick="changeTabs(this);">Viseu
+        <button id="tab3" class="tab-option" onclick="changeTabs(this);" aria-controls="panel3">Viseu
         </button>
     </div>
 
-        <div id="panel1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true">
+        <div id="panel1" class="panel-container" aria-hidden="false">
             <p>Porto is the second-largest city in Portugal, located in the northwest part of the country. It is known
                 for its rich history, stunning architecture, and vibrant culture. The city is famous for its Port wine,
                 which is produced in the Douro Valley nearby. Porto's historic center, known as Ribeira, is a UNESCO
@@ -33,7 +33,7 @@
         </div>
 
     <!--role="tabpanel" aria-labelledby="tab1" aria-hidden="true"-->
-    <div id="panel2">
+    <div id="panel2" class="panel-container" aria-hidden="true">
             <p>Lisbon, the capital city of Portugal, is situated on the western coast of the country. It is one of the
                 oldest cities in Europe and is known for its unique blend of tradition and modernity. Lisbon offers a
                 charming mix of historic neighborhoods, grand plazas, and scenic viewpoints. The city's most iconic
@@ -56,7 +56,7 @@
             </p>
         </div>
 
-        <div id="panel3" role="tabpanel" aria-labelledby="tab3" aria-hidden="false">
+        <div id="panel3" class="panel-container" aria-hidden="true">
             <p>Viseu is a charming city located in the central part of Portugal. It is known for its historic and
                 cultural heritage, as well as its beautiful landscapes. The city's historic center features medieval
                 streets, picturesque squares, and elegant palaces. One of the main attractions in Viseu is the Viseu
@@ -129,19 +129,21 @@
 
 <script>
     function changeTabs(el) {
-        var tabRoles = document.querySelectorAll('[role=tab]');
-        for (var i = 0; i < tabRoles.length; i++) {
-            tabRoles[i].setAttribute("aria-selected", "false");
-            tabRoles[i].setAttribute("tabindex", "-1");
+        const tabRoles = document.querySelectorAll('.tab-option');
+        for (let i = 0; i < tabRoles.length; i++) {
+            //tabRoles[i].setAttribute("aria-selected", "false");
+            //tabRoles[i].setAttribute("tabindex", "-1");
+            tabRoles[i].classList.remove("active");
         }
-        var tabpanelRoles = document.querySelectorAll('[role=tabpanel]');
-        for (var i = 0; i < tabpanelRoles.length; i++) {
+        const tabpanelRoles = document.querySelectorAll('.panel-container');
+        for (let i = 0; i < tabpanelRoles.length; i++) {
             tabpanelRoles[i].setAttribute("aria-hidden", "true");
         }
-        el.setAttribute("aria-selected", "true");
-        el.setAttribute("tabindex", "0");
-        var ariaControls = el.getAttribute("aria-controls");
-        document.getElementById(ariaControls).setAttribute("aria-hidden", "false");
+        //el.setAttribute("aria-selected", "true");
+        //el.setAttribute("tabindex", "0");
+        el.classList.add("active");
+        const ariaControls = el.getAttribute("aria-controls");
+        if (ariaControls) document.getElementById(ariaControls).setAttribute("aria-hidden", "false");
         el.preventDefault();
     }
 

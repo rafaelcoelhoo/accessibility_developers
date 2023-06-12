@@ -466,7 +466,7 @@ h4 {
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16' style='forced-color-adjust: auto;'%3E%3Crect x='2' y='2' height='13' width='13' rx='2' stroke='currentcolor' stroke-width='1' fill-opacity='0' /%3E%3Cpolyline points='4,8 7,12 12,5' fill='none' stroke='currentcolor' stroke-width='2' /%3E%3C/svg%3E");
 }
 
-.aria-tabs [role=tab][aria-selected=true] {
+.aria-tabs .tab-option.active {
   margin-top: 0;
   border-top-color: #2474d6;
   border-bottom-color: #fbfcfe;
@@ -474,7 +474,7 @@ h4 {
   border-width: 6px 2px 2px;
   background: #fbfcfe;
 }
-.aria-tabs [role=tab] {
+.aria-tabs .tab-option {
   margin-top: 30px;
   display: inline-block;
   position: relative;
@@ -490,10 +490,10 @@ h4 {
   border-radius: 5px 5px 0 0;
   background: #edeff3;
 }
-.aria-tabs [role=tab][aria-selected=false] {
+.aria-tabs .tab-option:not(.active) {
   border-bottom: 1px solid #b7b7b8;
 }
-.aria-tabs [role=tabpanel] {
+.aria-tabs .panel-container {
   border-width: 2px;
   border-style: solid;
   border-color: #b7b7b8;
@@ -501,7 +501,7 @@ h4 {
   border-radius: 0 5px 5px;
   padding: 20px;
 }
-.aria-tabs [role=tabpanel][aria-hidden=true] {
+.aria-tabs .panel-container[aria-hidden=true] {
   display: none;
 }
 
