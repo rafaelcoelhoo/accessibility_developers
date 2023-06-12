@@ -1,1 +1,116 @@
-tabs
+<section class="aria-tabs">
+    <h2 id="title">Tabs for cities</h2>
+    <div id="tabs" role="tablist" aria-labelledby="title">
+        <button id="tab1" onclick="changeTabs(this);" role="tab" aria-controls="panel1" aria-selected="false" tabindex="-1">Porto
+        </button>
+        <button id="tab2" onclick="changeTabs(this);" role="tab" aria-controls="panel2" aria-selected="false" tabindex="-1">Lisbon
+        </button>
+        <button id="tab3" onclick="changeTabs(this);" role="tab" aria-controls="panel3" aria-selected="true" tabindex="0">Viseu
+        </button>
+    </div>
+
+        <div id="panel1" role="tabpanel" aria-labelledby="tab1" aria-hidden="true">
+            <p>Porto is the second-largest city in Portugal, located in the northwest part of the country. It is known
+                for its rich history, stunning architecture, and vibrant culture. The city is famous for its Port wine,
+                which is produced in the Douro Valley nearby. Porto's historic center, known as Ribeira, is a UNESCO
+                World Heritage site and offers narrow cobbled streets, colorful houses, and beautiful views of the Douro
+                River. Other notable attractions include the iconic Dom Luís I Bridge, the Clerigos Tower, Livraria
+                Lello (one of the most beautiful bookstores in the world), and the contemporary art museum, Serralves.
+                Porto is also home to a thriving food scene, offering delicious traditional dishes and fresh
+                seafood.</p>
+            <p><a href="https://pt.wikipedia.org/wiki/Porto" aria-describedby="open_new_window">
+                Know more about Porto
+                <svg role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-external-link">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+                </a>
+            </p>
+        </div>
+
+        <div id="panel2" role="tabpanel" aria-labelledby="tab2" aria-hidden="true">
+            <p>Lisbon, the capital city of Portugal, is situated on the western coast of the country. It is one of the oldest cities in Europe and is known for its unique blend of tradition and modernity. Lisbon offers a charming mix of historic neighborhoods, grand plazas, and scenic viewpoints. The city's most iconic district is Alfama, characterized by its narrow streets, colorful houses, and Fado music. Belem is another must-visit area, where you can find the historic Belém Tower and the Jerónimos Monastery. Lisbon is famous for its vibrant street life, with bustling markets, lively cafes, and a thriving nightlife. The city also boasts a rich cultural scene, including world-class museums like the Museu Nacional do Azulejo and the Museu Nacional de Arte Antiga.</p>
+            <p><a href="https://pt.wikipedia.org/wiki/Lisboa" aria-describedby="open_new_window">
+                Know more about Lisbon
+                <svg role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-external-link">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a>
+            </p>
+        </div>
+
+        <div id="panel3" role="tabpanel" aria-labelledby="tab3" aria-hidden="false">
+            <p>Viseu is a charming city located in the central part of Portugal. It is known for its historic and cultural heritage, as well as its beautiful landscapes. The city's historic center features medieval streets, picturesque squares, and elegant palaces. One of the main attractions in Viseu is the Viseu Cathedral, a stunning Gothic monument with impressive stained glass windows. Another notable landmark is the Grão Vasco Museum, which houses a remarkable collection of Portuguese Renaissance paintings. Viseu is surrounded by the scenic Dão wine region, known for its vineyards and wine production. The city also hosts various cultural events throughout the year, including the famous Feira de São Mateus, one of the oldest fairs in Portugal.</p>
+            <p><a href="https://pt.wikipedia.org/wiki/Viseu" aria-describedby="open_new_window">
+                Know more about Viseu
+                <svg role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                     class="feather feather-external-link">
+                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                    <polyline points="15 3 21 3 21 9"></polyline>
+                    <line x1="10" y1="14" x2="21" y2="3"></line>
+                </svg>
+            </a></p>
+        </div>
+    <p class="d-none" id="open_new_window">Open in a new window</p>
+</section>
+<script>
+    function changeTabs(el) {
+        var tabRoles = document.querySelectorAll('[role=tab]');
+        for (var i = 0; i < tabRoles.length; i++) {
+            tabRoles[i].setAttribute("aria-selected", "false");
+            tabRoles[i].setAttribute("tabindex", "-1");
+        }
+        var tabpanelRoles = document.querySelectorAll('[role=tabpanel]');
+        for (var i = 0; i < tabpanelRoles.length; i++) {
+            tabpanelRoles[i].setAttribute("aria-hidden", "true");
+        }
+        el.setAttribute("aria-selected", "true");
+        el.setAttribute("tabindex", "0");
+        var ariaControls = el.getAttribute("aria-controls");
+        document.getElementById(ariaControls).setAttribute("aria-hidden", "false");
+        el.preventDefault();
+    }
+
+    document.onkeydown = (function (e) {
+        e = e || window.event;
+        let leftElement;
+        let rightElement;
+        switch (e.which || e.keyCode) {
+            case 37: // left
+                leftElement = document.querySelector('button[aria-selected=true]').previousElementSibling;
+                leftElement.click();
+                leftElement.focus();
+                break;
+
+            case 38: // up
+                leftElement = document.querySelector('button[aria-selected=true]').previousElementSibling;
+                leftElement.click();
+                leftElement.focus();
+                break;
+
+            case 39: // right
+                rightElement = document.querySelector('button[aria-selected=true] + button');
+                rightElement.click();
+                rightElement.focus();
+                break;
+
+            case 40: // down
+                rightElement = document.querySelector('button[aria-selected=true] + button');
+                rightElement.click();
+                rightElement.focus();
+                break;
+
+            default:
+                return; // exit this handler for other keys
+        }
+        e.preventDefault(); // prevent the default action (scroll / move caret)
+    });
+</script>
