@@ -30,9 +30,7 @@ export const notesAccordion = () => (function () {
 
         // Initialize accordions
         const accordions = document.querySelectorAll('.accordion h2');
-        debugger
         accordions.forEach((accordionEl) => {
-            debugger
             initializeAccordion(accordionEl);
         });
     })()

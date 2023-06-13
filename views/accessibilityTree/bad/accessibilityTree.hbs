@@ -1,11 +1,11 @@
 <div class="accessibility-tree">
-    <div class="page-title">Árvore de acessibilidade</div>
+    <div class="page-title">Accessibility Tree</div>
 
     <div class="image-decorative"></div>
-    <div class="d-block register-account">Registar conta</div>
+    <div class="d-block register-account">Register account</div>
 
     <div class="custom-checkbox" tabindex="0">
-        Aceitar termos e condições
+        Accept terms and conditions
     </div>
 
     <div onclick="window.location = 'https://www.w3.org/WAI/standards-guidelines/wcag/'" class="wcag-page">Web Content
@@ -20,47 +20,22 @@
 
 <script>
     (function () {
-        'use strict';
+        const checkboxes = document.querySelectorAll('.custom-checkbox');
 
-        /** Define values for keycodes */
-        var VK_ENTER = 13;
-        var VK_SPACE = 32;
+        checkboxes.forEach(check => {
+            check.addEventListener('click', function () {
+                const classList = this.classList.contains('active');
+                classList ? this.classList.remove('active') : this.classList.add('active');
+            });
 
-        /** Helper function to convert NodeLists to Arrays */
-        function slice(nodes) {
-            return Array.prototype.slice.call(nodes);
-        }
-
-        function Checkbox(el) {
-            this.el = el;
-
-            this.el.addEventListener('keydown', this.handleKeyDown.bind(this));
-            this.el.addEventListener('click', this.toggle.bind(this));
-
-            // Any other set-up we want to do here?
-        }
-
-        Checkbox.prototype.handleKeyDown = function (e) {
-            switch (e.keyCode) {
-                case VK_ENTER:
-                case VK_SPACE: {
-                    this.toggle();
-                    break;
+            check.addEventListener('keyup', function (e) {
+                e.preventDefault();
+                e.stopPropagation();
+                if (e.keyCode === 32) {
+                    const classList = this.classList.contains('active');
+                    classList ? this.classList.remove('active') : this.classList.add('active');
                 }
-            }
-        };
-
-        Checkbox.prototype.toggle = function () {
-            if (this.el.hasAttribute('checked')) {
-                this.el.removeAttribute('checked');
-            } else {
-                this.el.setAttribute('checked', '');
-            }
-        };
-
-        var checkboxes = slice(document.querySelectorAll('.custom-checkbox'));
-        for (var checkbox of checkboxes)
-            checkbox.logic = new Checkbox(checkbox);
-
-    }());
+            });
+        })
+    })()
 </script>

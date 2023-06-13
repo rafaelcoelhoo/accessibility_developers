@@ -11,14 +11,8 @@ export const notes = {
             'Add accessible name to the <code>role="tablist"</code>',
             'Add <code>aria-hidden="true"</code> to each hidden tab'
         ],
-        live_examples: ["s"],
+        live_examples: [],
     },
-    test: {
-        tips: [
-            'Add <code>role="tablist"</code>',
-        ],
-        live_examples: ['olaaaaaaa'],
-    }
 }
 
 export function getDataByKey (key) {

@@ -1,6 +1,6 @@
 import express from 'express';
 import fs from "fs";
-import {getDataByKey, notes} from '../data/notes.js';
+import {getDataByKey} from '../data/ARIA/notes.js';
 
 
 const router = express.Router();
@@ -60,11 +60,11 @@ router.get('/modal/initial', function (req, res) {
 });
 
 router.get('/accessible-names/initial', function (req, res) {
-  res.render('aria/accessibleNames/initial', {title: "Nomes acessíveis - Aria"});
+  res.render('aria/accessibleNames/initial', {title: "Accessible names - Aria"});
 });
 
 router.get('/accessible-names/solution', function (req, res) {
-  res.render('aria/accessibleNames/solution', {title: "Nomes acessíveis - Aria"});
+  res.render('aria/accessibleNames/solution', {title: "Accessible names - Aria"});
 });
 
 router.get('/practical-accessible-names/initial', function (req, res) {

@@ -206,7 +206,18 @@ h4 {
   left: -36px;
   top: -1px;
 }
-.accessibility-tree .custom-checkbox[checked]::after {
+.accessibility-tree .custom-checkbox:not(.active)::before {
+  content: "";
+  display: block;
+  height: 24px;
+  width: 24px;
+  border: 1px solid rgba(0, 0, 0, 0.25);
+  border-radius: 2px;
+  position: absolute;
+  left: -36px;
+  top: -1px;
+}
+.accessibility-tree .custom-checkbox.active::after {
   content: "";
   background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAQAAAADpb+tAAAAaElEQVR4Xl3PIQoCQQCF4Y8JW42D1bDZ4iVEjDbxFpstYhC7eIVBZHkXFGw734sv/TqDQQ8Xb1udja/I8igeIm7Aygj2IpoKTGZnVRNxAHYi4iPiDlA9xX+aNQDFySziqDN6uSp6y7ofEMwZ05uUZRkAAAAASUVORK5CYII=);
   background-size: 100% 100%;
@@ -503,7 +514,7 @@ h4 {
 
 .aria-tabs .tab-option.active {
   margin-top: 0;
-  border-top-color: #2474d6;
+  border-top-color: #1c9963;
   border-bottom-color: #fbfcfe;
   padding: 15px;
   border-width: 6px 2px 2px;

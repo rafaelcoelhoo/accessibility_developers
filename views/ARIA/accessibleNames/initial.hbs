@@ -36,7 +36,7 @@
     <form>
         <span>Name</span>
         <input type="text" id="name">
-        <button lang="pt" class="btn-yellow ml-2">Save</button>
+        <button class="btn-yellow ml-2">Save</button>
     </form>
 
     <hr>
@@ -46,7 +46,7 @@
     <form>
         <label for="labelName">Name</label>
         <input type="text" id="labelName">
-        <button lang="pt" class="btn-yellow ml-2" id="guardar">Save</button>
+        <button class="btn-yellow ml-2" id="guardar">Save</button>
     </form>
 
 
@@ -60,7 +60,7 @@
     </form>
 
     <hr>
-    <h2>All mixed</h2>
+    <h2>All mixed - See accessible name order</h2>
 
     <button class="btn-transparent" aria-label="Menu aria-label" aria-labelledby="menu-id">
         <span class="visually-hidden-custom" id="menu-id">Menu visually hidden</span>
@@ -81,11 +81,11 @@
     <hr>
 
     <h2>Over-using aria</h2>
-    <button aria-label="Save">Save</button>
+    <button class="btn-yellow" aria-label="Save">Save</button>
 
     <hr>
 
     <h2>Unnecessary role text</h2>
-    <button aria-label="Save button">Save</button>
+    <button class="btn-yellow" aria-label="Save button">Save</button>
 
 </div>
