@@ -1,5 +1,7 @@
 import express from 'express';
 import fs from "fs";
+import {getDataByKey, notes} from '../data/notes.js';
+
 
 const router = express.Router();
 
@@ -37,7 +39,8 @@ router.get('/switch-control/solution', function (req, res) {
 });
 
 router.get('/tabs/initial', function (req, res) {
-  res.render('aria/tabs/initial', {title: "Tabs - Aria"});
+  console.log(getDataByKey('aria_tabs'))
+  res.render('aria/tabs/initial', {title: "Tabs - Aria", notes: getDataByKey('aria_tabs')});
 });
 
 router.get('/tabs/solution', function (req, res) {

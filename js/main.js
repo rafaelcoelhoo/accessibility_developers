@@ -1,11 +1,7 @@
-import {example} from "./components/example";
-
-const start = () => {
-	example();
-};
+import {notesAccordion} from "./components/notesAccordion.js";
 
 if (/complete|interactive/.test(document.readyState)) {
-	start();
+	notesAccordion();
 } else {
-	document.addEventListener('DOMContentLoaded', start);
+	document.addEventListener('DOMContentLoaded', notesAccordion);
 }

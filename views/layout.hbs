@@ -1,25 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<title>{{{title}}}</title>
-		<link rel="icon" href="/img/favicon.ico">
-		<link rel='stylesheet' href='/css/style.css' />
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	</head>
-	<body>
-    <header class="container">
-        <h1 class="text-center pt-5">Accessibility for developers</h1>
-    </header>
-    <main class="container mt-5 mb-5">
-		{{{body}}}
-		<script src="/js/main.js"></script>
-    </main>
-    {{{modal}}}
-    <footer class="container">
-        <p class="text-center border-top border-dark">
-            <a href="/" class="pt-3 d-block">Back to homepage</a>
-        </p>
-    </footer>
-	</body>
+<head>
+    <title>{{{title}}}</title>
+    <link rel="icon" href="/img/favicon.ico">
+    <link rel='stylesheet' href='/css/style.css'/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+</head>
+<body>
+<header class="container">
+    <h1 class="text-center pt-5">Accessibility for developers</h1>
+</header>
+<main class="container mt-5 mb-5">
+    {{{body}}}
+
+    <section class="mt-5">
+        <hr>
+        <div id="accordionGroup" class="accordion">
+            {{#if notes.tips.length }}
+                <h2 class="heading">
+                    <button type="button" aria-expanded="false" class="accordion-trigger btn-transparent"
+                            aria-controls="sect1"
+                            id="accordion1id">
+                          <span class="accordion-title">Tips</span>
+                        <span class="accordion-icon"></span>
+                    </button>
+                </h2>
+                <div id="sect1" aria-labelledby="accordion1id" class="accordion-panel" hidden>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            {{#each notes.tips}}
+                                <li class="list-group-item">{{{this}}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            {{/if}}
+            {{#if notes.live_examples.length }}
+                <h2 class="heading">
+                    <button type="button" aria-expanded="false" class="accordion-trigger btn-transparent"
+                            aria-controls="sect2"
+                            id="accordion2id">
+                          <span class="accordion-title">Live examples</span>
+                        <span class="accordion-icon"></span>
+                    </button>
+                </h2>
+                <div id="sect2" aria-labelledby="accordion2id" class="accordion-panel" hidden>
+                    <div>
+                        <ul class="list-group list-group-flush">
+                            {{#each notes.live_examples}}
+                                <li class="list-group-item">{{{this}}}</li>
+                            {{/each}}
+                        </ul>
+                    </div>
+                </div>
+            {{/if}}
+        </div>
+    </section>
+
+    <script src="/js/main.js"></script>
+</main>
+{{{modal}}}
+<footer class="container">
+    <p class="text-center border-top border-dark">
+        <a href="/" class="pt-3 d-block">Back to homepage</a>
+    </p>
+</footer>
+</body>
+
 </html>

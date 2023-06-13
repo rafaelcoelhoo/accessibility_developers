@@ -80,53 +80,6 @@
     <p class="d-none" id="open_new_window">Open in a new window</p>
 </section>
 
-<section class="mt-5">
-    <hr>
-    <div id="accordionGroup" class="accordion">
-        <h2 class="heading">
-            <button type="button" aria-expanded="false" class="accordion-trigger btn-transparent" aria-controls="sect1"
-                    id="accordion1id">
-                  <span class="accordion-title">
-                    Tips
-                  </span>
-                  <span class="accordion-icon"></span>
-            </button>
-        </h2>
-        <div id="sect1" aria-labelledby="accordion1id" class="accordion-panel" hidden>
-            <div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Add <code>role="tablist"</code></li>
-                    <li class="list-group-item">Add accessible name to the <code>role="tablist"</code></li>
-                    <li class="list-group-item">Add <code>role="tab"</code> to each tab option</li>
-                    <li class="list-group-item">Add <code>aria-selected</code> and attibute to each tab</li>
-                    <li class="list-group-item">Add <code>aria-controls</code> and attibute to each tab</li>
-                    <li class="list-group-item">Add <code>role="tabpanel"</code></li>
-                    <li class="list-group-item">Add accessible name to the <code>role="tablist"</code></li>
-                    <li class="list-group-item">Add <code>aria-hidden="true"</code> to each hidden tab</li>
-                </ul>
-            </div>
-        </div>
-        <h2 class="heading">
-            <button type="button" aria-expanded="false" class="accordion-trigger btn-transparent" aria-controls="sect2"
-                    id="accordion2id">
-                  <span class="accordion-title">
-                    Live examples
-                  </span>
-                <span class="accordion-icon"></span>
-            </button>
-        </h2>
-        <div id="sect2" aria-labelledby="accordion2id" class="accordion-panel" hidden>
-            <div>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Add <code>role="tablist"</code></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-
-</section>
-
-
 <script>
     function changeTabs(el) {
         const tabRoles = document.querySelectorAll('.tab-option');
@@ -183,45 +136,3 @@
     });
 </script>
 
-
-<script>
-    (function () {
-        function toggleAccordion(buttonEl) {
-            const controlsId = buttonEl.getAttribute('aria-controls');
-            const contentEl = document.getElementById(controlsId);
-            const open = buttonEl.getAttribute('aria-expanded') === 'true';
-
-            // Don't do anything if the open state doesn't change
-            if (open === contentEl.hidden) {
-                return;
-            }
-
-            // Update the internal state
-            buttonEl.setAttribute('aria-expanded', `${!open}`);
-            if (!open) {
-                contentEl.removeAttribute('hidden');
-            } else {
-                contentEl.setAttribute('hidden', '');
-            }
-        }
-
-        function onButtonClick(event) {
-            const buttonEl = event.currentTarget;
-            toggleAccordion(buttonEl);
-        }
-
-        function initializeAccordion(accordionEl) {
-            const buttonEl = accordionEl.querySelector('button[aria-expanded]');
-            buttonEl.addEventListener('click', onButtonClick);
-        }
-
-        // Initialize accordions
-        const accordions = document.querySelectorAll('.accordion h2');
-        debugger
-        accordions.forEach((accordionEl) => {
-            debugger
-            initializeAccordion(accordionEl);
-        });
-    })()
-
-</script>
