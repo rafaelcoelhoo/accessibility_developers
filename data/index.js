@@ -27,6 +27,15 @@ export const index = {
             ]
         },
         {
+            title: "Screen Readers",
+            options: [
+                {
+                    link: "/screen-readers",
+                    label: "How to use"
+                }
+        ]
+        },
+        {
             title: "Show and hide techniques",
             options: [
                 {
