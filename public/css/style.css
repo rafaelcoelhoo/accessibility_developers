@@ -242,6 +242,9 @@ h4 {
   margin-bottom: 30px;
 }
 
+.show-and-hide .invisible {
+  max-height: 0;
+}
 .show-and-hide #off_screen {
   visibility: hidden;
   overflow: hidden;

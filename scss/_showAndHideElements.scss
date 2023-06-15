@@ -3,7 +3,9 @@
     @extend .btn-yellow;
   }
 
-
+  .invisible {
+    max-height: 0;
+  }
   #off_screen {
     visibility: hidden;
     overflow: hidden;

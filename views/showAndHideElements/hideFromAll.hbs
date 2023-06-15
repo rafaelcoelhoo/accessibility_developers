@@ -1,9 +1,9 @@
 <section class="show-and-hide">
-    <div class="mb-5">
-        <h2 class="mb-3">Esconder de todos os utilizadores</h2>
+    <div>
+        <h2 class="mb-3">display:none</h2>
         <div>
             <button type="button" id="toggle" aria-expanded="false" class="toogle">
-                Toggle com display:none
+                Toggle
             </button>
 
             <div class="content-d-none">
@@ -16,9 +16,12 @@
                 </p>
             </div>
         </div>
-        <div class="mt-4">
+        <p class="d-none">display:none paragraph</p>
+        <div>
+            <hr>
+            <h2 class="mb-3">visibility:hidden</h2>
             <button type="button" class="toogle">
-                Toggle com visibility:hidden
+                Toggle
             </button>
             <div id="off_screen">
                 <p class="mt-3">
@@ -27,10 +30,15 @@
                     cupiditate numquam sed architecto doloremque qui dignissimos accusantium ex ullam tenetur.
                 </p>
             </div>
+
+            <p class="invisible">visibility:hidden paragraph</p>
+
         </div>
-        <div class="mt-4">
+        <hr>
+        <div>
+            <h2 class="mb-3">off-screen content - Problem</h2>
             <button type="button" aria-expanded="false" class="toogle">
-                Toggle com off-screen
+                Toggle
             </button>
             <div id="off_screen_absolute">
                 <p class="mt-3">
@@ -39,11 +47,24 @@
                     cupiditate numquam sed architecto doloremque qui dignissimos accusantium ex ullam tenetur.
                 </p>
             </div>
-        </div>
 
-        <div class="mt-4">
+            <div class="bad-dropdown mt-5">
+                <button aria-haspopup="true" aria-expanded="false" id="bad_dropdown_btn" type="button"
+                        class="btn-yellow">
+                    Dropdown
+                </button>
+                <ul class="dropdown-content" id="bad_dropdown_content">
+                    <li><a href="#" class="option-dropdown">Option 1</a></li>
+                    <li><a href="#" class="option-dropdown">Option 2</a></li>
+                    <li><a href="#" class="option-dropdown">Option 3</a></li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div>
+            <h2 class="mb-3">visually:hidden - Problem</h2>
             <button type="button" aria-expanded="false" class="toogle">
-                Toggle com visually:hidden
+                Toggle
             </button>
             <div id="visually_hidden">
                 <p class="mt-3">
@@ -54,17 +75,6 @@
             </div>
         </div>
 
-        <div class="bad-dropdown mt-4">
-            <button aria-haspopup="true" aria-expanded="false" id="bad_dropdown_btn" type="button"
-                 class="btn-yellow">
-                Dropdown
-            </button>
-            <ul class="dropdown-content" id="bad_dropdown_content">
-                <li><a href="#" class="option-dropdown">Option 1</a></li>
-                <li><a href="#" class="option-dropdown">Option 2</a></li>
-                <li><a href="#" class="option-dropdown">Option 3</a></li>
-            </ul>
-        </div>
     </div>
 </section>
 <script>

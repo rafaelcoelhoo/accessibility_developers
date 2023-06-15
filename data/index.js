@@ -49,6 +49,10 @@ export const index = {
                 {
                     link: "/show-and-hide-elements/hide-from-at",
                     label: "Hide from screen readers"
+                },
+                {
+                    link: "/show-and-hide-elements/examples",
+                    label: "Live examples"
                 }]
         }, {
             title: "Focus Management",
