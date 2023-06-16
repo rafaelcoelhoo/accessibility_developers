@@ -1,9 +1,9 @@
 <section class="focus-management modal-focus-content">
     <div id="controls">
-        <a href="/" class="d-block">Link to homepage</a>
+        <a href="#" class="d-block">Link 1</a>
         <button class="modal-toggle mt-4 btn-yellow d-block">Open modal</button>
         <button class="modal-toggle-2 mt-4 btn-yellow">Open modal inert</button>
-        <a href="/" class="d-block mt-4">Link to homepage</a>
+        <a href="#" class="d-block mt-4">Link 2</a>
 
     </div>
     </section>
@@ -75,6 +75,7 @@
                     }
                 } else {
                     document.querySelector('main').inert = true;
+                    document.querySelector('footer').inert = true;
                 }
 
                 // ESCAPE
@@ -97,7 +98,7 @@
     document.addEventListener('DOMContentLoaded', () => {
         modal('.modal-1', '.modal-toggle', 'close-modal', false);
         // alterar o inert para true para teste
-        modal('.modal-2', '.modal-toggle-2', 'close-modal-2', false);
+        modal('.modal-2', '.modal-toggle-2', 'close-modal-2', true);
     });
 
 </script>

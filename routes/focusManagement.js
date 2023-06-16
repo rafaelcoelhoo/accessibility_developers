@@ -6,7 +6,7 @@ import {getDataByKey} from '../data/focusManagement/notes.js';
 const router = express.Router();
 
 router.get('/keyboard', function (req, res) {
-  res.render('focusManagement/keyboardAccessibility', {title: "Keyboard Accessibility"});
+  res.render('focusManagement/keyboardAccessibility', {title: "Keyboard Accessibility", notes: getDataByKey('keyboardAccessibility')});
 });
 
 router.get('/focus-indicator', function (req, res) {
@@ -15,25 +15,25 @@ router.get('/focus-indicator', function (req, res) {
 });
 
 router.get('/content-order', function (req, res) {
-  res.render('focusManagement/contentOrder', {title: "Tab order"});
+  res.render('focusManagement/contentOrder', {title: "Tab order", notes: getDataByKey('tabOrder')});
 });
 
 router.get('/focus-on-modals', function (req, res) {
-  const modalCode = fs.readFileSync('./views/partials/modal-focus-on-aria-modals.hbs', 'utf8');
+  const modalCode = fs.readFileSync('./views/partials/modal-focus-on-modals.hbs', 'utf8');
 
-  res.render('focusManagement/focusOnModals', {title: "Focus in modals", modal: modalCode});
+  res.render('focusManagement/focusOnModals', {title: "Focus in modals", modal: modalCode, notes: getDataByKey('focusOnModals')});
 });
 
 router.get('/keyboard-trap', function (req, res) {
-  res.render('focusManagement/keyboardTrap', {title: "Keyboard Trap"});
+  res.render('focusManagement/keyboardTrap', {title: "Keyboard Trap", notes: getDataByKey('keyboardTrap')});
 });
 
 router.get('/tabindex', function (req, res) {
-  res.render('focusManagement/tabIndex', {title: "tabindex attribute"});
+  res.render('focusManagement/tabIndex/tabindex', {title: "tabindex attribute", notes: getDataByKey('tabindex')});
 });
 
 router.get('/tabindex-example', function (req, res) {
-  res.render('focusManagement/tabIndexExample', {title: "Example tabindex"});
+  res.render('focusManagement/tabindex/tabIndexExample', {title: "Example tabindex", notes: getDataByKey('tabindexExample')});
 });
 
 router.get('/about', function (req, res) {

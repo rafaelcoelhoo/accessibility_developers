@@ -1,4 +1,10 @@
 .focus-management {
+  .paragraph-section {
+    p:focus {
+      outline: 3px solid #d33a2c;
+      outline-offset: 2px;
+    }
+  }
   .options {
     ul {
       display: flex;

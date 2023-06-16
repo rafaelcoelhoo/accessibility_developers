@@ -82,10 +82,6 @@ export const index = {
                     ]
                 },
                 {
-                    link: "/focus-management/keyboard",
-                    label: "Keyboard accessibility"
-                },
-                {
                     link: "/focus-management/content-order",
                     label: "Tab order"
                 },
@@ -96,6 +92,10 @@ export const index = {
                 {
                     link: "/focus-management/keyboard-trap",
                     label: "Keyboard trap"
+                },
+                {
+                    link: "/focus-management/keyboard",
+                    label: "Keyboard accessibility Examples"
                 },
             ]
         },
