@@ -14,7 +14,7 @@ router.get('/links/solution', function (req, res) {
 });
 
 router.get('/buttons/initial', function (req, res) {
-  res.render('aria/buttons/initial', {title: "Buttons - Aria"});
+  res.render('aria/buttons/initial', {title: "Buttons - Aria", notes: getDataByKey('buttons')});
 });
 
 router.get('/buttons/solution', function (req, res) {
@@ -22,7 +22,7 @@ router.get('/buttons/solution', function (req, res) {
 });
 
 router.get('/checkbox/initial', function (req, res) {
-  res.render('aria/checkbox/initial', {title: "Checkbox - Aria"});
+  res.render('aria/checkbox/initial', {title: "Checkbox - Aria", notes: getDataByKey('checkboxes')});
 });
 
 router.get('/checkbox/solution', function (req, res) {

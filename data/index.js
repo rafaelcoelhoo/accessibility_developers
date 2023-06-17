@@ -157,6 +157,26 @@ export const index = {
                     ]
                 },
                 {
+                    hasMultipleLinks: true,
+                    id: "aria_expanded",
+                    label: "aria-expanded",
+                    options: [
+                        {
+                            label: "aria-expanded",
+                            topics: [
+                                {
+                                    link: "/aria/aria-expanded/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/aria/aria-expanded/solution",
+                                    label: "Solution"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
                     label: "Links",
                     hasMultipleLinks: true,
                     id: "aria_links",
@@ -275,26 +295,6 @@ export const index = {
                                 {
                                     link: "/aria/aria-live/examples",
                                     label: "Examples"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    hasMultipleLinks: true,
-                    id: "aria_expanded",
-                    label: "aria-expanded",
-                    options: [
-                        {
-                            label: "aria-expanded",
-                            topics: [
-                                {
-                                    link: "/aria/aria-expanded/initial",
-                                    label: "Initial"
-                                },
-                                {
-                                    link: "/aria/aria-expanded/solution",
-                                    label: "Solution"
                                 }
                             ]
                         }

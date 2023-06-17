@@ -94,6 +94,10 @@ export const notes = {
                 label: 'Bootstrap - Focus visible'
             },
             {
+                url: 'https://www.apple.com/shop/accessories/all',
+                label: 'Apple - Delete search'
+            },
+            {
                 url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/ ',
                 label: 'Transparência - Focus visible'
             },
@@ -136,6 +140,14 @@ export const notes = {
             {
                 url: 'https://blog.outletbaby.com.br/',
                 label: 'Outlet baby - Many tabs to reach the modal'
+            },
+            {
+                url: 'https://www.bbc.com/',
+                label: 'BBC - Focus is moved to the cookies modal'
+            },
+            {
+                url: 'https://usablenet.com/',
+                label: 'Usablenet - Accessibility Status - Focus on close modal'
             },
         ],
     },
