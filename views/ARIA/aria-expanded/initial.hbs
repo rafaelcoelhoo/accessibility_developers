@@ -11,11 +11,11 @@
 </div>
 
 <script>
-    document.addEventListener('click', ()=> {
-        /*const button = document.getElementById('menu-button');
-        const expanded = button.getAttribute("aria-expanded");
-        expanded === "true" ? button.setAttribute("aria-expanded", "false") : button.setAttribute("aria-expanded", "true");
-        */document.getElementById('panel-options').classList.toggle('d-none');
+    const menuItem =  document.getElementById('menu-button');
+    document.getElementById('menu-button').addEventListener('click', ()=> {
+        //const expanded = menuItem.getAttribute("aria-expanded");
+        //expanded === "true" ? menuItem.setAttribute("aria-expanded", "false") : menuItem.setAttribute("aria-expanded", "true");
+        document.getElementById('panel-options').classList.toggle('d-none');
 
     })
 </script>

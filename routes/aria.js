@@ -6,7 +6,7 @@ import {getDataByKey} from '../data/ARIA/notes.js';
 const router = express.Router();
 
 router.get('/links/initial', function (req, res) {
-  res.render('aria/links/initial', {title: "Links - Aria"});
+  res.render('aria/links/initial', {title: "Links - Aria", notes: getDataByKey('links')});
 });
 
 router.get('/links/solution', function (req, res) {
@@ -68,7 +68,7 @@ router.get('/accessible-names/solution', function (req, res) {
 });
 
 router.get('/practical-accessible-names/initial', function (req, res) {
-  res.render('aria/accessibleNamesExercise/initial', {title: "Real example - Aria"});
+  res.render('aria/accessibleNamesExercise/initial', {title: "Real example - Aria", notes: getDataByKey('accessibleNames')});
 });
 
 router.get('/practical-accessible-names/solution', function (req, res) {
@@ -76,7 +76,7 @@ router.get('/practical-accessible-names/solution', function (req, res) {
 });
 
 router.get('/aria-live/initial', function (req, res) {
-  res.render('aria/aria-live/initial', {title: "aria-live - Aria"});
+  res.render('aria/aria-live/initial', {title: "aria-live - Aria", notes: getDataByKey('aria_live')});
 });
 
 router.get('/aria-live/solution', function (req, res) {
@@ -84,11 +84,11 @@ router.get('/aria-live/solution', function (req, res) {
 });
 
 router.get('/aria-live/examples', function (req, res) {
-  res.render('aria/aria-live/examples', {title: "aria-live - Aria"});
+  res.render('aria/aria-live/examples', {title: "aria-live - Aria", notes: getDataByKey('aria_live_examples')});
 });
 
 router.get('/aria-expanded/initial', function (req, res) {
-  res.render('aria/aria-expanded/initial', {title: "aria-expanded - Aria"});
+  res.render('aria/aria-expanded/initial', {title: "aria-expanded - Aria", notes: getDataByKey('aria_expanded')});
 });
 
 router.get('/aria-expanded/solution', function (req, res) {
