@@ -301,6 +301,39 @@ export const index = {
                     ]
                 },
             ]
-        }
+        },
+        {
+            title: "Semantic elements",
+            options: [
+                {
+                    link: "/",
+                    label: "Language"
+                },
+                {
+                    link: "/",
+                    label: "Landmark"
+                },
+                {
+                    link: "/",
+                    label: "Headings"
+                },
+                {
+                    link: "/",
+                    label: "Links"
+                },
+                {
+                    link: "/",
+                    label: "Tables"
+                },
+                {
+                    link: "/",
+                    label: "Lists"
+                },
+                {
+                    link: "/",
+                    label: "Other semantic elements"
+                }
+            ]
+        },
     ]
 };
