@@ -10,6 +10,7 @@ import {showAndHideElementsRouter} from "./routes/showAndHideElements.js";
 import {focusManagementRouter} from "./routes/focusManagement.js";
 import {ariaRouter} from "./routes/aria.js";
 import {screenReadersRouter} from "./routes/screenReaders.js";
+import {semanticStructureAndNavigationRouter} from "./routes/semanticStructureAndNavigation.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -31,6 +32,7 @@ app.use('/show-and-hide-elements', showAndHideElementsRouter);
 app.use('/focus-management', focusManagementRouter);
 app.use('/aria', ariaRouter);
 app.use('/screen-readers', screenReadersRouter);
+app.use('/semantic-structure-navigation', semanticStructureAndNavigationRouter);
 
 app.use('/', indexRouter);
 

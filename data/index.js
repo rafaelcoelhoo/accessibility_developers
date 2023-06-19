@@ -303,10 +303,14 @@ export const index = {
             ]
         },
         {
-            title: "Semantic elements",
+            title: "Semantic Structure and Navigation",
             options: [
                 {
-                    link: "/",
+                    link: "/semantic-structure-navigation/page-title",
+                    label: "Page Title"
+                },
+                {
+                    link: "/semantic-structure-navigation/languages",
                     label: "Language"
                 },
                 {
