@@ -74,6 +74,22 @@ export const notes = {
             },
         ],
     },
+    headings: {
+        tips: [
+            'Next heading <code>VO + Command + H</code>',
+            'Previous heading <code>VO + Shift + Command + H</code>'
+        ],
+        live_examples: [
+            {
+                url: 'https://mosaico.gov.pt/homepage',
+                label: 'Mosaico - Not meaningfully headings (1. 2.)',
+            },
+            {
+                url: 'https://mosaico.gov.pt/perfis/ux-ui-designer',
+                label: 'Mosaico - Missing headings (Stages, principles)',
+            },
+        ],
+    },
 }
 
 export function getDataByKey (key) {
