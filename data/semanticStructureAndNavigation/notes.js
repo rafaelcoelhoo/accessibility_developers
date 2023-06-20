@@ -32,7 +32,44 @@ export const notes = {
         ],
         live_examples: [
             {
-                url: 'https://mosaico.gov.pt/plano-de-evolucao',
+                url: 'http://www.lingoes.net/en/translator/langcode.htm',
+                label: 'List of codes',
+            },
+            {
+                url: 'https://mosaico.gov.pt/homepage',
+                label: 'Mosaico - Primary language',
+            },
+            {
+                url: 'https://www.tedbaker.com/uk',
+                label: 'Ted Baker - Primary language',
+            },
+            {
+                url: 'https://www.coverflex.com/en-pt',
+                label: 'Coverflex - Primary language',
+            },
+            {
+                url: 'https://info.portaldasfinancas.gov.pt/pt/docs/Conteudos_1pagina/Pages/portuguese-tax-system.aspx',
+                label: 'Finances - Language for parts of page',
+            },
+        ],
+    },
+    landmarks: {
+        tips: [],
+        live_examples: [
+            {
+                url: 'https://www.gov.uk/cost-of-living/60-or-over',
+                label: 'Gov UK',
+            },
+            {
+                url: 'https://eportugal.gov.pt/contactos',
+                label: 'ePortugal',
+            },
+            {
+                url: 'https://pt.tommy.com/terms-and-conditions',
+                label: 'Tommy Hilfiger',
+            },
+            {
+                url: 'https://mosaico.gov.pt/etapas',
                 label: 'Mosaico',
             },
         ],

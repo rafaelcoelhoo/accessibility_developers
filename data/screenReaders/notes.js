@@ -1,7 +1,7 @@
 export const notes = {
     screenReaders: {
         tips: [
-            'Enable keyboard navigation on your Mac',
+            'Enable keyboard navigation on Mac preferences',
             'Enable Safari keyboard accessibility',
             'Change voiceOver settings (speed, voice, verbosity)',
             'Start (or Stop) - <code>Command + F5</code>',

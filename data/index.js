@@ -314,8 +314,28 @@ export const index = {
                     label: "Language"
                 },
                 {
-                    link: "/",
-                    label: "Landmark"
+                    label: "Landmark",
+                    hasMultipleLinks: true,
+                    id: "landmarks",
+                    options: [
+                        {
+                            label: "landmarks",
+                            topics: [
+                                {
+                                    link: "/semantic-structure-navigation/landmarks/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/semantic-structure-navigation/landmarks/solution",
+                                    label: "Solution"
+                                },
+                                {
+                                    link: "/semantic-structure-navigation/landmarks/examples",
+                                    label: "Examples"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     link: "/",

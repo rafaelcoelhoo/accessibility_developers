@@ -21,6 +21,10 @@ export const notes = {
                 label: 'Purina'
             },
             {
+                url: 'https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html',
+                label: 'W3'
+            },
+            {
                 url: 'https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd',
                 label: 'Google and axe devTools'
             },

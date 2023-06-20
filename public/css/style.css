@@ -558,4 +558,100 @@ h4 {
   display: none;
 }
 
+.bad-landmarks {
+  /* stylelint-disable selector-list-comma-newline-after */
+  /* Pagination */
+  /*
+   * Blog posts
+   */
+  /*
+   * Footer
+   */
+}
+.bad-landmarks .blog-header {
+  line-height: 1;
+  border-bottom: 1px solid #e5e5e5;
+}
+.bad-landmarks .blog-header-logo {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+  font-size: 2.25rem;
+}
+.bad-landmarks .blog-header-logo:hover {
+  text-decoration: none;
+}
+.bad-landmarks h1, .bad-landmarks h2, .bad-landmarks h3, .bad-landmarks h4, .bad-landmarks h5, .bad-landmarks h6 {
+  font-family: "Playfair Display", Georgia, "Times New Roman", serif;
+}
+.bad-landmarks .display-4 {
+  font-size: 2.5rem;
+}
+@media (min-width: 768px) {
+  .bad-landmarks .display-4 {
+    font-size: 3rem;
+  }
+}
+.bad-landmarks .nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+.bad-landmarks .nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.bad-landmarks .nav-scroller .nav-link {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  font-size: 0.875rem;
+}
+.bad-landmarks .card-img-right {
+  height: 100%;
+  border-radius: 0 3px 3px 0;
+}
+.bad-landmarks .flex-auto {
+  flex: 0 0 auto;
+}
+.bad-landmarks .h-250 {
+  height: 250px;
+}
+@media (min-width: 768px) {
+  .bad-landmarks .h-md-250 {
+    height: 250px;
+  }
+}
+.bad-landmarks .blog-pagination {
+  margin-bottom: 4rem;
+}
+.bad-landmarks .blog-pagination > .btn {
+  border-radius: 2rem;
+}
+.bad-landmarks .blog-post {
+  margin-bottom: 4rem;
+}
+.bad-landmarks .blog-post-title {
+  margin-bottom: 0.25rem;
+  font-size: 2.5rem;
+}
+.bad-landmarks .blog-post-meta {
+  margin-bottom: 1.25rem;
+  color: #727272;
+}
+.bad-landmarks .blog-footer {
+  padding: 2.5rem 0;
+  color: #727272;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 0.05rem solid #e5e5e5;
+}
+.bad-landmarks .blog-footer p:last-child {
+  margin-bottom: 0;
+}
+
 /*# sourceMappingURL=style.css.map */
