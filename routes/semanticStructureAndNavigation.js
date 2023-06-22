@@ -32,4 +32,27 @@ router.get('/headings/solution', function (req, res) {
   res.render('semanticStructureAndNavigation/headings/solution', {title: "Headings - Amazing Animals"});
 });
 
+router.get('/links/initial', function (req, res) {
+  res.render('semanticStructureAndNavigation/links/initial', {title: "Links", notes: getDataByKey('links')});
+});
+
+router.get('/links/solution', function (req, res) {
+  res.render('semanticStructureAndNavigation/links/solution', {title: "Links"});
+});
+
+
+router.get('/links/skip-links', function (req, res) {
+  res.render('semanticStructureAndNavigation/links/skipLinks', {layout: false});
+});
+
+router.get('/tables/problem', function (req, res) {
+  res.render('semanticStructureAndNavigation/tables/problem', {title: "Tables", notes: getDataByKey('tables')});
+});
+
+router.get('/tables/solution', function (req, res) {
+  res.render('semanticStructureAndNavigation/tables/solution', {title: "Tables"});
+});
+
+
+
 export {router as semanticStructureAndNavigationRouter};

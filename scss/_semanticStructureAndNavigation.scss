@@ -6,7 +6,8 @@
   }
 
   .blog-header-logo {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+  ;
     font-size: 2.25rem;
   }
 
@@ -15,7 +16,8 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "Playfair Display", Georgia, "Times New Roman", serif/*rtl:Amiri, Georgia, "Times New Roman", serif*/;
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif /*rtl:Amiri, Georgia, "Times New Roman", serif*/
+  ;
   }
 
   .display-4 {
@@ -55,15 +57,19 @@
     flex: 0 0 auto;
   }
 
-  .h-250 { height: 250px; }
+  .h-250 {
+    height: 250px;
+  }
 
   .blog-post {
     margin-bottom: 4rem;
   }
+
   .blog-post-title {
     margin-bottom: .25rem;
     font-size: 2.5rem;
   }
+
   .blog-post-meta {
     margin-bottom: 1.25rem;
     color: #727272;
@@ -89,3 +95,52 @@
     color: #00b3cc;
   }
 }
+
+.links {
+  .tableOfContents {
+    background-color: #F2F2F2;
+    padding: 10px;
+    border-radius: 5px;
+  }
+
+  .tableOfContents ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  .tableOfContents li {
+    margin-bottom: 5px;
+  }
+
+  .tableOfContents a {
+    text-decoration: none;
+    color: #0066CC;
+  }
+
+  p {
+    margin-bottom: 75px;
+  }
+
+}
+
+.tables {
+  table {
+    border-collapse: collapse;
+    margin-bottom: 4em;
+  }
+  table caption, th, .th {
+    text-align: left;
+    font-weight: bold;
+  }
+  caption {
+    display: table;
+  }
+  th, .th {
+    background-color: #ddd;
+  }
+  td, th, .th {
+    padding: 0.5rem;
+    border: 1px solid #333;
+  }
+}
+

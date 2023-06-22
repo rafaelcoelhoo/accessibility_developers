@@ -359,12 +359,53 @@ export const index = {
                     ]
                 },
                 {
-                    link: "/",
-                    label: "Links"
+                    label: "Links",
+                    hasMultipleLinks: true,
+                    id: "links",
+                    options: [
+                        {
+                            label: "Links",
+                            topics: [
+                                {
+                                    link: "/semantic-structure-navigation/links/initial",
+                                    label: "Initial"
+                                },
+                                {
+                                    link: "/semantic-structure-navigation/links/solution",
+                                    label: "Solution"
+                                }
+                            ]
+                        },
+                        {
+                            label: "Skip links",
+                            topics: [
+                                {
+                                    link: "/semantic-structure-navigation/links/skip-links",
+                                    label: "Skip links"
+                                }
+                            ]
+                        },
+                    ]
                 },
                 {
-                    link: "/",
-                    label: "Tables"
+                    label: "Tables",
+                    hasMultipleLinks: true,
+                    id: "tables",
+                    options: [
+                        {
+                            label: "Tables",
+                            topics: [
+                                {
+                                    link: "/semantic-structure-navigation/tables/problem",
+                                    label: "Problem"
+                                },
+                                {
+                                    link: "/semantic-structure-navigation/tables/solution",
+                                    label: "Solution"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     link: "/",

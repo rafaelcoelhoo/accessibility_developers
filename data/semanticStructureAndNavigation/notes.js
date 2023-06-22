@@ -77,7 +77,8 @@ export const notes = {
     headings: {
         tips: [
             'Next heading <code>VO + Command + H</code>',
-            'Previous heading <code>VO + Shift + Command + H</code>'
+            'Previous heading <code>VO + Shift + Command + H</code>',
+            'To use aria for heading <code>role: heading</code> and <code>aria-level: (heading level)</code>'
         ],
         live_examples: [
             {
@@ -88,6 +89,47 @@ export const notes = {
                 url: 'https://mosaico.gov.pt/perfis/ux-ui-designer',
                 label: 'Mosaico - Missing headings (Stages, principles)',
             },
+            {
+                url: 'https://www.whitehouse.gov/priorities/',
+                label: 'The White House',
+            },
+        ],
+    },
+    links: {
+        tips: [
+            'Link should point an element with an accessible name',
+            'Add <code>tabindex: -1</code> to the content itself',
+            'Use descriptive text links',
+            "Add an accessible name for the image links"
+        ],
+        live_examples: [
+            {
+                url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
+                label: 'Transparência - Page contents',
+            },
+            {
+                url: 'https://www.w3.org/WAI/standards-guidelines/#guidelines',
+                label: 'W3 - Page contents',
+            },
+            {
+                url: 'https://www.vinted.pt/',
+                label: 'Vinted - Social media links',
+            },
+        ],
+    },
+    tables: {
+        tips: [
+
+        ],
+        live_examples: [
+            {
+                url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
+                label: 'Transparência - Table',
+            },
+            {
+                url: 'https://www.worten.pt/produtos/tabela-de-flexoes-astan-hogar-push-up-board-fitness-3060-multifuncao-mrkean-8436534304468',
+                label: 'Worten - Wrong caption and missing proper headers',
+            }
         ],
     },
 }

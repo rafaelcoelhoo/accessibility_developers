@@ -107,6 +107,27 @@ input {
   padding: 0 1rem 2rem 1rem;
 }
 
+.skip-to-content-link {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  white-space: nowrap;
+  border: 0;
+  background: #DCE1E8;
+  display: flex;
+  align-items: center;
+  margin: 5px;
+}
+
+.skip-to-content-link:focus {
+  position: static;
+  width: auto;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+}
+
 h1,
 h2,
 h3,
@@ -629,6 +650,45 @@ h4 {
 }
 .headings .h5 {
   color: #00b3cc;
+}
+
+.links .tableOfContents {
+  background-color: #F2F2F2;
+  padding: 10px;
+  border-radius: 5px;
+}
+.links .tableOfContents ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+.links .tableOfContents li {
+  margin-bottom: 5px;
+}
+.links .tableOfContents a {
+  text-decoration: none;
+  color: #0066CC;
+}
+.links p {
+  margin-bottom: 75px;
+}
+
+.tables table {
+  border-collapse: collapse;
+  margin-bottom: 4em;
+}
+.tables table caption, .tables th, .tables .th {
+  text-align: left;
+  font-weight: bold;
+}
+.tables caption {
+  display: table;
+}
+.tables th, .tables .th {
+  background-color: #ddd;
+}
+.tables td, .tables th, .tables .th {
+  padding: 0.5rem;
+  border: 1px solid #333;
 }
 
 /*# sourceMappingURL=style.css.map */

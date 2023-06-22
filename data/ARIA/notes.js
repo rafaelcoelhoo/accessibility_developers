@@ -63,6 +63,17 @@ export const notes = {
             },
         ],
     },
+    switch: {
+        tips: [
+            'Add <code>role: switch</code>, <code>tabindex: 0</code>, <code>aria-labelledby</code>, <code>aria-checked: true/false</code>',
+        ],
+        live_examples: [
+            {
+                url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camara-de-seguranca-xiaomi-smart-camera-c300-2k-pan-tilt-security-wi-fi-bhr6540gl-6934177796296',
+                label: 'PcDiga - Switch'
+            },
+        ],
+    },
     checkboxes: {
         tips: ["Keyup versus Keydown"],
         live_examples: [

@@ -31,7 +31,7 @@ router.get('/checkbox/solution', function (req, res) {
 
 
 router.get('/switch-control/initial', function (req, res) {
-  res.render('aria/switchControl/initial', {title: "Switch - Aria"});
+  res.render('aria/switchControl/initial', {title: "Switch - Aria", notes: getDataByKey('switch')});
 });
 
 router.get('/switch-control/solution', function (req, res) {

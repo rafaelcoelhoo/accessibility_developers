@@ -5,6 +5,7 @@ export const notes = {
             'Enable Safari keyboard accessibility',
             'Change voiceOver settings (speed, voice, verbosity)',
             'Start (or Stop) - <code>Command + F5</code>',
+            'Open voiceOver help - <code>VO + H</code>',
             'Start reading automatically - <code>VO + A</code>',
             'Navigate by Headings - <code>VO + Command + H</code>',
             'Navigate to the next Graphic - <code>VO + Command + G</code>',
