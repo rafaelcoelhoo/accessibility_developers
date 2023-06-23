@@ -428,8 +428,24 @@ export const index = {
                     ]
                 },
                 {
-                    link: "/",
-                    label: "Other semantic elements"
+                    label: "Other semantic elements",
+                    hasMultipleLinks: true,
+                    id: "otherSE",
+                    options: [
+                        {
+                            label: "Other semantic elements",
+                            topics: [
+                                {
+                                    link: "/semantic-structure-navigation/other-elements/mark",
+                                    label: "Mark"
+                                },
+                                {
+                                    link: "/semantic-structure-navigation/other-elements/strong",
+                                    label: "Strong"
+                                }
+                            ]
+                        }
+                    ]
                 }
             ]
         },

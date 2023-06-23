@@ -165,3 +165,28 @@
   }
 }
 
+.otherSemanticElements {
+
+  mark {
+    background-color: #ffc107;
+  }
+  mark::before,
+  mark::after {
+    clip-path: inset(100%);
+    clip: rect(1px, 1px, 1px, 1px);
+    white-space: nowrap;
+    width: 1px;
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+  }
+
+  mark::after {
+    content: " [highlight end] ";
+  }
+
+  mark::before {
+    content: " [highlight start] ";
+  }
+}
+

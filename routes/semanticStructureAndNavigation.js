@@ -61,6 +61,14 @@ router.get('/lists/solution', function (req, res) {
   res.render('semanticStructureAndNavigation/lists/solution', {title: "Lists", notes: getDataByKey('lists')});
 });
 
+router.get('/other-elements/mark', function (req, res) {
+  res.render('semanticStructureAndNavigation/otherSemanticElements/mark', {title: "Mark", notes: getDataByKey('mark')});
+});
+
+router.get('/other-elements/strong', function (req, res) {
+  res.render('semanticStructureAndNavigation/otherSemanticElements/strong', {title: "Strong"});
+});
+
 
 
 export {router as semanticStructureAndNavigationRouter};

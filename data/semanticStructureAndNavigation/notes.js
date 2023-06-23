@@ -159,6 +159,13 @@ export const notes = {
             }
         ],
     },
+    mark: {
+        tips: [
+            'Using CSS content property and pseudo-element <code>::before</code> and <code>::after</code>',
+            'Check the accessibility tree'
+        ],
+        live_examples: [],
+    },
 }
 
 export function getDataByKey (key) {

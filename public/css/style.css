@@ -708,4 +708,24 @@ h4 {
   margin-right: 8px;
 }
 
+.otherSemanticElements mark {
+  background-color: #ffc107;
+}
+.otherSemanticElements mark::before,
+.otherSemanticElements mark::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  white-space: nowrap;
+  width: 1px;
+  overflow: hidden;
+  position: absolute;
+  height: 1px;
+}
+.otherSemanticElements mark::after {
+  content: " [highlight end] ";
+}
+.otherSemanticElements mark::before {
+  content: " [highlight start] ";
+}
+
 /*# sourceMappingURL=style.css.map */
