@@ -119,7 +119,7 @@ export const notes = {
     },
     tables: {
         tips: [
-
+            'Next table <code>VO + Command + T</code>',
         ],
         live_examples: [
             {
@@ -129,6 +129,29 @@ export const notes = {
             {
                 url: 'https://www.worten.pt/produtos/tabela-de-flexoes-astan-hogar-push-up-board-fitness-3060-multifuncao-mrkean-8436534304468',
                 label: 'Worten - Wrong caption and missing proper headers',
+            },
+            {
+                url: 'https://www.growthbook.io/pricing',
+                label: 'Growthbook - Table with divs',
+            },
+            {
+                url: 'https://getbootstrap.com/docs/5.3/content/tables/#table-borders',
+                label: 'Bootstrap - No captions but well struture tables',
+            }
+        ],
+    },
+    lists: {
+        tips: [
+            'Next list <code>VO + Command + X</code>',
+        ],
+        live_examples: [
+            {
+                url: 'https://www.purina.co.uk/dog/dog-food',
+                label: 'Purina - Pack size list (Change div to p)',
+            },
+            {
+                url: 'https://www.purina.fr/chien/alimentation/croquettes',
+                label: 'Purina - Offers list without telling the index',
             }
         ],
     },

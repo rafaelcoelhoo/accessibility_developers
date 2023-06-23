@@ -691,4 +691,21 @@ h4 {
   border: 1px solid #333;
 }
 
+.lists .list-container {
+  display: flex;
+  flex-direction: column;
+}
+.lists .list-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.lists .bullet {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: #000;
+  margin-right: 8px;
+}
+
 /*# sourceMappingURL=style.css.map */

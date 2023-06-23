@@ -408,8 +408,24 @@ export const index = {
                     ]
                 },
                 {
-                    link: "/",
-                    label: "Lists"
+                    label: "Lists",
+                    hasMultipleLinks: true,
+                    id: "lists",
+                    options: [
+                        {
+                            label: "Lists",
+                            topics: [
+                                {
+                                    link: "/semantic-structure-navigation/lists/problem",
+                                    label: "Problem"
+                                },
+                                {
+                                    link: "/semantic-structure-navigation/lists/solution",
+                                    label: "Solution"
+                                }
+                            ]
+                        }
+                    ]
                 },
                 {
                     link: "/",

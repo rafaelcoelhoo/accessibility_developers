@@ -50,7 +50,15 @@ router.get('/tables/problem', function (req, res) {
 });
 
 router.get('/tables/solution', function (req, res) {
-  res.render('semanticStructureAndNavigation/tables/solution', {title: "Tables"});
+  res.render('semanticStructureAndNavigation/tables/solution', {title: "Tables", notes: getDataByKey('tables')});
+});
+
+router.get('/lists/problem', function (req, res) {
+  res.render('semanticStructureAndNavigation/lists/problem', {title: "Lists", notes: getDataByKey('lists')});
+});
+
+router.get('/lists/solution', function (req, res) {
+  res.render('semanticStructureAndNavigation/lists/solution', {title: "Lists", notes: getDataByKey('lists')});
 });
 
 
