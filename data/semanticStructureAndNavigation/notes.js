@@ -48,8 +48,12 @@ export const notes = {
                 label: 'Coverflex - Primary language',
             },
             {
+                url: 'https://www.ipma.pt/pt/otempo/prev.localidade.hora/legenda.jsp',
+                label: 'IPMA - Language for parts of page',
+            },
+            {
                 url: 'https://info.portaldasfinancas.gov.pt/pt/docs/Conteudos_1pagina/Pages/portuguese-tax-system.aspx',
-                label: 'Finances - Language for parts of page',
+                label: 'Finances - Primary and Language for parts of page',
             },
         ],
     },

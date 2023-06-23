@@ -38,6 +38,10 @@ export const notes = {
                 label: 'W3 - Cursor documentation'
             },
             {
+                url: 'https://www.google.com/search?q=tempo&rlz=1C5GCEM_enPT1024PT1024&sxsrf=APwXEde4jSrrfwu54NdT4Gdkntly_2qfNA%3A1687523130897&ei=Oo-VZOSdNraA9u8P59242A4&ved=0ahUKEwjkopHGsdn_AhU2gP0HHecuDusQ4dUDCBA&uact=5&oq=tempo&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzoHCCMQsAMQJzoKCAAQRxDWBBCwAzoKCC4QigUQsAMQQzoPCC4QigUQyAMQsAMQQxgBOhIILhCKBRDUAhDIAxCwAxBDGAE6FQguEIoFEMcBENEDEMgDELADEEMYAUoECEEYAFCJBViJBWDIB2gBcAJ4AIABAIgBAJIBAJgBAKABAcABAcgBCNoBBggBEAEYCA&sclient=gws-wiz-serp',
+                label: 'Google - Dropdown filters'
+            },
+            {
                 url: 'https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
                 label: 'OLX - Filter typology'
             },
