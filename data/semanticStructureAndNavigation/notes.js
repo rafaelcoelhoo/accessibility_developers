@@ -97,6 +97,10 @@ export const notes = {
                 url: 'https://www.whitehouse.gov/priorities/',
                 label: 'The White House',
             },
+            {
+                url: 'https://help.medium.com/hc/en-us/articles/360053078253',
+                label: 'Medium',
+            },
         ],
     },
     links: {

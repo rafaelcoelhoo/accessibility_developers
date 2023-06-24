@@ -728,4 +728,19 @@ h4 {
   content: " [highlight start] ";
 }
 
+.images .decorative-img-alt {
+  height: 350px;
+}
+.images .decorative-img-aria {
+  height: 350px;
+}
+.images .decorative-img-css {
+  background-image: url("https://www.reliablesoft.net/wp-content/uploads/2019/06/beagle-dog.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: cover;
+  width: 525px;
+  height: 350px;
+}
+
 /*# sourceMappingURL=style.css.map */

@@ -206,6 +206,10 @@ export const notes = {
                 url: 'https://www.worten.pt/cliente/conta#/myLogin',
                 label: 'Worten - Login (Zoom required feedback)'
             },
+            {
+                url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
+                label: 'Mosaico - Search (screen small than 1200px)'
+            },
         ],
     },
 }

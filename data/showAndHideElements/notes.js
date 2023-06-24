@@ -25,7 +25,11 @@ export const notes = {
             {
                 url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                 label: 'Transparência Gov - List of contents - Section with graphics'
-            }
+            },
+            {
+                url: 'https://www.13.cl/',
+                label: '13 channel - Radios'
+            },
         ],
     }
 }
