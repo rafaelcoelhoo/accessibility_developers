@@ -11,6 +11,8 @@ import {focusManagementRouter} from "./routes/focusManagement.js";
 import {ariaRouter} from "./routes/aria.js";
 import {screenReadersRouter} from "./routes/screenReaders.js";
 import {semanticStructureAndNavigationRouter} from "./routes/semanticStructureAndNavigation.js";
+import {ImagesRouter} from "./routes/images.js";
+import {SVGRouter} from "./routes/SVG.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -33,6 +35,8 @@ app.use('/focus-management', focusManagementRouter);
 app.use('/aria', ariaRouter);
 app.use('/screen-readers', screenReadersRouter);
 app.use('/semantic-structure-navigation', semanticStructureAndNavigationRouter);
+app.use('/images', ImagesRouter);
+app.use('/SVG', SVGRouter);
 
 app.use('/', indexRouter);
 

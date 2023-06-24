@@ -449,5 +449,62 @@ export const index = {
                 }
             ]
         },
+        {
+            title: "Images and SVG",
+            options: [
+                {
+                    label: "Images",
+                    hasMultipleLinks: true,
+                    id: "images",
+                    options: [
+                        {
+                            label: "Images",
+                            topics: [
+                                {
+                                    link: "/images/decorative",
+                                    label: "Decorative images"
+                                },
+                                {
+                                    link: "/images/informative",
+                                    label: "Informative images"
+                                },
+                                {
+                                    link: "/images/clickable",
+                                    label: "Clickable images"
+                                },
+                                {
+                                    link: "/images/complex",
+                                    label: "Complex images"
+                                },
+                                {
+                                    link: "/images/text",
+                                    label: "Images of Text"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    label: "SVG",
+                    hasMultipleLinks: true,
+                    id: "svg",
+                    options: [
+                        {
+                            label: "SVG",
+                            topics: [
+                                {
+                                    link: "/SVG/inline",
+                                    label: "Inline SVG"
+                                },
+                                {
+                                    link: "/SVG/image-src",
+                                    label: "SVG as image sourc"
+                                },
+                            ]
+                        }
+                    ]
+                }
+            ]
+        },
     ]
 };
