@@ -751,5 +751,9 @@ h4 {
   justify-content: center;
   align-items: center;
 }
+.images .clickable-menu {
+  width: 50px;
+  height: 50px;
+}
 
 /*# sourceMappingURL=style.css.map */

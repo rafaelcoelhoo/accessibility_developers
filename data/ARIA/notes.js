@@ -42,6 +42,10 @@ export const notes = {
                 label: 'Google - Dropdown filters'
             },
             {
+                url: 'https://feathericons.com/',
+                label: 'Feather Icons - Download icons'
+            },
+            {
                 url: 'https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
                 label: 'OLX - Filter typology'
             },
@@ -133,6 +137,11 @@ export const notes = {
                 url: 'https://www.apple.com/apple-arcade/',
                 label: 'Apple'
             },
+            {
+                url: 'https://www.zara.com/pt/',
+                label: 'Zara - Hamburger menu - Missing aria-expanded and label'
+            },
+
         ],
     },
     aria_live_examples: {
@@ -183,6 +192,10 @@ export const notes = {
                 label: 'IKEA - Price'
             },
             {
+                url: 'https://feathericons.com/',
+                label: 'Feather Icons - Download icons'
+            },
+            {
                 url: 'https://saboreiaavida.nestle.pt/produtos/kitkat-snack-de-chocolate',
                 label: 'Nestle - Login and Social media links'
             },
@@ -210,6 +223,10 @@ export const notes = {
                 url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
                 label: 'Mosaico - Search (screen small than 1200px)'
             },
+            {
+                url: 'https://www.zara.com/pt/',
+                label: 'Zara - Link homepage (label versus title)'
+            }
         ],
     },
 }

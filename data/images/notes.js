@@ -37,6 +37,21 @@ export const notes = {
             }
         ],
     },
+    clickableImages: {
+        tips: [
+            'Have a look at the accessibility tree',
+        ],
+        live_examples: [
+            {
+                url: 'https://www.portovivosru.pt/',
+                label: 'Porto - Search and menu (screen < 1100px)',
+            },
+            {
+                url: 'https://www.walmart.com/plus?povid=wpl_pov_gm_TopNav',
+                label: 'Walmart - Link homepage (label versus alt)'
+            },
+        ],
+    },
 }
 
 export function getDataByKey (key) {
