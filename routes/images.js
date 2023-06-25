@@ -9,7 +9,7 @@ router.get('/decorative', function (req, res) {
 });
 
 router.get('/informative', function (req, res) {
-  res.render('imagesAndSVG/images/informativeImages', {title: "Informative Images", notes: getDataByKey('')});
+  res.render('imagesAndSVG/images/informativeImages', {title: "Informative Images", notes: getDataByKey('informativeImages')});
 });
 
 router.get('/clickable', function (req, res) {

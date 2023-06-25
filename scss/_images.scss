@@ -1,10 +1,10 @@
 .images {
   .decorative-img-alt {
-    height: 350px;
+    height: 200px;
   }
 
   .decorative-img-aria {
-    height: 350px;
+    height: 200px;
   }
 
   .decorative-img-css {
@@ -12,7 +12,17 @@
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
-    width: 525px;
-    height: 350px;
+    width: 300px;
+    height: 200px;
+  }
+
+  .box-search {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #ffc107;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

@@ -36,8 +36,8 @@ export const notes = {
                 label: 'List of codes',
             },
             {
-                url: 'https://mosaico.gov.pt/homepage',
-                label: 'Mosaico - Primary language',
+                url: 'https://mosaico.gov.pt/principios/10',
+                label: 'Mosaico - Primary language and parts of page',
             },
             {
                 url: 'https://www.tedbaker.com/uk',
@@ -100,6 +100,10 @@ export const notes = {
             {
                 url: 'https://help.medium.com/hc/en-us/articles/360053078253',
                 label: 'Medium',
+            },
+            {
+                url: 'https://www.starbucksathome.com/pt/artigo/sobre-nos',
+                label: 'Starbucks - Heading only visually',
             },
         ],
     },
