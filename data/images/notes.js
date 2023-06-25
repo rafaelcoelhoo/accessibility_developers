@@ -52,6 +52,22 @@ export const notes = {
             },
         ],
     },
+    imagesOfText: {
+        tips: [
+            'Font scaling',
+            'Page zooming',
+        ],
+        live_examples: [
+            {
+                url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
+                label: 'Transparência'
+            },
+            {
+                url: 'https://expresso.pt/',
+                label: 'Expresso - Complaint book (footer)'
+            },
+        ],
+    },
 }
 
 export function getDataByKey (key) {

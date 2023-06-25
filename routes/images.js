@@ -13,7 +13,7 @@ router.get('/informative', function (req, res) {
 });
 
 router.get('/clickable', function (req, res) {
-  res.render('imagesAndSVG/images/clickableImages', {title: "Clickable Images", notes: getDataByKey('')});
+  res.render('imagesAndSVG/images/clickableImages', {title: "Clickable Images", notes: getDataByKey('clickableImages')});
 });
 
 router.get('/complex', function (req, res) {
