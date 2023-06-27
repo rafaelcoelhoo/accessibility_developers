@@ -33,7 +33,7 @@ export const index = {
                     link: "/screen-readers",
                     label: "How to use"
                 }
-        ]
+            ]
         },
         {
             title: "Show and hide techniques",
@@ -498,12 +498,53 @@ export const index = {
                                 },
                                 {
                                     link: "/SVG/image-src",
-                                    label: "SVG as image sourc"
+                                    label: "SVG as image source"
                                 },
                             ]
                         }
                     ]
                 }
+            ]
+        },
+        {
+            title: "Other visual considerations",
+            options: [
+                {
+                    link: "/visual-considerations/reduce-motion",
+                    label: "Reduce motion"
+                },
+                {
+                    link: "/visual-considerations/dark-mode",
+                    label: "Dark mode"
+                },
+                {
+                    label: "Zoom",
+                    hasMultipleLinks: true,
+                    id: "zoom",
+                    options: [
+                        {
+                            label: "SVG",
+                            topics: [
+                                {
+                                    link: "/visual-considerations/zoom/mobile",
+                                    label: "Zoom mobile"
+                                },
+                                {
+                                    link: "/visual-considerations/zoom/scaling",
+                                    label: "Browser zooming versus font scaling"
+                                },
+                            ]
+                        }
+                    ]
+                },
+                {
+                    link: "/visual-considerations/target-size",
+                    label: "Target size"
+                },
+                {
+                    link: "/visual-considerations/text-spacing",
+                    label: "Text spacing"
+                },
             ]
         },
     ]

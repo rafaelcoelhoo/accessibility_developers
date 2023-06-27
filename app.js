@@ -13,6 +13,7 @@ import {screenReadersRouter} from "./routes/screenReaders.js";
 import {semanticStructureAndNavigationRouter} from "./routes/semanticStructureAndNavigation.js";
 import {ImagesRouter} from "./routes/images.js";
 import {SVGRouter} from "./routes/SVG.js";
+import {otherVisualConsiderationsRouter} from "./routes/otherVisualConsiderations.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -37,6 +38,7 @@ app.use('/screen-readers', screenReadersRouter);
 app.use('/semantic-structure-navigation', semanticStructureAndNavigationRouter);
 app.use('/images', ImagesRouter);
 app.use('/SVG', SVGRouter);
+app.use('/visual-considerations', otherVisualConsiderationsRouter);
 
 app.use('/', indexRouter);
 
