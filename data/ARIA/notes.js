@@ -28,6 +28,10 @@ export const notes = {
                 url: 'https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd',
                 label: 'Google and axe devTools'
             },
+            {
+                url: 'https://www.ablebits.com/office-addins-blog/make-bar-graph-excel/',
+                label: 'Ablebits - Cookies modal (incognito mode)'
+            },
         ],
     },
     buttons: {

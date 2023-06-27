@@ -18,7 +18,10 @@ export const notes = {
                 url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
                 label: 'Mosaico - Background image and search modal (owl image)',
             },
-
+            {
+                url: 'https://www.continente.pt/produto/batata-frita-lisa-original-lays-7379467.html',
+                label: 'Continente - Aria and alt doing the same',
+            },
         ],
     },
     informativeImages: {
@@ -65,6 +68,37 @@ export const notes = {
             {
                 url: 'https://expresso.pt/',
                 label: 'Expresso - Complaint book (footer)'
+            },
+        ],
+    },
+    svgSource: {
+        tips: [
+            'Font scaling',
+            'Page zooming',
+            'Have a look at the accessibility tree',
+        ],
+        live_examples: [
+            {
+                url: 'https://www.w3.org/',
+                label: 'W3 - logo'
+            },
+        ],
+    },
+    svgInline: {
+        tips: [
+        ],
+        live_examples: [
+            {
+                url: 'https://medium.com/',
+                label: 'Medium - Notifications icon'
+            },
+            {
+                url: 'https://www.w3.org/WAI/standards-guidelines/',
+                label: 'W3 - Logo'
+            },
+            {
+                url: '/https://my.vodafone.pt/main.html',
+                label: 'Vodafone - Social media logos'
             },
         ],
     },

@@ -55,6 +55,10 @@ export const notes = {
                 url: 'https://info.portaldasfinancas.gov.pt/pt/docs/Conteudos_1pagina/Pages/portuguese-tax-system.aspx',
                 label: 'Finances - Primary and Language for parts of page',
             },
+            {
+                url: 'https://www.w3.org/',
+                label: 'W3 - Choose language',
+            },
         ],
     },
     landmarks: {
@@ -149,6 +153,14 @@ export const notes = {
             {
                 url: 'https://getbootstrap.com/docs/5.3/content/tables/#table-borders',
                 label: 'Bootstrap - No captions but well struture tables',
+            },
+            {
+                url: 'https://zippyonline.com/pt/edredao-para-cama-120x60cm--essential-blue-zy-baby/80140797.html',
+                label: 'Zippy - Delivery table',
+            },
+            {
+                url: 'https://mosaico.gov.pt/termos-e-condicoes',
+                label: 'Mosaico - Table without headers',
             }
         ],
     },

@@ -30,6 +30,10 @@ export const notes = {
                 url: 'https://www.13.cl/',
                 label: '13 channel - Radios'
             },
+            {
+                url: 'https://www.scottohara.me/',
+                label: 'Scott O\'Hara - Logo'
+            },
         ],
     }
 }

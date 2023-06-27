@@ -1,1 +1,40 @@
-Complex images
+<div class="images">
+    <h2>Using alt and aria-describedby</h2>
+    <img class="bars-img" src="./../../img/bars.svg" role="img"
+         alt="Bar chart with the favorite fruit for students. Extended description below chart."
+         aria-describedby="description1">
+    <div id="description1">
+        <p>The results for the survey to discover what is the favorite fruit for the students are:
+        <ul class="ps-5">
+            <li>Banana: 6 students</li>
+            <li>Apple: 5 students</li>
+            <li>Orange: 4 students</li>
+            <li>Strawberry: 10 students</li>
+            <li>Kiwi: 3 students</li>
+            <li>Grapes: 1 students</li>
+        </ul>
+    </div>
+
+    <hr>
+
+    <h2>Using alt and link to a long description</h2>
+    <img class="bars-img" src="./../../img/bars.svg" role="img"
+         alt="Bar chart with the favorite fruit for students. Extended description below chart.">
+    <div class="center">
+        <a href="/images/long-description">Detailed description of the chart.</a>
+    </div>
+
+    <hr>
+
+    <h2>Using alt and figcaption</h2>
+    <figure role="group">
+        <img
+                src="./../../img/bars.svg"
+                alt="Bar chart with the favorite fruit for students. Extended description below chart.">
+        <figcaption>
+            <a href="/images/long-description">Detailed description of the chart.</a>
+        </figcaption>
+    </figure>
+
+    <hr>
+</div>

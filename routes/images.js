@@ -24,4 +24,8 @@ router.get('/text', function (req, res) {
   res.render('imagesAndSVG/images/imagesOfText', {title: "Images of text", notes: getDataByKey('')});
 });
 
+router.get('/long-description', function (req, res) {
+  res.render('imagesAndSVG/images/longDescription', {layout: false});
+});
+
 export {router as ImagesRouter};
