@@ -7,6 +7,10 @@ export const notes = {
                 label: 'Portugal Digital - Extra labels'
             },
             {
+                url: 'https://www.wildcodeschool.com/pt-PT/cursos/web-developer-bootcamp-3-meses',
+                label: 'Wild Code School - Menu option off screen'
+            },
+            {
                 url: 'https://academia.ama.gov.pt/',
                 label: 'Academia AMA - Sidebar'
             },

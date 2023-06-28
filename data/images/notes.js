@@ -37,6 +37,10 @@ export const notes = {
             {
                 url: 'https://www.starbucksathome.com/pt/artigo/sobre-nos',
                 label: 'Starbucks - Not meaningful alt',
+            },
+            {
+                url: 'https://roble.store/blogs/blog/por-que-elegir-sillas-nordicstory',
+                label: 'Roble store - Not meaningful alt',
             }
         ],
     },

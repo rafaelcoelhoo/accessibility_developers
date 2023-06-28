@@ -759,4 +759,62 @@ h4 {
   height: 350px;
 }
 
+.reduce-motion .scrolling-text-container {
+  overflow: hidden;
+}
+.reduce-motion .scrolling-text, .reduce-motion .scrolling-text-3, .reduce-motion .scrolling-text-2, .reduce-motion .scrolling-text-1 {
+  white-space: nowrap;
+  color: #006CFF;
+  font-size: 3rem;
+  line-height: 5rem;
+  letter-spacing: 0;
+  font-weight: normal;
+}
+.reduce-motion .scrolling-text-1 {
+  animation: scrolling 5s linear infinite;
+}
+.reduce-motion .scrolling-text-2 {
+  animation: scrolling-2 10s linear infinite;
+}
+.reduce-motion .scrolling-text-3 {
+  animation: scrolling-3 15s linear infinite;
+}
+@keyframes scrolling {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes scrolling-2 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@keyframes scrolling-3 {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-200%);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .reduce-motion .scrolling-text, .reduce-motion .scrolling-text-1, .reduce-motion .scrolling-text-2, .reduce-motion .scrolling-text-3 {
+    animation: none;
+    font-size: 1.3rem;
+    line-height: 1.5;
+  }
+}
+.reduce-motion .disable-animation {
+  animation: none !important;
+  transform: translateX(0) !important;
+  font-size: 1.3rem !important;
+  line-height: 1.5 !important;
+}
+
 /*# sourceMappingURL=style.css.map */

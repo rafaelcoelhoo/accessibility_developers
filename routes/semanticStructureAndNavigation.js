@@ -66,7 +66,7 @@ router.get('/other-elements/mark', function (req, res) {
 });
 
 router.get('/other-elements/strong', function (req, res) {
-  res.render('semanticStructureAndNavigation/otherSemanticElements/strong', {title: "Strong"});
+  res.render('semanticStructureAndNavigation/otherSemanticElements/strong', {title: "Strong", notes: getDataByKey('strong')});
 });
 
 

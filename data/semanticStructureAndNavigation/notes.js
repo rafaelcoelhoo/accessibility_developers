@@ -186,6 +186,16 @@ export const notes = {
         ],
         live_examples: [],
     },
+
+    strong: {
+        tips: [],
+        live_examples: [
+            {
+                url: 'https://www.tpgi.com/screen-readers-support-for-text-level-html-semantics/',
+                label: 'TPGI - Screen reader support for their semantic elements ',
+            }
+        ],
+    },
 }
 
 export function getDataByKey (key) {

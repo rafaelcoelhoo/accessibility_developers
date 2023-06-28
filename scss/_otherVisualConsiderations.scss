@@ -1,0 +1,62 @@
+
+@mixin scrolling-animation($name, $start, $end) {
+  @keyframes #{$name} {
+    0% {
+      transform: translateX(#{$start});
+    }
+    100% {
+      transform: translateX(#{$end});
+    }
+  }
+}
+
+.reduce-motion {
+  .scrolling-text-container {
+    overflow: hidden;
+  }
+
+  .scrolling-text {
+    white-space: nowrap;
+    color: #006CFF;
+    font-size: 3rem;
+    line-height: 5rem;
+    letter-spacing: 0;
+    font-weight: normal;
+  }
+
+  .scrolling-text-1 {
+    animation: scrolling 5s linear infinite;
+    @extend .scrolling-text;
+  }
+
+  .scrolling-text-2 {
+    animation: scrolling-2 10s linear infinite;
+    @extend .scrolling-text;
+  }
+
+  .scrolling-text-3 {
+    animation: scrolling-3 15s linear infinite;
+    @extend .scrolling-text;
+  }
+
+  @include scrolling-animation('scrolling', '100%', '-200%');
+  @include scrolling-animation('scrolling-2', '100%', '-200%');
+  @include scrolling-animation('scrolling-3', '100%', '-200%');
+
+  @media (prefers-reduced-motion: reduce) {
+    .scrolling-text{
+      animation: none;
+      font-size: 1.3rem;
+      line-height: 1.5;
+    }
+  }
+
+  .disable-animation {
+    animation: none !important;
+    transform: translateX(0) !important;
+    font-size: 1.3rem !important;
+    line-height: 1.5 !important;
+  }
+}
+
+
