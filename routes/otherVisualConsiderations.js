@@ -5,7 +5,7 @@ import {getDataByKey} from '../data/otherVisualConsiderations/notes.js';
 const router = express.Router();
 
 router.get('/reduce-motion', function (req, res) {
-  res.render('otherVisualConsiderations/reduceMotion', {title: "Reduce motion", notes: getDataByKey('')});
+  res.render('otherVisualConsiderations/reduceMotion', {title: "Reduce motion", notes: getDataByKey('reduceMotion')});
 });
 
 router.get('/dark-mode', function (req, res) {

@@ -73,6 +73,10 @@ export const notes = {
                 url: 'https://expresso.pt/',
                 label: 'Expresso - Complaint book (footer)'
             },
+            {
+                url: 'https://www.peppasauce.love/',
+                label: 'Peppa sauce - Footer image'
+            },
         ],
     },
     svgSource: {
