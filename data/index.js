@@ -541,10 +541,6 @@ export const index = {
                     link: "/visual-considerations/target-size",
                     label: "Target size"
                 },
-                {
-                    link: "/visual-considerations/text-spacing",
-                    label: "Text spacing"
-                },
             ]
         },
     ]

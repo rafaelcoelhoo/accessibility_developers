@@ -120,6 +120,10 @@ export const notes = {
         ],
         live_examples: [
             {
+                url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
+                label: 'CGD - Search without href',
+            },
+            {
                 url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                 label: 'Transparência - Page contents',
             },

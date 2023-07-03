@@ -134,6 +134,10 @@ export const notes = {
                 label: 'Purina - Terms and condition'
             },
             {
+                url: 'https://www.cgd.pt/Precario/Pages/Precario.aspx',
+                label: 'CGD - Other clients accordion'
+            },
+            {
                 url: 'https://blog.usablenet.com/page/2',
                 label: 'UsableNet - Menu'
             },

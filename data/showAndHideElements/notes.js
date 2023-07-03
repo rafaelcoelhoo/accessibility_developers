@@ -7,6 +7,10 @@ export const notes = {
                 label: 'Portugal Digital - Extra labels'
             },
             {
+                url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
+                label: 'CGD - Caixa direta'
+            },
+            {
                 url: 'https://www.wildcodeschool.com/pt-PT/cursos/web-developer-bootcamp-3-meses',
                 label: 'Wild Code School - Menu option off screen'
             },

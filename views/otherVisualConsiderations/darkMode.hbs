@@ -1,1 +1,25 @@
-Olá Mundo!
+<div class="dark-mode">
+    <h2>Accessibility</h2>
+    <form action="" method="post">
+        <fieldset>
+            <div>
+                <legend>Theme</legend>
+
+                <div>
+                    <input id="system" name="theme" value="system" type="radio" checked="checked">
+                    <label for="system" class="me-3">System</label>
+                    <input id="light" name="theme" value="light" type="radio">
+                    <label for="light" class="me-3">Light</label>
+                    <input id="dark" name="theme" value="dark" type="radio">
+                    <label for="dark" class="me-3">Dark</label>
+                </div>
+            </div>
+        </fieldset>
+    </form>
+
+    <picture>
+        <source srcset="./../../img/search.svg" media="(prefers-color-scheme: light)" />
+        <source srcset="./../../img/menu.svg" media="(prefers-color-scheme: dark)" />
+        <img src="./../../img/menu.svg" />
+    </picture>
+</div>
