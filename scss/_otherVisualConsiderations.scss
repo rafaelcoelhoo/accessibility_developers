@@ -1,4 +1,3 @@
-
 @mixin scrolling-animation($name, $start, $end) {
   @keyframes #{$name} {
     0% {
@@ -44,7 +43,7 @@
   @include scrolling-animation('scrolling-3', '100%', '-200%');
 
   @media (prefers-reduced-motion: reduce) {
-    .scrolling-text{
+    .scrolling-text {
       animation: none;
       font-size: 1.3rem;
       line-height: 1.5;
@@ -60,16 +59,16 @@
 }
 
 
-  @media (prefers-color-scheme: dark) {
- //Ver aqui este ponto que pode ser interessante
-    img:not([src$=".svg"]) {
-      filter: brightness(70%);
-    }
-    :root {
-      --backgroundColor: black;
-      --color: white;
-    }
+@media (prefers-color-scheme: dark) {
+  //Ver aqui este ponto que pode ser interessante
+  img:not([src$=".svg"]) {
+    filter: brightness(70%);
   }
+  :root {
+    --backgroundColor: black;
+    --color: white;
+  }
+}
 
 .zoom {
   .fixed-card {
@@ -77,14 +76,67 @@
     height: 150px;
     border: #0C1932 2px solid;
     width: 500px;
+
     .font-16 {
       font-size: 16px;
     }
   }
+
   .card-zoom {
     border: #0C1932 2px solid;
     padding: 10px;
     width: 500px;
+
+  }
+}
+
+.target-size {
+  .pagination {
+    display: flex;
+    list-style: none;
+
+    &.version-1 {
+      li {
+        margin: 2px;
+      }
+      a {
+        line-height: 1.5;
+        color: #000;
+        display: block;
+        text-decoration: none;
+        padding: 0.6875rem 1.125rem;
+      }
+
+      [aria-current="page"] {
+        background-color: #0C1932;
+        border-radius: 50%;
+        color: white;
+        text-decoration: underline;
+
+      }
+    }
+    &.version-2 {
+      li {
+        margin: 2px;
+      }
+      a {
+        line-height: 1.5;
+        color: #000;
+        display: block;
+        text-decoration: none;
+        margin: 0.6875rem 1.125rem;
+      }
+
+      .active {
+        background-color: #0C1932;
+        border-radius: 50%;
+      }
+      [aria-current="page"] {
+        color: white;
+        text-decoration: underline;
+
+      }
+    }
 
   }
 }

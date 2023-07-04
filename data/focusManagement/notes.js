@@ -70,6 +70,10 @@ export const notes = {
                 label: 'Vodafone - links not focusable'
             },
             {
+                url: 'https://www.tesla.com/pt_PT/inventory/new/m3?TRIM=PAWD&PAINT=BLACK&arrangeby=plh&zip=4000-000&range=50',
+                label: 'Tesla - Exterior color'
+            },
+            {
                 url: 'https://www.chvng.pt/#main',
                 label: 'Gaia Hospital - links not focusable'
             },

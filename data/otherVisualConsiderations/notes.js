@@ -88,26 +88,32 @@ export const notes = {
     },
     targetSize: {
         tips: [
-            'Browser zooming',
-            'Font scaling',
-            'Use Stylus to change the line-height of class <code>fixed-card</code>'
+            'Use 44x44 cursor plugin'
         ],
         live_examples: [
             {
-                url: 'https://transparencia.gov.pt/pt/',
-                label: 'Mais transparência - Just some content is scaling',
+                url: 'https://codepen.io/aardrian/pen/eYZWNyv',
+                label: '44 x 44 Cursor',
             },
             {
-                url: 'https://www.cgd.pt/Particulares/Contas/Abertura-conta/Pages/Abertura-conta.aspx',
-                label: 'CGD - Not scale at all',
+                url: 'https://www.linkedin.com/feed/',
+                label: 'Linkedin - Profile button on small screen',
             },
             {
-                url: 'https://www.novobanco.pt/particulares',
-                label: 'Novo Banco - Just some content is scaling and using fixed box height (Need help?)',
+                url: 'https://www.w3.org/',
+                label: 'W3 - Social media icon - Footer',
             },
             {
-                url: 'https://web.dev/',
-                label: 'Webdev - Scaling properly',
+                url: 'https://www.w3.org/',
+                label: 'W3 - Menu option - Search',
+            },
+            {
+                url: 'https://www.santander.pt/cartao-debito',
+                label: 'Santander - Footer - Social media',
+            },
+            {
+                url: 'https://www.purina.co.uk/cat/cat-food/felix',
+                label: 'Purina - Close modal',
             },
         ],
     },
