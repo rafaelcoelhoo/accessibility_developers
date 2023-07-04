@@ -543,5 +543,14 @@ export const index = {
                 },
             ]
         },
+        {
+            title: "Tests",
+            options: [
+                {
+                    link: "/tests/duplicated-id",
+                    label: "Duplicated ids"
+                },
+            ]
+        }
     ]
 };
