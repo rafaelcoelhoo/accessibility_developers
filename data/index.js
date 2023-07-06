@@ -550,6 +550,10 @@ export const index = {
                     link: "/tests/duplicated-id",
                     label: "Duplicated ids"
                 },
+                {
+                    link: "/tests/accesslint",
+                    label: "AccessLint"
+                },
             ]
         }
     ]
