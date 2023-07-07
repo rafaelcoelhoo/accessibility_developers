@@ -523,7 +523,7 @@ export const index = {
                     id: "zoom",
                     options: [
                         {
-                            label: "SVG",
+                            label: "Zoom",
                             topics: [
                                 {
                                     link: "/visual-considerations/zoom/mobile",

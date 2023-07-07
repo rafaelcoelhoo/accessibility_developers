@@ -46,6 +46,10 @@ export const notes = {
                 label: 'Tesla - Menu - Idiom'
             },
             {
+                url: 'https://portocanal.sapo.pt/',
+                label: 'Porto channel - Hamburger menu'
+            },
+            {
                 url: 'https://www.google.com/search?q=tempo&rlz=1C5GCEM_enPT1024PT1024&sxsrf=APwXEde4jSrrfwu54NdT4Gdkntly_2qfNA%3A1687523130897&ei=Oo-VZOSdNraA9u8P59242A4&ved=0ahUKEwjkopHGsdn_AhU2gP0HHecuDusQ4dUDCBA&uact=5&oq=tempo&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzoHCCMQsAMQJzoKCAAQRxDWBBCwAzoKCC4QigUQsAMQQzoPCC4QigUQyAMQsAMQQxgBOhIILhCKBRDUAhDIAxCwAxBDGAE6FQguEIoFEMcBENEDEMgDELADEEMYAUoECEEYAFCJBViJBWDIB2gBcAJ4AIABAIgBAJIBAJgBAKABAcABAcgBCNoBBggBEAEYCA&sclient=gws-wiz-serp',
                 label: 'Google - Dropdown filters'
             },
@@ -225,7 +229,7 @@ export const notes = {
             },
             {
                 url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2020/barometro/',
-                label: 'Transparência - Modal'
+                label: 'Transparência - Ficha técnica'
             },
             {
                 url: 'https://www.ikea.com/pt/pt/',
@@ -237,7 +241,7 @@ export const notes = {
             },
             {
                 url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
-                label: 'Mosaico - Search (screen small than 1200px)'
+                label: 'Mosaico - Search (screen small than 1200px) (Add class visually-hidden)'
             },
             {
                 url: 'https://www.zara.com/pt/',

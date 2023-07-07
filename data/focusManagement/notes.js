@@ -157,6 +157,10 @@ export const notes = {
                 url: 'https://pt-jobs.about.ikea.com/busca-de-vagas?acm=ALL&alrpm=2264397&ascf=[%7B%22key%22:%22ALL%22,%22value%22:%22%22%7D]',
                 label: 'Ikea - Cookies'
             },
+            {
+                url: 'https://www.worten.pt/cliente/conta#/myLogin',
+                label: 'Worten - Modal error password'
+            },
         ],
     },
     keyboardTrap: {
