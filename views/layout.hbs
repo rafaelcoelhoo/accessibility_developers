@@ -41,19 +41,21 @@
                     </div>
                 </div>
             {{/if}}
-            {{#if notes.live_examples.length }}
+
+            {{#if notes.examples.length }}
+                {{#each notes.examples}}
                 <h2 class="heading">
                     <button type="button" aria-expanded="false" class="accordion-trigger btn-transparent"
-                            aria-controls="sect2"
-                            id="accordion2id">
-                          <span class="accordion-title">Live examples</span>
+                            aria-controls="section_{{@index}}"
+                            id="accordion_{{@index}}">
+                        <span class="accordion-title">{{{sectionName}}}</span>
                         <span class="accordion-icon"></span>
                     </button>
                 </h2>
-                <div id="sect2" role="region" aria-labelledby="accordion2id" class="accordion-panel" hidden>
+                <div id="section_{{@index}}" role="region" aria-labelledby="accordion_{{@index}}" class="accordion-panel" hidden>
                     <div>
                         <ul class="list-group list-group-flush">
-                            {{#each notes.live_examples}}
+                            {{#each listOfUrls}}
                                 <li class="list-group-item">
                                     <a href="{{{url}}}" target="_blank" aria-describedby="open_new_window">
                                         {{{label}}}
@@ -65,12 +67,20 @@
                                             <line x1="10" y1="14" x2="21" y2="3"></line>
                                         </svg>
                                     </a>
+                                {{#if extraInformation }}
+                                    <p class="m-0 ps-4 extra-information-links">- {{{extraInformation}}}</p>
+                                {{/if}}
                                 </li>
                             {{/each}}
                         </ul>
                     </div>
                 </div>
+                {{/each}}
             {{/if}}
+
+
+
+
         </div>
     </section>
 

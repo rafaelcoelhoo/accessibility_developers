@@ -19,35 +19,40 @@ export const notes = {
             'Read word by letters - <code>VO + Shift + Down Arrow</code> then <code>VO + Shift + Right Arrow</code>',
             'Stop reading - <code>Control</code>',
         ],
-        live_examples: [
+        examples: [
             {
-                url: 'http://localhost:3001/accessibility-tree/good',
-                label: 'Accessibility tree',
-                isInternal: true
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://www.youtube.com/watch?v=kJKQmTumFP0&t=58s',
+                        label: 'Dragon Naturally Speaking'
+                    },
+                    {
+                        url: 'https://www.youtube.com/watch?v=A8H7iFCy5UI',
+                        label: 'ZoomText'
+                    },
+                    {
+                        url: 'https://www.youtube.com/watch?v=Gug23VRlsGg',
+                        label: 'Refreshable Braille Display'
+                    },
+                    {
+                        url: 'https://www.youtube.com/watch?v=ev8ERS5Z3NU',
+                        label: 'Mobile Screen reader example'
+                    },
+                ],
             },
             {
-                url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
-                label: 'Transparência Gov'
-            },
-            {
-                url: 'https://www.acessibilidade.gov.pt/',
-                label: 'Acessibilidade Gov'
-            },
-            {
-                url: 'https://www.youtube.com/watch?v=kJKQmTumFP0&t=58s',
-                label: 'Dragon Naturally Speaking'
-            },
-            {
-                url: 'https://www.youtube.com/watch?v=A8H7iFCy5UI',
-                label: 'ZoomText'
-            },
-            {
-                url: 'https://www.youtube.com/watch?v=Gug23VRlsGg',
-                label: 'Refreshable Braille Display'
-            },
-            {
-                url: 'https://www.youtube.com/watch?v=ev8ERS5Z3NU',
-                label: 'Mobile Screen reader example'
+                sectionName: 'Live examples',
+                listOfUrls: [
+                    {
+                        url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
+                        label: 'Transparência Gov'
+                    },
+                    {
+                        url: 'https://www.acessibilidade.gov.pt/',
+                        label: 'Acessibilidade Gov'
+                    },
+                ],
             },
         ],
     },
