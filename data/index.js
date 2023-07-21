@@ -555,6 +555,15 @@ export const index = {
                     label: "AccessLint"
                 },
             ]
+        },
+        {
+            title: "Website",
+            options: [
+                {
+                    link: "/audit/websites",
+                    label: "Audit"
+                },
+            ]
         }
     ]
 };

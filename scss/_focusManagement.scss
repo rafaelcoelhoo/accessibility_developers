@@ -25,6 +25,10 @@
       //outline: 0;
     }
 
+/*    :focus {
+      outline: -webkit-focus-ring-color auto 5px;
+    }*/
+
     .btn-yellow {
 
       &:hover,
@@ -131,6 +135,7 @@
       box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
       list-style: none;
       padding: 20px !important;
+      z-index: 3;
       &.open {
         top: 50px;
       }

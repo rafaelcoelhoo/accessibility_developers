@@ -66,6 +66,10 @@ export const notes = {
         ],
         live_examples: [
             {
+                url: 'https://www.b-simple.pt/en/',
+                label: 'B-Simple'
+            },
+            {
                 url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                 label: 'Transparência'
             },

@@ -94,6 +94,10 @@ input {
 .accordion .extra-information-links {
   font-size: 0.9rem;
 }
+.accordion .accordion-title {
+  margin-right: 3rem;
+  padding-right: 2rem;
+}
 
 .accordion-icon {
   border: solid currentcolor;
@@ -349,6 +353,11 @@ h4 {
   box-shadow: 0 0 8px #BBB;
   border-bottom: 1px solid #AAA;
 }
+.focus-management.focus-outline {
+  /*    :focus {
+        outline: -webkit-focus-ring-color auto 5px;
+      }*/
+}
 .focus-management.focus-outline :focus-visible {
   outline: -webkit-focus-ring-color auto 5px;
 }
@@ -440,6 +449,7 @@ h4 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   list-style: none;
   padding: 20px !important;
+  z-index: 3;
 }
 .focus-management .bad-dropdown .dropdown-content.open {
   top: 50px;

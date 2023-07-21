@@ -15,6 +15,7 @@ import {ImagesRouter} from "./routes/images.js";
 import {SVGRouter} from "./routes/SVG.js";
 import {otherVisualConsiderationsRouter} from "./routes/otherVisualConsiderations.js";
 import {testsRouter} from "./routes/tests.js";
+import {auditRouter} from "./routes/audit.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
@@ -41,6 +42,7 @@ app.use('/images', ImagesRouter);
 app.use('/SVG', SVGRouter);
 app.use('/visual-considerations', otherVisualConsiderationsRouter);
 app.use('/tests', testsRouter);
+app.use('/audit', auditRouter);
 
 app.use('/', indexRouter);
 
