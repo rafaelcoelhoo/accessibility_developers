@@ -3,6 +3,36 @@ export const notes = {
         tips: [],
         examples: [
             {
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://portugaldigital.gov.pt/',
+                        label: 'Portugal Digital',
+                        extraInformation: 'Menu with extra labels on search option, using <code>sr-only</code> unnecessary'
+                    },
+                    {
+                        url: 'https://my.vodafone.pt/main.html',
+                        label: 'Portugal Digital',
+                        extraInformation: 'Menu with duplicated labels on search option, using <code>visually-hidden</code> unnecessary'
+                    },
+                    {
+                        url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
+                        label: 'CGD',
+                        extraInformation: 'Caixadirecta menu option is using height to control the submenu,(<code>direct-wrapper</code>)'
+                    },
+                    {
+                        url: 'https://academia.ama.gov.pt/',
+                        label: 'Academia AMA - Sidebar',
+                        extraInformation: 'Hamburger menu - Content at the end of the page hidden with off screen'
+                    },
+                    {
+                        url: 'https://www.13.cl/',
+                        label: '13 channel',
+                        extraInformation: 'RADIOS menu options is visible for keyboard users '
+                    },
+                ],
+            },
+            {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
@@ -37,36 +67,6 @@ export const notes = {
                     },
                 ],
             },
-            {
-                sectionName: 'Examples for Accessibility Enhancement',
-                listOfUrls: [
-                    {
-                        url: 'https://portugaldigital.gov.pt/',
-                        label: 'Portugal Digital',
-                        extraInformation: 'Menu with extra labels on search option, using <code>sr-only</code> unnecessary'
-                    },
-                    {
-                        url: 'https://my.vodafone.pt/main.html',
-                        label: 'Portugal Digital',
-                        extraInformation: 'Menu with duplicated labels on search option, using <code>visually-hidden</code> unnecessary'
-                    },
-                    {
-                        url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
-                        label: 'CGD',
-                        extraInformation: 'Caixadirecta menu option is using height to control the submenu,(<code>direct-wrapper</code>)'
-                    },
-                    {
-                        url: 'https://academia.ama.gov.pt/',
-                        label: 'Academia AMA - Sidebar',
-                        extraInformation: 'Hamburger menu - Content at the end of the page hidden with off screen'
-                    },
-                    {
-                        url: 'https://www.13.cl/',
-                        label: '13 channel',
-                        extraInformation: 'RADIOS menu options is visible for keyboard users '
-                    },
-                ],
-            }
         ],
     }
 }

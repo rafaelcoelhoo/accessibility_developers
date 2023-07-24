@@ -198,12 +198,12 @@ export const notes = {
                     {
                         url: 'https://www.justdial.com/Mumbai/ods?city=Mumbai&area=&cid=jd_topbanner&jdtracker=jd_internal_desk-banner',
                         label: 'Just Dial',
-                        extraInformation: 'Open in incognito mode - Location modal (close button and focus managements)'
+                        extraInformation: 'Open in incognito mode - Location modal (close button and focus management)'
                     },
                     {
                         url: 'https://blog.outletbaby.com.br/',
                         label: 'Outlet baby',
-                        extraInformation: 'Open in incognito mode, we need to tab till the end of the page to jump in the modal'
+                        extraInformation: 'Open in incognito mode, we need to tab till the end of the page to jump in to the modal'
                     },
                 ],
             },
@@ -233,7 +233,7 @@ export const notes = {
         tips: [],
         examples: [
             {
-                sectionName: 'Additional Resources',
+                sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
                         url: 'https://www.justdial.com/Mumbai/ods?city=Mumbai&area=&cid=jd_topbanner&jdtracker=jd_internal_desk-banner',

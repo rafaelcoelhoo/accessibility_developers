@@ -11,63 +11,104 @@ export const notes = {
             'Add accessible name to the <code>role="tablist"</code>',
             'Add <code>aria-hidden="true"</code> to each hidden tab'
         ],
-        live_examples: [
+        examples: [
             {
-                url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2020/barometro/',
-                label: 'Transparencia'
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.worten.pt/cliente/conta#/create_account',
+                        label: 'Worten',
+                        extraInformation: 'Create account and login, screen smaller than 960px'
+                    },
+                    {
+                        url: 'https://www.purina.co.uk/dog/dog-food',
+                        label: 'Purina',
+                        extraInformation: 'Open Lightbox'
+                    },
+                    {
+                        url: 'https://www.jn.pt/654547582/comentario-jn-a-nova-fase-da-operacao-vortex/',
+                        label: 'JN - Últimas GMG on footer',
+                        extraInformation: 'Open Lightbox'
+                    },
+                ],
             },
             {
-                url: 'https://www.purina.co.uk/dog/dog-food',
-                label: 'Purina'
-            },
-            {
-                url: 'https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html',
-                label: 'W3'
-            },
-            {
-                url: 'https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd',
-                label: 'Google and axe devTools'
-            },
-            {
-                url: 'https://www.ablebits.com/office-addins-blog/make-bar-graph-excel/',
-                label: 'Ablebits - Cookies modal (incognito mode)'
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://www.w3.org/WAI/ARIA/apg/patterns/landmarks/examples/general-principles.html',
+                        label: 'W3 - Navigation'
+                    },
+                    {
+                        url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2020/barometro/',
+                        label: 'Transparencia Gov'
+                    },
+                    {
+                        url: 'https://chrome.google.com/webstore/detail/axe-devtools-web-accessib/lhdoppojpmngadmnindnejefpokejbdd',
+                        label: 'axe DevTools on chrome web store'
+                    },
+                    {
+                        url: 'https://www.ablebits.com/',
+                        label: 'Ablebits',
+                        extraInformation: 'Open in incognito mode - Cookies modal'
+                    },
+                ],
             },
         ],
     },
     buttons: {
-        tips: ["Keyboard events", "Cursor pointer"],
-        live_examples: [
+        tips: [
+            'Add <code>tabindex: 0</code>',
+            'Add <code>role: button</code>',
+            "Keyboard events",
+            "Cursor pointer"
+        ],
+        examples: [
             {
-                url: 'https://www.w3.org/TR/css-ui-4/#propdef-cursor',
-                label: 'W3 - Cursor documentation'
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://www.w3.org/TR/css-ui-4/#propdef-cursor',
+                        label: 'W3 - Cursor documentation'
+                    },
+                ],
             },
             {
-                url: 'https://www.tesla.com/pt_PT/inventory/new/m3?TRIM=PAWD&PAINT=BLACK&arrangeby=plh&zip=4000-000&range=50',
-                label: 'Tesla - Menu - Idiom'
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.tesla.com/pt_pt',
+                        label: 'Tesla',
+                        extraInformation: 'Menu option - Idiom'
+                    },
+                    {
+                        url: 'https://portocanal.sapo.pt/',
+                        label: 'Porto channel',
+                        extraInformation: 'Hamburger menu using div'
+                    },
+                    {
+                        url: 'https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
+                        label: 'OLX',
+                        extraInformation: 'Filter typology using just <code>role:"button"</code>'
+                    },
+                ],
             },
             {
-                url: 'https://portocanal.sapo.pt/',
-                label: 'Porto channel - Hamburger menu'
-            },
-            {
-                url: 'https://www.google.com/search?q=tempo&rlz=1C5GCEM_enPT1024PT1024&sxsrf=APwXEde4jSrrfwu54NdT4Gdkntly_2qfNA%3A1687523130897&ei=Oo-VZOSdNraA9u8P59242A4&ved=0ahUKEwjkopHGsdn_AhU2gP0HHecuDusQ4dUDCBA&uact=5&oq=tempo&gs_lcp=Cgxnd3Mtd2l6LXNlcnAQAzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzIECAAQRzoHCCMQsAMQJzoKCAAQRxDWBBCwAzoKCC4QigUQsAMQQzoPCC4QigUQyAMQsAMQQxgBOhIILhCKBRDUAhDIAxCwAxBDGAE6FQguEIoFEMcBENEDEMgDELADEEMYAUoECEEYAFCJBViJBWDIB2gBcAJ4AIABAIgBAJIBAJgBAKABAcABAcgBCNoBBggBEAEYCA&sclient=gws-wiz-serp',
-                label: 'Google - Dropdown filters'
-            },
-            {
-                url: 'https://feathericons.com/',
-                label: 'Feather Icons - Download icons'
-            },
-            {
-                url: 'https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
-                label: 'OLX - Filter typology'
-            },
-            {
-                url: 'https://www.continente.pt/mercearia/cafe-cha-e-chocolate-soluvel/?start=0&srule=FOOD_Mercearia&pmin=0.01',
-                label: 'Continente - Add item button'
-            },
-            {
-                url: 'https://makeitfable.com/',
-                label: 'Fable - Menu options'
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://www.google.com/search?q=tempo+porto&rlz=1C5GCEM_enPT1024PT1024&sxsrf=AB5stBjyDtddD1W7zAzuz0wd0-aghH4N8g%3A1690060926866&ei=fki8ZOikNJO7kdUPtcGWgAs&oq=tempo+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnRlbXBvICoCCAEyChAjGIoFGCcYnQIyBBAjGCcyBxAjGIoFGCcyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIoFGLEDGIMBGMkDMggQABiABBiSAzIIEAAYigUYkgMyCxAAGIAEGLEDGIMBSKUNUIcBWIcBcAF4AZABAJgBggKgAYICqgEDMi0xuAEByAEA-AEBwgIHECMYsAMYJ8ICChAAGEcY1gQYsAPCAhAQLhiKBRjIAxiwAxhD2AEB4gMEGAAgQYgGAZAGC7oGBAgBGAg&sclient=gws-wiz-serp',
+                        label: 'Google - Dropdown filters'
+                    },
+                    {
+                        url: 'https://feathericons.com/',
+                        label: 'Feather Icons - Download icons'
+                    },
+                    {
+                        url: 'https://makeitfable.com/',
+                        label: 'Fable - Menu options'
+                    },
+                ],
             },
         ],
     },
@@ -76,35 +117,62 @@ export const notes = {
             'Add <code>tabindex: 0</code>',
             'Add <code>role: link</code>',
         ],
-        live_examples: [
+        examples: [
             {
-                url: 'https://mosaico.gov.pt/homepage',
-                label: 'Mosaico - Search modal - Close button'
-            },
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://mosaico.gov.pt/homepage',
+                        label: 'Mosaico',
+                        extraInformation: 'Search modal - Close button'
+                    },
+                ],
+            }
         ],
     },
     switch: {
         tips: [
             'Add <code>role: switch</code>, <code>tabindex: 0</code>, <code>aria-labelledby</code>, <code>aria-checked: true/false</code>',
         ],
-        live_examples: [
+        examples: [
             {
-                url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camara-de-seguranca-xiaomi-smart-camera-c300-2k-pan-tilt-security-wi-fi-bhr6540gl-6934177796296',
-                label: 'PcDiga - Switch'
-            },
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.pcdiga.com/',
+                        label: 'PcDiga - Switch'
+                    },
+                    {
+                        url: 'https://www.google.com/',
+                        label: 'Google',
+                        extraInformation: 'Open new incognito tab to see the switch'
+                    },
+                ],
+            }
         ],
     },
     checkboxes: {
-        tips: ["Keyup versus Keydown"],
-        live_examples: [
+        tips: [
+            "Add <code>role='checkbox'</code>",
+            "Add <code>tabindex='0'</code>",
+            "Keyup versus Keydown"
+        ],
+        examples: [
             {
-                url: 'https://www.nestlehealthscience.ph/products/buynow ',
-                label: 'Nestle'
-            },
-            {
-                url: 'https://interfaceingame.com/games/?themes=medieval',
-                label: 'Interface in game - Checkbox from CSS'
-            },
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.nestlehealthscience.ph/products/buynow ',
+                        label: 'Nestle',
+                        extraInformation: 'Open second product'
+                    },
+                    {
+                        url: 'https://interfaceingame.com/games/?themes=medieval',
+                        label: 'Interface in game',
+                        extraInformation: 'Checkbox from CSS'
+                    },
+                ],
+            }
         ],
     },
     modal: {
@@ -115,77 +183,120 @@ export const notes = {
             'Add <code>tabindex: -1</code> to the container',
             'Focus management',
         ],
-        live_examples: [
+        examples: [
             {
-                url: 'https://www.record.pt/',
-                label: 'Record - Login'
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.record.pt/',
+                        label: 'Record',
+                        extraInformation: 'Login - it is just a div'
+                    },
+                    {
+                        url: 'https://campus.altice.pt/',
+                        label: 'Campus UA',
+                        extraInformation: 'Login - it is just a div'
+                    },
+                ],
             },
             {
-                url: 'https://usablenet.com/support',
-                label: 'Usablenet - Accessibility status'
-            },
-            {
-                url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
-                label: 'Ikea - Product details'
-            },
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://usablenet.com/support',
+                        label: 'Usablenet - Accessibility status'
+                    },
+                    {
+                        url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
+                        label: 'Ikea - Product details'
+                    },
+                ],
+            }
         ],
     },
     aria_expanded: {
         tips: ["Add <code>aria-expanded</code> attribute"],
-        live_examples: [
+        examples: [
             {
-                url: 'https://www.sns.gov.pt/home/perguntas-e-respostas/',
-                label: 'SNS - Menu and Questions and Answers'
-            },
-            {
-                url: 'https://www.purina.co.uk/dog/dog-food/dry',
-                label: 'Purina - Terms and condition'
-            },
-            {
-                url: 'https://www.cgd.pt/Precario/Pages/Precario.aspx',
-                label: 'CGD - Other clients accordion'
-            },
-            {
-                url: 'https://blog.usablenet.com/page/2',
-                label: 'UsableNet - Menu'
-            },
-            {
-                url: 'https://www.apple.com/apple-arcade/',
-                label: 'Apple'
-            },
-            {
-                url: 'https://www.zara.com/pt/',
-                label: 'Zara - Hamburger menu - Missing aria-expanded and label'
-            },
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.sns.gov.pt/home/perguntas-e-respostas/',
+                        label: 'SNS',
+                        extraInformation: 'Menu options and Questions and Answers section'
+                    },
+                    {
+                        url: 'https://www.cgd.pt/Precario/Pages/Precario.aspx',
+                        label: 'CGD',
+                        extraInformation: 'Other clients accordion'
+                    },
 
+                ],
+            },
+            {
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://blog.usablenet.com/page/2',
+                        label: 'UsableNet - Menu'
+                    },
+                    {
+                        url: 'https://www.novobanco.pt/ajuda-contactos',
+                        label: 'Novo Banco - Questions'
+                    },
+                    {
+                        url: 'https://www.apple.com/apple-arcade/',
+                        label: 'Apple - Questions'
+                    },
+                ],
+            },
         ],
     },
     aria_live_examples: {
         tips: [],
-        live_examples: [
+        examples: [
             {
-                url: 'https://www.continente.pt/mercearia/cafe-cha-e-chocolate-soluvel/?start=0&srule=FOOD_Mercearia&pmin=0.01',
-                label: 'Continente - Add item'
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.continente.pt/mercearia/cafe-cha-e-chocolate-soluvel/?start=0&srule=FOOD_Mercearia&pmin=0.01',
+                        label: 'Continente - Add item'
+                    },
+                    {
+                        url: 'https://pt.tommy.com/tommy-hilfiger-x-vacation-flag-embroidery-t-shirt-mw0mw33438ybl',
+                        label: 'Tommy Hilfiger',
+                        extraInformation: 'Add item with and without selected size'
+                    },
+                ],
             },
             {
-                url: 'https://pt.tommy.com/tommy-hilfiger-x-vacation-flag-embroidery-t-shirt-mw0mw33438ybl',
-                label: 'Tommy Hilfiger - Add item with and without size'
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camara-de-seguranca-xiaomi-smart-camera-c300-2k-pan-tilt-security-wi-fi-bhr6540gl-6934177796296',
+                        label: 'PCDIGA',
+                        extraInformation: 'Add item working with aria live, but poor modal focus management'
+                    },
+                    {
+                        url: 'https://www.gov.uk/search/all?keywords=Taxes&level_one_taxon=d6c2de5d-ef90-45d1-82d4-5f2438369eea&order=relevance',
+                        label: 'Gov UK - Search',
+                        extraInformation: 'Change filter topic'
+                    },
+                    {
+                        url: 'https://findajob.dwp.gov.uk/sign-in?after_login=search%3Floc%3D86383',
+                        label: 'Gov UK - Login',
+                        extraInformation: 'Login - Incorrect data'
+                    },
+                ],
             },
             {
-                url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camara-de-seguranca-xiaomi-smart-camera-c300-2k-pan-tilt-security-wi-fi-bhr6540gl-6934177796296',
-                label: 'PCDIGA - Add item'
-            },
-            {
-                url: 'https://www.gov.uk/search/all?keywords=Taxes&level_one_taxon=d6c2de5d-ef90-45d1-82d4-5f2438369eea&order=relevance',
-                label: 'Gov UK - Search'
-            },
-            {
-                url: 'https://findajob.dwp.gov.uk/sign-in?after_login=search%3Floc%3D86383',
-                label: 'Gov UK - Login'
-            },
-            {
-                url: 'https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html',
-                label: 'Aria - Bookmark'
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html',
+                        label: 'Aria usage - Bookmark'
+                    },
+                ],
             },
         ],
     },
@@ -198,55 +309,86 @@ export const notes = {
     },
     accessibleNames: {
         tips: [],
+        examples: [
+            {
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://saboreiaavida.nestle.pt/produtos/kitkat-snack-de-chocolate',
+                        label: 'Nestle',
+                        extraInformation: 'Login button and Social media links'
+                    },
+                    {
+                        url: 'https://www.tesla.com/pt_PT/inventory/new/m3?TRIM=PAWD&PAINT=BLACK&arrangeby=plh&zip=4000-000&range=50',
+                        label: 'Tesla',
+                        extraInformation: 'Type of view buttons using empty <code>aria-label</code>'
+                    },
+                    {
+                        url: 'https://feed.continente.pt/decoracao-e-jardim/como-decorar-o-escritorio-em-casa',
+                        label: 'Continente',
+                        extraInformation: 'Menu button with no accessible name'
+                    },
+                    {
+                        url: 'https://www.worten.pt/cliente/conta#/myLogin',
+                        label: 'Worten',
+                        extraInformation: 'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback'
+                    },
+                    {
+                        url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
+                        label: 'Mosaico',
+                        extraInformation: 'Search (screen small than 1200px) (Add class visually-hidden)'
+                    },
+                    {
+                        url: 'https://www.zara.com/pt/',
+                        label: 'Zara',
+                        extraInformation: 'Link homepage (label image versus link title)'
+                    },
+                    {
+                        url: 'https://www.purina.co.uk/dog/dog-food/dry',
+                        label: 'Purina - Lightbox',
+                        extraInformation: 'Open lightbox and open the rotor to see the list of link (Buy Now)'
+                    },
+                    {
+                        url: 'https://www.purina.co.uk/dog/dog-food/dry',
+                        label: 'Purina - Pagination',
+                        extraInformation: 'PLP pagination has title and visually hidden text, but the text is similar'
+                    },
+                ],
+            },
+            {
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://www.apple.com/apple-events/',
+                        label: 'Apple',
+                        extraInformation: 'Explore the preview and learn more links'
+                    },
+                    {
+                        url: 'https://www.ikea.com/pt/pt/p/godmorgon-armario-p-lavatorio-c-2-gavetas-brilh-branco-30180995/',
+                        label: 'IKEA',
+                        extraInformation: 'Price using aria-hidden and visually hidden'
+                    },
+                    {
+                        url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2020/barometro/',
+                        label: 'Transparência',
+                        extraInformation: 'Technical file - Attention to voice control'
+                    },
+                ],
+            },
+        ],
         live_examples: [
-            {
-                url: 'https://www.apple.com/apple-events/',
-                label: 'Apple - Explore the preview'
-            },
-            {
-                url: 'https://www.ikea.com/pt/pt/p/godmorgon-armario-p-lavatorio-c-2-gavetas-brilh-branco-30180995/',
-                label: 'IKEA - Price'
-            },
+
             {
                 url: 'https://feathericons.com/',
                 label: 'Feather Icons - Download icons'
             },
             {
-                url: 'https://saboreiaavida.nestle.pt/produtos/kitkat-snack-de-chocolate',
-                label: 'Nestle - Login and Social media links'
-            },
-            {
-                url: 'https://www.tesla.com/pt_PT/inventory/new/m3?TRIM=PAWD&PAINT=BLACK&arrangeby=plh&zip=4000-000&range=50',
-                label: 'Tesla - Type of view buttons'
-            },
-            {
-                url: 'https://feed.continente.pt/decoracao-e-jardim/como-decorar-o-escritorio-em-casa',
-                label: 'Continente - Menu'
-            },
-            {
-                url: 'https://my.vodafone.pt/main.html',
-                label: 'Vodafone - Menu'
-            },
-            {
-                url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2020/barometro/',
-                label: 'Transparência - Ficha técnica'
-            },
-            {
                 url: 'https://www.ikea.com/pt/pt/',
                 label: 'IKEA - Create Account'
             },
-            {
-                url: 'https://www.worten.pt/cliente/conta#/myLogin',
-                label: 'Worten - Login (Zoom required feedback)'
-            },
-            {
-                url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
-                label: 'Mosaico - Search (screen small than 1200px) (Add class visually-hidden)'
-            },
-            {
-                url: 'https://www.zara.com/pt/',
-                label: 'Zara - Link homepage (label versus title)'
-            }
+
+
+
         ],
     },
 }

@@ -112,6 +112,10 @@ export const notes = {
                 url: '/https://my.vodafone.pt/main.html',
                 label: 'Vodafone - Social media logos'
             },
+            {
+                url: 'https://www.zara.com/pt/',
+                label: 'Zara - Logo'
+            },
         ],
     },
 }

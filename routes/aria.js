@@ -56,7 +56,7 @@ router.get('/modal/solution', function (req, res) {
 router.get('/modal/initial', function (req, res) {
   const modalCode = fs.readFileSync('./views/partials/aria-modals.hbs', 'utf8');
 
-  res.render('aria/modal/initial', {title: "Modal - Aria", modal: modalCode});
+  res.render('aria/modal/initial', {title: "Modal - Aria", modal: modalCode, notes: getDataByKey('modal')});
 });
 
 router.get('/accessible-names/initial', function (req, res) {

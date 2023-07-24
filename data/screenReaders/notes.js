@@ -42,7 +42,7 @@ export const notes = {
                 ],
             },
             {
-                sectionName: 'Live examples',
+                sectionName: 'Additional Resources',
                 listOfUrls: [
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
