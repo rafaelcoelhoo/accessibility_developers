@@ -22,6 +22,11 @@ export const notes = {
                 url: 'https://www.continente.pt/produto/batata-frita-lisa-original-lays-7379467.html',
                 label: 'Continente - Aria and alt doing the same',
             },
+            {
+                url: 'https://mosaico.gov.pt/perfis/ux-ui-designer',
+                label: 'Mosaico - Section stages, principles using empty alt and <code>aria-hidden="true"</code>',
+
+            },
         ],
     },
     informativeImages: {

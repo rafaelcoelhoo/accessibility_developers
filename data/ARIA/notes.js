@@ -147,7 +147,21 @@ export const notes = {
                         label: 'Google',
                         extraInformation: 'Open new incognito tab to see the switch'
                     },
+                    {
+                        url: 'https://mosaico.gov.pt/pesquisar?query=acc',
+                        label: 'Mosaico',
+                        extraInformation: 'Switch with no accessible name'
+                    },
                 ],
+            },
+            {
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/pesquisar/beneficiario/',
+                        label: 'Mais Transparência'
+                    },
+                ]
             }
         ],
     },
@@ -394,7 +408,5 @@ export const notes = {
 }
 
 export function getDataByKey(key) {
-    const data = {...notes[key]};
-    //if (data.tips?.length) data.push({tips})
     return {...notes[key]};
 }

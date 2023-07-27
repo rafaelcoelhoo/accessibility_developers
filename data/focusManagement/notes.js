@@ -29,6 +29,12 @@ export const notes = {
                         url: 'https://getbootstrap.com/docs/5.0/components/buttons/',
                         label: 'Bootstrap - Contrast'
                     },
+                    {
+                        url: 'https://mosaico.gov.pt/pesquisar?query=acc',
+                        label: 'Mosaico - Contrast',
+                        extraInformation: 'Remove all filters button do not pass the minimum contrast'
+                    },
+
                 ],
             },
             {
@@ -111,6 +117,11 @@ export const notes = {
                         url: 'https://feed.continente.pt/',
                         label: 'Continente',
                         extraInformation: 'Menu on hover and menu options not focusable'
+                    },
+                    {
+                        url: 'https://mosaico.gov.pt/pesquisar?query=acc',
+                        label: 'Mosaico',
+                        extraInformation: 'Disable checkbox but not for keyboard users/screen reader users'
                     },
                     {
                         url: 'https://www.maxi-cosi.pt/customer/account/login/',

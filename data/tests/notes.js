@@ -8,6 +8,12 @@ export const notes = {
                 url: 'https://validator.w3.org/nu/',
                 label: 'W3 validator - Page source'
             },
+            {
+                url: 'https://mosaico.gov.pt/pesquisar?query=acc',
+                label: 'Mosaico',
+                extraInformation: 'Mobile and desktop use the same component and same ids, therefore the desktop filters do not have a label'
+            },
+
         ],
     },
     accessLint: {
