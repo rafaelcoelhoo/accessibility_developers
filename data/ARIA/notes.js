@@ -319,7 +319,7 @@ export const notes = {
             '<code>role: status</code> have an implicit <code>aria-live: polite</code>',
             '<code>role: alert</code> have an implicit <code>aria-live: assertive</code>',
         ],
-        live_examples: [],
+        examples: [],
     },
     accessibleNames: {
         tips: [],
@@ -389,20 +389,6 @@ export const notes = {
                     },
                 ],
             },
-        ],
-        live_examples: [
-
-            {
-                url: 'https://feathericons.com/',
-                label: 'Feather Icons - Download icons'
-            },
-            {
-                url: 'https://www.ikea.com/pt/pt/',
-                label: 'IKEA - Create Account'
-            },
-
-
-
         ],
     },
 }

@@ -29,7 +29,7 @@ router.get('/headings/problem', function (req, res) {
 });
 
 router.get('/headings/solution', function (req, res) {
-  res.render('semanticStructureAndNavigation/headings/solution', {title: "Headings - Amazing Animals"});
+  res.render('semanticStructureAndNavigation/headings/solution', {title: "Headings - Amazing Animals", notes: getDataByKey('headings')});
 });
 
 router.get('/links/initial', function (req, res) {
@@ -37,7 +37,7 @@ router.get('/links/initial', function (req, res) {
 });
 
 router.get('/links/solution', function (req, res) {
-  res.render('semanticStructureAndNavigation/links/solution', {title: "Links"});
+  res.render('semanticStructureAndNavigation/links/solution', {title: "Links", notes: getDataByKey('links')});
 });
 
 

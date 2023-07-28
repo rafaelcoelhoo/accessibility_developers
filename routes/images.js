@@ -21,7 +21,7 @@ router.get('/complex', function (req, res) {
 });
 
 router.get('/text', function (req, res) {
-  res.render('imagesAndSVG/images/imagesOfText', {title: "Images of text", notes: getDataByKey('')});
+  res.render('imagesAndSVG/images/imagesOfText', {title: "Images of text", notes: getDataByKey('imagesOfText')});
 });
 
 router.get('/long-description', function (req, res) {
