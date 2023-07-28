@@ -5,30 +5,58 @@ export const notes = {
             'Show the reduce motion on CSS and on Javascript',
             'Show stylus plugin for Digital of things'
         ],
-        live_examples: [
+        examples: [
             {
-                url: 'https://github.com/infiniteluke/react-reduce-motion',
-                label: 'Github - React hook',
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://github.com/infiniteluke/react-reduce-motion',
+                        label: 'Github - React hook',
+                    },
+                ],
             },
             {
-                url: 'https://www.bysix.com/',
-                label: 'Bysix - Buttons animations',
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.bysix.com/',
+                        label: 'Bysix',
+                        extraInformation: 'Buttons animations'
+                    },
+                    {
+                        url: 'https://wearemultitudes.org/#content5',
+                        label: 'Multitudes foundation',
+                        extraInformation: 'Text scrolling'
+                    },
+                    {
+                        url: 'https://digitalofthings.studio/',
+                        label: 'Digital of things',
+                        extraInformation: 'Text scrolling'
+                    },
+                    {
+                        url: 'https://www.42lisboa.com/',
+                        label: '42 Lisbon',
+                        extraInformation: 'Background video'
+                    },
+                ],
             },
             {
-                url: 'https://wearemultitudes.org/#content5',
-                label: 'We are multitudes - Text scrolling',
-            },
-            {
-                url: 'https://digitalofthings.studio/',
-                label: 'Digital of things - Text scrolling',
-            },
-            {
-                url: 'https://www.peppasauce.love/',
-                label: 'Peppa sauce',
-            },
-            {
-                url: 'https://www.42lisboa.com/',
-                label: '42 Lisbon - Background video',
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://viljamisdesign.com/',
+                        label: 'Viljami S. Design ',
+                        extraInformation: 'Background dots'
+                    },
+                    {
+                        url: 'https://www.apple.com/airpods-pro/',
+                        label: 'Apple',
+                    },
+                    {
+                        url: 'https://animalcrossing.nintendo.com/',
+                        label: 'Nintendo - Toggle',
+                    },
+                ],
             },
         ],
     },
