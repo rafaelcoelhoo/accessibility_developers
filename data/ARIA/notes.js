@@ -152,6 +152,11 @@ export const notes = {
                         label: 'Mosaico',
                         extraInformation: 'Switch with no accessible name'
                     },
+                    {
+                        url: 'https://www.santander.pt/credito-habitacao/simulador-credito-habitacao',
+                        label: 'Santander',
+                        extraInformation: 'Last step - Toggle without name'
+                    },
                 ],
             },
             {
@@ -160,6 +165,11 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/pesquisar/beneficiario/',
                         label: 'Mais Transparência'
+                    },
+                    {
+                        url: 'https://eportugal.gov.pt/contactos',
+                        label: 'ePortugal',
+                        extraInformation: 'Open in incognito mode to open the cookies modal'
                     },
                 ]
             }
@@ -331,6 +341,11 @@ export const notes = {
                         url: 'https://saboreiaavida.nestle.pt/produtos/kitkat-snack-de-chocolate',
                         label: 'Nestle',
                         extraInformation: 'Login button and Social media links'
+                    },
+                    {
+                        url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
+                        label: 'CGD',
+                        extraInformation: 'Close button on CaixaDirecta panel is just a "x" without an explicit label of the functionality'
                     },
                     {
                         url: 'https://www.tesla.com/pt_PT/inventory/new/m3?TRIM=PAWD&PAINT=BLACK&arrangeby=plh&zip=4000-000&range=50',

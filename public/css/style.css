@@ -709,9 +709,21 @@ h4 {
 .tables th, .tables .th {
   background-color: #ddd;
 }
-.tables td, .tables th, .tables .th {
+.tables td, .tables th, .tables .th, .tables .cell {
   padding: 0.5rem;
   border: 1px solid #333;
+}
+.tables .table-div {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  border-collapse: collapse;
+  width: 490px;
+}
+.tables .row {
+  display: contents;
+}
+.tables .cell {
+  border: 1px solid #ccc;
 }
 
 .lists .list-container {

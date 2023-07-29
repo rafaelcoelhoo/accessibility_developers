@@ -252,6 +252,7 @@ export const notes = {
     tables: {
         tips: [
             'Next table <code>VO + Command + T</code>',
+            'Tables without caption'
         ],
         examples: [
             {
@@ -279,7 +280,7 @@ export const notes = {
                     },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/contratualizacao/',
-                        label: 'Mais Transparência',
+                        label: 'Mais Transparência - Contractualization',
                         extraInformation: 'Missing row headings'
                     },
                 ]
@@ -289,7 +290,7 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://transparencia.gov.pt/pt/municipios/indicadores-por-municipio/dinamica-economica/',
-                        label: 'Mais Transparência'
+                        label: 'Mais Transparência - Economic Dynamics'
                     },
                 ]
             }

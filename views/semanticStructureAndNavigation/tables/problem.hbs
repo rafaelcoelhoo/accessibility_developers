@@ -1,5 +1,5 @@
 <div class="tables">
-    <h2>Table with one header</h2>
+    <h2>Table with one header but using only <code>td</code> tags</h2>
     <span>Movie Details</span>
     <table>
         <tbody>
@@ -29,29 +29,29 @@
 
     <h2>Table with one header but with divs</h2>
     <span>Another version of movie Details</span>
-    <table>
-        <tbody>
-        <tr>
-            <td class="th"><div>Title</div></td>
-            <td class="th">Director</td>
-            <td class="th">Genre</td>
 
-        </tr>
-        <tr>
-            <td><div>The Shawshank Redemption</div></td>
-            <td>Frank Darabont</td>
-            <td>Drama</td>
-        </tr>
-        <tr>
-            <td>Inception</td>
-            <td>Christopher Nolan</td>
-            <td><div>Sci-Fi</div></td>
-        </tr>
-        <tr>
-            <td>Pulp Fiction</td>
-            <td>Quentin Tarantino</td>
-            <td>Crime</td>
-        </tr>
-        </tbody>
-    </table>
+
+    <div class="table-div">
+        <div class="row">
+            <div class="cell th">Title</div>
+            <div class="cell th">Director</div>
+            <div class="cell th">Genre</div>
+        </div>
+        <div class="row">
+            <div class="cell"><div>The Shawshank Redemption</div></div>
+            <div class="cell">Frank Darabont</div>
+            <div class="cell">Drama</div>
+        </div>
+        <div class="row">
+            <div class="cell"><div>Inception</div></div>
+            <div class="cell">Christopher Nolan</div>
+            <div class="cell"><div>Sci-Fi</div></div>
+        </div>
+        <div class="row">
+            <div class="cell"><div>Pulp Fiction</div></div>
+            <div class="cell">Quentin Tarantino</div>
+            <div class="cell">Crime</div>
+        </div>
+    </div>
+
 </div>

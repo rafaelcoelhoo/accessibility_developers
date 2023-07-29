@@ -138,9 +138,23 @@
   th, .th {
     background-color: #ddd;
   }
-  td, th, .th {
+  td, th, .th, .cell {
     padding: 0.5rem;
     border: 1px solid #333;
+  }
+  .table-div {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    border-collapse: collapse;
+    width: 490px;
+  }
+
+  .row {
+    display: contents;
+  }
+
+  .cell {
+    border: 1px solid #ccc;
   }
 }
 

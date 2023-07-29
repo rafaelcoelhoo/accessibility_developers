@@ -113,8 +113,20 @@ export const notes = {
                         label: 'CGD',
                     },
                     {
+                        url: 'https://app.seg-social.pt/sso/cookies?service=https%3A%2F%2Fapp.seg-social.pt%2Fptss%2Fcaslogin',
+                        label: 'Segurança Social',
+                    },
+                    {
+                        url: 'https://www.projectoperfeito.com/',
+                        label: 'Projecto Perfeito',
+                    },
+                    {
                         url: 'https://campus.altice.pt/',
                         label: 'Campus Altice',
+                    },
+                    {
+                        url: 'https://www.abola.pt/',
+                        label: 'A Bola',
                     },
                 ],
             },

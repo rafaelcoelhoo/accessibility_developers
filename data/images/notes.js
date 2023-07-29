@@ -81,6 +81,11 @@ export const notes = {
                         url: 'https://roble.store/blogs/blog/por-que-elegir-sillas-nordicstory',
                         label: 'Roble store',
                         extraInformation: 'Not meaningful alt'
+                    },
+                    {
+                        url: 'https://www.santander.pt/abrir-conta-online',
+                        label: 'Santander',
+                        extraInformation: 'Not meaningful alt and duplicated'
                     }
                 ],
             },

@@ -39,6 +39,10 @@ export const notes = {
                         url: 'https://www.youtube.com/watch?v=ev8ERS5Z3NU',
                         label: 'Mobile Screen reader example'
                     },
+                    {
+                        url: 'https://www.nvaccess.org/product/basic-training-for-nvda-ebook/',
+                        label: 'NVDA Training'
+                    },
                 ],
             },
             {
