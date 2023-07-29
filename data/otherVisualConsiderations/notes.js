@@ -64,28 +64,59 @@ export const notes = {
         tips: [
             'Turn on the dark/light mode (operating system versus browser emulating)',
         ],
-        live_examples: [
+        examples: [
             {
-                url: 'https://www.whitehouse.gov/',
-                label: 'White House',
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://diariodarepublica.pt/dr/home',
+                        label: 'Diário da República',
+                        extraInformation: 'Missing dark mode response'
+                    },
+                    {
+                        url: 'https://www.acessibilidade.gov.pt/#',
+                        label: 'Accessibility Gov',
+                        extraInformation: 'Color contrast of "SimpleX" word on dark mode'
+                    },
+                ],
             },
             {
-                url: 'https://web.dev/',
-                label: 'Webdev',
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://www.whitehouse.gov/',
+                        label: 'White House',
+                    },
+                    {
+                        url: 'https://web.dev/',
+                        label: 'Webdev',
+                        extraInformation: 'Toggle on footer'
+                    },
+                    {
+                        url: 'https://www.a11yproject.com/about/',
+                        label: 'A11y Project',
+                        extraInformation: 'Footer'
+                    },
+                ],
             },
         ],
     },
     zoom: {
         tips: [
         ],
-        live_examples: [
+        examples: [
             {
-                url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
-                label: 'CGD',
-            },
-            {
-                url: 'https://campus.altice.pt/',
-                label: 'Campus Altice',
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
+                        label: 'CGD',
+                    },
+                    {
+                        url: 'https://campus.altice.pt/',
+                        label: 'Campus Altice',
+                    },
+                ],
             },
         ],
     },
@@ -95,53 +126,92 @@ export const notes = {
             'Font scaling',
             'Use Stylus to change the line-height of class <code>fixed-card</code>'
         ],
-        live_examples: [
+        examples: [
             {
-                url: 'https://transparencia.gov.pt/pt/',
-                label: 'Mais transparência - Just some content is scaling',
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://transparencia.gov.pt/pt/',
+                        label: 'Mais Transparência',
+                        extraInformation: 'Just some content is scaling'
+                    },
+                    {
+                        url: 'https://www.cgd.pt/Particulares/Contas/Abertura-conta/Pages/Abertura-conta.aspx',
+                        label: 'CGD',
+                        extraInformation: 'Not scale at all'
+                    },
+                    {
+                        url: 'https://www.novobanco.pt/particulares',
+                        label: 'Novo Banco',
+                        extraInformation: 'Just some content is scaling and using fixed box height (section: Need help?)'
+                    },
+                ],
             },
             {
-                url: 'https://www.cgd.pt/Particulares/Contas/Abertura-conta/Pages/Abertura-conta.aspx',
-                label: 'CGD - Not scale at all',
-            },
-            {
-                url: 'https://www.novobanco.pt/particulares',
-                label: 'Novo Banco - Just some content is scaling and using fixed box height (Need help?)',
-            },
-            {
-                url: 'https://web.dev/',
-                label: 'Webdev - Scaling properly',
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
+                        label: 'Mosaico',
+                        extraInformation: 'Scaling properly'
+                    },
+                    {
+                        url: 'https://web.dev/about/',
+                        label: 'Webdev',
+                        extraInformation: 'Scaling properly'
+                    },
+                ],
             },
         ],
     },
     targetSize: {
         tips: [
+            'Use 24x24 cursor plugin',
             'Use 44x44 cursor plugin'
         ],
-        live_examples: [
+        examples: [
             {
-                url: 'https://codepen.io/aardrian/pen/eYZWNyv',
-                label: '44 x 44 Cursor',
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://codepen.io/aardrian/pen/eYZWNyv',
+                        label: '44 x 44 Cursor',
+                    },
+                    {
+                        url: 'https://codepen.io/aardrian/pen/eYyjNVg',
+                        label: '24 x 24 Cursor',
+                    },
+                ],
             },
             {
-                url: 'https://www.linkedin.com/feed/',
-                label: 'Linkedin - Profile button on small screen',
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.santander.pt/cartao-debito',
+                        label: 'Santander',
+                        extraInformation: 'Footer - Social media'
+                    },
+                    {
+                        url: 'https://www.continente.pt/mercearia/cafe-cha-e-chocolate-soluvel/?start=0&srule=FOOD_Mercearia&pmin=0.01',
+                        label: 'Continente',
+                        extraInformation: 'Footer - Social media'
+                    },
+                ],
             },
             {
-                url: 'https://www.w3.org/',
-                label: 'W3 - Social media icon - Footer',
-            },
-            {
-                url: 'https://www.w3.org/',
-                label: 'W3 - Menu option - Search',
-            },
-            {
-                url: 'https://www.santander.pt/cartao-debito',
-                label: 'Santander - Footer - Social media',
-            },
-            {
-                url: 'https://www.purina.co.uk/cat/cat-food/felix',
-                label: 'Purina - Close modal',
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://www.linkedin.com/feed/',
+                        label: 'Linkedin',
+                        extraInformation: 'Profile button on screen smaller than 850px'
+                    },
+                    {
+                        url: 'https://www.w3.org/',
+                        label: 'W3',
+                        extraInformation: 'Social media icon on Footer and Menu option on Search'
+                    },
+                ],
             },
         ],
     },
