@@ -13,15 +13,11 @@ router.get('/languages', function (req, res) {
 });
 
 router.get('/landmarks/initial', function (req, res) {
-  res.render('semanticStructureAndNavigation/landmarks/initial', {layout: false});
+  res.render('semanticStructureAndNavigation/landmarks/initial', {layout: false, notes: getDataByKey('landmarks')});
 });
 
 router.get('/landmarks/solution', function (req, res) {
-  res.render('semanticStructureAndNavigation/landmarks/solution', {layout: false});
-});
-
-router.get('/landmarks/examples', function (req, res) {
-  res.render('semanticStructureAndNavigation/landmarks/examples', {title: "Landmarks examples", notes: getDataByKey('landmarks')});
+  res.render('semanticStructureAndNavigation/landmarks/solution', {layout: false, notes: getDataByKey('landmarks')});
 });
 
 router.get('/headings/problem', function (req, res) {

@@ -124,6 +124,11 @@ export const notes = {
                         label: 'Porto SRU',
                         extraInformation: 'Search and menu icons (screen < 1100px)'
                     },
+                    {
+                        url: 'https://www.aboutamazon.es/?language=pt',
+                        label: 'Amazon',
+                        extraInformation: 'Link images without name on footer'
+                    },
                 ],
             },
             {

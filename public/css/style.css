@@ -876,6 +876,9 @@ h4 {
   padding: 10px;
   width: 500px;
 }
+.zoom .card-zoom .font-vw {
+  font-size: 2vw;
+}
 
 .target-size .pagination {
   display: flex;

@@ -319,7 +319,7 @@ export const index = {
                     id: "landmarks",
                     options: [
                         {
-                            label: "landmarks",
+                            label: "Landmarks",
                             topics: [
                                 {
                                     link: "/semantic-structure-navigation/landmarks/initial",
@@ -328,10 +328,6 @@ export const index = {
                                 {
                                     link: "/semantic-structure-navigation/landmarks/solution",
                                     label: "Solution"
-                                },
-                                {
-                                    link: "/semantic-structure-navigation/landmarks/examples",
-                                    label: "Examples"
                                 }
                             ]
                         }

@@ -99,7 +99,15 @@ export const notes = {
     landmarks: {
         tips: [
             'Use the rotor to check the landmarks',
-            'Use Landmarks Bookmark plugin'],
+            'Use Landmarks Bookmark plugin',
+            'Add <code>header</code>',
+            'Add <code>nav</code> with <code>aria-label="Menu principal"</code> - Header',
+            'Add <code>nav</code> with <code>aria-label="Secondary menu"</code> - Footer',
+            'Add <code>main</code>',
+            'Add <code>article</code> with <code>aria-labelledby="article title"</code>',
+            'Add <code>aside</code>',
+            'Add <code>footer</code>',
+        ],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
@@ -212,6 +220,11 @@ export const notes = {
             {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
+                    {
+                        url: 'https://my.vodafone.pt/main.html',
+                        label: 'Vodafone',
+                        extraInformation: 'Menu options not focusable, using <code>a</code> without <code>href</code> attribute'
+                    },
                     {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
                         label: 'CGD',

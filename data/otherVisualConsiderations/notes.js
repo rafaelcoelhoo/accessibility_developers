@@ -136,7 +136,10 @@ export const notes = {
         tips: [
             'Browser zooming',
             'Font scaling',
-            'Use Stylus to change the line-height of class <code>fixed-card</code>'
+            'Use Stylus to change the line-height of class <code>fixed-card</code>',
+            '<code>.fixed-card {\n' +
+            '    line-height: 2;\n' +
+            '}</code>'
         ],
         examples: [
             {
@@ -222,6 +225,11 @@ export const notes = {
                         url: 'https://www.w3.org/',
                         label: 'W3',
                         extraInformation: 'Social media icon on Footer and Menu option on Search'
+                    },
+                    {
+                        url: 'https://www.boia.org/blog',
+                        label: 'Bureau of Internet Accessibility',
+                        extraInformation: 'Pagination'
                     },
                 ],
             },

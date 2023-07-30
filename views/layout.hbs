@@ -19,75 +19,7 @@
 <main class="container mt-5 mb-5">
     {{{body}}}
 
-    <section class="mt-5">
-        <hr>
-        <div id="accordionGroup" class="accordion">
-            {{#if notes.tips.length }}
-                <h2 class="heading">
-                    <button type="button" aria-expanded="false" class="accordion-trigger btn-transparent"
-                            aria-controls="sect1"
-                            id="accordion1id">
-                        <span class="accordion-title">Tips</span>
-                        <span class="accordion-icon"></span>
-                    </button>
-                </h2>
-                <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
-                    <div>
-                        <ul class="list-group list-group-flush">
-                            {{#each notes.tips}}
-                                <li class="list-group-item">{{{this}}}</li>
-                            {{/each}}
-                        </ul>
-                    </div>
-                </div>
-            {{/if}}
-
-            {{#if notes.examples.length }}
-                {{#each notes.examples}}
-                    {{#if listOfUrls.length }}
-                        <h2 class="heading">
-                            <button type="button" aria-expanded="false" class="accordion-trigger btn-transparent"
-                                    aria-controls="section_{{@index}}"
-                                    id="accordion_{{@index}}">
-                                <span class="accordion-title">{{{sectionName}}}</span>
-                                <span class="accordion-icon"></span>
-                            </button>
-                        </h2>
-                        <div id="section_{{@index}}" role="region" aria-labelledby="accordion_{{@index}}"
-                             class="accordion-panel" hidden>
-                            <div>
-                                <ul class="list-group list-group-flush">
-
-                                    {{#each listOfUrls}}
-                                        <li class="list-group-item">
-                                            <a href="{{{url}}}" target="_blank" aria-describedby="open_new_window">
-                                                {{{label}}}
-                                                <svg role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                                                     width="18" height="18" viewBox="0 0 24 24" fill="none"
-                                                     stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                                     stroke-linejoin="round"
-                                                     class="feather feather-external-link ms-1">
-                                                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                                                    <polyline points="15 3 21 3 21 9"></polyline>
-                                                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                                                </svg>
-                                            </a>
-                                            {{#if extraInformation }}
-                                                <p class="m-0 ps-4 extra-information-links">- {{{extraInformation}}}</p>
-                                            {{/if}}
-                                        </li>
-                                    {{/each}}
-
-                                </ul>
-                            </div>
-                        </div>
-                    {{/if}}
-                {{/each}}
-            {{/if}}
-
-
-        </div>
-    </section>
+    {{> notesAccordion}}
 
     <p class="d-none" id="open_new_window">Open in a new window</p>
 

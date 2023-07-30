@@ -39,7 +39,6 @@ router.get('/switch-control/solution', function (req, res) {
 });
 
 router.get('/tabs/initial', function (req, res) {
-  console.log(getDataByKey('aria_tabs'))
   res.render('aria/tabs/initial', {title: "Tabs - Aria", notes: getDataByKey('aria_tabs')});
 });
 

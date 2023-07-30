@@ -100,9 +100,9 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
-                        url: 'https://my.vodafone.pt/main.html',
-                        label: 'Vodafone',
-                        extraInformation: 'Menu options not focusable, using <code>a</code> without <code>href</code> attribute'
+                        url: 'https://www.aboutamazon.es/?language=pt',
+                        label: 'Amazon',
+                        extraInformation: 'Follow us option not focusable, just expand on hover'
                     },
                     {
                         url: 'https://www.tesla.com/pt_PT/inventory/new/m3?TRIM=PAWD&PAINT=BLACK&arrangeby=plh&zip=4000-000&range=50',

@@ -17,6 +17,8 @@ import {otherVisualConsiderationsRouter} from "./routes/otherVisualConsideration
 import {testsRouter} from "./routes/tests.js";
 import {auditRouter} from "./routes/audit.js";
 
+import hbs from "hbs";
+
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
 const app = express();
@@ -25,6 +27,7 @@ const port = process.env.PORT || 3001;
 // view engine setup
 app.set('views', join(__dirname, 'views'));
 app.set('view engine', 'hbs');
+hbs.registerPartials(__dirname + '/views/partials')
 
 app.use(morgan('dev'));
 app.use(express.json());
