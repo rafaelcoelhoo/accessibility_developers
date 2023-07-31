@@ -77,6 +77,11 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
+                        url: 'https://www.acessibilidade.gov.pt/',
+                        label: 'Accessibility Gov',
+                        extraInformation: 'Buttons (1, 2) as spans with just a role'
+                    },
+                    {
                         url: 'https://www.tesla.com/pt_pt',
                         label: 'Tesla',
                         extraInformation: 'Menu option - Idiom'

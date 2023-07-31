@@ -10,7 +10,7 @@ router.get('/hide-from-all', function (req, res) {
 });
 
 router.get('/hide-from-at', function (req, res) {
-  res.render('showAndHideElements/hideFromAssistiveTechnologies', {title: "Hide from assistive tecnologies"});
+  res.render('showAndHideElements/hideFromAssistiveTechnologies', {title: "Hide from assistive technologies"});
 });
 
 router.get('/hide-visually', function (req, res) {

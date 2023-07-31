@@ -262,6 +262,35 @@ export const notes = {
             }
         ],
     },
+    skipLinks: {
+        tips: [],
+        examples: [
+            {
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://mosaico.gov.pt/etapas',
+                        label: 'Mosaico',
+                        extraInformation: 'Broken skip link'
+                    },
+                    {
+                        url: 'https://www.ikea.com/pt/pt/p/ektorp-sofa-3-lugares-totebo-bege-claro-s49320043/',
+                        label: 'Ikea',
+                        extraInformation: 'Send to a group without an accessible name, show skip to main content and skip images'
+                    },
+                ]
+            },
+            {
+                sectionName: 'Accessible Examples',
+                listOfUrls: [
+                    {
+                        url: 'https://abilitynet.org.uk/how-contact-us',
+                        label: 'AbilityNet',
+                    },
+                ]
+            }
+        ],
+    },
     tables: {
         tips: [
             'Next table <code>VO + Command + T</code>',

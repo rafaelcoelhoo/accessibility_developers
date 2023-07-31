@@ -40,7 +40,7 @@ export const index = {
             options: [
                 {
                     link: "/show-and-hide-elements/hide-from-all",
-                    label: "Hid from all"
+                    label: "Hide from all"
                 },
                 {
                     link: "/show-and-hide-elements/hide-visually",

@@ -53,7 +53,7 @@ export const notes = {
                         label: 'Transparência Gov'
                     },
                     {
-                        url: 'https://www.acessibilidade.gov.pt/',
+                        url: 'https://www.acessibilidade.gov.pt/quem-somos//',
                         label: 'Acessibilidade Gov'
                     },
                 ],

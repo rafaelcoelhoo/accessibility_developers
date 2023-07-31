@@ -38,7 +38,7 @@ router.get('/links/solution', function (req, res) {
 
 
 router.get('/links/skip-links', function (req, res) {
-  res.render('semanticStructureAndNavigation/links/skipLinks', {layout: false});
+  res.render('semanticStructureAndNavigation/links/skipLinks', {layout: false, notes: getDataByKey('skipLinks')});
 });
 
 router.get('/tables/problem', function (req, res) {

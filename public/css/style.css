@@ -330,6 +330,7 @@ h4 {
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
   list-style: none;
   padding: 20px !important;
+  z-index: 2;
 }
 .show-and-hide .bad-dropdown .dropdown-content.open {
   top: 50px;

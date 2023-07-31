@@ -22,6 +22,11 @@ export const notes = {
                         label: 'Continente'
                     },
                     {
+                        url: 'https://www.acessibilidade.gov.pt/',
+                        label: 'Accessibility Gov',
+                        extraInformation: 'See the report button without minimum contrast'
+                    },
+                    {
                         url: 'https://www.olx.pt/',
                         label: 'Olx'
                     },
