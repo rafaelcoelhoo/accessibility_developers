@@ -2,7 +2,8 @@ export const notes = {
     focus: {
         tips: [
             'If we are using the mouse and lose track of which element is selected, at any time we can click on a key for the focus indicator to appear.',
-            '<code>outline: 0</code>',
+            'Search for class <code>focus-outline</code>',
+            'Add <code>outline: 0</code> to check the impact',
             'Comment/Uncomment css styles for <code>:focus</code> versus <code>:focus-visible</code>',
         ],
         examples: [
@@ -32,12 +33,13 @@ export const notes = {
                     },
                     {
                         url: 'https://getbootstrap.com/docs/5.0/components/buttons/',
-                        label: 'Bootstrap - Contrast'
+                        label: 'Bootstrap - Contrast',
+                        extraInformation: 'Check buttons contrast with the CCA app'
                     },
                     {
                         url: 'https://mosaico.gov.pt/pesquisar?query=acc',
                         label: 'Mosaico - Contrast',
-                        extraInformation: 'Remove all filters button do not pass the minimum contrast'
+                        extraInformation: 'Remove all filters button do not pass the minimum contrast, check with the CCA app'
                     },
 
                 ],
@@ -162,7 +164,7 @@ export const notes = {
         ],
     },
     tabOrder: {
-        tips: ['Although it is possible to change the order of elements by CSS, you have to be very careful with this, because it will change the order in which screen readers provide information, because the order of the DOM is what will matter'],
+        tips: ['Although it is possible to change the order of elements by CSS, you have to be very careful with this, because it will change the order in which assistive technologies provide information, because the order of the DOM is what will matter'],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
@@ -227,11 +229,6 @@ export const notes = {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
-                        url: 'https://www.bbc.com/',
-                        label: 'BBC',
-                        extraInformation: 'Open in incognito mode, Focus is moved to the cookies modal'
-                    },
-                    {
                         url: 'https://usablenet.com/',
                         label: 'Usablenet',
                         extraInformation: 'Accessibility Status modal - Focus management closing the modal'
@@ -239,7 +236,7 @@ export const notes = {
                     {
                         url: 'https://pt-jobs.about.ikea.com/busca-de-vagas?acm=ALL&alrpm=2264397&ascf=[%7B%22key%22:%22ALL%22,%22value%22:%22%22%7D]',
                         label: 'Ikea',
-                        extraInformation: 'Open in incognito mode, Cookies modal'
+                        extraInformation: 'Open in incognito mode, Cookies modal, Focus is moved to the cookies modal'
                     },
                 ],
             },

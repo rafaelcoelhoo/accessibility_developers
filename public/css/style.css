@@ -360,7 +360,7 @@ h4 {
       }*/
 }
 .focus-management.focus-outline :focus-visible {
-  outline: -webkit-focus-ring-color auto 5px;
+  outline: 0;
 }
 .focus-management.focus-outline .btn-yellow:hover, .focus-management.focus-outline .show-and-hide .toogle:hover, .show-and-hide .focus-management.focus-outline .toogle:hover, .focus-management.focus-outline .btn-yellow:focus, .focus-management.focus-outline .show-and-hide .toogle:focus, .show-and-hide .focus-management.focus-outline .toogle:focus {
   background: #FCC303;
@@ -395,6 +395,10 @@ h4 {
   background: black;
   color: white;
 }
+.focus-management.tab-index-example nav a.selected {
+  background: black;
+  color: white;
+}
 .focus-management.modal-focus-content .modal-1, .focus-management.modal-focus-content .modal-2, .focus-management.modal-focus-content .modal-initial, .focus-management.modal-focus-content .modal-solution {
   width: 50%;
   border-radius: 4px;
@@ -403,7 +407,6 @@ h4 {
   padding: 24px;
   background-color: #fff;
   z-index: 3;
-  /* places the modal on top of everything */
   position: fixed;
   top: 25%;
   left: 25%;
@@ -413,7 +416,6 @@ h4 {
   width: 100%;
   height: 100%;
   z-index: 2;
-  /* places the modalOverlay between the main page and the modal dialog */
   background-color: #000;
   opacity: 0.5;
   position: fixed;
@@ -918,6 +920,10 @@ h4 {
 .target-size .pagination.version-2 [aria-current=page] {
   color: white;
   text-decoration: underline;
+}
+
+.audit ul {
+  list-style-position: inside;
 }
 
 /*# sourceMappingURL=style.css.map */

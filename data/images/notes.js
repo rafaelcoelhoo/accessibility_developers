@@ -68,6 +68,11 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
+                        url: 'https://www.libertyseguros.pt/PublicWebsite/',
+                        label: 'Liberty insurance',
+                        extraInformation: 'Informative image without alt attribute - Best place to be'
+                    },
+                    {
                         url: 'https://www.worten.pt/dicas-como-escolher/como-escolher-fritadeira',
                         label: 'Worten',
                         extraInformation: 'Not meaningful alt'
@@ -92,6 +97,11 @@ export const notes = {
             {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
+                    {
+                        url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
+                        label: 'Ikea',
+                        extraInformation: 'Rating Stars are using <code>role="img"</code> with <code>aria-label</code>'
+                    },
                     {
                         url: 'https://www.americanexpress.com/us/credit-cards/',
                         label: 'American Express - Credit card',

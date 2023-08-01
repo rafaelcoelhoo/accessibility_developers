@@ -2,8 +2,8 @@
     <div class="wrapper">
         <nav id="side-nav">
             <ul class="mt-4">
-                <li><a href="#" onclick="loadContent('focus-management/about')" >About</a></li>
-                <li><a href="#" onclick="loadContent('focus-management/contact')">Contacts</a></li>
+                <li><a href="#" class="selected" onclick="loadContent('focus-management/about', this)" >About</a></li>
+                <li><a href="#" onclick="loadContent('focus-management/contact', this)">Contacts</a></li>
             </ul>
         </nav>
         <div id="content" class="ps-5">
@@ -13,7 +13,7 @@
 </div>
 
 <script>
-    function loadContent(page) {
+    function loadContent(page, clickedLink) {
         fetch('/' + page)
                 .then(function(response) {
                     if (!response.ok) {
@@ -24,6 +24,13 @@
                 .then(function(content) {
                     document.getElementById('content').innerHTML = content;
                     const heading = document.querySelector("h2");
+                    if (clickedLink) {
+                    const previouslySelectedLink = document.querySelector('a.selected');
+                    if (previouslySelectedLink) {
+                        previouslySelectedLink.classList.remove('selected');
+                    }
+                        clickedLink.classList.add('selected');
+                    }
                     setTimeout(function(){
                         /* move focus to the heading after a delay of half second */
                         heading.focus();

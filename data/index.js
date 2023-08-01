@@ -48,7 +48,7 @@ export const index = {
                 },
                 {
                     link: "/show-and-hide-elements/hide-from-at",
-                    label: "Hide from screen readers"
+                    label: "Hide from assistive technologies"
                 },
                 {
                     link: "/show-and-hide-elements/examples",
@@ -550,11 +550,6 @@ export const index = {
                     link: "/tests/accesslint",
                     label: "AccessLint"
                 },
-            ]
-        },
-        {
-            title: "Website",
-            options: [
                 {
                     link: "/audit/websites",
                     label: "Audit"

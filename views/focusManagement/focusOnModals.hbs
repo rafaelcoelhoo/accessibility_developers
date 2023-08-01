@@ -25,6 +25,11 @@
             // Save current focus
             focusedElementBeforeModal = document.activeElement;
 
+            if (inert) {
+                document.querySelector('main').inert = true;
+                document.querySelector('footer').inert = true;
+            }
+
             // Listen for and trap the keyboard
             modal.addEventListener('keydown', trapTabKey);
 
@@ -32,6 +37,7 @@
             // uncomment
             modalOverlay.addEventListener('click', closeModal);
             closeModalButton.addEventListener('click', closeModal);
+
 
             // Sign-Up button
             let signUpBtn = modal.querySelector('#signup');
@@ -73,9 +79,6 @@
                             }
                         }
                     }
-                } else {
-                    document.querySelector('main').inert = true;
-                    document.querySelector('footer').inert = true;
                 }
 
                 // ESCAPE
@@ -89,6 +92,10 @@
             // Hide the modal and overlay
             modal.style.display = 'none';
             modalOverlay.style.display = 'none';
+            if (inert) {
+                document.querySelector('main').inert = false;
+                document.querySelector('footer').inert = false;
+            }
 
             // Set focus back to element that had it before the modal was opened
             focusedElementBeforeModal.focus();

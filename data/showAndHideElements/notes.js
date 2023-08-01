@@ -36,14 +36,19 @@ export const notes = {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
+                        url: 'https://www.ikea.com/pt/pt/this-is-ikea/',
+                        label: 'Ikea - Create account',
+                        extraInformation: 'Create account link is hiding the button because it is redundant, they already have the link'
+                    },
+                    {
                         url: 'https://www.wacoal-america.com/elevated-allure-wire-free-bra-852336',
                         label: 'Wacoal',
                         extraInformation: 'Rating component'
                     },
                     {
                         url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
-                        label: 'Ikea',
-                        extraInformation: 'Rating component'
+                        label: 'Ikea - Malm product',
+                        extraInformation: 'The rating component is hiding the starts (but could be improved the number of reviews, as it is duplicated in the button name)'
                     },
                     {
                         url: 'https://www.gov.uk/',

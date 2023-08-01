@@ -9,6 +9,10 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
+                        url: 'https://www.libertyseguros.pt/PublicWebsite/',
+                        label: 'Liberty insurance',
+                    },
+                    {
                         url: 'https://www.estgv.ipv.pt/estgv/?',
                         label: 'ESTGV',
                     },
@@ -204,6 +208,11 @@ export const notes = {
                     {
                         url: 'https://usablenet.com/about-us',
                         label: 'UsableNet',
+                    },
+                    {
+                        url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
+                        label: 'Ikea',
+                        extraInformation: 'Section product details accordion, Heading using aria, with <code>role="heading"</code> and <code>aria-level="2"</code>'
                     },
                 ],
             },
