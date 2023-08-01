@@ -172,6 +172,10 @@ export const notes = {
                         label: 'Mais Transparência'
                     },
                     {
+                        url: 'chrome-extension://pbjjkligggfmakdaogkfomddhfmpjeni/DetailsView/detailsView.html?tabId=1573015678',
+                        label: 'Accessibility Insights for Web'
+                    },
+                    {
                         url: 'https://eportugal.gov.pt/contactos',
                         label: 'ePortugal',
                         extraInformation: 'Open in incognito mode to open the cookies modal'

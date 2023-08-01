@@ -3,7 +3,7 @@ export const notes = {
         tips: [
             'Turn on the reduce motion (operating system versus browser emulating)',
             'Show the reduce motion on CSS and on Javascript',
-            'Show stylus plugin for Digital of things'
+            'Show stylus plugin for bysix website and for Digital of Things'
         ],
         examples: [
             {
