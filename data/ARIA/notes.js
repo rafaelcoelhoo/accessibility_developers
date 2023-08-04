@@ -60,8 +60,9 @@ export const notes = {
         tips: [
             'Add <code>tabindex: 0</code>',
             'Add <code>role: button</code>',
-            "Keyboard events",
-            "Cursor pointer"
+            "Handle keyboard events",
+            "Keyup versus Keydown event- <a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F101\" target=\"_blank\" aria-describedby=\"open_new_window\">Technique F101 <img src=\"./../../img/external.svg\" role=\"img\" alt=\"\"></a>\n",
+            "Cursor pointer on buttons"
         ],
         examples: [
             {
@@ -69,7 +70,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://www.w3.org/TR/css-ui-4/#propdef-cursor',
-                        label: 'W3 - Cursor documentation'
+                        label: 'W3 - Cursor documentation',
+                        extraInformation: 'The cursor is a pointer that indicates a link. <br> - Authors should use pointer on links and may use on other interactive elements.'
                     },
                 ],
             },
@@ -188,7 +190,6 @@ export const notes = {
         tips: [
             "Add <code>role='checkbox'</code>",
             "Add <code>tabindex='0'</code>",
-            "Keyup versus Keydown"
         ],
         examples: [
             {
@@ -212,6 +213,7 @@ export const notes = {
         tips: [
             'Add <code>role: dialog</code>',
             'Add <code>aria-modal: true</code>',
+            'The escape button cannot be the only way to close a modal, we do not have an escape button on the modal, and not all the users know that the escape allows us to close the modal',
             'Add an accessible name',
             'Add <code>tabindex: -1</code> to the container',
             'Focus management',
@@ -346,6 +348,11 @@ export const notes = {
             {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
+                    {
+                        url: 'https://www.augmental.tech/media',
+                        label: 'MouthPad',
+                        extraInformation: 'Read the article - Label and accessible name do not match'
+                    },
                     {
                         url: 'https://saboreiaavida.nestle.pt/produtos/kitkat-snack-de-chocolate',
                         label: 'Nestle',

@@ -144,6 +144,11 @@ export const notes = {
                         label: 'Transparência',
                         extraInformation: 'Focus obscured behind menu - Breadcrumb'
                     },
+                    {
+                        url: 'https://commission.europa.eu/index_en',
+                        label: 'European Commission',
+                        extraInformation: 'Open in incognito mode - Focus obscured behind cookies modal at the bottom'
+                    },
                 ],
             },
             {
