@@ -149,6 +149,11 @@ export const notes = {
                         label: 'European Commission',
                         extraInformation: 'Open in incognito mode - Focus obscured behind cookies modal at the bottom'
                     },
+                    {
+                        url: 'https://flag.pt/',
+                        label: 'Flag',
+                        extraInformation: 'Focus obscured on Footer'
+                    },
                 ],
             },
             {

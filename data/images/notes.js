@@ -111,6 +111,11 @@ export const notes = {
                         url: 'https://www.americanexpress.com/us/credit-cards/',
                         label: 'American Express - Rewards checking',
                         extraInformation: 'Good alt but bad implementation'
+                    },
+                    {
+                        url: 'https://blog.usablenet.com/a-record-breaking-year-for-ada-digital-accessibility-lawsuits',
+                        label: 'UsableNet',
+                        extraInformation: 'Image from article'
                     }
                 ],
             },
