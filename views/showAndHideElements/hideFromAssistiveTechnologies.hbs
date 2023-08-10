@@ -1,7 +1,7 @@
 <section class="show-and-hide">
     <div class="mt-4">
         <h2 class="mb-3">aria-hidden</h2>
-        <button class="btn">
+        <button class="btn-transparent">
             <svg viewBox="0 0 100 80" width="40" height="40" aria-hidden="true">
                 <rect width="100" height="20"></rect>
                 <rect y="30" width="100" height="20"></rect>
@@ -22,25 +22,25 @@
 
         <div>
             <p class="mb-0">Bad practice, removing interactive elements only from assistive technologies.</p>
-            <p>Will be listed by the VoiceOver rotor, but will not be available by the VoiceOver cursor.</p>
-            <button class="btn toogle mt-3" aria-hidden="true">Button with aria-hidden</button>
+            <p>Will be <strong>possible to tab</strong> to this button, but it <strong>will not be listed</strong> by the VoiceOver rotor, and <strong> will not be</strong> available by the VoiceOver <strong>cursor</strong>.</p>
+            <button class="btn-yellow toogle mt-3" aria-hidden="true">Button with aria-hidden</button>
         </div>
         <hr/>
 
 
         <h2>Using role="presentation"</h2>
         <div>
-            <a href="#" class="search">
+            <button class="btn-transparent">
                 <img src="./../../img/search.svg" role="presentation">
                 Search
-            </a>
+            </button>
         </div>
         <hr/>
         <h2>Avoid having duplicated labels</h2>
-            <a href="#" class="search">
+            <button class="btn-transparent">
                 <img src="./../../img/search.svg" alt="Search">
                 Search
-            </a>
+            </button>
 
     </div>
 

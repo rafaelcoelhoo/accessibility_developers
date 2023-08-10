@@ -159,10 +159,10 @@ export const index = {
                 {
                     hasMultipleLinks: true,
                     id: "aria_expanded",
-                    label: "aria-expanded",
+                    label: "Expanded and Collapsed",
                     options: [
                         {
-                            label: "aria-expanded",
+                            label: "Expanded and Collapsed",
                             topics: [
                                 {
                                     link: "/aria/aria-expanded/initial",
@@ -279,10 +279,10 @@ export const index = {
                 {
                     hasMultipleLinks: true,
                     id: "aria_live",
-                    label: "aria-live",
+                    label: "Live announcements",
                     options: [
                         {
-                            label: "aria-live",
+                            label: "Live announcements",
                             topics: [
                                 {
                                     link: "/aria/aria-live/initial",

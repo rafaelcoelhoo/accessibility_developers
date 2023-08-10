@@ -4,7 +4,7 @@ export const notes = {
             'Analyse Accessibility Tree in Google Chrome Dev Tools',
             'Compare both accessibility trees',
             'See real time changes - Change text/Change input type',
-            'See Accessibility Tree in Firefox Dev Tools'
+            'See Accessibility Tree in Firefox Dev Tools - Inspect Accessibility Properties'
         ],
         examples: [
             {

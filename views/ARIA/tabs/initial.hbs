@@ -1,5 +1,5 @@
 <section class="aria-tabs">
-    <h2 id="title">Tabs for cities</h2>
+    <h2 id="title">Cities</h2>
     <div id="tabs">
         <button id="tab1" class="tab-option active" onclick="changeTabs(this);" aria-controls="panel1">Porto
         </button>
@@ -129,7 +129,7 @@
                 break;
 
             default:
-                return; // exit this handler for other keys
+                return;
         }
         e.preventDefault(); // prevent the default action (scroll / move caret)
     });

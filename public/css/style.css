@@ -132,7 +132,7 @@ input {
   overflow: hidden;
   white-space: nowrap;
   border: 0;
-  background: #DCE1E8;
+  background: #ffc107;
   display: flex;
   align-items: center;
   margin: 5px;
@@ -144,6 +144,7 @@ input {
   height: 60px;
   display: flex;
   justify-content: center;
+  color: #0C1932;
 }
 
 h1,
@@ -354,13 +355,8 @@ h4 {
   box-shadow: 0 0 8px #BBB;
   border-bottom: 1px solid #AAA;
 }
-.focus-management.focus-outline {
-  /*    :focus {
-        outline: -webkit-focus-ring-color auto 5px;
-      }*/
-}
-.focus-management.focus-outline :focus-visible {
-  outline: 0;
+.focus-management.focus-outline :focus {
+  outline: -webkit-focus-ring-color auto 5px;
 }
 .focus-management.focus-outline .btn-yellow:hover, .focus-management.focus-outline .show-and-hide .toogle:hover, .show-and-hide .focus-management.focus-outline .toogle:hover, .focus-management.focus-outline .btn-yellow:focus, .focus-management.focus-outline .show-and-hide .toogle:focus, .show-and-hide .focus-management.focus-outline .toogle:focus {
   background: #FCC303;

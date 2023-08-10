@@ -1,6 +1,8 @@
 export const notes = {
     pageTitle: {
         tips: [
+            'See title attribute code',
+            'Check the accessibility tree',
             'List all opened tabs <code>VO + I</code>',
             'Navigate by tabs <code>VO + Right/Left Arrow</code>',
         ],
@@ -8,6 +10,11 @@ export const notes = {
             {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
+                    {
+                        url: 'https://www.amazon.es/?language=pt_PT',
+                        label: 'Amazon',
+                        extraInformation: 'Company name is in first place in every page'
+                    },
                     {
                         url: 'https://www.libertyseguros.pt/PublicWebsite/',
                         label: 'Liberty insurance',
@@ -26,16 +33,12 @@ export const notes = {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
-                        url: 'https://mosaico.gov.pt/homepage',
-                        label: 'Mosaico',
+                        url: 'https://www.up.pt/portal/pt/estudar/licenciaturas-e-mestrados-integrados/oferta-formativa/',
+                        label: 'Porto University',
                     },
                     {
                         url: 'https://www.gov.uk/search/all?order=relevance',
                         label: 'Gov UK - Search',
-                    },
-                    {
-                        url: 'https://www.up.pt/portal/pt/estudar/licenciaturas-e-mestrados-integrados/oferta-formativa/',
-                        label: 'Porto University',
                     },
                 ],
             },
@@ -43,6 +46,7 @@ export const notes = {
     },
     languages: {
         tips: [
+            'The language attribute helps on the quotation marks according each country'
         ],
         examples: [
             {
@@ -60,7 +64,7 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/principios/10',
                         label: 'Mosaico',
-                        extraInformation: 'Primary language and parts of page - Section (Related areas in Mosaico)'
+                        extraInformation: 'Primary language and parts of page - Section (Related areas in Mosaico) <br> - Add lang attibute to see the difference'
                     },
                     {
                         url: 'https://www.coverflex.com/en-pt',
@@ -94,7 +98,8 @@ export const notes = {
                     },
                     {
                         url: 'https://www.w3.org/',
-                        label: 'W3 - Choose language',
+                        label: 'W3',
+                        extraInformation: 'Link to Chinese website '
                     },
                 ],
             },
@@ -102,13 +107,14 @@ export const notes = {
     },
     landmarks: {
         tips: [
-            'Use the rotor to check the landmarks',
-            'Use Landmarks Bookmark plugin',
+            'Check the accessibility tree',
+            'List all landmarks <code>VO + U</code>',
+            'Use Landmarks Bookmark plugin and Landmarks from accessibility insights',
             'Add <code>header</code>',
             'Add <code>nav</code> with <code>aria-label="Menu principal"</code> - Header',
             'Add <code>nav</code> with <code>aria-label="Secondary menu"</code> - Footer',
             'Add <code>main</code>',
-            'Add <code>article</code> with <code>aria-labelledby="article title"</code>',
+            'Add <code>article</code> with <code>aria-labelledby="articleTitle"</code>',
             'Add <code>aside</code>',
             'Add <code>footer</code>',
         ],
@@ -160,8 +166,11 @@ export const notes = {
     },
     headings: {
         tips: [
+            'Check the accessibility tree',
+            'List all headings <code>VO + U</code>',
             'Next heading <code>VO + Command + H</code>',
             'Previous heading <code>VO + Shift + Command + H</code>',
+            'Add proper headings',
             'To use aria for heading <code>role: heading</code> and <code>aria-level: (heading level)</code>'
         ],
         examples: [
@@ -204,6 +213,7 @@ export const notes = {
                     {
                         url: 'https://www.whitehouse.gov/priorities/',
                         label: 'The White House',
+                        extraInformation: 'Same heading level with different styles (Stay Connected)'
                     },
                     {
                         url: 'https://usablenet.com/about-us',
@@ -220,25 +230,24 @@ export const notes = {
     },
     links: {
         tips: [
-            'Link should point an element with an accessible name',
-            'Add <code>tabindex: -1</code> to the content itself',
+            'Link should point an element with an accessible name, in this case should point to the heading',
+            'Add <code>tabindex: -1</code> to the content itself (in this case the heading)',
             'Use descriptive text links',
-            "Add an accessible name for the image links"
+            "Add an accessible name for the social images links"
         ],
         examples: [
             {
-                sectionName: 'Examples for Accessibility Enhancement',
+                sectionName: 'Additional Resources',
                 listOfUrls: [
                     {
-                        url: 'https://my.vodafone.pt/main.html',
-                        label: 'Vodafone',
-                        extraInformation: 'Menu options not focusable, using <code>a</code> without <code>href</code> attribute'
+                        url: 'https://developers.google.com/search/docs/crawling-indexing/links-crawlable?visit_id=638269067656202103-4080801841&rd=1&hl=pt-br',
+                        label: 'Google Documentation',
                     },
-                    {
-                        url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
-                        label: 'CGD',
-                        extraInformation: 'Search without href'
-                    },
+                ]
+            },
+            {
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                         label: 'Transparência',
@@ -248,6 +257,16 @@ export const notes = {
                         url: 'https://web.dev/learn/html/links/',
                         label: 'Web Dev',
                         extraInformation: 'Page contents and destination link without <code>tabindex="-1"</code>'
+                    },
+                    {
+                        url: 'https://my.vodafone.pt/main.html',
+                        label: 'Vodafone',
+                        extraInformation: 'Menu options not focusable, using <code>a</code> without <code>href</code> attribute'
+                    },
+                    {
+                        url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
+                        label: 'CGD',
+                        extraInformation: 'Search without href'
                     },
                     {
                         url: 'https://www.vinted.pt/',
@@ -272,7 +291,9 @@ export const notes = {
         ],
     },
     skipLinks: {
-        tips: [],
+        tips: [
+            'Check the accessibility tree',
+        ],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
@@ -302,6 +323,8 @@ export const notes = {
     },
     tables: {
         tips: [
+            'Check the accessibility tree',
+            'List all links <code>VO + U</code>',
             'Next table <code>VO + Command + T</code>',
             'Tables without caption'
         ],
@@ -350,8 +373,9 @@ export const notes = {
     },
     lists: {
         tips: [
+            'Check the accessibility tree',
             'Next list <code>VO + Command + X</code>',
-            'On Safari with VoiceOver, list without bullets are not announced as lists'
+            'On Safari with VoiceOver, list without bullets are not announced as lists (It is nor exactly an issue)'
         ],
         examples: [
         ],
@@ -366,7 +390,9 @@ export const notes = {
     },
 
     strong: {
-        tips: [],
+        tips: [
+            'Check the accessibility tree',
+        ],
         examples: [
             {
                 sectionName: 'Additional Resources',

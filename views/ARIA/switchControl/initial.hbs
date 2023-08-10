@@ -22,7 +22,7 @@
     }
 
     // Adds keyboard events to the toggle
-    toggler.addEventListener('keydown', function (event) {
+    toggler.addEventListener('keyup', function (event) {
         if (event.key === ' ') {
             event.preventDefault();
             handleClick();
@@ -30,3 +30,30 @@
     });
     toggler.onclick = handleClick;
 </script>
+
+<style>
+    del::before,
+    del::after {
+        clip-path: inset(100%);
+        clip: rect(1px, 1px, 1px, 1px);
+        height: 1px;
+        overflow: hidden;
+        position: absolute;
+        white-space: nowrap;
+        width: 1px;
+    }
+
+    del::before {
+        content: " [deletion start] ";
+    }
+
+    del::after {
+        content: " [deletion end] ";
+    }
+</style>
+
+
+<p>
+    <del>10€</del>
+    <ins>8€</ins>
+</p>

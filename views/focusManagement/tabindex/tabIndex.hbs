@@ -2,9 +2,9 @@
     <div class="paragraph-section">
         <p>I am a paragraph that doesn't receive any focus</p>
         <p tabindex="0">I am a paragraph that receives focus</p>
-        <p tabindex="-1">I am a paragraph programmatically focused</p>
+        <p tabindex="-1" id="negativeTabindex">I am a paragraph programmatically focused</p>
         <p tabindex="1">I am a paragraph that receives focus first</p>
-        <button class="btn-yellow">Button</button>
+        <button class="btn-yellow" onclick="document.getElementById('negativeTabindex').focus()">Send focus to tabindex -1</button>
     </div>
 
     <hr/>

@@ -1,12 +1,21 @@
 export const notes = {
     focus: {
         tips: [
-            'If we are using the mouse and lose track of which element is selected, at any time we can click on a key for the focus indicator to appear.',
+            'Impact of <code>outline: 0</code>',
             'Search for class <code>focus-outline</code>',
-            'Add <code>outline: 0</code> to check the impact',
             'Comment/Uncomment css styles for <code>:focus</code> versus <code>:focus-visible</code>',
+            'If we are using the mouse and lose track of which element is selected, at any time we can click on a key for the focus indicator to appear.',
         ],
         examples: [
+            {
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://github.com/WICG/focus-visible ',
+                        label: 'Focus-visible polyfill'
+                    },
+                ]
+            },
             {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
@@ -62,16 +71,18 @@ export const notes = {
     tabindex: {
         tips: [
             'log <code>document.activeElement</code>',
-            '<code>.focus()</code> to <code>tabindex: 1</code>',
-            '<code>.focus()</code> to normal paragraph',
+            '<code>.focus()</code> to <code>tabindex: -1</code>',
+            '<code>.focus()</code> to normal paragraph will not send the focus',
             'Buttons and links already have an implicit <code>tabindex: 0</code>',
-            //TODO
-            'VER O TEMA DO FOCUS NÃO FICAR VISIVEL COM O FOCUS() - Penso que não dá mesmo aparentemente'
         ],
         examples: [],
     },
     tabindexExample: {
-        tips: [],
+        tips: [
+            'Show advantage of <code>tabindex="-1"</code> on screen reader',
+            'Remove the <code>tabindex="-1"</code> from file <code>tabIndexExample</code> file to see the impact',
+            'Without <code>tabindex="-1"</code> the heading is not announced'
+        ],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
@@ -123,7 +134,7 @@ export const notes = {
                     {
                         url: 'https://feed.continente.pt/',
                         label: 'Continente',
-                        extraInformation: 'Menu on hover and menu options not focusable'
+                        extraInformation: 'Menu on hover and menu options not focusable - See Event Listener tab and open the mouseHover event'
                     },
                     {
                         url: 'https://mosaico.gov.pt/pesquisar?query=acc',
@@ -174,7 +185,11 @@ export const notes = {
         ],
     },
     tabOrder: {
-        tips: ['Although it is possible to change the order of elements by CSS, you have to be very careful with this, because it will change the order in which assistive technologies provide information, because the order of the DOM is what will matter'],
+        tips: [
+            'The DOM is the source of true for tab order',
+            'Although it is possible to change the order of elements by CSS, you have to be very careful with this, because it will change the order in which assistive technologies provide information, because the order of the DOM is what will matter',
+            'Changing the order it is not predictable for users',
+            'Meaningful Sequence Level A'],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
@@ -193,7 +208,8 @@ export const notes = {
             'autofocus the first input only depending of the context',
             'Keep it within the custom dialog until the dialog is closed',
             'Send it back to the triggering element when the user closes the dialog',
-            '<code>inert</code> versus <code>aria-modal: true</code> versus <code>aria-hidden: true</code>'
+            '<code>inert</code> versus <code>aria-modal: true</code> versus <code>aria-hidden: true</code>',
+            'ESC key cannot be the only way to close a modal'
         ],
         examples: [
             {
@@ -211,7 +227,7 @@ export const notes = {
                     {
                         url: 'https://www.worten.pt/cliente/conta#/myLogin',
                         label: 'Worten',
-                        extraInformation: 'Modal login error - It is not receiving the focus'
+                        extraInformation: 'Modal login error (Password must have minimum 4 characters) - It is not receiving the focus'
                     },
                     {
                         url: 'https://my.vodafone.pt/main.html',
@@ -258,6 +274,21 @@ export const notes = {
             {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
+                    {
+                        url: 'https://my.vodafone.pt/main.html',
+                        label: 'Vodafone',
+                        extraInformation: 'Hamburger menu, it is not possible to close the modal with keyboard - screen less than 970px'
+                    },
+                    {
+                        url: 'https://blog.outletbaby.com.br/',
+                        label: 'Outlet Baby',
+                        extraInformation: 'Open in incognito mode, Keyboard Trap modal'
+                    },
+                    {
+                        url: 'https://www.purina.co.uk/dog/dog-food/wet',
+                        label: 'Purina',
+                        extraInformation: 'It is not possible to close the modal by keyboard'
+                    },
                     {
                         url: 'https://www.justdial.com/Mumbai/ods?city=Mumbai&area=&cid=jd_topbanner&jdtracker=jd_internal_desk-banner',
                         label: 'Just Dial',

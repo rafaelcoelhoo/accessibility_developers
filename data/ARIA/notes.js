@@ -2,13 +2,12 @@ export const notes = {
     aria_tabs: {
         tips: [
             'Add <code>role="tablist"</code>',
-            'Add accessible name to the <code>role="tablist"</code>',
+            'Add accessible name to the <code>role="tablist"</code>, from the heading',
             'Add <code>role="tab"</code> to each tab option',
             'Add <code>aria-selected</code> attribute to each tab',
             'Add <code>aria-controls</code> attribute to each tab',
             'Add focus management with arrow keys',
             'Add <code>role="tabpanel"</code>',
-            'Add accessible name to the <code>role="tablist"</code>',
             'Add <code>aria-hidden="true"</code> to each hidden tab'
         ],
         examples: [
@@ -115,6 +114,10 @@ export const notes = {
                         url: 'https://makeitfable.com/',
                         label: 'Fable - Menu options'
                     },
+                    {
+                        url: 'https://www.augmental.tech/faq',
+                        label: 'MouthPad - FAQ'
+                    },
                 ],
             },
         ],
@@ -214,7 +217,7 @@ export const notes = {
             'Add <code>role: dialog</code>',
             'Add <code>aria-modal: true</code>',
             'The escape button cannot be the only way to close a modal, we do not have an escape button on the modal, and not all the users know that the escape allows us to close the modal',
-            'Add an accessible name',
+            'Add an accessible name with <code>aria-labelledby</code>',
             'Add <code>tabindex: -1</code> to the container',
             'Focus management',
         ],
@@ -250,7 +253,10 @@ export const notes = {
         ],
     },
     aria_expanded: {
-        tips: ["Add <code>aria-expanded</code> attribute"],
+        tips: [
+            "Add <code>aria-expanded</code> attribute",
+            "Add logic to change the value accordingly"
+        ],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
@@ -264,6 +270,11 @@ export const notes = {
                         url: 'https://www.cgd.pt/Precario/Pages/Precario.aspx',
                         label: 'CGD',
                         extraInformation: 'Other clients accordion'
+                    },
+                    {
+                        url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
+                        label: 'Mais Transparência',
+                        extraInformation: 'Modal All Themes by default has all options collapsed'
                     },
 
                 ],

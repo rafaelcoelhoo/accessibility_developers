@@ -125,8 +125,8 @@ export const notes = {
                         label: 'Campus Altice',
                     },
                     {
-                        url: 'https://www.abola.pt/',
-                        label: 'A Bola',
+                        url: 'https://medium.com/about',
+                        label: 'Medium',
                     },
                 ],
             },

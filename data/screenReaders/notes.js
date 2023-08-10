@@ -3,9 +3,9 @@ export const notes = {
         tips: [
             'Enable keyboard navigation on Mac preferences',
             'Enable Safari keyboard accessibility',
-            'Change voiceOver settings (speed, voice, verbosity)',
-            'Check the difference between input type text and type password',
             'Start (or Stop) - <code>Command + F5</code>',
+            'Change voiceOver settings (speed, voice, verbosity)',
+            'Open VoiceOver training',
             'Open voiceOver help - <code>VO + H</code>',
             'Start reading automatically - <code>VO + A</code>',
             'Navigate by Headings - <code>VO + Command + H</code>',
@@ -18,7 +18,8 @@ export const notes = {
             'Navigate by other non-interactive elements - <code>VO + Right Arrow</code> - <code>VO + Left Arrow</code>',
             'Navigate by rotor - <code>VO + U</code>',
             'Read word by letters - <code>VO + Shift + Down Arrow</code> then <code>VO + Shift + Right Arrow</code>',
-            'Stop reading - <code>Control</code>',
+            'Pause reading - <code>Control</code>',
+            'Check the difference between input type text and type password',
         ],
         examples: [
             {
@@ -26,19 +27,35 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://www.youtube.com/watch?v=kJKQmTumFP0&t=58s',
-                        label: 'Dragon Naturally Speaking'
+                        label: 'Dragon Naturally Speaking - What this, for grid, number options, voice commands (56 seconds to 2,55 minutes)'
                     },
                     {
                         url: 'https://www.youtube.com/watch?v=A8H7iFCy5UI',
                         label: 'ZoomText'
                     },
                     {
+                        url: 'https://www.augmental.tech/',
+                        label: 'MouthPad'
+                    },
+                    {
                         url: 'https://www.youtube.com/watch?v=Gug23VRlsGg',
                         label: 'Refreshable Braille Display'
                     },
                     {
-                        url: 'https://www.youtube.com/watch?v=ev8ERS5Z3NU',
-                        label: 'Mobile Screen reader example'
+                        url: 'https://www.youtube.com/watch?v=Jao3s_CwdRU',
+                        label: 'NVDA - Windows'
+                    },
+                    {
+                        url: 'https://www.youtube.com/watch?v=0Zpzl4EKCco',
+                        label: 'Talkback - Android'
+                    },
+                    {
+                        url: 'https://www.youtube.com/watch?v=bCHpdjvxBws&t=336s',
+                        label: 'VoiceOver - IOS'
+                    },
+                    {
+                        url: 'https://www.youtube.com/watch?v=Q1gHxM1nP00&t=298s',
+                        label: 'JAWS'
                     },
                     {
                         url: 'https://www.nvaccess.org/product/basic-training-for-nvda-ebook/',

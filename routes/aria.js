@@ -10,7 +10,7 @@ router.get('/links/initial', function (req, res) {
 });
 
 router.get('/links/solution', function (req, res) {
-  res.render('ARIA/links/solution', {title: "Links - Aria"});
+  res.render('ARIA/links/solution', {title: "Links - Aria", notes: getDataByKey('links')});
 });
 
 router.get('/buttons/initial', function (req, res) {
@@ -43,7 +43,7 @@ router.get('/tabs/initial', function (req, res) {
 });
 
 router.get('/tabs/solution', function (req, res) {
-  res.render('ARIA/tabs/solution', {title: "Tabs - Aria"});
+  res.render('ARIA/tabs/solution', {title: "Tabs - Aria", notes: getDataByKey('aria_tabs')});
 });
 
 router.get('/modal/solution', function (req, res) {

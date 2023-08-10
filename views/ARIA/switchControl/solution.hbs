@@ -8,9 +8,6 @@
     </div>
 </section>
 
-
-Mostar depois que se tivermos uma checkbox já não precisamos do aria-checked
-
 <script>
     const toggler = document.querySelector('.toggle-switch');
     const switchStatus = document.querySelector('.status');
@@ -25,7 +22,7 @@ Mostar depois que se tivermos uma checkbox já não precisamos do aria-checked
     }
 
     // Adds keyboard events to the toggle
-    toggler.addEventListener('keydown', function (event) {
+    toggler.addEventListener('keyup', function (event) {
         if (event.key === ' ') {
             event.preventDefault();
             handleClick();
