@@ -26,6 +26,11 @@ export const notes = {
                         extraInformation: 'Hamburger menu - Content at the end of the page hidden with off screen'
                     },
                     {
+                        url: 'https://www.portovivosru.pt/',
+                        label: 'Porto SRU',
+                        extraInformation: 'Porto town hall - The dropdown at the top is in the accessibility tree'
+                    },
+                    {
                         url: 'https://www.13.cl/',
                         label: '13 channel',
                         extraInformation: 'RADIOS menu options is visible for keyboard users '

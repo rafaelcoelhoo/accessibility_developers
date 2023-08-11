@@ -387,7 +387,7 @@ export const notes = {
                     {
                         url: 'https://www.worten.pt/cliente/conta#/myLogin',
                         label: 'Worten',
-                        extraInformation: 'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback'
+                        extraInformation: 'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback and the time that is visible'
                     },
                     {
                         url: 'https://mosaico.gov.pt/servicos-publicos-digitais',

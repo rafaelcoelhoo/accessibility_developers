@@ -26,11 +26,11 @@ export const notes = {
                     {
                         url: 'https://www.continente.pt/produto/batata-frita-lisa-original-lays-7379467.html',
                         label: 'Continente',
-                        extraInformation: '<code>role="presentation"</code> and alt doing the same'
+                        extraInformation: '<code>title</code> and alt doing the same'
                     },
                     {
                         url: 'https://mosaico.gov.pt/perfis/ux-ui-designer',
-                        label: 'Mosaico',
+                        label: 'Mosaico - Profile',
                         extraInformation: 'Section stages, principles using empty alt and <code>aria-hidden="true"</code>'
                     },
                     {
@@ -155,9 +155,9 @@ export const notes = {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
-                        url: 'https://www.walmart.com/plus?povid=wpl_pov_gm_TopNav',
-                        label: 'Walmart',
-                        extraInformation: 'Link homepage (label versus alt)'
+                        url: 'https://www.amazon.es/gp/yourstore?ie=UTF8&ref=ox_checkout_redirects_yourstore',
+                        label: 'Amazon',
+                        extraInformation: 'Link homepage'
                     },
                 ],
             },
@@ -247,8 +247,9 @@ export const notes = {
                         extraInformation: 'Notifications icon using <code>aria-label</code> but missing the <code>role</code>'
                     },
                     {
-                        url: 'https://www.zara.com/pt/',
-                        label: 'Zara - Logo'
+                        url: 'https://web.dev/prefers-color-scheme/',
+                        label: 'Web dev',
+                        extraInformation: 'Link homepage'
                     },
                 ],
             },

@@ -103,6 +103,7 @@ export const notes = {
     },
     zoom: {
         tips: [
+            'See viewport tags from app amd from examples'
         ],
         examples: [
             {
@@ -136,7 +137,7 @@ export const notes = {
         tips: [
             'Browser zooming',
             'Font scaling',
-            'Use Stylus to change the line-height of class <code>fixed-card</code>',
+            'Use Stylus localhost code, to change the line-height of class <code>fixed-card</code>',
             '<code>.fixed-card {\n' +
             '    line-height: 2;\n' +
             '}</code>'
@@ -182,7 +183,9 @@ export const notes = {
     targetSize: {
         tips: [
             'Use 24x24 cursor plugin',
-            'Use 44x44 cursor plugin'
+            'Use 44x44 cursor plugin',
+            'Check <code>aria-current</code>',
+            'Importance of using padding for this success criteria'
         ],
         examples: [
             {
