@@ -16,9 +16,36 @@
         </fieldset>
     </form>
 
-    <picture>
-        <source srcset="./../../img/search.svg" media="(prefers-color-scheme: light)" />
-        <source srcset="./../../img/menu.svg" media="(prefers-color-scheme: dark)" />
-        <img src="./../../img/menu.svg" />
-    </picture>
+    <div>
+
+    </div>
+
+    <hr>
+    <div>
+        <h2>Images using <code>picture</code></h2>
+        <picture>
+            <source srcset="./../../img/shopping-cart-dark-mode.svg" media="(prefers-color-scheme: dark)" />
+            <img src="./../../img/shopping-cart-light-mode.svg" role="img" alt="Shopping Cart"/>
+        </picture>
+        <span id="cart">0</span> items
+    </div>
+
+    <hr>
+    <div>
+        <h2>SVG inline using <code>currentColor</code></h2>
+        <svg role="img" aria-label="Shopping Cart" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+             stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-shopping-cart">
+            <circle cx="9" cy="21" r="1"></circle>
+            <circle cx="20" cy="21" r="1"></circle>
+            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        <span id="cart">0</span> items
+    </div>
+
+    <hr>
+    <h2>Image using filter on media query</h2>
+
+    <div class="d-flex justify-content-center mt-5">
+    <img src="./../../img/wallpaper.jpg" alt="">
+    </div>
 </div>

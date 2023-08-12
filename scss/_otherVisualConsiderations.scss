@@ -58,11 +58,10 @@
   }
 }
 
-
 @media (prefers-color-scheme: dark) {
   // TODO Ver aqui este ponto que pode ser interessante
   img:not([src$=".svg"]) {
-    filter: brightness(70%);
+    filter: brightness(60%);
   }
   :root {
     --backgroundColor: black;

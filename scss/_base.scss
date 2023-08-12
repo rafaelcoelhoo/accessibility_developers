@@ -96,6 +96,8 @@ input {
 		position: relative;
 		width: 50%;
 		text-align: left;
+		color: var(--color);
+
 	}
 
 	.extra-information-links {
@@ -132,6 +134,10 @@ input {
 .accordion-panel {
 	margin: 0;
 	padding: 0 1rem 2rem 1rem;
+	li {
+		background-color: var(--backgroundColor);
+		color: var(--color);
+	}
 }
 
 

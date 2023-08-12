@@ -90,6 +90,7 @@ input {
   position: relative;
   width: 50%;
   text-align: left;
+  color: var(--color);
 }
 .accordion .extra-information-links {
   font-size: 0.9rem;
@@ -123,6 +124,10 @@ input {
 .accordion-panel {
   margin: 0;
   padding: 0 1rem 2rem 1rem;
+}
+.accordion-panel li {
+  background-color: var(--backgroundColor);
+  color: var(--color);
 }
 
 .skip-to-content-link {
@@ -853,7 +858,7 @@ h4 {
 
 @media (prefers-color-scheme: dark) {
   img:not([src$=".svg"]) {
-    filter: brightness(70%);
+    filter: brightness(60%);
   }
 
   :root {
