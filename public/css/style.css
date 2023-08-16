@@ -23,6 +23,9 @@ html {
   --backgroundColor: white;
   --color: #222;
 }
+.light img:not([src$=".svg"]) {
+  filter: brightness(100%);
+}
 
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;

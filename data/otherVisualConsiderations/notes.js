@@ -63,6 +63,9 @@ export const notes = {
     darkMode: {
         tips: [
             'Turn on the dark/light mode (operating system versus browser emulating)',
+            '<code>media="(prefers-color-scheme: dark)"</code> attribute on <code>source</code> elements only respect device settings',
+            'Show <code>updateSourceMedia</code> function to see how can we use the source element with custom theme switcher',
+            'Show filter on images'
         ],
         examples: [
             {

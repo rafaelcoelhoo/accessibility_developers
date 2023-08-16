@@ -23,6 +23,9 @@ html {
 .light {
 	--backgroundColor: white;
 	--color: #222;
+	img:not([src$=".svg"]) {
+		filter: brightness(100%);
+	}
 }
 
 body {

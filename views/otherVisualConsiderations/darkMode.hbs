@@ -53,19 +53,46 @@
 
 
 <script>
+
+    function updateSourceMedia(colorPreference) {
+        const pictures = document.querySelectorAll('picture');
+
+        pictures.forEach(function (picture) {
+            const sources = picture.querySelectorAll(
+                    'source[media*="prefers-color-scheme"], source[data-media*="prefers-color-scheme"]'
+            );
+
+            sources.forEach(function (source) {
+                // Save the source `media` as a data-attribute
+                if (source && source.media.includes('prefers-color-scheme')) {
+                    source.dataset.media = source.media;
+                }
+
+                if (source && source.dataset.media.includes(colorPreference)) {
+                    source.media = 'all';
+                }
+                else if (source && colorPreference === 'system') {
+                    source.media = source.dataset.media;
+                }
+                else if (source) {
+                    source.media = 'none';
+                }
+            });
+        });
+    }
+
     const radioButtons = document.querySelectorAll('input[name="theme"]');
     const body = document.body;
 
     radioButtons.forEach(radioButton => {
         radioButton.addEventListener('change', (event) => {
-            // This event will be triggered when a radio button is selected
-            // You can put your code here to handle the theme change
+
             const selectedTheme = event.target.value;
-            // Remove any existing theme classes from body
             body.classList.remove('system', 'light', 'dark');
 
             // Add the selected theme class to body
             body.classList.add(selectedTheme);
+            updateSourceMedia(selectedTheme)
         });
     });
 </script>
