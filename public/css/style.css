@@ -11,9 +11,17 @@ html {
   --color: #222;
 }
 
-.dark-mode-theme {
+.dark {
   --backgroundColor: black;
   --color: white;
+}
+.dark img:not([src$=".svg"]) {
+  filter: brightness(60%);
+}
+
+.light {
+  --backgroundColor: white;
+  --color: #222;
 }
 
 body {

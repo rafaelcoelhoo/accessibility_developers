@@ -25,6 +25,7 @@
         <h2>Images using <code>picture</code></h2>
         <picture>
             <source srcset="./../../img/shopping-cart-dark-mode.svg" media="(prefers-color-scheme: dark)" />
+            <source srcset="./../../img/shopping-cart-light-mode.svg" media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)" />
             <img src="./../../img/shopping-cart-light-mode.svg" role="img" alt="Shopping Cart"/>
         </picture>
         <span id="cart">0</span> items
@@ -49,3 +50,23 @@
     <img src="./../../img/wallpaper.jpg" alt="">
     </div>
 </div>
+
+
+<script>
+    const radioButtons = document.querySelectorAll('input[name="theme"]');
+    const body = document.body;
+
+    radioButtons.forEach(radioButton => {
+        radioButton.addEventListener('change', (event) => {
+            // This event will be triggered when a radio button is selected
+            // You can put your code here to handle the theme change
+            const selectedTheme = event.target.value;
+            // Remove any existing theme classes from body
+            body.classList.remove('system', 'light', 'dark');
+
+            // Add the selected theme class to body
+            body.classList.add(selectedTheme);
+        });
+    });
+</script>
+
