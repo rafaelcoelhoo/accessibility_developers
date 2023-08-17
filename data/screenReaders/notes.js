@@ -27,7 +27,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://www.youtube.com/watch?v=kJKQmTumFP0&t=58s',
-                        label: 'Dragon Naturally Speaking - What this, for grid, number options, voice commands (56 seconds to 2,55 minutes)'
+                        label: 'Dragon Naturally Speaking',
+                        extraInformation: 'What is this, grid, number options, voice commands (56 seconds to 2,55 minutes)'
                     },
                     {
                         url: 'https://www.youtube.com/watch?v=A8H7iFCy5UI',
@@ -56,6 +57,10 @@ export const notes = {
                     {
                         url: 'https://www.youtube.com/watch?v=Q1gHxM1nP00&t=298s',
                         label: 'JAWS'
+                    },
+                    {
+                        url: 'https://play.google.com/store/apps/details?id=app.screenreader&pcampaignid=web_share',
+                        label: 'Talkback Screen Reader Gestures - App'
                     },
                     {
                         url: 'https://www.nvaccess.org/product/basic-training-for-nvda-ebook/',
