@@ -37,11 +37,11 @@ router.get('/tabindex-example', function (req, res) {
 });
 
 router.get('/about', function (req, res) {
-  res.render('focusManagement/tab-index-content-example', { layout: false, h2_title: "About" });
+  res.render('focusManagement/tabindex/tabIndexContentExample', { layout: false, h2_title: "About" });
 });
 
 router.get('/contact', function (req, res) {
-  res.render('focusManagement/tab-index-content-example', { layout: false, h2_title: "Contacts" });
+  res.render('focusManagement/tabindex/tabIndexContentExample', { layout: false, h2_title: "Contacts" });
 });
 
 export {router as focusManagementRouter};

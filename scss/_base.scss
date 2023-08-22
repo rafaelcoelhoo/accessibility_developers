@@ -106,13 +106,16 @@ input {
 	}
 	.accordion-trigger {
 		position: relative;
-		width: 50%;
+		width: 100%;
 		text-align: left;
 		color: var(--color);
 
 	}
+	@media (min-width: 768px) {
+		width: 50%;
+	}
 
-	.extra-information-links {
+		.extra-information-links {
 		font-size: 0.9rem;
 	}
 

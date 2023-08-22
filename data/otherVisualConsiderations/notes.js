@@ -123,10 +123,12 @@ export const notes = {
                     {
                         url: 'https://www.projectoperfeito.com/',
                         label: 'Projecto Perfeito',
+                        disabled: true
                     },
                     {
                         url: 'https://campus.altice.pt/',
                         label: 'Campus Altice',
+                        disabled: true
                     },
                     {
                         url: 'https://medium.com/about',

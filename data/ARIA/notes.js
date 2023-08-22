@@ -60,7 +60,6 @@ export const notes = {
             'Add <code>tabindex: 0</code>',
             'Add <code>role: button</code>',
             "Handle keyboard events",
-            "Keyup versus Keydown event- <a href=\"https://www.w3.org/WAI/WCAG21/Techniques/failures/F101\" target=\"_blank\" aria-describedby=\"open_new_window\">Technique F101 <img src=\"./../../img/external.svg\" role=\"img\" alt=\"\"></a>\n",
             "Cursor pointer on buttons"
         ],
         examples: [
@@ -85,7 +84,7 @@ export const notes = {
                     {
                         url: 'https://www.tesla.com/pt_pt',
                         label: 'Tesla',
-                        extraInformation: 'Menu option - Idiom'
+                        extraInformation: 'Menu option - Idiom (Screen smaller than 1200px)'
                     },
                     {
                         url: 'https://portocanal.sapo.pt/',
@@ -112,7 +111,8 @@ export const notes = {
                     },
                     {
                         url: 'https://makeitfable.com/',
-                        label: 'Fable - Menu options'
+                        label: 'Fable - Menu options',
+                        disabled: true
                     },
                     {
                         url: 'https://www.augmental.tech/faq',
@@ -172,6 +172,10 @@ export const notes = {
             {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
+                    {
+                        url: 'https://www.linkedin.com/jobs/search/?currentJobId=3683258692&geoId=100364837&keywords=Frontend&location=Portugal&refresh=true',
+                        label: 'Linkedin'
+                    },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/pesquisar/beneficiario/',
                         label: 'Mais Transparência'
@@ -302,6 +306,15 @@ export const notes = {
         tips: [],
         examples: [
             {
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html',
+                        label: 'Aria usage - Bookmark <br> - Run also on MouthPad'
+                    },
+                ],
+            },
+            {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
@@ -335,15 +348,6 @@ export const notes = {
                     },
                 ],
             },
-            {
-                sectionName: 'Additional Resources',
-                listOfUrls: [
-                    {
-                        url: 'https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html',
-                        label: 'Aria usage - Bookmark'
-                    },
-                ],
-            },
         ],
     },
     aria_live: {
@@ -360,34 +364,36 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
-                        url: 'https://www.augmental.tech/media',
-                        label: 'MouthPad',
-                        extraInformation: 'Read the article - Label and accessible name do not match'
-                    },
-                    {
                         url: 'https://saboreiaavida.nestle.pt/produtos/kitkat-snack-de-chocolate',
                         label: 'Nestle',
-                        extraInformation: 'Login button and Social media links'
+                        extraInformation: 'Login button and Social media links',
+                        disabled: true
+                    },
+                    {
+                        url: 'https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
+                        label: 'OLX',
+                        extraInformation: 'Filters using the same <code>aria-label</code> (Typology, bathroom, Energetic certificate)',
                     },
                     {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
                         label: 'CGD',
-                        extraInformation: 'Close button on CaixaDirecta panel is just a "x" without an explicit label of the functionality'
+                        extraInformation: 'Close button on CaixaDirecta panel is just a "x" without an explicit label of the functionality',
                     },
                     {
                         url: 'https://www.tesla.com/pt_PT/inventory/new/m3?TRIM=PAWD&PAINT=BLACK&arrangeby=plh&zip=4000-000&range=50',
                         label: 'Tesla',
-                        extraInformation: 'Type of view buttons using empty <code>aria-label</code>'
+                        extraInformation: 'Type of view buttons using empty <code>aria-label</code>',
+                        disabled: true
                     },
                     {
                         url: 'https://feed.continente.pt/decoracao-e-jardim/como-decorar-o-escritorio-em-casa',
                         label: 'Continente',
-                        extraInformation: 'Menu button with no accessible name'
+                        extraInformation: 'Menu button with no accessible name and button on left side with name from pseudo class <code>:before</code> incorrectly'
                     },
                     {
                         url: 'https://www.worten.pt/cliente/conta#/myLogin',
                         label: 'Worten',
-                        extraInformation: 'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback and the time that is visible'
+                        extraInformation: 'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback and the time that is visible <br> - Invalid email error message it is not associated to the input field'
                     },
                     {
                         url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
@@ -395,19 +401,9 @@ export const notes = {
                         extraInformation: 'Search (screen small than 1200px) (Add class visually-hidden)'
                     },
                     {
-                        url: 'https://www.zara.com/pt/',
-                        label: 'Zara',
-                        extraInformation: 'Link homepage (label image versus link title)'
-                    },
-                    {
                         url: 'https://www.purina.co.uk/dog/dog-food/dry',
                         label: 'Purina - Lightbox',
                         extraInformation: 'Open lightbox and open the rotor to see the list of link (Buy Now)'
-                    },
-                    {
-                        url: 'https://www.purina.co.uk/dog/dog-food/dry',
-                        label: 'Purina - Pagination',
-                        extraInformation: 'PLP pagination has title and visually hidden text, but the text is similar'
                     },
                 ],
             },

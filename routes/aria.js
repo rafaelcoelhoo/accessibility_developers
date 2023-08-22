@@ -75,15 +75,15 @@ router.get('/practical-accessible-names/solution', function (req, res) {
 });
 
 router.get('/aria-live/initial', function (req, res) {
-  res.render('ARIA/aria-live/initial', {title: "aria-live - Aria", notes: getDataByKey('aria_live')});
+  res.render('ARIA/aria-live/initial', {title: "Live Announcements - Aria", notes: getDataByKey('aria_live')});
 });
 
 router.get('/aria-live/solution', function (req, res) {
-  res.render('ARIA/aria-live/solution', {title: "aria-live - Aria"});
+  res.render('ARIA/aria-live/solution', {title: "Live Announcements - Aria"});
 });
 
 router.get('/aria-live/examples', function (req, res) {
-  res.render('ARIA/aria-live/examples', {title: "aria-live - Aria", notes: getDataByKey('aria_live_examples')});
+  res.render('ARIA/aria-live/examples', {title: "Live Announcements - Aria", notes: getDataByKey('aria_live_examples')});
 });
 
 router.get('/aria-expanded/initial', function (req, res) {

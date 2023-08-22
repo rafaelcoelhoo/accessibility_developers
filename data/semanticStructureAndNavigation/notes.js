@@ -16,6 +16,11 @@ export const notes = {
                         extraInformation: 'Company name is in first place in every page'
                     },
                     {
+                        url: 'https://www.augmental.tech/',
+                        label: 'MouthPad',
+                        extraInformation: 'Company name is in first place in every page'
+                    },
+                    {
                         url: 'https://www.libertyseguros.pt/PublicWebsite/',
                         label: 'Liberty insurance',
                     },

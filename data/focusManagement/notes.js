@@ -25,7 +25,8 @@ export const notes = {
                     },
                     {
                         url: 'https://www.coverflex.com/pt',
-                        label: 'Coverflex'
+                        label: 'Coverflex',
+                        extraInformation: '<code>:focus-visible</code> is being override by custom <code>focus</code> styles'
                     },
                     {
                         url: 'https://feed.continente.pt/',
@@ -38,17 +39,18 @@ export const notes = {
                     },
                     {
                         url: 'https://www.olx.pt/',
-                        label: 'Olx'
+                        label: 'Olx',
+                        extraInformation: 'Advertise and sell button'
                     },
                     {
                         url: 'https://getbootstrap.com/docs/5.0/components/buttons/',
                         label: 'Bootstrap - Contrast',
-                        extraInformation: 'Check buttons contrast with the CCA app'
+                        extraInformation: 'Check buttons contrast with the CCA app, contrast between focus and white background'
                     },
                     {
                         url: 'https://mosaico.gov.pt/pesquisar?query=acc',
                         label: 'Mosaico - Contrast',
-                        extraInformation: 'Remove all filters button do not pass the minimum contrast, check with the CCA app'
+                        extraInformation: 'Remove all filters button do not pass the minimum contrast, check with the CCA app <br> - Focus styles are coming from bootstrap, <code>btn</code> class'
                     },
 
                 ],
@@ -71,6 +73,7 @@ export const notes = {
     tabindex: {
         tips: [
             'log <code>document.activeElement</code>',
+            'See this log on Coverflex website',
             '<code>.focus()</code> to <code>tabindex: -1</code>',
             '<code>.focus()</code> to normal paragraph will not send the focus',
             'Buttons and links already have an implicit <code>tabindex: 0</code>',
@@ -80,7 +83,7 @@ export const notes = {
     tabindexExample: {
         tips: [
             'Show advantage of <code>tabindex="-1"</code> on screen reader',
-            'Remove the <code>tabindex="-1"</code> from file <code>tabIndexExample</code> file to see the impact',
+            'Remove the <code>tabindex="-1"</code> from file <code>tabIndexContentExample</code> file to see the impact',
             'Without <code>tabindex="-1"</code> the heading is not announced'
         ],
         examples: [
@@ -105,7 +108,7 @@ export const notes = {
                     {
                         url: 'https://www.gov.uk/',
                         label: 'Gov UK',
-                        extraInformation: '<code>tabindex=-1</code> on Is this page useful'
+                        extraInformation: '<code>tabindex=-1</code> on Is this page useful <br> - Use the rotor to reach the button "Yes"'
                     },
                 ],
             },
@@ -134,7 +137,7 @@ export const notes = {
                     {
                         url: 'https://feed.continente.pt/',
                         label: 'Continente',
-                        extraInformation: 'Menu on hover and menu options not focusable - See Event Listener tab and open the mouseHover event'
+                        extraInformation: 'Menu on hover and menu options not focusable - See <strong>Event Listener</strong> tab and open the mouseHover event'
                     },
                     {
                         url: 'https://mosaico.gov.pt/pesquisar?query=acc',
@@ -209,7 +212,6 @@ export const notes = {
             'Keep it within the custom dialog until the dialog is closed',
             'Send it back to the triggering element when the user closes the dialog',
             '<code>inert</code> versus <code>aria-modal: true</code> versus <code>aria-hidden: true</code>',
-            'ESC key cannot be the only way to close a modal'
         ],
         examples: [
             {
@@ -242,7 +244,7 @@ export const notes = {
                     {
                         url: 'https://www.justdial.com/Mumbai/ods?city=Mumbai&area=&cid=jd_topbanner&jdtracker=jd_internal_desk-banner',
                         label: 'Just Dial',
-                        extraInformation: 'Open in incognito mode - Location modal (close button and focus management)'
+                        extraInformation: 'Open in incognito mode - Location modal (close button and focus management) <br> - Not all users use the mouse and can see the screen, the background content is accessible by keyboard users and screen reader users'
                     },
                     {
                         url: 'https://blog.outletbaby.com.br/',
@@ -269,7 +271,7 @@ export const notes = {
         ],
     },
     keyboardTrap: {
-        tips: [],
+        tips: ['ESC key cannot be the only way to close a modal'],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
@@ -277,22 +279,13 @@ export const notes = {
                     {
                         url: 'https://my.vodafone.pt/main.html',
                         label: 'Vodafone',
-                        extraInformation: 'Hamburger menu, it is not possible to close the modal with keyboard - screen less than 970px'
-                    },
-                    {
-                        url: 'https://blog.outletbaby.com.br/',
-                        label: 'Outlet Baby',
-                        extraInformation: 'Open in incognito mode, Keyboard Trap modal'
+                        extraInformation: 'Hamburger menu, it is not possible to close the modal with keyboard - screen less than 970px' +
+                            '<br> - It is also not possible to click on any link as all of them are not keyboard accessible'
                     },
                     {
                         url: 'https://www.purina.co.uk/dog/dog-food/wet',
                         label: 'Purina',
                         extraInformation: 'It is not possible to close the modal by keyboard'
-                    },
-                    {
-                        url: 'https://www.justdial.com/Mumbai/ods?city=Mumbai&area=&cid=jd_topbanner&jdtracker=jd_internal_desk-banner',
-                        label: 'Just Dial',
-                        extraInformation: 'Open in incognito mode, Keyboard Trap on location modal'
                     }
                 ],
             },

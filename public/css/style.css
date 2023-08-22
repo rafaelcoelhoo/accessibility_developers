@@ -99,9 +99,14 @@ input {
 }
 .accordion .accordion-trigger {
   position: relative;
-  width: 50%;
+  width: 100%;
   text-align: left;
   color: var(--color);
+}
+@media (min-width: 768px) {
+  .accordion {
+    width: 50%;
+  }
 }
 .accordion .extra-information-links {
   font-size: 0.9rem;
@@ -371,8 +376,8 @@ h4 {
   box-shadow: 0 0 8px #BBB;
   border-bottom: 1px solid #AAA;
 }
-.focus-management.focus-outline :focus {
-  outline: -webkit-focus-ring-color auto 5px;
+.focus-management.focus-outline :focus-visible {
+  outline: 0;
 }
 .focus-management.focus-outline .btn-yellow:hover, .focus-management.focus-outline .show-and-hide .toogle:hover, .show-and-hide .focus-management.focus-outline .toogle:hover, .focus-management.focus-outline .btn-yellow:focus, .focus-management.focus-outline .show-and-hide .toogle:focus, .show-and-hide .focus-management.focus-outline .toogle:focus {
   background: #FCC303;
