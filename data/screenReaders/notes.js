@@ -77,7 +77,8 @@ export const notes = {
                     },
                     {
                         url: 'https://www.acessibilidade.gov.pt/quem-somos//',
-                        label: 'Acessibilidade Gov'
+                        label: 'Acessibilidade Gov',
+                        disabled: true
                     },
                 ],
             },

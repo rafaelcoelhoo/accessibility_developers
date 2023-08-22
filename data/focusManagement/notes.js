@@ -40,7 +40,8 @@ export const notes = {
                     {
                         url: 'https://www.olx.pt/',
                         label: 'Olx',
-                        extraInformation: 'Advertise and sell button'
+                        extraInformation: 'Advertise and sell button',
+                        disabled: true
                     },
                     {
                         url: 'https://getbootstrap.com/docs/5.0/components/buttons/',

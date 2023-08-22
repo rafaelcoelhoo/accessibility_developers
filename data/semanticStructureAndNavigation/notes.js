@@ -130,7 +130,8 @@ export const notes = {
                     {
                         url: 'https://microsoftedge.github.io/Demos/devtools-a11y-testing/',
                         label: 'Microsoft demo page',
-                        extraInformation: 'Landmarks without accessible names'
+                        extraInformation: 'Landmarks without accessible names',
+                        disabled: true
                     },
                     {
                         url: 'https://eportugal.gov.pt/contactos',
@@ -145,11 +146,6 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/etapas',
                         label: 'Mosaico',
-                        extraInformation: 'Two navigation without accessible name'
-                    },
-                    {
-                        url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/#main',
-                        label: 'Mais Transparência',
                         extraInformation: 'Two navigation without accessible name'
                     },
                 ],
@@ -213,7 +209,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://www.magentaa11y.com/demos/dog-breeds/',
-                        label: 'MagentaA11y'
+                        label: 'MagentaA11y',
+                        disabled: true
                     },
                     {
                         url: 'https://www.whitehouse.gov/priorities/',
@@ -345,12 +342,13 @@ export const notes = {
                     {
                         url: 'https://getbootstrap.com/docs/5.3/content/tables/#table-borders',
                         label: 'Bootstrap',
-                        extraInformation: 'No captions but well structure tables'
+                        extraInformation: 'No captions but well structure tables',
                     },
                     {
                         url: 'https://zippyonline.com/pt/edredao-para-cama-120x60cm--essential-blue-zy-baby/80140797.html',
                         label: 'Zippy - Delivery section',
-                        extraInformation: 'No captions but well structure tables'
+                        extraInformation: 'No captions but well structure tables',
+                        disabled: true
                     },
                     {
                         url: 'https://www.ipv.pt/esav/estudar-esav/ofertaformatica-esav/enf-veterinaria/',
