@@ -259,7 +259,8 @@ export const notes = {
     aria_expanded: {
         tips: [
             "Add <code>aria-expanded</code> attribute",
-            "Add logic to change the value accordingly"
+            "Add logic to change the value accordingly",
+            "See this Tips accordion implementation as well"
         ],
         examples: [
             {

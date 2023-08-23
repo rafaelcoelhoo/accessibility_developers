@@ -1,8 +1,27 @@
 <div class="images">
-    <h2>Search icon</h2>
+    <h2>Search icon - Alt text</h2>
     <button class="box-search"><img src="./../../img/search.svg" alt="Search"></button>
     <hr>
-    <h2>Menu icon</h2>
-    <button class="btn-transparent"><img class="clickable-menu" src="./../../img/menu.svg" alt="Menu"></button>
+
+    <h2>Search icon - Visually hidden text</h2>
+    <button class="box-search">
+        <span class="visually-hidden">Search</span>
+        <img src="./../../img/search.svg" alt="">
+    </button>
+
+    <hr>
+
+    <h2>Search icon - Aria</h2>
+    <button class="box-search" aria-label="Search">
+        <img src="./../../img/search.svg" alt="">
+    </button>
+
+    <hr>
+
+    <h2>Search icon - Just an image</h2>
+    <div class="box-search">
+        <img src="./../../img/search.svg"  onclick="console.log('Clickable image')">
+    </div>
+    <hr>
 
 </div>

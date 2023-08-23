@@ -15,22 +15,26 @@ export const notes = {
                     {
                         url: 'https://wearemultitudes.org/#content5',
                         label: 'We are Multitudes',
-                        extraInformation: 'Run ARC Toolkit before and after activating the overlay <br> Pause animations make lose some content'
+                        extraInformation: 'Run ARC Toolkit before and after activating the overlay <br> Pause animations make lose some content',
+                        disabled: true
                     },
                     {
                         url: 'https://shop.hbo.com/',
                         label: 'HBO',
-                        extraInformation: 'Run axe DevTools before and after activating the overlay <br> Activate Keyboard Navigation option'
+                        extraInformation: 'Run axe DevTools before and after activating the overlay <br> Activate Keyboard Navigation option',
+                        disabled: true
                     },
                     {
                         url: 'https://www.abbott.com/',
                         label: 'Abbott',
-                        extraInformation: 'Run axe DevTools before and after activating the overlay <br> Activate Keyboard Navigation option'
+                        extraInformation: 'Run axe DevTools before and after activating the overlay <br> Activate Keyboard Navigation option',
+                        disabled: true
                     },
                     {
                         url: 'https://shop.hulu.com/',
                         label: 'Shop Hulu',
-                        extraInformation: 'Run axe DevTools before and after activating the overlay <br> Activate Keyboard Navigation option'
+                        extraInformation: 'Run axe DevTools before and after activating the overlay <br> Activate Keyboard Navigation option',
+                        disabled: true
                     }
                 ],
             },

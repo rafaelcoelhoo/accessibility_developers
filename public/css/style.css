@@ -805,6 +805,7 @@ h4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .images .clickable-menu {
   width: 50px;

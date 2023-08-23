@@ -3,7 +3,7 @@ export const notes = {
         tips: [
             'Navigate by images - <code>VO + Command + G</code>',
             'Have a look at the accessibility tree',
-            "Remove alt attribute and check the accessibility tree"
+            "Compare the differences on how the images is announce in Chrome and Safari"
         ],
         examples: [
             {
@@ -168,6 +168,8 @@ export const notes = {
         tips: [
             'Font scaling',
             'Page zooming',
+            'Translate the page using Google Translate plugin',
+            'Try to copy the text'
         ],
         examples: [
             {
