@@ -3,7 +3,7 @@ export const notes = {
         tips: [
             'Turn on the reduce motion (operating system versus browser emulating)',
             'Show the reduce motion on CSS and on Javascript',
-            'Show stylus plugin for bysix website and for Digital of Things'
+            'Show stylus plugin for bysix website'
         ],
         examples: [
             {
@@ -12,6 +12,7 @@ export const notes = {
                     {
                         url: 'https://github.com/infiniteluke/react-reduce-motion',
                         label: 'Github - React hook',
+                        disabled: true
                     },
                 ],
             },
@@ -26,7 +27,8 @@ export const notes = {
                     {
                         url: 'https://wearemultitudes.org/#content5',
                         label: 'Multitudes foundation',
-                        extraInformation: 'Text scrolling'
+                        extraInformation: 'Text scrolling',
+                        disabled: true
                     },
                     {
                         url: 'https://digitalofthings.studio/',
@@ -36,7 +38,8 @@ export const notes = {
                     {
                         url: 'https://www.42lisboa.com/',
                         label: '42 Lisbon',
-                        extraInformation: 'Background video'
+                        extraInformation: 'Background video',
+                        disabled: true
                     },
                 ],
             },
@@ -46,7 +49,8 @@ export const notes = {
                     {
                         url: 'https://viljamisdesign.com/',
                         label: 'Viljami S. Design ',
-                        extraInformation: 'Background dots'
+                        extraInformation: 'Background dots',
+                        disabled: true
                     },
                     {
                         url: 'https://www.apple.com/airpods-pro/',
@@ -55,6 +59,7 @@ export const notes = {
                     {
                         url: 'https://animalcrossing.nintendo.com/',
                         label: 'Nintendo - Toggle',
+                        disabled: true
                     },
                 ],
             },
@@ -65,7 +70,8 @@ export const notes = {
             'Turn on the dark/light mode (operating system versus browser emulating)',
             '<code>media="(prefers-color-scheme: dark)"</code> attribute on <code>source</code> elements only respect device settings',
             'Show <code>updateSourceMedia</code> function to see how can we use the source element with custom theme switcher',
-            'Show filter on images'
+            'Show filter on images',
+            '<code>currentColor</code> on SVG works for dark/light mode, either for system preference as manual options'
         ],
         examples: [
             {
@@ -74,7 +80,8 @@ export const notes = {
                     {
                         url: 'https://diariodarepublica.pt/dr/home',
                         label: 'Diário da República',
-                        extraInformation: 'Missing dark mode response'
+                        extraInformation: 'Missing dark mode response',
+                        disabled: true
                     },
                     {
                         url: 'https://www.acessibilidade.gov.pt/#',
@@ -87,18 +94,25 @@ export const notes = {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
+                        url: 'https://developer.mozilla.org/pt-BR/',
+                        label: 'MDN Web Docs',
+                    },
+                    {
                         url: 'https://www.whitehouse.gov/',
                         label: 'White House',
+                        disabled: true
                     },
                     {
                         url: 'https://web.dev/',
                         label: 'Webdev',
-                        extraInformation: 'Toggle on footer'
+                        extraInformation: 'Toggle on footer',
+                        disabled: true
                     },
                     {
                         url: 'https://www.a11yproject.com/about/',
                         label: 'A11y Project',
-                        extraInformation: 'Footer'
+                        extraInformation: 'Footer',
+                        disabled: true
                     },
                 ],
             },
@@ -133,6 +147,7 @@ export const notes = {
                     {
                         url: 'https://medium.com/about',
                         label: 'Medium',
+                        disabled: true
                     },
                 ],
             },
@@ -154,7 +169,8 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/',
                         label: 'Mais Transparência',
-                        extraInformation: 'Just some content is scaling'
+                        extraInformation: 'Just some content is scaling',
+                        disabled: true
                     },
                     {
                         url: 'https://www.cgd.pt/Particulares/Contas/Abertura-conta/Pages/Abertura-conta.aspx',
@@ -179,7 +195,8 @@ export const notes = {
                     {
                         url: 'https://web.dev/about/',
                         label: 'Webdev',
-                        extraInformation: 'Scaling properly'
+                        extraInformation: 'Scaling properly',
+                        disabled: true
                     },
                 ],
             },
@@ -187,10 +204,11 @@ export const notes = {
     },
     targetSize: {
         tips: [
+            'Importance of using padding and not margin for this success criteria',
+            'Check Visually hidden texts',
             'Use 24x24 cursor plugin',
             'Use 44x44 cursor plugin',
             'Check <code>aria-current</code>',
-            'Importance of using padding for this success criteria'
         ],
         examples: [
             {
@@ -212,12 +230,14 @@ export const notes = {
                     {
                         url: 'https://www.santander.pt/cartao-debito',
                         label: 'Santander',
-                        extraInformation: 'Footer - Social media'
+                        extraInformation: 'Footer - Social media',
+                        disabled: true
                     },
                     {
                         url: 'https://www.continente.pt/mercearia/cafe-cha-e-chocolate-soluvel/?start=0&srule=FOOD_Mercearia&pmin=0.01',
                         label: 'Continente',
-                        extraInformation: 'Footer - Social media'
+                        extraInformation: 'Footer - Social media',
+                        disabled: true
                     },
                 ],
             },
@@ -227,17 +247,19 @@ export const notes = {
                     {
                         url: 'https://www.linkedin.com/feed/',
                         label: 'Linkedin',
-                        extraInformation: 'Profile button on screen smaller than 850px'
+                        extraInformation: 'Profile button on screen smaller than 850px',
+                        disabled: true
                     },
                     {
                         url: 'https://www.w3.org/',
                         label: 'W3',
-                        extraInformation: 'Social media icon on Footer and Menu option on Search'
+                        extraInformation: 'Social media icon on Footer and Menu option on Search <br> - Change padding to margin to se the impact'
                     },
                     {
                         url: 'https://www.boia.org/blog',
                         label: 'Bureau of Internet Accessibility',
-                        extraInformation: 'Pagination'
+                        extraInformation: 'Pagination',
+                        disabled: true
                     },
                 ],
             },
