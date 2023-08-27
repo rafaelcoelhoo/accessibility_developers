@@ -61,6 +61,7 @@ export const notes = {
     informativeImages: {
         tips: [
             'Navigate by images - <code>VO + Command + G</code>',
+            'Stop the screen reader in the middle of the alternative text',
             'Have a look at the accessibility tree',
         ],
         examples: [
