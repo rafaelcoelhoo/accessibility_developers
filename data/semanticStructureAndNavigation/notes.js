@@ -303,7 +303,8 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/etapas',
                         label: 'Mosaico',
-                        extraInformation: 'Broken skip link'
+                        extraInformation: 'Broken skip link',
+                        disabled: true
                     },
                     {
                         url: 'https://www.ikea.com/pt/pt/p/ektorp-sofa-3-lugares-totebo-bege-claro-s49320043/',

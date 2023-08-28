@@ -35,6 +35,16 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(join(__dirname, 'public')));
 
+// Define the custom Handlebars helper
+hbs.registerHelper('anyNotDisabled', function(listOfUrls, options) {
+    for (const example of listOfUrls) {
+        if (!example.disabled) {
+            return options.fn(this);
+        }
+    }
+    return options.inverse(this);
+});
+
 app.use('/accessibility-tree', accessibilityTreeRouter);
 app.use('/show-and-hide-elements', showAndHideElementsRouter);
 app.use('/focus-management', focusManagementRouter);

@@ -3,15 +3,13 @@ export const notes = {
         tips: [
             'Enable keyboard navigation on Mac preferences',
             'Enable Safari keyboard accessibility',
-            'Start (or Stop) - <code>Command + F5</code>',
             'Change voiceOver settings (speed, voice, verbosity)',
             'Open VoiceOver training',
+            'Start (or Stop) - <code>Command + F5</code>',
             'Open voiceOver help - <code>VO + H</code>',
             'Start reading automatically - <code>VO + A</code>',
             'Navigate by Headings - <code>VO + Command + H</code>',
             'Navigate to the next Graphic - <code>VO + Command + G</code>',
-            'Navigate to the next Table - <code>VO + Command + T</code>',
-            'Navigate table cells - <code>VO + Arrow Keys</code>',
             'Navigate to the next Link - <code>VO + Command + L</code>',
             'Navigate to the next Form - <code>VO + Command + J</code>',
             'Navigate by focusable elements - <code>Tab / Shift + Tab</code>',
@@ -73,7 +71,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
-                        label: 'Transparência Gov'
+                        label: 'Transparência Gov',
+                        disabled: true
                     },
                     {
                         url: 'https://www.acessibilidade.gov.pt/quem-somos//',

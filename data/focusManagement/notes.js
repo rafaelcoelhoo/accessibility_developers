@@ -193,6 +193,8 @@ export const notes = {
             'The DOM is the source of true for tab order',
             'Although it is possible to change the order of elements by CSS, you have to be very careful with this, because it will change the order in which assistive technologies provide information, because the order of the DOM is what will matter',
             'Changing the order it is not predictable for users',
+            'Check the tab order with the plugin Accessibility Insights for Web',
+            'Check on firefox the tab order option',
             'Meaningful Sequence Level A'],
         examples: [
             {
