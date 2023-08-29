@@ -206,8 +206,9 @@ export const notes = {
         tips: [
             'Importance of using padding and not margin for this success criteria',
             'Check Visually hidden texts',
-            'Use 24x24 cursor plugin',
-            'Use 44x44 cursor plugin',
+            'Use 24x24 cursor bookmark (2.5.8 Target Size (Minimum))',
+            'Use 44x44 cursor bookmark (2.5.5 Target Size)',
+            'Use target size bookmark (2.5.8 Target Size (Minimum))',
             'Check <code>aria-current</code>',
         ],
         examples: [

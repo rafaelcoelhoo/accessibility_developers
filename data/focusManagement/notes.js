@@ -180,8 +180,8 @@ export const notes = {
                         extraInformation: 'Search accessories - Clear button'
                     },
                     {
-                        url: 'https://blog.usablenet.com/page/2',
-                        label: 'UsableNet',
+                        url: 'https://www.accessarmada.com/blog/',
+                        label: 'Access Armada',
                         extraInformation: 'Menu options with arrows'
                     },
                 ],
