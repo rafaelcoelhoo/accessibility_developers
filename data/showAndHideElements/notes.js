@@ -53,7 +53,7 @@ export const notes = {
                     {
                         url: 'https://www.apple.com/shop/accessories/all',
                         label: 'Apple',
-                        extraInformation: 'Search accessories reset button on input'
+                        extraInformation: 'Search accessories reset button text on input'
                     },
                     {
                         url: 'https://www.ikea.com/pt/pt/this-is-ikea/',

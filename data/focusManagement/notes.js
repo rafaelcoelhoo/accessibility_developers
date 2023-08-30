@@ -30,7 +30,8 @@ export const notes = {
                     },
                     {
                         url: 'https://feed.continente.pt/',
-                        label: 'Continente'
+                        label: 'Continente',
+                        disabled: true
                     },
                     {
                         url: 'https://www.acessibilidade.gov.pt/',
@@ -51,7 +52,8 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/pesquisar?query=acc',
                         label: 'Mosaico - Contrast',
-                        extraInformation: 'Remove all filters button do not pass the minimum contrast, check with the CCA app <br> - Focus styles are coming from bootstrap, <code>btn</code> class'
+                        extraInformation: 'Remove all filters button do not pass the minimum contrast, check with the CCA app <br> - Focus styles are coming from bootstrap, <code>btn</code> class',
+                        disabled: true
                     },
 
                 ],
