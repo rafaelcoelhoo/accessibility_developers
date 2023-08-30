@@ -13,7 +13,7 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
                         label: 'Transparência Gov',
-                        disabled: true
+                        hide: true
                     }
                 ],
             }

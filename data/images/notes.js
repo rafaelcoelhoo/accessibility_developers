@@ -72,7 +72,7 @@ export const notes = {
                         url: 'https://www.libertyseguros.pt/PublicWebsite/',
                         label: 'Liberty insurance',
                         extraInformation: 'Informative image without alt attribute - Best place to be',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.worten.pt/dicas-como-escolher/como-escolher-fritadeira',

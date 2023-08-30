@@ -38,7 +38,7 @@ app.use(express.static(join(__dirname, 'public')));
 // Define the custom Handlebars helper
 hbs.registerHelper('anyNotDisabled', function(listOfUrls, options) {
     for (const example of listOfUrls) {
-        if (!example.disabled) {
+        if (!example.hide) {
             return options.fn(this);
         }
     }

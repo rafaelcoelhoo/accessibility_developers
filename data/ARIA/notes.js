@@ -112,7 +112,7 @@ export const notes = {
                     {
                         url: 'https://makeitfable.com/',
                         label: 'Fable - Menu options',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.augmental.tech/faq',
@@ -365,10 +365,15 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
+                        url: 'https://www.accessibilityassociation.org/s/',
+                        label: ' International Association of Accessibility Professionals',
+                        extraInformation: 'Accessible name does not start with the same text we have visually (Learn more)',
+                    },
+                    {
                         url: 'https://saboreiaavida.nestle.pt/produtos/kitkat-snack-de-chocolate',
                         label: 'Nestle',
                         extraInformation: 'Login button and Social media links',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
@@ -384,7 +389,7 @@ export const notes = {
                         url: 'https://www.tesla.com/pt_PT/inventory/new/m3?TRIM=PAWD&PAINT=BLACK&arrangeby=plh&zip=4000-000&range=50',
                         label: 'Tesla',
                         extraInformation: 'Type of view buttons using empty <code>aria-label</code>',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://feed.continente.pt/decoracao-e-jardim/como-decorar-o-escritorio-em-casa',

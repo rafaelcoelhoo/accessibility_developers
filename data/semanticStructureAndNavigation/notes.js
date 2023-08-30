@@ -131,7 +131,7 @@ export const notes = {
                         url: 'https://microsoftedge.github.io/Demos/devtools-a11y-testing/',
                         label: 'Microsoft demo page',
                         extraInformation: 'Landmarks without accessible names',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://eportugal.gov.pt/contactos',
@@ -210,7 +210,7 @@ export const notes = {
                     {
                         url: 'https://www.magentaa11y.com/demos/dog-breeds/',
                         label: 'MagentaA11y',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.whitehouse.gov/priorities/',
@@ -304,7 +304,7 @@ export const notes = {
                         url: 'https://mosaico.gov.pt/etapas',
                         label: 'Mosaico',
                         extraInformation: 'Broken skip link',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.ikea.com/pt/pt/p/ektorp-sofa-3-lugares-totebo-bege-claro-s49320043/',
@@ -349,7 +349,7 @@ export const notes = {
                         url: 'https://zippyonline.com/pt/edredao-para-cama-120x60cm--essential-blue-zy-baby/80140797.html',
                         label: 'Zippy - Delivery section',
                         extraInformation: 'No captions but well structure tables',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.ipv.pt/esav/estudar-esav/ofertaformatica-esav/enf-veterinaria/',

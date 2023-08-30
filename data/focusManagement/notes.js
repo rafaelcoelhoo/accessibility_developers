@@ -21,7 +21,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://expresso.pt/',
-                        label: 'Expresso'
+                        label: 'Expresso',
+                        hide: true
                     },
                     {
                         url: 'https://www.coverflex.com/pt',
@@ -31,7 +32,7 @@ export const notes = {
                     {
                         url: 'https://feed.continente.pt/',
                         label: 'Continente',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.acessibilidade.gov.pt/',
@@ -42,7 +43,7 @@ export const notes = {
                         url: 'https://www.olx.pt/',
                         label: 'Olx',
                         extraInformation: 'Advertise and sell button',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://getbootstrap.com/docs/5.0/components/buttons/',
@@ -53,7 +54,7 @@ export const notes = {
                         url: 'https://mosaico.gov.pt/pesquisar?query=acc',
                         label: 'Mosaico - Contrast',
                         extraInformation: 'Remove all filters button do not pass the minimum contrast, check with the CCA app <br> - Focus styles are coming from bootstrap, <code>btn</code> class',
-                        disabled: true
+                        hide: true
                     },
 
                 ],
@@ -63,7 +64,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://www.gov.uk/',
-                        label: 'Gov UK'
+                        label: 'Gov UK',
+                        hide: true
                     },
                     {
                         url: 'https://makeitfable.com/',
@@ -118,7 +120,7 @@ export const notes = {
         ],
     },
     keyboardAccessibility: {
-        tips: ['Do not use <code>tabindex: 0</code>  everywhere, the screen readers can access to divs, paragraphs, span, etc.'],
+        tips: [],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
@@ -126,16 +128,19 @@ export const notes = {
                     {
                         url: 'https://www.aboutamazon.es/?language=pt',
                         label: 'Amazon',
-                        extraInformation: 'Follow us option not focusable, just expand on hover'
+                        extraInformation: 'Follow us option not focusable, just expand on hover',
+                        hide: true
                     },
                     {
                         url: 'https://www.tesla.com/pt_PT/inventory/new/m3?TRIM=PAWD&PAINT=BLACK&arrangeby=plh&zip=4000-000&range=50',
                         label: 'Tesla - Exterior color',
-                        extraInformation: 'Checkbox with <code>display:none</code>, we can just remove it and see the active element'
+                        extraInformation: 'Checkbox with <code>display:none</code>, we can just remove it and see the active element',
+                        hide: true
                     },
                     {
                         url: 'https://repsolmove.com/',
-                        label: 'Repsol - Login'
+                        label: 'Repsol - Login',
+                        hide: true
                     },
                     {
                         url: 'https://feed.continente.pt/',
@@ -154,7 +159,8 @@ export const notes = {
                     {
                         url: 'https://getbootstrap.com/docs/4.6/getting-started/introduction/',
                         label: 'Bootstrap',
-                        extraInformation: 'Focus obscured behind menu'
+                        extraInformation: 'Focus obscured behind menu',
+                        hide: true
                     },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
@@ -164,12 +170,14 @@ export const notes = {
                     {
                         url: 'https://commission.europa.eu/index_en',
                         label: 'European Commission',
-                        extraInformation: 'Open in incognito mode - Focus obscured behind cookies modal at the bottom'
+                        extraInformation: 'Open in incognito mode - Focus obscured behind cookies modal at the bottom',
+                        hide: true
                     },
                     {
                         url: 'https://flag.pt/',
                         label: 'Flag',
-                        extraInformation: 'Focus obscured on Footer'
+                        extraInformation: 'Focus obscured on Footer',
+                        hide: true
                     },
                 ],
             },
@@ -249,12 +257,14 @@ export const notes = {
                     {
                         url: 'https://www.justdial.com/Mumbai/ods?city=Mumbai&area=&cid=jd_topbanner&jdtracker=jd_internal_desk-banner',
                         label: 'Just Dial',
-                        extraInformation: 'Open in incognito mode - Location modal (close button and focus management) <br> - Not all users use the mouse and can see the screen, the background content is accessible by keyboard users and screen reader users'
+                        extraInformation: 'Open in incognito mode - Location modal (close button and focus management) <br> - Not all users use the mouse and can see the screen, the background content is accessible by keyboard users and screen reader users',
+                        hide: true
                     },
                     {
                         url: 'https://blog.outletbaby.com.br/',
                         label: 'Outlet baby',
-                        extraInformation: 'Open in incognito mode, we need to tab till the end of the page to jump in to the modal'
+                        extraInformation: 'Open in incognito mode, we need to tab till the end of the page to jump in to the modal',
+                        hide: true
                     },
                 ],
             },
@@ -285,12 +295,14 @@ export const notes = {
                         url: 'https://my.vodafone.pt/main.html',
                         label: 'Vodafone',
                         extraInformation: 'Hamburger menu, it is not possible to close the modal with keyboard - screen less than 970px' +
-                            '<br> - It is also not possible to click on any link as all of them are not keyboard accessible'
+                            '<br> - It is also not possible to click on any link as all of them are not keyboard accessible',
+                        hide: true
                     },
                     {
                         url: 'https://www.purina.co.uk/dog/dog-food/wet',
                         label: 'Purina',
-                        extraInformation: 'It is not possible to close the modal by keyboard'
+                        extraInformation: 'It is not possible to close the modal by keyboard',
+                        hide: true
                     }
                 ],
             },

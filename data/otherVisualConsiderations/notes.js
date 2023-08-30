@@ -12,7 +12,7 @@ export const notes = {
                     {
                         url: 'https://github.com/infiniteluke/react-reduce-motion',
                         label: 'Github - React hook',
-                        disabled: true
+                        hide: true
                     },
                 ],
             },
@@ -28,7 +28,7 @@ export const notes = {
                         url: 'https://wearemultitudes.org/#content5',
                         label: 'Multitudes foundation',
                         extraInformation: 'Text scrolling',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://digitalofthings.studio/',
@@ -39,7 +39,7 @@ export const notes = {
                         url: 'https://www.42lisboa.com/',
                         label: '42 Lisbon',
                         extraInformation: 'Background video',
-                        disabled: true
+                        hide: true
                     },
                 ],
             },
@@ -50,7 +50,7 @@ export const notes = {
                         url: 'https://viljamisdesign.com/',
                         label: 'Viljami S. Design ',
                         extraInformation: 'Background dots',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.apple.com/airpods-pro/',
@@ -59,7 +59,7 @@ export const notes = {
                     {
                         url: 'https://animalcrossing.nintendo.com/',
                         label: 'Nintendo - Toggle',
-                        disabled: true
+                        hide: true
                     },
                 ],
             },
@@ -81,7 +81,7 @@ export const notes = {
                         url: 'https://diariodarepublica.pt/dr/home',
                         label: 'Diário da República',
                         extraInformation: 'Missing dark mode response',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.acessibilidade.gov.pt/#',
@@ -100,19 +100,19 @@ export const notes = {
                     {
                         url: 'https://www.whitehouse.gov/',
                         label: 'White House',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://web.dev/',
                         label: 'Webdev',
                         extraInformation: 'Toggle on footer',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.a11yproject.com/about/',
                         label: 'A11y Project',
                         extraInformation: 'Footer',
-                        disabled: true
+                        hide: true
                     },
                 ],
             },
@@ -137,17 +137,17 @@ export const notes = {
                     {
                         url: 'https://www.projectoperfeito.com/',
                         label: 'Projecto Perfeito',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://campus.altice.pt/',
                         label: 'Campus Altice',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://medium.com/about',
                         label: 'Medium',
-                        disabled: true
+                        hide: true
                     },
                 ],
             },
@@ -170,7 +170,7 @@ export const notes = {
                         url: 'https://transparencia.gov.pt/pt/',
                         label: 'Mais Transparência',
                         extraInformation: 'Just some content is scaling',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.cgd.pt/Particulares/Contas/Abertura-conta/Pages/Abertura-conta.aspx',
@@ -196,7 +196,7 @@ export const notes = {
                         url: 'https://web.dev/about/',
                         label: 'Webdev',
                         extraInformation: 'Scaling properly',
-                        disabled: true
+                        hide: true
                     },
                 ],
             },
@@ -232,13 +232,13 @@ export const notes = {
                         url: 'https://www.santander.pt/cartao-debito',
                         label: 'Santander',
                         extraInformation: 'Footer - Social media',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.continente.pt/mercearia/cafe-cha-e-chocolate-soluvel/?start=0&srule=FOOD_Mercearia&pmin=0.01',
                         label: 'Continente',
                         extraInformation: 'Footer - Social media',
-                        disabled: true
+                        hide: true
                     },
                 ],
             },
@@ -249,7 +249,7 @@ export const notes = {
                         url: 'https://www.linkedin.com/feed/',
                         label: 'Linkedin',
                         extraInformation: 'Profile button on screen smaller than 850px',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.w3.org/',
@@ -260,7 +260,7 @@ export const notes = {
                         url: 'https://www.boia.org/blog',
                         label: 'Bureau of Internet Accessibility',
                         extraInformation: 'Pagination',
-                        disabled: true
+                        hide: true
                     },
                 ],
             },

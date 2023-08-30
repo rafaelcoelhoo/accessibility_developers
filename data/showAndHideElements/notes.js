@@ -21,7 +21,7 @@ export const notes = {
                         url: 'https://my.vodafone.pt/main.html',
                         label: 'Vodafone',
                         extraInformation: 'Menu with duplicated labels on search option, using <code>visually-hidden</code> unnecessary',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
@@ -32,7 +32,7 @@ export const notes = {
                         url: 'https://academia.ama.gov.pt/',
                         label: 'Academia AMA - Sidebar',
                         extraInformation: 'Hamburger menu - Content at the end of the page hidden with off screen',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.portovivosru.pt/',
@@ -43,7 +43,7 @@ export const notes = {
                         url: 'https://www.13.cl/',
                         label: '13 channel',
                         extraInformation: 'RADIOS menu options is visible for keyboard users',
-                        disabled: true
+                        hide: true
                     },
                 ],
             },
@@ -59,7 +59,7 @@ export const notes = {
                         url: 'https://www.ikea.com/pt/pt/this-is-ikea/',
                         label: 'Ikea - Create account',
                         extraInformation: 'Create account link is hiding the button because it is redundant, they already have the link',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
@@ -70,7 +70,7 @@ export const notes = {
                         url: 'https://www.gov.uk/',
                         label: 'Gov UK',
                         extraInformation: 'Search menu and logo',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
@@ -81,13 +81,13 @@ export const notes = {
                         url: 'https://www.scottohara.me/',
                         label: 'Scott O\'Hara',
                         extraInformation: 'Logo text',
-                        disabled: true
+                        hide: true
                     },
                     {
                         url: 'https://www.wildcodeschool.com/pt-PT/cursos/web-developer-bootcamp-3-meses',
                         label: 'Wild Code School',
                         extraInformation: 'Campus menu option - Using visibility hidden',
-                        disabled: true
+                        hide: true
                     },
                 ],
             },
