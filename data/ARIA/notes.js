@@ -384,6 +384,7 @@ export const notes = {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
                         label: 'CGD',
                         extraInformation: 'Close button on CaixaDirecta panel is just a "x" without an explicit label of the functionality',
+                        hide: true
                     },
                     {
                         url: 'https://www.tesla.com/pt_PT/inventory/new/m3?TRIM=PAWD&PAINT=BLACK&arrangeby=plh&zip=4000-000&range=50',
@@ -394,12 +395,14 @@ export const notes = {
                     {
                         url: 'https://feed.continente.pt/decoracao-e-jardim/como-decorar-o-escritorio-em-casa',
                         label: 'Continente',
-                        extraInformation: 'Menu button with no accessible name and button on left side with name from pseudo class <code>:before</code> incorrectly'
+                        extraInformation: 'Menu button with no accessible name and button on left side with name from pseudo class <code>:before</code> incorrectly',
+                        hide: true
                     },
                     {
                         url: 'https://www.worten.pt/cliente/conta#/myLogin',
                         label: 'Worten',
-                        extraInformation: 'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback and the time that is visible <br> - Invalid email error message it is not associated to the input field'
+                        extraInformation: 'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback and the time that is visible <br> - Invalid email error message it is not associated to the input field',
+                        hide: true
                     },
                     {
                         url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
@@ -409,7 +412,8 @@ export const notes = {
                     {
                         url: 'https://www.purina.co.uk/dog/dog-food/dry',
                         label: 'Purina - Lightbox',
-                        extraInformation: 'Open lightbox and open the rotor to see the list of link (Buy Now)'
+                        extraInformation: 'Open lightbox and open the rotor to see the list of link (Buy Now)',
+                        hide: true
                     },
                 ],
             },
@@ -424,12 +428,14 @@ export const notes = {
                     {
                         url: 'https://www.ikea.com/pt/pt/p/godmorgon-armario-p-lavatorio-c-2-gavetas-brilh-branco-30180995/',
                         label: 'IKEA',
-                        extraInformation: 'Price using aria-hidden and visually hidden'
+                        extraInformation: 'Price using aria-hidden and visually hidden',
+                        hide: true
                     },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2020/barometro/',
                         label: 'Transparência',
-                        extraInformation: 'Technical file - Attention to voice control'
+                        extraInformation: 'Technical file - Attention to voice control',
+                        hide: true
                     },
                 ],
             },
