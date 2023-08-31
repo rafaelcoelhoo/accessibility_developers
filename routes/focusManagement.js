@@ -29,7 +29,7 @@ router.get('/keyboard-trap', function (req, res) {
 });
 
 router.get('/tabindex', function (req, res) {
-  res.render('focusManagement/tabIndex/tabindex', {title: "tabindex attribute", notes: getDataByKey('tabindex')});
+  res.render('focusManagement/tabindex/tabIndex', {title: "tabindex attribute", notes: getDataByKey('tabindex')});
 });
 
 router.get('/tabindex-example', function (req, res) {

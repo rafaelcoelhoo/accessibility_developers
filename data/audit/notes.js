@@ -13,6 +13,11 @@ export const notes = {
                         extraInformation: 'Homepage <br> - Personal area type a invalid email to see just a color indication od something is wrong'
                     },
                     {
+                        url: 'https://feed.continente.pt/',
+                        label: 'Continente',
+                        extraInformation: 'Menu on hover and menu options not focusable - See <strong>Event Listener</strong> tab and open the mouseHover event'
+                    },
+                    {
                         url: 'https://wearemultitudes.org/#content5',
                         label: 'We are Multitudes',
                         extraInformation: 'Run ARC Toolkit before and after activating the overlay <br> Pause animations make lose some content',

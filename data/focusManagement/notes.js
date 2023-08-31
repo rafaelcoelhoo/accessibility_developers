@@ -78,7 +78,7 @@ export const notes = {
     tabindex: {
         tips: [
             'log <code>document.activeElement</code>',
-            'See this log on Coverflex website',
+            'See this log on Coverflex website, hover expression result',
             '<code>.focus()</code> to <code>tabindex: -1</code>',
             '<code>.focus()</code> to normal paragraph will not send the focus',
             'Buttons and links already have an implicit <code>tabindex: 0</code>',
@@ -98,7 +98,8 @@ export const notes = {
                     {
                         url: 'https://eportugal.gov.pt/contactos',
                         label: 'ePortugal',
-                        extraInformation: 'Positive tabindex form'
+                        extraInformation: 'Positive tabindex form',
+                        hide: true
                     },
                     {
                         url: 'https://www.worten.pt/cliente/conta#/myLogin/',
@@ -154,7 +155,8 @@ export const notes = {
                     },
                     {
                         url: 'https://www.maxi-cosi.pt/customer/account/login/',
-                        label: 'Maxi-cosi - Show password'
+                        label: 'Maxi-cosi - Show password',
+                        hide: true
                     },
                     {
                         url: 'https://getbootstrap.com/docs/4.6/getting-started/introduction/',
@@ -165,7 +167,8 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
                         label: 'Transparência',
-                        extraInformation: 'Focus obscured behind menu - Breadcrumb'
+                        extraInformation: 'Focus obscured behind menu - Breadcrumb',
+                        hide: true
                     },
                     {
                         url: 'https://commission.europa.eu/index_en',
@@ -203,7 +206,6 @@ export const notes = {
             'The DOM is the source of true for tab order',
             'Although it is possible to change the order of elements by CSS, you have to be very careful with this, because it will change the order in which assistive technologies provide information, because the order of the DOM is what will matter',
             'Changing the order it is not predictable for users',
-            'Check the tab order with the plugin Accessibility Insights for Web',
             'Check on firefox the tab order option',
             'Meaningful Sequence Level A'],
         examples: [
@@ -242,7 +244,8 @@ export const notes = {
                     {
                         url: 'https://www.worten.pt/cliente/conta#/myLogin',
                         label: 'Worten',
-                        extraInformation: 'Modal login error (Password must have minimum 4 characters) - It is not receiving the focus'
+                        extraInformation: 'Modal login error (Password must have minimum 4 characters) - It is not receiving the focus',
+                        hide: true
                     },
                     {
                         url: 'https://my.vodafone.pt/main.html',

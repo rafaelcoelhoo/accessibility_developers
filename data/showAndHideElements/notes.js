@@ -37,7 +37,8 @@ export const notes = {
                     {
                         url: 'https://www.portovivosru.pt/',
                         label: 'Porto SRU',
-                        extraInformation: 'Porto town hall - The dropdown at the top is in the accessibility tree'
+                        extraInformation: 'Porto town hall - The dropdown at the top is in the accessibility tree',
+                        hide: true
                     },
                     {
                         url: 'https://www.13.cl/',
@@ -64,7 +65,7 @@ export const notes = {
                     {
                         url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
                         label: 'Ikea - Malm product',
-                        extraInformation: 'The rating component is hiding the stars (but could be improved the number of reviews, as it is duplicated in the button name)'
+                        extraInformation: 'The rating component is hiding the stars (but could be improved the number of reviews, as it is duplicated in the button name) <br> - Add <code>aria-hidden</code> to the number of comments'
                     },
                     {
                         url: 'https://www.gov.uk/',
@@ -75,7 +76,8 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                         label: 'Transparência Gov',
-                        extraInformation: 'List of contents - Section with graphics'
+                        extraInformation: 'List of contents - Section with graphics',
+                        hide: true
                     },
                     {
                         url: 'https://www.scottohara.me/',
