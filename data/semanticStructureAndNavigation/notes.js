@@ -18,15 +18,18 @@ export const notes = {
                     {
                         url: 'https://www.augmental.tech/',
                         label: 'MouthPad',
-                        extraInformation: 'Company name is in first place in every page'
+                        extraInformation: 'Company name is in first place in every page',
+                        hide: true
                     },
                     {
                         url: 'https://www.libertyseguros.pt/PublicWebsite/',
                         label: 'Liberty insurance',
+                        hide: true
                     },
                     {
                         url: 'https://www.estgv.ipv.pt/estgv/?',
                         label: 'ESTGV',
+                        hide: true
                     },
                     {
                         url: 'https://www.esev.ipv.pt/posgrad.aspx',
@@ -74,7 +77,8 @@ export const notes = {
                     {
                         url: 'https://www.coverflex.com/en-pt',
                         label: 'Coverflex',
-                        extraInformation: 'Primary language'
+                        extraInformation: 'Primary language',
+                        hide: true
                     },
                     {
                         url: 'https://diariodarepublica.pt/dr/home',
@@ -84,7 +88,8 @@ export const notes = {
                     {
                         url: 'https://www.ipma.pt/pt/otempo/prev.localidade.hora/legenda.jsp',
                         label: 'IPMA',
-                        extraInformation: 'Language for parts of page'
+                        extraInformation: 'Language for parts of page',
+                        hide: true
                     },
                     {
                         url: 'https://info.portaldasfinancas.gov.pt/pt/docs/Conteudos_1pagina/Pages/portuguese-tax-system.aspx',
@@ -99,7 +104,8 @@ export const notes = {
                     {
                         url: 'https://www.apple.com/choose-country-region/',
                         label: 'Apple',
-                        extraInformation: 'Primary language'
+                        extraInformation: 'Primary language',
+                        hide: true
                     },
                     {
                         url: 'https://www.w3.org/',
@@ -146,7 +152,8 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/etapas',
                         label: 'Mosaico',
-                        extraInformation: 'Two navigation without accessible name'
+                        extraInformation: 'Two navigation without accessible name',
+                        hide: true
                     },
                 ],
             },
@@ -156,6 +163,7 @@ export const notes = {
                     {
                         url: 'https://www.gov.uk/cost-of-living/60-or-over',
                         label: 'Gov UK',
+                        hide: true
                     },
                     {
                         url: 'https://www.w3.org/standards/about/#value',
@@ -181,7 +189,8 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/homepage',
                         label: 'Mosaico - Homepage',
-                        extraInformation: 'Not meaningfully headings (1. 2.)'
+                        extraInformation: 'Not meaningfully headings (1. 2.)',
+                        hide: true
                     },
                     {
                         url: 'https://mosaico.gov.pt/perfis/ux-ui-designer',
@@ -201,7 +210,8 @@ export const notes = {
                     {
                         url: 'https://www.ipv.pt/esav/candidaturas-esav/',
                         label: 'IPV',
-                        extraInformation: 'Heading only visually and wrong headings tags for the main heading of the page'
+                        extraInformation: 'Heading only visually and wrong headings tags for the main heading of the page',
+                        hide: true
                     },
                 ],
             },{
@@ -220,6 +230,7 @@ export const notes = {
                     {
                         url: 'https://usablenet.com/about-us',
                         label: 'UsableNet',
+                        hide: true
                     },
                     {
                         url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
@@ -253,7 +264,8 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                         label: 'Transparência',
-                        extraInformation: 'Page contents and destination link without <code>tabindex="-1"</code>'
+                        extraInformation: 'Page contents and destination link without <code>tabindex="-1"</code>',
+                        hide: true
                     },
                     {
                         url: 'https://web.dev/learn/html/links/',
@@ -268,12 +280,14 @@ export const notes = {
                     {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
                         label: 'CGD',
-                        extraInformation: 'Search without href'
+                        extraInformation: 'Search without href',
+                        hide: true
                     },
                     {
                         url: 'https://www.vinted.pt/',
                         label: 'Vinted',
-                        extraInformation: 'Social media links without name'
+                        extraInformation: 'Social media links without name',
+                        hide: true
                     },
                 ]
             },
@@ -283,6 +297,7 @@ export const notes = {
                     {
                         url: 'https://www.w3.org/WAI/standards-guidelines/#guidelines',
                         label: 'W3 - Page contents',
+                        hide: true
                     },
                     {
                         url: 'https://www.magentaa11y.com/design/',
@@ -359,7 +374,8 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/contratualizacao/',
                         label: 'Mais Transparência - Contractualization',
-                        extraInformation: 'Missing row headings'
+                        extraInformation: 'Missing row headings',
+                        hide: true
                     },
                 ]
             },
