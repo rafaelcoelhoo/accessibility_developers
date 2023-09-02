@@ -21,23 +21,19 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
                         label: 'Mosaico - Search modal',
-                        extraInformation: 'Search modal (owl icon) using alt and <code>aria-hidden="true"</code>'
+                        extraInformation: 'Search modal (owl icon) using alt and <code>aria-hidden="true"</code>',
+                        hide: true
                     },
                     {
                         url: 'https://www.continente.pt/produto/batata-frita-lisa-original-lays-7379467.html',
                         label: 'Continente',
-                        extraInformation: '<code>title</code> and alt doing the same'
+                        extraInformation: '<code>title</code> and alt doing the same',
+                        hide: true
                     },
                     {
                         url: 'https://mosaico.gov.pt/perfis/ux-ui-designer',
                         label: 'Mosaico - Profile',
                         extraInformation: 'Section stages, principles using empty alt and <code>aria-hidden="true"</code>'
-                    },
-                    {
-                        url: 'https://www.americanexpress.com/en-us/banking/online-checking/?eep=90021&inav=us_menu_banking_personal_checking_personal_checking',
-                        label: 'American Express',
-                        extraInformation: 'Image from css but using alt'
-
                     },
                 ],
             },
@@ -82,12 +78,14 @@ export const notes = {
                     {
                         url: 'https://www.starbucksathome.com/pt/artigo/sobre-nos',
                         label: 'Starbucks',
-                        extraInformation: 'Not meaningful alt - Background image and COFFEHOUSES'
+                        extraInformation: 'Not meaningful alt - Background image and COFFEHOUSES',
+                        hide: true
                     },
                     {
                         url: 'https://roble.store/blogs/blog/por-que-elegir-sillas-nordicstory',
                         label: 'Roble store',
-                        extraInformation: 'Not meaningful alt'
+                        extraInformation: 'Not meaningful alt',
+                        hide: true
                     },
                     {
                         url: 'https://www.santander.pt/abrir-conta-online',
@@ -97,7 +95,8 @@ export const notes = {
                     {
                         url: 'https://www.disneyworld.eu/vacation-planning/?ef_id=EAIaIQobChMIl6-YioXOgAMVLQCzAB2xgwUCEAAYASAAEgLOnPD_BwE:G:s&s_kwcid=AL!5060!3!601103288317!e!!g!!disney%20world&CMP=KNC-FY23_WDW_TRA_DXF_W365_SCP_SCP_Gold%7CG%7C5231213.RR.AM.01.01%7CMYBUBPO%7CBR%7C601103288317&keyword_id=aud-300113739056:kwd-12193621%7Cdc%7Cdisney%20world%7C601103288317%7Ce%7C5060:3%7C&gclid=EAIaIQobChMIl6-YioXOgAMVLQCzAB2xgwUCEAAYASAAEgLOnPD_BwE',
                         label: 'Disney World',
-                        extraInformation: 'Using alt and aria-label'
+                        extraInformation: 'Using alt and aria-label',
+                        hide: true
                     }
                 ],
             },
@@ -112,17 +111,20 @@ export const notes = {
                     {
                         url: 'https://www.americanexpress.com/us/credit-cards/',
                         label: 'American Express - Credit card',
-                        extraInformation: 'Platinum card image'
+                        extraInformation: 'Platinum card image',
+                        hide: true
                     },
                     {
                         url: 'https://www.americanexpress.com/us/credit-cards/',
                         label: 'American Express - Rewards checking',
-                        extraInformation: 'Good alt but bad implementation'
+                        extraInformation: 'Good alt but bad implementation',
+                        hide: true
                     },
                     {
                         url: 'https://blog.usablenet.com/a-record-breaking-year-for-ada-digital-accessibility-lawsuits',
                         label: 'UsableNet',
-                        extraInformation: 'Image from article'
+                        extraInformation: 'Image from article',
+                        hide: true
                     }
                 ],
             },
@@ -149,7 +151,8 @@ export const notes = {
                     {
                         url: 'https://www.aboutamazon.es/?language=pt',
                         label: 'Amazon',
-                        extraInformation: 'Link images without name on footer'
+                        extraInformation: 'Link images without name on footer',
+                        hide: true
                     },
                 ],
             },
@@ -179,12 +182,13 @@ export const notes = {
                     {
                         url: 'https://www.b-simple.pt/en/',
                         label: 'B-Simple',
-                        extraInformation: 'With who we integrate section - Images with not alt'
+                        extraInformation: '"Who we thank section" - Images with not alt'
                     },
                     {
                         url: 'https://www.peppasauce.love/',
                         label: 'Peppa sauce',
-                        extraInformation: 'Footer image (Mama Joyce Peppa Sauce)'
+                        extraInformation: 'Footer image (Mama Joyce Peppa Sauce)',
+                        hide: true
                     },
                 ],
             },
@@ -194,12 +198,14 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                         label: 'Mais Transparência',
-                        extraInformation: 'Canvas section with a visually hidden text'
+                        extraInformation: 'Canvas section with a visually hidden text',
+                        hide: true
                     },
                     {
                         url: 'https://expresso.pt/',
                         label: 'Expresso',
-                        extraInformation: 'Complaint book (footer)'
+                        extraInformation: 'Complaint book (footer)',
+                        hide: true
                     },
                     {
                         url: 'https://usablenet.com/strategic-relationships',
@@ -238,7 +244,7 @@ export const notes = {
                     {
                         url: 'https://my.vodafone.pt/main.html',
                         label: 'Vodafone',
-                        extraInformation: 'Social media logos without name'
+                        extraInformation: 'Social media logos without name and without <code>role="img"</code>'
                     },
                 ],
             },
@@ -248,10 +254,11 @@ export const notes = {
                     {
                         url: 'https://medium.com/',
                         label: 'Medium',
-                        extraInformation: 'Notifications icon using <code>aria-label</code> but missing the <code>role</code>'
+                        extraInformation: 'Notifications icon using <code>aria-label</code> but missing the <code>role</code>',
+                        hide: true
                     },
                     {
-                        url: 'https://web.dev/prefers-color-scheme/',
+                        url: 'https://web.dev/',
                         label: 'Web dev',
                         extraInformation: 'Link homepage'
                     },

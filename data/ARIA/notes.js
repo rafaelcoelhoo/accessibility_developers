@@ -89,12 +89,14 @@ export const notes = {
                     {
                         url: 'https://portocanal.sapo.pt/',
                         label: 'Porto channel',
-                        extraInformation: 'Hamburger menu using div'
+                        extraInformation: 'Hamburger menu using div',
+                        hide: true
                     },
                     {
                         url: 'https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
                         label: 'OLX',
-                        extraInformation: 'Filter typology using just <code>role:"button"</code>'
+                        extraInformation: 'Filter typology using just <code>role:"button"</code>',
+                        hide: true
                     },
                 ],
             },
@@ -103,7 +105,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://www.google.com/search?q=tempo+porto&rlz=1C5GCEM_enPT1024PT1024&sxsrf=AB5stBjyDtddD1W7zAzuz0wd0-aghH4N8g%3A1690060926866&ei=fki8ZOikNJO7kdUPtcGWgAs&oq=tempo+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnRlbXBvICoCCAEyChAjGIoFGCcYnQIyBBAjGCcyBxAjGIoFGCcyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIoFGLEDGIMBGMkDMggQABiABBiSAzIIEAAYigUYkgMyCxAAGIAEGLEDGIMBSKUNUIcBWIcBcAF4AZABAJgBggKgAYICqgEDMi0xuAEByAEA-AEBwgIHECMYsAMYJ8ICChAAGEcY1gQYsAPCAhAQLhiKBRjIAxiwAxhD2AEB4gMEGAAgQYgGAZAGC7oGBAgBGAg&sclient=gws-wiz-serp',
-                        label: 'Google - Dropdown filters'
+                        label: 'Google - Dropdown filters',
+                        hide: true
                     },
                     {
                         url: 'https://feathericons.com/',
@@ -116,7 +119,8 @@ export const notes = {
                     },
                     {
                         url: 'https://www.augmental.tech/faq',
-                        label: 'MouthPad - FAQ'
+                        label: 'MouthPad - FAQ',
+                        hide: true
                     },
                 ],
             },
@@ -126,6 +130,7 @@ export const notes = {
         tips: [
             'Add <code>tabindex: 0</code>',
             'Add <code>role: link</code>',
+            'Handle keyboard events'
         ],
         examples: [
             {
@@ -205,7 +210,8 @@ export const notes = {
                     {
                         url: 'https://www.nestlehealthscience.ph/products/buynow ',
                         label: 'Nestle',
-                        extraInformation: 'Open second product'
+                        extraInformation: 'Open second product',
+                        hide: true
                     },
                     {
                         url: 'https://interfaceingame.com/games/?themes=medieval',
@@ -274,12 +280,13 @@ export const notes = {
                     {
                         url: 'https://www.cgd.pt/Precario/Pages/Precario.aspx',
                         label: 'CGD',
-                        extraInformation: 'Other clients accordion'
+                        extraInformation: 'Other clients accordion <br> - See the Event Listener for element with class <code>title-accordion_v2</code> '
                     },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
                         label: 'Mais Transparência',
-                        extraInformation: 'Modal All Themes by default has all options collapsed'
+                        extraInformation: 'Modal All Themes by default has all options collapsed',
+                        hide: true
                     },
 
                 ],
@@ -297,7 +304,8 @@ export const notes = {
                     },
                     {
                         url: 'https://www.apple.com/apple-arcade/',
-                        label: 'Apple - Questions'
+                        label: 'Apple - Questions',
+                        hide: true
                     },
                 ],
             },
@@ -320,7 +328,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://www.continente.pt/mercearia/cafe-cha-e-chocolate-soluvel/?start=0&srule=FOOD_Mercearia&pmin=0.01',
-                        label: 'Continente - Add item'
+                        label: 'Continente - Add item',
+                        hide: true
                     },
                     {
                         url: 'https://pt.tommy.com/tommy-hilfiger-x-vacation-flag-embroidery-t-shirt-mw0mw33438ybl',
