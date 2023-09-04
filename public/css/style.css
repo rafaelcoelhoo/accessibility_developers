@@ -933,22 +933,47 @@ h4 {
   }
 }
 
-.zoom .fixed-card {
-  padding: 10px;
-  height: 150px;
-  border: #0C1932 2px solid;
-  width: 500px;
+@media (min-width: 768px) {
+  .zoom .card-container {
+    display: flex;
+  }
 }
-.zoom .fixed-card .font-16 {
+.zoom .card-container .fixed-card {
+  padding: 10px;
+  height: 185px;
+  border: #0C1932 2px solid;
+  margin-bottom: 5rem;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .zoom .card-container .fixed-card {
+    width: 500px;
+    height: 150px;
+    margin-bottom: 0;
+  }
+}
+.zoom .card-container .fixed-card .font-16 {
   font-size: 16px;
 }
-.zoom .card-zoom {
+.zoom .card-container .card-zoom {
   border: #0C1932 2px solid;
   padding: 10px;
-  width: 500px;
+  width: 100%;
+  margin-bottom: 5rem;
 }
-.zoom .card-zoom .font-vw {
-  font-size: 1.2vw;
+@media (min-width: 768px) {
+  .zoom .card-container .card-zoom {
+    width: 500px;
+    margin-bottom: 0;
+  }
+}
+.zoom .card-container .card-zoom .font-vw {
+  font-size: 4.2vw;
+}
+@media (min-width: 768px) {
+  .zoom .card-container .card-zoom .font-vw {
+    font-size: 1.2vw;
+  }
 }
 
 .target-size .pagination {

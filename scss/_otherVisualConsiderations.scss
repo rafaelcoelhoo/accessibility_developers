@@ -77,26 +77,47 @@
 }
 
 .zoom {
-  .fixed-card {
-    padding: 10px;
-    height: 150px;
-    border: #0C1932 2px solid;
-    width: 500px;
+  .card-container {
+    @media (min-width: 768px) {
+      display: flex;
+    }
 
-    .font-16 {
-      font-size: 16px;
+    .fixed-card {
+      padding: 10px;
+      height: 185px;
+      border: #0C1932 2px solid;
+      margin-bottom: 5rem;
+      width: 100%;
+      @media (min-width: 768px) {
+        width: 500px;
+        height: 150px;
+        margin-bottom: 0;
+      }
+
+      .font-16 {
+        font-size: 16px;
+      }
+    }
+
+    .card-zoom {
+      border: #0C1932 2px solid;
+      padding: 10px;
+      width: 100%;
+      margin-bottom: 5rem;
+      @media (min-width: 768px) {
+        width: 500px;
+        margin-bottom: 0;
+      }
+
+      .font-vw {
+        font-size: 4.2vw;
+        @media (min-width: 768px) {
+          font-size: 1.2vw;
+        }
+      }
     }
   }
 
-  .card-zoom {
-    border: #0C1932 2px solid;
-    padding: 10px;
-    width: 500px;
-
-    .font-vw {
-      font-size: 1.2vw;
-    }
-  }
 }
 
 .target-size {

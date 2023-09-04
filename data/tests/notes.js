@@ -1,7 +1,9 @@
 export const notes = {
     duplicatedIds: {
         tips: [
-            'Run axe devTools'
+            'Run axe devTools',
+            'Check accessible names',
+            'Click on "account" label to see that the input that receives focus is from "Personal data"'
         ],
         examples: [
             {
