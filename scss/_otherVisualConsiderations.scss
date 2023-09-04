@@ -47,6 +47,7 @@
       animation: none;
       font-size: 1.3rem;
       line-height: 1.5;
+      white-space: normal;
     }
   }
 
@@ -65,6 +66,13 @@
   :root {
     --backgroundColor: black;
     --color: white;
+  }
+}
+
+.wallpaper {
+  width: 100%;
+  @media (min-width: 768px) {
+    width: auto;
   }
 }
 

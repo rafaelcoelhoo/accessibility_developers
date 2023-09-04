@@ -128,7 +128,10 @@
     display: grid;
     grid-template-columns: auto auto auto;
     border-collapse: collapse;
-    width: 490px;
+    width: 100%;
+    @media (min-width: 568px) {
+      width: 455px;
+    }
   }
 
   .row {

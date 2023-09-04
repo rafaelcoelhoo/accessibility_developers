@@ -29,6 +29,13 @@
   }
 }
 
+.ikea-image {
+  width: 100%;
+  @media (min-width: 992px) {
+    width: auto;
+  }
+}
+
 .accessible-names {
   .feather-external-link {
     margin-left: 5px;

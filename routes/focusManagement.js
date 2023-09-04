@@ -25,7 +25,8 @@ router.get('/focus-on-modals', function (req, res) {
 });
 
 router.get('/keyboard-trap', function (req, res) {
-  res.render('focusManagement/keyboardTrap', {title: "Keyboard Trap", notes: getDataByKey('keyboardTrap')});
+  const modalCode = fs.readFileSync('./views/partials/modal-focus-on-modals.hbs', 'utf8');
+  res.render('focusManagement/keyboardTrap', {title: "Keyboard Trap", modal: modalCode, notes: getDataByKey('keyboardTrap')});
 });
 
 router.get('/tabindex', function (req, res) {

@@ -105,7 +105,7 @@ input {
 }
 @media (min-width: 768px) {
   .accordion {
-    width: 50%;
+    width: 70%;
   }
 }
 .accordion .extra-information-links {
@@ -214,12 +214,27 @@ h4 {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  height: 400px;
+  width: 100%;
+}
+@media (min-width: 962px) {
+  .accessibility-tree .image-a11y {
+    width: 800px;
+    height: 533px;
+  }
 }
 .accessibility-tree .image-decorative {
   background-image: url("https://www.reliablesoft.net/wp-content/uploads/2019/06/beagle-dog.jpg");
-  height: 533px;
-  width: 800px;
+  height: 400px;
+  width: 100%;
+  background-position: right;
   margin: 0 auto;
+}
+@media (min-width: 962px) {
+  .accessibility-tree .image-decorative {
+    width: 800px;
+    height: 533px;
+  }
 }
 .accessibility-tree .register-account {
   background-color: #0C1932;
@@ -385,7 +400,20 @@ h4 {
 }
 .focus-management.tab-index-example .wrapper {
   height: 100%;
-  display: flex;
+}
+@media (min-width: 768px) {
+  .focus-management.tab-index-example .wrapper {
+    display: flex;
+  }
+}
+.focus-management.tab-index-example .wrapper #content {
+  padding-left: 0;
+  margin-top: 30px;
+}
+@media (min-width: 768px) {
+  .focus-management.tab-index-example .wrapper #content {
+    padding-left: 15px;
+  }
 }
 .focus-management.tab-index-example #side-nav-label {
   display: block;
@@ -416,18 +444,23 @@ h4 {
   background: black;
   color: white;
 }
-.focus-management.modal-focus-content .modal-1, .focus-management.modal-focus-content .modal-2, .focus-management.modal-focus-content .modal-initial, .focus-management.modal-focus-content .modal-solution {
-  width: 50%;
+.focus-management.modal-focus-content .modal-wrapper {
+  width: 100%;
   border-radius: 4px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 24px;
+  padding: 25px;
   background-color: #fff;
   z-index: 3;
   position: fixed;
   top: 25%;
-  left: 25%;
   display: none;
+}
+@media (min-width: 576px) {
+  .focus-management.modal-focus-content .modal-wrapper {
+    left: 25%;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 .focus-management.modal-focus-content .modal-overlay {
   width: 100%;
@@ -546,6 +579,15 @@ h4 {
 }
 .switch-control .toggle-switch.active .toggle-knob {
   margin-left: 36px;
+}
+
+.ikea-image {
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .ikea-image {
+    width: auto;
+  }
 }
 
 .accessible-names .feather-external-link {
@@ -724,7 +766,12 @@ h4 {
   display: grid;
   grid-template-columns: auto auto auto;
   border-collapse: collapse;
-  width: 490px;
+  width: 100%;
+}
+@media (min-width: 568px) {
+  .tables .table-div {
+    width: 455px;
+  }
 }
 .tables .row {
   display: contents;
@@ -799,7 +846,13 @@ h4 {
   height: 50px;
 }
 .images .bars-img {
+  width: 100%;
   height: 350px;
+}
+@media (min-width: 768px) {
+  .images .bars-img {
+    width: auto;
+  }
 }
 
 .reduce-motion .scrolling-text-container {
@@ -851,6 +904,7 @@ h4 {
     animation: none;
     font-size: 1.3rem;
     line-height: 1.5;
+    white-space: normal;
   }
 }
 .reduce-motion .disable-animation {
@@ -870,6 +924,15 @@ h4 {
     --color: white;
   }
 }
+.wallpaper {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .wallpaper {
+    width: auto;
+  }
+}
+
 .zoom .fixed-card {
   padding: 10px;
   height: 150px;

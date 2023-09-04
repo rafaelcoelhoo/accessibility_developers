@@ -47,7 +47,16 @@
   &.tab-index-example {
     .wrapper {
       height: 100%;
-      display: flex;
+      @media (min-width: 768px) {
+        display: flex;
+      }
+      #content {
+        padding-left: 0;
+        margin-top: 30px;
+        @media (min-width: 768px) {
+          padding-left: 15px;
+        }
+      }
     }
 
     #side-nav-label {
@@ -87,18 +96,21 @@
   }
 
   &.modal-focus-content {
-    .modal-1, .modal-2, .modal-initial, .modal-solution {
-      width: 50%;
+    .modal-wrapper {
+      width: 100%;
       border-radius: 4px;
-      margin-left: auto;
-      margin-right: auto;
-      padding: 24px;
+      padding: 25px;
       background-color: #fff;
       z-index: 3;
       position: fixed;
       top: 25%;
-      left: 25%;
       display: none;
+      @media (min-width: 576px) {
+        left: 25%;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
     }
 
     .modal-overlay {
