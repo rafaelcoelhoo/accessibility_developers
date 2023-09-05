@@ -83,7 +83,8 @@ export const notes = {
                     {
                         url: 'https://diariodarepublica.pt/dr/home',
                         label: 'Diário da Repúplica',
-                        extraInformation: 'Primary language'
+                        extraInformation: 'Primary language',
+                        hide: true
                     },
                     {
                         url: 'https://www.ipma.pt/pt/otempo/prev.localidade.hora/legenda.jsp',
@@ -179,8 +180,6 @@ export const notes = {
             'List all headings <code>VO + U</code>',
             'Next heading <code>VO + Command + H</code>',
             'Previous heading <code>VO + Shift + Command + H</code>',
-            'Add proper headings',
-            'To use aria for heading <code>role: heading</code> and <code>aria-level: (heading level)</code>'
         ],
         examples: [
             {
@@ -195,7 +194,8 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/perfis/ux-ui-designer',
                         label: 'Mosaico - Designer',
-                        extraInformation: 'Missing headings (Stages, principles)'
+                        extraInformation: 'Missing headings (Stages, principles)',
+                        hide: true
                     },
                     {
                         url: 'https://help.medium.com/hc/en-us/articles/360053078253',
@@ -235,7 +235,8 @@ export const notes = {
                     {
                         url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
                         label: 'Ikea',
-                        extraInformation: 'Section product details accordion, Heading using aria, with <code>role="heading"</code> and <code>aria-level="2"</code>'
+                        extraInformation: 'Section product details accordion, Heading using aria, with <code>role="heading"</code> and <code>aria-level="2"</code>',
+                        hide: true
                     },
                 ],
             },
@@ -245,6 +246,7 @@ export const notes = {
         tips: [
             'Link should point an element with an accessible name, in this case should point to the heading',
             'Add <code>tabindex: -1</code> to the content itself (in this case the heading)',
+            'Check cursor navigation before adding <code>tabindex: -1</code>',
             'Use descriptive text links',
             "Add an accessible name for the social images links"
         ],
@@ -369,7 +371,8 @@ export const notes = {
                     {
                         url: 'https://www.ipv.pt/esav/estudar-esav/ofertaformatica-esav/enf-veterinaria/',
                         label: 'IPV',
-                        extraInformation: 'Section Results CNA 2021, table without headings and no caption'
+                        extraInformation: 'Section Results CNA 2021, table without headings and no caption',
+                        hide: true
                     },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/contratualizacao/',
@@ -384,7 +387,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://transparencia.gov.pt/pt/municipios/indicadores-por-municipio/dinamica-economica/',
-                        label: 'Mais Transparência - Economic Dynamics'
+                        label: 'Mais Transparência - Economic Dynamics',
+                        hide: true
                     },
                 ]
             }

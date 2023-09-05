@@ -43,12 +43,14 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                         label: 'Mais Transparência',
-                        extraInformation: 'Background image'
+                        extraInformation: 'Background image',
+                        hide: true
                     },
                     {
                         url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
                         label: 'Mosaico - Digital Services',
-                        extraInformation: 'Background images'
+                        extraInformation: 'Background images',
+                        hide: true
                     },
                 ],
             },
@@ -57,7 +59,6 @@ export const notes = {
     informativeImages: {
         tips: [
             'Navigate by images - <code>VO + Command + G</code>',
-            'Stop the screen reader in the middle of the alternative text',
             'Have a look at the accessibility tree',
         ],
         examples: [
@@ -90,7 +91,8 @@ export const notes = {
                     {
                         url: 'https://www.santander.pt/abrir-conta-online',
                         label: 'Santander',
-                        extraInformation: 'Not meaningful alt and duplicated'
+                        extraInformation: 'Not meaningful alt and duplicated',
+                        hide: true
                     },
                     {
                         url: 'https://www.disneyworld.eu/vacation-planning/?ef_id=EAIaIQobChMIl6-YioXOgAMVLQCzAB2xgwUCEAAYASAAEgLOnPD_BwE:G:s&s_kwcid=AL!5060!3!601103288317!e!!g!!disney%20world&CMP=KNC-FY23_WDW_TRA_DXF_W365_SCP_SCP_Gold%7CG%7C5231213.RR.AM.01.01%7CMYBUBPO%7CBR%7C601103288317&keyword_id=aud-300113739056:kwd-12193621%7Cdc%7Cdisney%20world%7C601103288317%7Ce%7C5060:3%7C&gclid=EAIaIQobChMIl6-YioXOgAMVLQCzAB2xgwUCEAAYASAAEgLOnPD_BwE',
@@ -132,6 +134,7 @@ export const notes = {
     },
     clickableImages: {
         tips: [
+            'Keyboard navigation',
             'Have a look at the accessibility tree',
         ],
         examples: [
@@ -146,7 +149,8 @@ export const notes = {
                     {
                         url: 'https://www.portovivosru.pt/',
                         label: 'Porto SRU',
-                        extraInformation: 'Search and menu icons (screen < 1100px)'
+                        extraInformation: 'Search and menu icons (screen < 1100px)',
+                        hide: true
                     },
                     {
                         url: 'https://www.aboutamazon.es/?language=pt',
@@ -210,7 +214,8 @@ export const notes = {
                     {
                         url: 'https://usablenet.com/strategic-relationships',
                         label: 'UsableNet',
-                        extraInformation: 'Retail, Healthcare section'
+                        extraInformation: 'Retail, Healthcare section',
+                        hide: true
                     },
                 ],
             },
