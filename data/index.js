@@ -220,6 +220,7 @@ export const index = {
                     hasMultipleLinks: true,
                     id: "aria_tabs",
                     label: "Tabs",
+                    hide: true,
                     options: [
                         {
                             label: "Tabs",
@@ -240,6 +241,7 @@ export const index = {
                     label: "Switch control",
                     hasMultipleLinks: true,
                     id: "switch_control",
+                    hide: true,
                     options: [
                         {
                             label: "Switch control",
@@ -260,6 +262,7 @@ export const index = {
                     hasMultipleLinks: true,
                     id: "aria_modal",
                     label: "Modal",
+                    hide: true,
                     options: [
                         {
                             label: "Modal",
@@ -407,6 +410,7 @@ export const index = {
                     label: "Lists",
                     hasMultipleLinks: true,
                     id: "lists",
+                    hide: true,
                     options: [
                         {
                             label: "Lists",
@@ -427,6 +431,7 @@ export const index = {
                     label: "Other semantic elements",
                     hasMultipleLinks: true,
                     id: "otherSE",
+                    hide: true,
                     options: [
                         {
                             label: "Other semantic elements",
