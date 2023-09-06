@@ -202,6 +202,7 @@ export const notes = {
         tips: [
             "Add <code>role='checkbox'</code>",
             "Add <code>tabindex='0'</code>",
+            'Handle keyboard events'
         ],
         examples: [
             {
@@ -275,7 +276,8 @@ export const notes = {
                     {
                         url: 'https://www.sns.gov.pt/home/perguntas-e-respostas/',
                         label: 'SNS',
-                        extraInformation: 'Menu options and Questions and Answers section'
+                        extraInformation: 'Menu options and Questions and Answers section',
+                        hide: true
                     },
                     {
                         url: 'https://www.cgd.pt/Precario/Pages/Precario.aspx',
@@ -296,7 +298,13 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://blog.usablenet.com/page/2',
-                        label: 'UsableNet - Menu'
+                        label: 'UsableNet - Menu',
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.accessibilityassociation.org/s/',
+                        label: 'International Association of Accessibility Professionals',
+                        hide: true
                     },
                     {
                         url: 'https://www.novobanco.pt/ajuda-contactos',
@@ -319,7 +327,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html',
-                        label: 'Aria usage - Bookmark <br> - Run also on MouthPad'
+                        label: 'Aria usage - Bookmark <br> - Run also on MouthPad',
+                        hide: true
                     },
                 ],
             },
@@ -416,7 +425,8 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
                         label: 'Mosaico',
-                        extraInformation: 'Search (screen small than 1200px) (Add class visually-hidden)'
+                        extraInformation: 'Search (screen small than 1200px) (Add class visually-hidden)',
+                        hide: true
                     },
                     {
                         url: 'https://www.purina.co.uk/dog/dog-food/dry',
@@ -432,13 +442,13 @@ export const notes = {
                     {
                         url: 'https://www.apple.com/apple-events/',
                         label: 'Apple',
-                        extraInformation: 'Explore the preview and learn more links'
+                        extraInformation: 'Explore the preview and learn more links',
+                        hide: true
                     },
                     {
                         url: 'https://www.accessarmada.com/services/',
                         label: 'Access Armada',
-                        extraInformation: 'Leran more links with more context programmatically',
-                        hide: true
+                        extraInformation: 'Learn more links with more context programmatically'
                     },
                     {
                         url: 'https://www.ikea.com/pt/pt/p/godmorgon-armario-p-lavatorio-c-2-gavetas-brilh-branco-30180995/',

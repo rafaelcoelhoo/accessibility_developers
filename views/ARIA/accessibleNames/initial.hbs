@@ -1,7 +1,7 @@
 <div class="accessible-names" lang="en">
     <h2>aria-label</h2>
     <button class="btn-transparent mb-4 d-block">
-        <svg viewBox="0 0 100 80" width="40" height="40">
+        <svg viewBox="0 0 100 80" width="40" height="40" role="img" aria-hidden="true">
             <rect width="100" height="20"></rect>
             <rect y="30" width="100" height="20"></rect>
             <rect y="60" width="100" height="20"></rect>
@@ -21,7 +21,7 @@
 
     <h2>Content - Visually hidden</h2>
     <button class="btn-transparent">
-        <svg viewBox="0 0 100 80" width="40" height="40">
+        <svg viewBox="0 0 100 80" width="40" height="40" role="img" aria-hidden="true">
             <rect width="100" height="20"></rect>
             <rect y="30" width="100" height="20"></rect>
             <rect y="60" width="100" height="20"></rect>
@@ -55,7 +55,7 @@
     <h2>aria-describedby</h2>
     <form>
         <label for="pwd">Password</label>
-        <input type="text" id="pwd">
+        <input type="password" id="pwd">
         <p id="pwd-detail">The password must have 10 characters</p>
     </form>
 
@@ -74,7 +74,7 @@
     <hr>
 
     <h2>Mismatch accessible name and visible name</h2>
-    <a href="https://lisbondigitalschool.com/" target="_blank" aria-label="Click to see more about or school">
+    <a href="https://lisbondigitalschool.com/" target="_blank" aria-label="Click to see more about our school">
         Visit our school
     </a>
 

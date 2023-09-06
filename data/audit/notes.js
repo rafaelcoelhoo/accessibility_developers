@@ -1,7 +1,7 @@
 export const notes = {
     audit: {
         tips: [
-            'Enable Stylus plugin for focus on Liberty Insurance'
+            'Enable focus indicator with stylus plugin on Liberty Insurance'
         ],
         examples: [
             {

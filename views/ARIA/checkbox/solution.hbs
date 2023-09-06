@@ -20,12 +20,12 @@
             });
 
             check.addEventListener('keydown', function (e) {
-                    if (e.keyCode === 32) e.preventDefault();
+                    if (e.key === ' ') e.preventDefault();
                 });
             check.addEventListener('keyup', function (e) {
                 e.preventDefault();
                 e.stopPropagation();
-                if (e.keyCode === 32) {
+                if (e.key === ' ') {
                     const expanded = this.getAttribute("aria-checked");
                     expanded === "true" ? this.setAttribute("aria-checked", "false") : this.setAttribute("aria-checked", "true");
                 }
