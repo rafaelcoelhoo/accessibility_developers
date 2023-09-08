@@ -1,0 +1,9 @@
+<section class="mt-5">
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+            {{#each breadcrumb}}
+                <li><a href="{{{url}}}" {{#if currentPage}}aria-current="true" {{/if}}>{{{label}}}</a></li>
+            {{/each}}
+        </ol>
+    </nav>
+</section>
