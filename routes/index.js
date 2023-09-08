@@ -13,8 +13,10 @@ router.get('/', function (req, res) {
   const parameter = req.query.id;
   let renderView = "index";
   let optionsDetails = undefined;
+  let isHomepage = true;
 
   if (parameter) {
+    isHomepage = false;
     const data = index.content.find(item => {
       return item.options.some(option => option.id === parameter);
     });
@@ -26,6 +28,7 @@ router.get('/', function (req, res) {
     }
   }
   const response = optionsDetails || index;
+  response.isHomepage = isHomepage;
 
   res.render(renderView, response);
 });

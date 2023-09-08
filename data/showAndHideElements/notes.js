@@ -26,7 +26,7 @@ export const notes = {
                     {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
                         label: 'CGD',
-                        extraInformation: 'Caixadirecta menu option is using height to control the submenu,(<code>direct-wrapper</code>)'
+                        extraInformation: 'Caixadirecta menu option is using the height property to control the submenu,(<code>direct-wrapper</code>)'
                     },
                     {
                         url: 'https://academia.ama.gov.pt/',
