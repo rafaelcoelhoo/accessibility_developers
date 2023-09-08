@@ -1,5 +1,6 @@
 import express from 'express';
 import {index} from '../data/index.js';
+import {buildBreadcrumb} from "../js/components/notesData.js";
 
 const router = express.Router();
 
@@ -29,6 +30,7 @@ router.get('/', function (req, res) {
   }
   const response = optionsDetails || index;
   response.isHomepage = isHomepage;
+  response.breadcrumb = buildBreadcrumb('', req.path, response.title)
 
   res.render(renderView, response);
 });

@@ -180,6 +180,10 @@ input {
 }
 
 .breadcrumb {
+	ol {
+		padding-left: 0;
+		margin-bottom: 0;
+	}
 	li {
 		display: inline-block;
 		position: relative;
@@ -188,7 +192,11 @@ input {
 		padding-left: 0.9784375em;
 		float: left;
 	}
-	li:not(:first-child)::before {
+	li:first-child {
+		margin-left: 0;
+		padding-left: 0;
+	}
+		li:not(:first-child)::before {
 		border-width: max(1px, 0.0625em) max(1px, 0.0625em) 0 0;
 		font-size: max(16px, 1em);
 		content: "";

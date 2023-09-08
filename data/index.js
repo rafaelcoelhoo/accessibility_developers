@@ -71,7 +71,7 @@ export const index = {
                             topics: [
                                 {
                                     link: "/focus-management/tabindex",
-                                    label: "tabindex attribute"
+                                    label: "Tabindex attribute"
                                 },
                                 {
                                     link: "/focus-management/tabindex-example",
@@ -87,7 +87,7 @@ export const index = {
                 },
                 {
                     link: "/focus-management/focus-on-modals",
-                    label: "Focus management on modals"
+                    label: "Focus management in modals"
                 },
                 {
                     link: "/focus-management/keyboard-trap",

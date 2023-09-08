@@ -168,6 +168,10 @@ input {
   color: #0C1932;
 }
 
+.breadcrumb ol {
+  padding-left: 0;
+  margin-bottom: 0;
+}
 .breadcrumb li {
   display: inline-block;
   position: relative;
@@ -175,6 +179,10 @@ input {
   margin-left: 0.625em;
   padding-left: 0.9784375em;
   float: left;
+}
+.breadcrumb li:first-child {
+  margin-left: 0;
+  padding-left: 0;
 }
 .breadcrumb li:not(:first-child)::before {
   border-width: max(1px, 0.0625em) max(1px, 0.0625em) 0 0;

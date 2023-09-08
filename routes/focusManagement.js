@@ -1,40 +1,45 @@
 import express from 'express';
 import fs from 'fs';
-import {getDataByKey} from '../data/focusManagement/notes.js';
-
+import {notes} from '../data/focusManagement/notes.js';
+import {buildBreadcrumb, getDataByKey} from '../js/components/notesData.js';
 
 const router = express.Router();
 
 router.get('/keyboard', function (req, res) {
-  res.render('focusManagement/keyboardAccessibility', {title: "Keyboard Accessibility", notes: getDataByKey('keyboardAccessibility')});
+  const title = 'Keyboard Accessibility';
+  res.render('focusManagement/keyboardAccessibility', {title, notes: getDataByKey('keyboardAccessibility', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
 });
 
 router.get('/focus-indicator', function (req, res) {
-
-  res.render('focusManagement/focus', {title: "Focus Indicator", notes: getDataByKey('focus')});
+  const title = 'Focus Indicator';
+  res.render('focusManagement/focus', {title, notes: getDataByKey('focus', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
 });
 
 router.get('/content-order', function (req, res) {
-  res.render('focusManagement/contentOrder', {title: "Tab order", notes: getDataByKey('tabOrder')});
+  const title = 'Tab order';
+  res.render('focusManagement/contentOrder', {title, notes: getDataByKey('tabOrder', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
 });
 
 router.get('/focus-on-modals', function (req, res) {
   const modalCode = fs.readFileSync('./views/partials/modal-focus-on-modals.hbs', 'utf8');
-
-  res.render('focusManagement/focusOnModals', {title: "Focus in modals", modal: modalCode, notes: getDataByKey('focusOnModals')});
+  const title = 'Focus management in modals';
+  res.render('focusManagement/focusOnModals', {title, modal: modalCode, notes: getDataByKey('focusOnModals', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
 });
 
 router.get('/keyboard-trap', function (req, res) {
   const modalCode = fs.readFileSync('./views/partials/modal-focus-on-modals.hbs', 'utf8');
-  res.render('focusManagement/keyboardTrap', {title: "Keyboard Trap", modal: modalCode, notes: getDataByKey('keyboardTrap')});
+  const title = 'Keyboard Trap';
+  res.render('focusManagement/keyboardTrap', {title, modal: modalCode, notes: getDataByKey('keyboardTrap', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
 });
 
 router.get('/tabindex', function (req, res) {
-  res.render('focusManagement/tabindex/tabIndex', {title: "tabindex attribute", notes: getDataByKey('tabindex')});
+  const title = 'Tabindex attribute';
+  res.render('focusManagement/tabindex/tabIndex', {title, notes: getDataByKey('tabindex', notes), breadcrumb: buildBreadcrumb('focus_management_tabindex', req.path, title)});
 });
 
 router.get('/tabindex-example', function (req, res) {
-  res.render('focusManagement/tabindex/tabIndexExample', {title: "Example tabindex", notes: getDataByKey('tabindexExample')});
+  const title = 'Example tabindex';
+  res.render('focusManagement/tabindex/tabIndexExample', {title, notes: getDataByKey('tabindexExample', notes), breadcrumb: buildBreadcrumb('focus_management_tabindex', req.path, title)});
 });
 
 router.get('/about', function (req, res) {

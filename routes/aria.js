@@ -1,73 +1,87 @@
 import express from 'express';
 import fs from "fs";
-import {getDataByKey} from '../data/ARIA/notes.js';
+import {notes} from '../data/ARIA/notes.js';
+import {buildBreadcrumb, getDataByKey} from '../js/components/notesData.js';
 
 
 const router = express.Router();
 
 router.get('/links/initial', function (req, res) {
-  res.render('ARIA/links/initial', {title: "Links - Aria", notes: getDataByKey('links')});
+  const title = 'Links - Aria';
+  res.render('ARIA/links/initial', {title, notes: getDataByKey('links', notes), breadcrumb: buildBreadcrumb('aria_links', req.path, title)});
 });
 
 router.get('/links/solution', function (req, res) {
-  res.render('ARIA/links/solution', {title: "Links - Aria", notes: getDataByKey('links')});
+  const title = 'Links - Aria';
+  res.render('ARIA/links/solution', {title, notes: getDataByKey('links', notes), breadcrumb: buildBreadcrumb('aria_links', req.path, title)});
 });
 
 router.get('/buttons/initial', function (req, res) {
-  res.render('ARIA/buttons/initial', {title: "Buttons - Aria", notes: getDataByKey('buttons')});
+  const title = 'Buttons - Aria';
+  res.render('ARIA/buttons/initial', {title, notes: getDataByKey('buttons', notes), breadcrumb: buildBreadcrumb('aria_buttons', req.path, title)});
 });
 
 router.get('/buttons/solution', function (req, res) {
-  res.render('ARIA/buttons/solution', {title: "Buttons - Aria"});
+  const title = 'Buttons - Aria';
+  res.render('ARIA/buttons/solution', {title});
 });
 
 router.get('/checkbox/initial', function (req, res) {
-  res.render('ARIA/checkbox/initial', {title: "Checkbox - Aria", notes: getDataByKey('checkboxes')});
+  const title = 'Checkbox - Aria';
+  res.render('ARIA/checkbox/initial', {title, notes: getDataByKey('checkboxes', notes), breadcrumb: buildBreadcrumb('aria_checkbox', req.path, title)});
 });
 
 router.get('/checkbox/solution', function (req, res) {
-  res.render('ARIA/checkbox/solution', {title: "Checkbox - Aria"});
+  const title = 'Checkbox - Aria';
+  res.render('ARIA/checkbox/solution', {title});
 });
 
 
 router.get('/switch-control/initial', function (req, res) {
-  res.render('ARIA/switchControl/initial', {title: "Switch - Aria", notes: getDataByKey('switch')});
+  const title = 'Switch - Aria';
+  res.render('ARIA/switchControl/initial', {title, notes: getDataByKey('switch', notes), breadcrumb: buildBreadcrumb('switch_control', req.path, title)});
 });
 
 router.get('/switch-control/solution', function (req, res) {
-  res.render('ARIA/switchControl/solution', {title: "Switch - Aria"});
+  const title = 'Switch - Aria';
+  res.render('ARIA/switchControl/solution', {title});
 });
 
 router.get('/tabs/initial', function (req, res) {
-  res.render('ARIA/tabs/initial', {title: "Tabs - Aria", notes: getDataByKey('aria_tabs')});
+  const title = 'Tabs - Aria';
+  res.render('ARIA/tabs/initial', {title, notes: getDataByKey('aria_tabs', notes), breadcrumb: buildBreadcrumb('aria_tabs', req.path, title)});
 });
 
 router.get('/tabs/solution', function (req, res) {
-  res.render('ARIA/tabs/solution', {title: "Tabs - Aria", notes: getDataByKey('aria_tabs')});
+  const title = 'Tabs - Aria';
+  res.render('ARIA/tabs/solution', {title, notes: getDataByKey('aria_tabs', notes), breadcrumb: buildBreadcrumb('aria_tabs', req.path, title)});
 });
 
 router.get('/modal/solution', function (req, res) {
   const modalCode = fs.readFileSync('./views/partials/aria-modals.hbs', 'utf8');
-
-  res.render('ARIA/modal/solution', {title: "Modal - Aria", modal: modalCode});
+  const title = 'Modal - Aria';
+  res.render('ARIA/modal/solution', {title, modal: modalCode});
 });
 
 router.get('/modal/initial', function (req, res) {
   const modalCode = fs.readFileSync('./views/partials/aria-modals.hbs', 'utf8');
-
-  res.render('ARIA/modal/initial', {title: "Modal - Aria", modal: modalCode, notes: getDataByKey('modal')});
+  const title = 'Modal - Aria';
+  res.render('ARIA/modal/initial', {title, modal: modalCode, notes: getDataByKey('modal', notes), breadcrumb: buildBreadcrumb('aria_modal', req.path, title)});
 });
 
 router.get('/accessible-names/initial', function (req, res) {
-  res.render('ARIA/accessibleNames/initial', {title: "Accessible names - Aria"});
+  const title = 'Accessible names - Aria';
+  res.render('ARIA/accessibleNames/initial', {title, breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
 });
 
 router.get('/accessible-names/solution', function (req, res) {
-  res.render('ARIA/accessibleNames/solution', {title: "Accessible names - Aria"});
+  const title = 'Accessible names - Aria';
+  res.render('ARIA/accessibleNames/solution', {title, breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
 });
 
 router.get('/practical-accessible-names/initial', function (req, res) {
-  res.render('ARIA/accessibleNamesExercise/initial', {title: "Real example - Aria", notes: getDataByKey('accessibleNames')});
+  const title = 'Real example - Aria';
+  res.render('ARIA/accessibleNamesExercise/initial', {title, notes: getDataByKey('accessibleNames', notes), breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
 });
 
 router.get('/practical-accessible-names/solution', function (req, res) {
@@ -75,7 +89,8 @@ router.get('/practical-accessible-names/solution', function (req, res) {
 });
 
 router.get('/aria-live/initial', function (req, res) {
-  res.render('ARIA/aria-live/initial', {title: "Live Announcements - Aria", notes: getDataByKey('aria_live')});
+  const title = 'Live Announcements - Aria';
+  res.render('ARIA/aria-live/initial', {title, notes: getDataByKey('aria_live', notes), breadcrumb: buildBreadcrumb('aria_live', req.path, title)});
 });
 
 router.get('/aria-live/solution', function (req, res) {
@@ -83,11 +98,13 @@ router.get('/aria-live/solution', function (req, res) {
 });
 
 router.get('/aria-live/examples', function (req, res) {
-  res.render('ARIA/aria-live/examples', {title: "Live Announcements - Aria", notes: getDataByKey('aria_live_examples')});
+  const title = 'Live Announcements - Aria';
+  res.render('ARIA/aria-live/examples', {title, notes: getDataByKey('aria_live_examples', notes), breadcrumb: buildBreadcrumb('aria_live', req.path, title)});
 });
 
 router.get('/aria-expanded/initial', function (req, res) {
-  res.render('ARIA/aria-expanded/initial', {title: "aria-expanded - Aria", notes: getDataByKey('aria_expanded')});
+  const title = 'aria-expanded - Aria';
+  res.render('ARIA/aria-expanded/initial', {title, notes: getDataByKey('aria_expanded', notes), breadcrumb: buildBreadcrumb('aria_expanded', req.path, title)});
 });
 
 router.get('/aria-expanded/solution', function (req, res) {
