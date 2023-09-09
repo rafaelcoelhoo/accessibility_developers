@@ -1,27 +1,32 @@
 import express from 'express';
-import {getDataByKey} from '../data/otherVisualConsiderations/notes.js';
-
+import {notes} from '../data/otherVisualConsiderations/notes.js';
+import {buildBreadcrumb, getDataByKey} from '../js/components/shared.js';
 
 const router = express.Router();
 
 router.get('/reduce-motion', function (req, res) {
-  res.render('otherVisualConsiderations/reduceMotion', {title: "Reduce motion", notes: getDataByKey('reduceMotion')});
+  const title = 'Reduce motion';
+  res.render('otherVisualConsiderations/reduceMotion', {title, notes: getDataByKey('reduceMotion', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
 });
 
 router.get('/dark-mode', function (req, res) {
-  res.render('otherVisualConsiderations/darkMode', {title: "Dark mode", notes: getDataByKey('darkMode')});
+  const title = 'Dark mode';
+  res.render('otherVisualConsiderations/darkMode', {title, notes: getDataByKey('darkMode', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
 });
 
 router.get('/target-size', function (req, res) {
-  res.render('otherVisualConsiderations/targetSize', {title: "Target size", notes: getDataByKey('targetSize')});
+  const title = 'Target size';
+  res.render('otherVisualConsiderations/targetSize', {title, notes: getDataByKey('targetSize', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
 });
 
 router.get('/zoom/mobile', function (req, res) {
-  res.render('otherVisualConsiderations/zoom/zoomMobile', {title: "Zoom mobile", notes: getDataByKey('zoom')});
+  const title = 'Zoom mobile';
+  res.render('otherVisualConsiderations/zoom/zoomMobile', {title, notes: getDataByKey('zoom', notes), breadcrumb: buildBreadcrumb('zoom', req.path, title)});
 });
 
 router.get('/zoom/scaling', function (req, res) {
-  res.render('otherVisualConsiderations/zoom/scaling', {title: "Zooming versus Scaling", notes: getDataByKey('zoomScaling')});
+  const title = 'Zooming versus Scaling';
+  res.render('otherVisualConsiderations/zoom/scaling', {title, notes: getDataByKey('zoomScaling', notes), breadcrumb: buildBreadcrumb('zoom', req.path, title)});
 });
 
 export {router as otherVisualConsiderationsRouter};
