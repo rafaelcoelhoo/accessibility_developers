@@ -1,6 +1,6 @@
 import express from 'express';
 import {index} from '../data/index.js';
-import {buildBreadcrumb} from "../js/components/notesData.js";
+import {buildBreadcrumb} from "../js/components/shared.js";
 
 const router = express.Router();
 

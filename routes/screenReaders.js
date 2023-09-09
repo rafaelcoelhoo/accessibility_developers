@@ -1,6 +1,6 @@
 import express from 'express';
 import {notes} from '../data/screenReaders/notes.js';
-import {buildBreadcrumb, getDataByKey} from '../js/components/notesData.js';
+import {buildBreadcrumb, getDataByKey} from '../js/components/shared.js';
 
 
 

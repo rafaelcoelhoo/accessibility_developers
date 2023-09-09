@@ -10,14 +10,20 @@ export const buildBreadcrumb = (key, path, titlePage) => {
         url: `/`
     }];
 
-    const optionDetails = index.content
+    /*const optionDetails = index.content
         .map(item => item.options?.find(option => option.id === key))
-        .find(option => option !== undefined);
+        .find(option => option !== undefined);*/
 
-    let matchingTopics = [];
+    // let matchingTopics = [];
+    let titleSection;
+    const options = index.content.map(item => {
+        const option = item.options?.find(option => option.id === key);
+        if (option) titleSection = item.title;
+        return option;
+    })
+    const optionDetails = options.find(option => option !== undefined);
 
-    console.log(optionDetails);
-    if (optionDetails && optionDetails.options) {
+/*    if (optionDetails && optionDetails.options) {
         optionDetails.options.forEach(option => {
             if (option.topics) {
                 const matchingTopic = option.topics.find(topic => topic.link.includes(path));
@@ -26,10 +32,10 @@ export const buildBreadcrumb = (key, path, titlePage) => {
                 }
             }
         });
-    }
+    }*/
     if (optionDetails) {
         breadcrumb.push({
-            label: optionDetails.label,
+            label: `Lessons ${titleSection}`,
             url: `/?id=${optionDetails.id}`
         });
     }

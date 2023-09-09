@@ -1,7 +1,7 @@
 import express from 'express';
 import fs from 'fs';
 import {notes} from '../data/focusManagement/notes.js';
-import {buildBreadcrumb, getDataByKey} from '../js/components/notesData.js';
+import {buildBreadcrumb, getDataByKey} from '../js/components/shared.js';
 
 const router = express.Router();
 
