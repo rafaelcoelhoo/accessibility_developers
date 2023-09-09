@@ -430,7 +430,3 @@ export const notes = {
         ],
     },
 }
-
-export function getDataByKey (key) {
-    return {...notes[key]};
-}

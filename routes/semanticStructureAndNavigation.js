@@ -22,7 +22,7 @@ router.get('/landmarks/initial', function (req, res) {
 
 router.get('/landmarks/solution', function (req, res) {
   const title = 'Landmarks';
-  res.render('semanticStructureAndNavigation/landmarks/solution', {layout: false, notes: getDataByKey('landmarks', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
+  res.render('semanticStructureAndNavigation/landmarks/solution', {layout: false, breadcrumb: buildBreadcrumb('landmarks', req.path, title)});
 });
 
 router.get('/headings/problem', function (req, res) {
@@ -32,7 +32,7 @@ router.get('/headings/problem', function (req, res) {
 
 router.get('/headings/solution', function (req, res) {
   const title = 'Headings - Amazing Animals';
-  res.render('semanticStructureAndNavigation/headings/solution', {title, notes: getDataByKey('headings', notes), breadcrumb: buildBreadcrumb('headings', req.path, title)});
+  res.render('semanticStructureAndNavigation/headings/solution', {title, breadcrumb: buildBreadcrumb('headings', req.path, title)});
 });
 
 router.get('/links/initial', function (req, res) {
@@ -42,7 +42,7 @@ router.get('/links/initial', function (req, res) {
 
 router.get('/links/solution', function (req, res) {
   const title = 'Links';
-  res.render('semanticStructureAndNavigation/links/solution', {title, notes: getDataByKey('links', notes), breadcrumb: buildBreadcrumb('links', req.path, title)});
+  res.render('semanticStructureAndNavigation/links/solution', {title, breadcrumb: buildBreadcrumb('links', req.path, title)});
 });
 
 
@@ -58,7 +58,7 @@ router.get('/tables/problem', function (req, res) {
 
 router.get('/tables/solution', function (req, res) {
   const title = 'Tables';
-  res.render('semanticStructureAndNavigation/tables/solution', {title, notes: getDataByKey('tables', notes), breadcrumb: buildBreadcrumb('tables', req.path, title)});
+  res.render('semanticStructureAndNavigation/tables/solution', {title, breadcrumb: buildBreadcrumb('tables', req.path, title)});
 });
 
 router.get('/lists/problem', function (req, res) {
@@ -68,7 +68,7 @@ router.get('/lists/problem', function (req, res) {
 
 router.get('/lists/solution', function (req, res) {
   const title = 'Lists';
-  res.render('semanticStructureAndNavigation/lists/solution', {title, notes: getDataByKey('lists', notes), breadcrumb: buildBreadcrumb('lists', req.path, title)});
+  res.render('semanticStructureAndNavigation/lists/solution', {title, breadcrumb: buildBreadcrumb('lists', req.path, title)});
 });
 
 router.get('/other-elements/mark', function (req, res) {

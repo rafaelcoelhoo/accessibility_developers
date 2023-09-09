@@ -20,9 +20,3 @@ export const notes = {
         ],
     },
 }
-
-export function getDataByKey(key) {
-    const data = {...notes[key]};
-    //if (data.tips?.length) data.push({tips})
-    return {...notes[key]};
-}

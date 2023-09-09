@@ -189,3 +189,14 @@
   }
 }
 
+.custom-layout {
+  .breadcrumb-section {
+    margin-top: 0 !important;
+    .breadcrumb li:not(:first-child)::before {
+      border-color: white;
+    }
+    a {
+      color: white;
+    }
+  }
+}

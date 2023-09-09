@@ -170,7 +170,7 @@ input {
 
 .breadcrumb ol {
   padding-left: 0;
-  margin-bottom: 0;
+  margin-bottom: 2rem;
 }
 .breadcrumb li {
   display: inline-block;
@@ -851,6 +851,16 @@ h4 {
 }
 .otherSemanticElements mark::before {
   content: " [highlight start] ";
+}
+
+.custom-layout .breadcrumb-section {
+  margin-top: 0 !important;
+}
+.custom-layout .breadcrumb-section .breadcrumb li:not(:first-child)::before {
+  border-color: white;
+}
+.custom-layout .breadcrumb-section a {
+  color: white;
 }
 
 .images .decorative-img-alt {
