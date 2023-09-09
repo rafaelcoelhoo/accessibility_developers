@@ -317,7 +317,7 @@ export const index = {
                     label: "Language"
                 },
                 {
-                    label: "Landmark",
+                    label: "Landmarks",
                     hasMultipleLinks: true,
                     id: "landmarks",
                     options: [

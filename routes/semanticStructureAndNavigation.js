@@ -16,12 +16,12 @@ router.get('/languages', function (req, res) {
 });
 
 router.get('/landmarks/initial', function (req, res) {
-  const title = 'Landmarks';
+  const title = 'Landmarks - Initial';
   res.render('semanticStructureAndNavigation/landmarks/initial', {layout: false, notes: getDataByKey('landmarks', notes), breadcrumb: buildBreadcrumb('landmarks', req.path, title)});
 });
 
 router.get('/landmarks/solution', function (req, res) {
-  const title = 'Landmarks';
+  const title = 'Landmarks - Solution';
   res.render('semanticStructureAndNavigation/landmarks/solution', {layout: false, breadcrumb: buildBreadcrumb('landmarks', req.path, title)});
 });
 
@@ -36,12 +36,12 @@ router.get('/headings/solution', function (req, res) {
 });
 
 router.get('/links/initial', function (req, res) {
-  const title = 'Links';
+  const title = 'Links - Initial';
   res.render('semanticStructureAndNavigation/links/initial', {title, notes: getDataByKey('links', notes), breadcrumb: buildBreadcrumb('links', req.path, title)});
 });
 
 router.get('/links/solution', function (req, res) {
-  const title = 'Links';
+  const title = 'Links - Solution';
   res.render('semanticStructureAndNavigation/links/solution', {title, breadcrumb: buildBreadcrumb('links', req.path, title)});
 });
 
@@ -52,22 +52,22 @@ router.get('/links/skip-links', function (req, res) {
 });
 
 router.get('/tables/problem', function (req, res) {
-  const title = 'Tables';
+  const title = 'Tables - Problem';
   res.render('semanticStructureAndNavigation/tables/problem', {title, notes: getDataByKey('tables', notes), breadcrumb: buildBreadcrumb('tables', req.path, title)});
 });
 
 router.get('/tables/solution', function (req, res) {
-  const title = 'Tables';
+  const title = 'Tables - Solution';
   res.render('semanticStructureAndNavigation/tables/solution', {title, breadcrumb: buildBreadcrumb('tables', req.path, title)});
 });
 
 router.get('/lists/problem', function (req, res) {
-  const title = 'Lists';
+  const title = 'Lists - Problem';
   res.render('semanticStructureAndNavigation/lists/problem', {title, notes: getDataByKey('lists', notes), breadcrumb: buildBreadcrumb('lists', req.path, title)});
 });
 
 router.get('/lists/solution', function (req, res) {
-  const title = 'Lists';
+  const title = 'Lists - Solution';
   res.render('semanticStructureAndNavigation/lists/solution', {title, breadcrumb: buildBreadcrumb('lists', req.path, title)});
 });
 

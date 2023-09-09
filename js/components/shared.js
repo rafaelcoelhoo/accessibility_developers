@@ -35,7 +35,7 @@ export const buildBreadcrumb = (key, path, titlePage) => {
     }*/
     if (optionDetails) {
         breadcrumb.push({
-            label: `Lessons ${titleSection}`,
+            label: `Lessons ${optionDetails.label}`,
             url: `/?id=${optionDetails.id}`
         });
     }
