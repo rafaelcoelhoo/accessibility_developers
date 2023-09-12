@@ -146,6 +146,11 @@ export const notes = {
                         extraInformation: 'Two main landmark'
                     },
                     {
+                        url: 'https://www.santander.pt/credito-habitacao/simulador-credito-habitacao',
+                        label: 'Santander',
+                        extraInformation: 'No landmarks'
+                    },
+                    {
                         url: 'https://pt.tommy.com/terms-and-conditions',
                         label: 'Tommy Hilfiger',
                         extraInformation: 'Two navigation without accessible name'
