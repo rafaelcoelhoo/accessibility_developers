@@ -280,9 +280,14 @@ export const notes = {
                         extraInformation: 'Accessibility Status modal - Focus management closing the modal'
                     },
                     {
-                        url: 'https://pt-jobs.about.ikea.com/busca-de-vagas?acm=ALL&alrpm=2264397&ascf=[%7B%22key%22:%22ALL%22,%22value%22:%22%22%7D]',
-                        label: 'Ikea',
+                        url: 'https://technology.blog.gov.uk/',
+                        label: 'Blog Gov UK',
                         extraInformation: 'Open in incognito mode, Cookies modal, Focus is moved to the cookies modal'
+                    },
+                    {
+                        url: 'https://www.gov.uk/',
+                        label: 'Gov UK',
+                        extraInformation: 'Open in incognito mode, Cookies modal even if it is closed will not obscure the focus indicator'
                     },
                 ],
             },
