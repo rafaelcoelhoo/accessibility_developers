@@ -10,7 +10,7 @@ export const notes = {
                     {
                         url: 'https://www.libertyseguros.pt/PublicWebsite/',
                         label: 'Liberty insurance',
-                        extraInformation: 'Homepage <br> - Personal area type a invalid email to see just a color indication od something is wrong'
+                        extraInformation: 'Homepage <br> - Personal area type a invalid email to see just a color indication when something is invalid'
                     },
                     {
                         url: 'https://feed.continente.pt/',
