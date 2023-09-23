@@ -26,6 +26,7 @@
             focusedElementBeforeModal = document.activeElement;
 
             if (inert) {
+                document.querySelector('header').inert = true;
                 document.querySelector('main').inert = true;
                 document.querySelector('footer').inert = true;
             }

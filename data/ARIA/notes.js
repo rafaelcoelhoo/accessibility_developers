@@ -130,7 +130,10 @@ export const notes = {
         tips: [
             'Add <code>tabindex: 0</code>',
             'Add <code>role: link</code>',
-            'Handle keyboard events'
+            'Handle keyboard events',
+            'Link with aria does not allow to <strong>copy the link</strong> from the left mouse button menu',
+            'Do not allow to open the link in a <strong>new tab</strong>',
+            'Do not allow to see the link url at the left bottom of the screen'
         ],
         examples: [
             {

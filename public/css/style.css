@@ -39,6 +39,13 @@ body {
 ul {
   margin: 0 !important;
   padding: 0 !important;
+  list-style-position: inside;
+}
+ul li {
+  padding: 5px 0;
+}
+ul li a {
+  padding: 5px 0;
 }
 
 .d-block {
@@ -166,6 +173,14 @@ input {
   display: flex;
   justify-content: center;
   color: #0C1932;
+}
+
+h2 code, h3 code, h4 code {
+  color: black;
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: inherit;
+  font-family: inherit;
 }
 
 .breadcrumb ol {

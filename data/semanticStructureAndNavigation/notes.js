@@ -121,7 +121,8 @@ export const notes = {
         tips: [
             'Check the accessibility tree',
             'List all landmarks <code>VO + U</code>',
-            'Use Landmarks Bookmark plugin and Landmarks from accessibility insights',
+            'Use Landmarks from accessibility insights',
+            'Nested <code>&lt;footer&gt;</code> do not generate landmarks',
             'Add <code>header</code>',
             'Add <code>nav</code> with <code>aria-label="Menu principal"</code> - Header',
             'Add <code>nav</code> with <code>aria-label="Secondary menu"</code> - Footer',

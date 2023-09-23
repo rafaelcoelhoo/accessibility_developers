@@ -5,6 +5,8 @@ export const notes = {
             'Search for class <code>focus-outline</code>',
             'Comment/Uncomment css styles for <code>:focus</code> versus <code>:focus-visible</code>',
             'If we are using the mouse and lose track of which element is selected, at any time we can click on a key for the focus indicator to appear.',
+            'Log expression <code>document.activeElement</code>',
+            'See this log on Coverflex website, hover expression result',
         ],
         examples: [
             {
@@ -77,8 +79,6 @@ export const notes = {
     },
     tabindex: {
         tips: [
-            'log <code>document.activeElement</code>',
-            'See this log on Coverflex website, hover expression result',
             '<code>.focus()</code> to <code>tabindex: -1</code>',
             '<code>.focus()</code> to normal paragraph will not send the focus',
             'Buttons and links already have an implicit <code>tabindex: 0</code>',
@@ -227,6 +227,7 @@ export const notes = {
             'Keep it within the custom dialog until the dialog is closed',
             'Send it back to the triggering element when the user closes the dialog',
             '<code>inert</code> versus <code>aria-modal: true</code> versus <code>aria-hidden: true</code>',
+            'Remove <code>inert</code> from <code>header</code> to use the screen reader cursor'
         ],
         examples: [
             {
