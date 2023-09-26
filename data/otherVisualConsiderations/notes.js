@@ -2,8 +2,9 @@ export const notes = {
     reduceMotion: {
         tips: [
             'Turn on the reduce motion (operating system versus browser emulating)',
-            'Show the reduce motion on CSS and on Javascript',
-            'Show stylus plugin for bysix website'
+            'Check the reduce motion on CSS with the media query <code>prefers-reduced-motion</code>',
+            'Check the reduce motion applied on javascript',
+            //'Show stylus plugin for bysix website'
         ],
         examples: [
             {

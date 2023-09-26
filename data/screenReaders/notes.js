@@ -29,7 +29,7 @@ export const notes = {
                         extraInformation: 'What is this, grid, number options, voice commands (56 seconds to 2,55 minutes)'
                     },
                     {
-                        url: 'https://www.youtube.com/watch?v=A8H7iFCy5UI',
+                        url: 'https://www.youtube.com/watch?v=EEN79RRvKqE&t=4s',
                         label: 'ZoomText'
                     },
                     {
@@ -37,7 +37,7 @@ export const notes = {
                         label: 'MouthPad'
                     },
                     {
-                        url: 'https://www.youtube.com/watch?v=Gug23VRlsGg',
+                        url: 'https://www.youtube.com/watch?v=SlxIEPEC_Qc',
                         label: 'Refreshable Braille Display'
                     },
                     {

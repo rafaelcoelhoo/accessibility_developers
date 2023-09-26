@@ -175,6 +175,11 @@ export const notes = {
                         label: 'Santander',
                         extraInformation: 'Last step - Toggle without name'
                     },
+                    {
+                        url: 'https://www.microsoft.com/en-us/edge?form=MA13FJ',
+                        label: 'Microsoft Edge',
+                        extraInformation: 'Wrong role for hamburguer menu'
+                    },
                 ],
             },
             {

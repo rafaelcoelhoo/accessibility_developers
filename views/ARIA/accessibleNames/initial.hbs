@@ -34,8 +34,8 @@
     <h2><code>label</code></h2>
     <h3 id="title" class="mt-5">Personal data</h3>
     <form>
-        <span>Name</span>
-        <input type="text" id="name">
+        <span class="label-input">Name</span>
+        <input type="text" autocomplete="name" id="name">
         <button class="btn-yellow ml-2">Save</button>
     </form>
 
@@ -45,7 +45,7 @@
     <h3 id="title-1" class="mt-5">Professional data</h3>
     <form>
         <label for="labelName">Name</label>
-        <input type="text" id="labelName">
+        <input type="text" autocomplete="name" id="labelName">
         <button class="btn-yellow ml-2" id="save">Save</button>
     </form>
 
@@ -55,7 +55,7 @@
     <h2><code>aria-describedby</code></h2>
     <form>
         <label for="pwd">Password</label>
-        <input type="password" id="pwd">
+        <input type="password" autocomplete="current-password" id="pwd">
         <p id="pwd-detail">The password must have 10 characters</p>
     </form>
 

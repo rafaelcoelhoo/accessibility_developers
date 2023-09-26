@@ -105,6 +105,12 @@ hr {
 
 input {
 	border: 1px solid;
+	padding: 8px 12px;
+}
+
+label, .label-input {
+	display: block !important;
+	font-size: 1.2rem;
 }
 
 .accordion {
