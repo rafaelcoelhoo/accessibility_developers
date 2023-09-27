@@ -13,6 +13,10 @@ export const notes = {
                         extraInformation: 'Homepage <br> - Personal area type a invalid email to see just a color indication when something is invalid'
                     },
                     {
+                        url: 'https://medium.com/',
+                        label: 'Medium',
+                    },
+                    {
                         url: 'https://feed.continente.pt/',
                         label: 'Continente',
                         extraInformation: 'Menu on hover and menu options not focusable - See <strong>Event Listener</strong> tab and open the mouseHover event'
