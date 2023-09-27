@@ -177,7 +177,6 @@ export const notes = {
             'Font scaling',
             'Page zooming',
             'Translate the page using Google Translate plugin',
-            'Try to copy the text'
         ],
         examples: [
             {
