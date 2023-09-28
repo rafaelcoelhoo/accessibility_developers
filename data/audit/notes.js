@@ -17,6 +17,10 @@ export const notes = {
                         label: 'Medium',
                     },
                     {
+                        url: 'https://www.edp.pt/particulares/servicos/energia-solar/paineis-solares/?_gl=1*1eo3cna*_up*MQ..&gclid=CjwKCAiAjPyfBhBMEiwAB2CCIjRtAl4JKBwlVINQ0eTlhDVB3oG0mxTpJqjZOaYfhKUYNqKKLdOM9xoCboMQAvD_BwE&gclsrc=aw.ds',
+                        label: 'EDP',
+                    },
+                    {
                         url: 'https://feed.continente.pt/',
                         label: 'Continente',
                         extraInformation: 'Menu on hover and menu options not focusable - See <strong>Event Listener</strong> tab and open the mouseHover event'
