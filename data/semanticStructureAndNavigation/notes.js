@@ -122,7 +122,6 @@ export const notes = {
             'Check the accessibility tree',
             'List all landmarks <code>VO + U</code>',
             'Use Landmarks from accessibility insights',
-            'Nested <code>&lt;footer&gt;</code> do not generate landmarks',
             'Add <code>header</code>',
             'Add <code>nav</code> with <code>aria-label="Menu principal"</code> - Header',
             'Add <code>nav</code> with <code>aria-label="Secondary menu"</code> - Footer',
@@ -130,6 +129,7 @@ export const notes = {
             'Add <code>article</code> with <code>aria-labelledby="articleTitle"</code>',
             'Add <code>aside</code>',
             'Add <code>footer</code>',
+            'Nested <code>&lt;footer&gt;</code> do not generate landmarks',
         ],
         examples: [
             {
