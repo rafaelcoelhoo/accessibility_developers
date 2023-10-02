@@ -77,6 +77,10 @@
 }
 
 .zoom {
+
+  .font-16 {
+    font-size: 16px;
+  }
   .card-container {
     @media (min-width: 768px) {
       display: flex;
@@ -92,10 +96,6 @@
         width: 500px;
         height: 150px;
         margin-bottom: 0;
-      }
-
-      .font-16 {
-        font-size: 16px;
       }
     }
 

@@ -104,11 +104,11 @@ export const index = {
             options: [
                 {
                     hasMultipleLinks: true,
-                    label: "Accessible names",
+                    label: "Accessible names and descriptions",
                     id: "accessible_names",
                     options: [
                         {
-                            label: "Accessible names",
+                            label: "Accessible names and descriptions",
                             topics: [
                                 {
                                     link: "/aria/accessible-names/initial",
@@ -471,7 +471,8 @@ export const index = {
                                 },
                                 {
                                     link: "/images/clickable",
-                                    label: "Clickable images"
+                                    label: "Clickable images",
+                                    hide: true,
                                 },
                                 {
                                     link: "/images/complex",

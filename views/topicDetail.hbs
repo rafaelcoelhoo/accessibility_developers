@@ -3,7 +3,9 @@
         <h2>{{label}}</h2>
         <ul class="ms-5 mb-5">
             {{#each topics}}
+                {{#unless hide}}
                 <li class="border-bottom border-dark list-links"><a href="{{link}}">{{label}}</a></li>
+                {{/unless}}
             {{/each}}
         </ul>
 {{/each}}

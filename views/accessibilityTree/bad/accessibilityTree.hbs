@@ -8,12 +8,12 @@
         Accept terms and conditions
     </div>
 
-    <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
+    <div class="d-flex align-items-center gap-4 mt-4">
         <span class="d-block">Password:</span>
         <input type="password" autocomplete="current-password" class="d-block">
     </div>
 
-    <div class="d-flex justify-content-center align-items-center gap-4 mt-4">
+    <div class="d-flex align-items-center gap-4 mt-4">
         <span class="d-block">Name:</span>
         <input type="text" autocomplete="name" class="d-block">
     </div>
@@ -36,6 +36,10 @@
             check.addEventListener('click', function () {
                 const classList = this.classList.contains('active');
                 classList ? this.classList.remove('active') : this.classList.add('active');
+            });
+
+            check.addEventListener('keydown', function (e) {
+                if (e.keyCode === 32) e.preventDefault();
             });
 
             check.addEventListener('keyup', function (e) {

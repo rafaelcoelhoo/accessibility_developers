@@ -11,6 +11,10 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
+                        url: 'https://www.esev.ipv.pt/posgrad.aspx',
+                        label: 'ESEV',
+                    },
+                    {
                         url: 'https://www.amazon.es/?language=pt_PT',
                         label: 'Amazon',
                         extraInformation: 'Company name is in first place in every page'
@@ -30,10 +34,6 @@ export const notes = {
                         url: 'https://www.estgv.ipv.pt/estgv/?',
                         label: 'ESTGV',
                         hide: true
-                    },
-                    {
-                        url: 'https://www.esev.ipv.pt/posgrad.aspx',
-                        label: 'ESEV',
                     },
                 ],
             },
@@ -61,7 +61,7 @@ export const notes = {
                 sectionName: 'Additional Resources',
                 listOfUrls: [
                     {
-                        url: 'http://www.lingoes.net/en/translator/langcode.htm',
+                        url: 'https://www.arclab.com/en/kb/htmlcss/lang-attribute-2-letter-language-country-codes.html',
                         label: 'List of codes',
                     },
                 ],

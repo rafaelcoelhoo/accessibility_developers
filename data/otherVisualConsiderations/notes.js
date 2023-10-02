@@ -121,7 +121,7 @@ export const notes = {
     },
     zoom: {
         tips: [
-            'See viewport tags from app amd from examples'
+            'See viewport tags'
         ],
         examples: [
             {
@@ -205,7 +205,7 @@ export const notes = {
     },
     targetSize: {
         tips: [
-            'Importance of using padding and not margin for this success criteria',
+            'Importance of using padding and not margin for this behavior',
             'Check Visually hidden texts',
             'Use 24x24 cursor bookmark (2.5.8 Target Size (Minimum))',
             'Use 44x44 cursor bookmark (2.5.5 Target Size)',

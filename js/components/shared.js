@@ -1,6 +1,7 @@
 import {index} from '../../data/index.js';
 
 export const getDataByKey = (key, notes) => {
+    if (!notes) return {};
     return {...notes[key]};
 };
 

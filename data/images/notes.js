@@ -222,8 +222,6 @@ export const notes = {
     },
     svgSource: {
         tips: [
-            'Font scaling',
-            'Page zooming',
             'Have a look at the accessibility tree',
         ],
         examples: [

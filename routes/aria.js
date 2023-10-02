@@ -71,17 +71,17 @@ router.get('/modal/initial', function (req, res) {
 
 router.get('/accessible-names/initial', function (req, res) {
   const title = 'Accessible names - Initial';
-  res.render('ARIA/accessibleNames/initial', {title, breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
+  res.render('ARIA/accessibleNames/initial', {title, notes: getDataByKey('accessibleNames', notes), breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
 });
 
 router.get('/accessible-names/solution', function (req, res) {
   const title = 'Accessible names - Solution';
-  res.render('ARIA/accessibleNames/solution', {title, breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
+  res.render('ARIA/accessibleNames/solution', {title, notes: getDataByKey('accessibleNames', notes), breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
 });
 
 router.get('/practical-accessible-names/initial', function (req, res) {
   const title = 'Real example - Initial';
-  res.render('ARIA/accessibleNamesExercise/initial', {title, notes: getDataByKey('accessibleNames', notes), breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
+  res.render('ARIA/accessibleNamesExercise/initial', {title, breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
 });
 
 router.get('/practical-accessible-names/solution', function (req, res) {

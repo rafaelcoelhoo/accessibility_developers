@@ -256,7 +256,6 @@ h4 {
 }
 
 .accessibility-tree .page-title {
-  text-align: center;
   font-size: 2rem;
   margin-top: 0;
   margin-bottom: 1em;
@@ -269,9 +268,6 @@ h4 {
 }
 .accessibility-tree .image-a11y {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
-  height: 400px;
   width: 100%;
 }
 @media (min-width: 962px) {
@@ -282,10 +278,14 @@ h4 {
 }
 .accessibility-tree .image-decorative {
   background-image: url("https://www.reliablesoft.net/wp-content/uploads/2019/06/beagle-dog.jpg");
-  height: 400px;
+  height: 300px;
   width: 100%;
   background-position: right;
-  margin: 0 auto;
+}
+@media (min-width: 568px) {
+  .accessibility-tree .image-decorative {
+    height: 400px;
+  }
 }
 @media (min-width: 962px) {
   .accessibility-tree .image-decorative {
@@ -298,7 +298,7 @@ h4 {
   color: #FFFFFF;
   height: 60px;
   font-size: 1.5rem;
-  margin: 30px auto;
+  margin: 30px 0;
   padding: 15px;
   width: fit-content;
   border: 0;
@@ -308,14 +308,12 @@ h4 {
   font-size: 1.5rem;
   margin-top: 30px;
   display: block;
-  text-align: center;
   color: #0C1932;
   cursor: pointer;
   text-decoration: underline;
 }
 .accessibility-tree .terms {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: 10px;
 }
@@ -325,8 +323,8 @@ h4 {
 }
 .accessibility-tree .custom-checkbox {
   position: relative;
-  margin: 0 auto;
   width: fit-content;
+  margin-left: 35px;
 }
 .accessibility-tree .custom-checkbox::before {
   content: "";
@@ -370,7 +368,6 @@ h4 {
 }
 .accessibility-tree .video {
   display: flex;
-  justify-content: center;
   margin-top: 30px;
   margin-bottom: 30px;
 }
@@ -1000,6 +997,9 @@ h4 {
   }
 }
 
+.zoom .font-16 {
+  font-size: 16px;
+}
 @media (min-width: 768px) {
   .zoom .card-container {
     display: flex;
@@ -1018,9 +1018,6 @@ h4 {
     height: 150px;
     margin-bottom: 0;
   }
-}
-.zoom .card-container .fixed-card .font-16 {
-  font-size: 16px;
 }
 .zoom .card-container .card-zoom {
   border: #0C1932 2px solid;

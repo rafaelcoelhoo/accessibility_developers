@@ -10,20 +10,26 @@ export const notes = {
                     {
                         url: 'https://www.libertyseguros.pt/PublicWebsite/',
                         label: 'Liberty insurance',
-                        extraInformation: 'Homepage <br> - Personal area type a invalid email to see just a color indication when something is invalid'
+                        extraInformation: 'Homepage ' +
+                            '<br> - Personal area type a invalid email to see just a color indication when something is invalid ' +
+                            '<br> - No Landmarks' +
+                            '<br> - No Headings'
                     },
                     {
                         url: 'https://medium.com/',
                         label: 'Medium',
+                        hide: true
                     },
                     {
                         url: 'https://www.edp.pt/particulares/servicos/energia-solar/paineis-solares/?_gl=1*1eo3cna*_up*MQ..&gclid=CjwKCAiAjPyfBhBMEiwAB2CCIjRtAl4JKBwlVINQ0eTlhDVB3oG0mxTpJqjZOaYfhKUYNqKKLdOM9xoCboMQAvD_BwE&gclsrc=aw.ds',
                         label: 'EDP',
+                        hide: true
                     },
                     {
                         url: 'https://feed.continente.pt/',
                         label: 'Continente',
-                        extraInformation: 'Menu on hover and menu options not focusable - See <strong>Event Listener</strong> tab and open the mouseHover event'
+                        extraInformation: 'Menu on hover and menu options not focusable - See <strong>Event Listener</strong> tab and open the mouseHover event',
+                        hide: true
                     },
                     {
                         url: 'https://wearemultitudes.org/#content5',
