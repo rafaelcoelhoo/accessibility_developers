@@ -40,7 +40,6 @@
 	.register-account {
 		background-color: #0C1932;
 		color: #FFFFFF;
-		height: 60px;
 		font-size: 1.5rem;
 		margin: 30px 0;
 		padding: 15px;
@@ -50,10 +49,10 @@
 	}
 
 	.wcag-page {
-		font-size: 1.5rem;
+		font-size: 1.3rem;
 		margin-top: 30px;
 		display: block;
-		color: #0C1932;
+		color: #0d6efd;
 		cursor: pointer;
 		text-decoration: underline;
 
@@ -123,5 +122,21 @@
 		display: flex;
 		margin-top: 30px;
 		margin-bottom: 30px;
+	}
+
+	strong::before,
+	strong::after {
+		clip-path: inset(100%);
+		clip: rect(1px, 1px, 1px, 1px);
+		height: 1px;
+		overflow: hidden;
+		position: absolute;
+		white-space: nowrap;
+		width: 1px;
+	}
+
+	strong::before {
+		// content: " [Important:] " / "";
+		content: " [Important:] ";
 	}
 }

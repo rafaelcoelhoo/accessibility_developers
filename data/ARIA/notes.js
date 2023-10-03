@@ -385,7 +385,7 @@ export const notes = {
         examples: [],
     },
     accessibleNames: {
-        tips: [],
+        tips: ['Show voiceOver rotor to see the names for controls'],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',

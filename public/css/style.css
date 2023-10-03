@@ -296,7 +296,6 @@ h4 {
 .accessibility-tree .register-account {
   background-color: #0C1932;
   color: #FFFFFF;
-  height: 60px;
   font-size: 1.5rem;
   margin: 30px 0;
   padding: 15px;
@@ -305,10 +304,10 @@ h4 {
   cursor: pointer;
 }
 .accessibility-tree .wcag-page {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   margin-top: 30px;
   display: block;
-  color: #0C1932;
+  color: #0d6efd;
   cursor: pointer;
   text-decoration: underline;
 }
@@ -370,6 +369,19 @@ h4 {
   display: flex;
   margin-top: 30px;
   margin-bottom: 30px;
+}
+.accessibility-tree strong::before,
+.accessibility-tree strong::after {
+  clip-path: inset(100%);
+  clip: rect(1px, 1px, 1px, 1px);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+.accessibility-tree strong::before {
+  content: " [Important:] ";
 }
 
 .show-and-hide .invisible {
@@ -649,8 +661,7 @@ h4 {
   vertical-align: top;
 }
 .accessible-names #pwd-detail {
-  display: inline-block;
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
 .aria-buttons .btn-yellow, .aria-buttons .show-and-hide .toogle, .show-and-hide .aria-buttons .toogle {
