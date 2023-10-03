@@ -1,41 +1,36 @@
 <section class="mt-5">
     <hr>
+
     <div id="accordionGroup" class="accordion">
         {{#if notes.tips.length }}
-            <h2 class="heading">
-                <button type="button" aria-expanded="false" class="accordion-trigger btn-transparent"
-                        aria-controls="sect1"
-                        id="accordion1id">
-                    <span class="accordion-title">Tips</span>
+            <details>
+                <summary>
                     <span class="accordion-icon"></span>
-                </button>
-            </h2>
-            <div id="sect1" role="region" aria-labelledby="accordion1id" class="accordion-panel" hidden>
-                <div>
+                    <h2 class="heading">Tips</h2>
+                </summary>
+                <div class="accordion-panel">
                     <ul class="list-group list-group-flush">
                         {{#each notes.tips}}
                             <li class="list-group-item">{{{this}}}</li>
                         {{/each}}
                     </ul>
                 </div>
-            </div>
+            </details>
         {{/if}}
+
+
+
 
         {{#if notes.examples.length }}
             {{#each notes.examples}}
                 {{#anyNotDisabled listOfUrls}}
                     {{#if listOfUrls.length }}
-                        <h2 class="heading">
-                            <button type="button" aria-expanded="false" class="accordion-trigger btn-transparent"
-                                    aria-controls="section_{{@index}}"
-                                    id="accordion_{{@index}}">
-                                <span class="accordion-title">{{{sectionName}}}</span>
+                        <details>
+                            <summary>
                                 <span class="accordion-icon"></span>
-                            </button>
-                        </h2>
-                        <div id="section_{{@index}}" role="region" aria-labelledby="accordion_{{@index}}"
-                             class="accordion-panel" hidden>
-                            <div>
+                                <h2 class="heading">{{{sectionName}}}</h2>
+                            </summary>
+                            <div class="accordion-panel">
                                 <ul class="list-group list-group-flush">
 
                                     {{#each listOfUrls}}
@@ -64,10 +59,11 @@
 
                                 </ul>
                             </div>
-                        </div>
+                        </details>
                     {{/if}}
                 {{/anyNotDisabled}}
             {{/each}}
         {{/if}}
     </div>
+
 </section>

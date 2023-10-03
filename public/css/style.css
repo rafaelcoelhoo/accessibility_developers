@@ -107,8 +107,20 @@ label, .label-input {
   font-size: 1.2rem;
 }
 
+.accordion details > summary {
+  list-style: none;
+  position: relative;
+}
+.accordion details > summary::-webkit-details-marker {
+  display: none;
+}
+.accordion details[open] .accordion-icon {
+  transform: translateY(-50%) rotate(-135deg);
+  border-color: #0759d5;
+}
 .accordion .heading {
   margin-bottom: 30px;
+  margin-left: 2rem;
 }
 .accordion .accordion-trigger {
   position: relative;
@@ -135,19 +147,10 @@ label, .label-input {
   height: 1rem;
   pointer-events: none;
   position: absolute;
-  right: 2em;
+  left: 0;
   top: 50%;
   transform: translateY(-60%) rotate(45deg);
   width: 1rem;
-}
-
-.accordion-trigger:focus .accordion-icon,
-.accordion-trigger:hover .accordion-icon {
-  border-color: #0759d5;
-}
-
-.accordion-trigger[aria-expanded=true] .accordion-icon {
-  transform: translateY(-50%) rotate(-135deg);
 }
 
 .accordion-panel {
