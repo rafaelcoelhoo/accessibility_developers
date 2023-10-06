@@ -31,7 +31,7 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://mosaico.gov.pt/perfis/ux-ui-designer',
+                        url: 'https://mosaico.gov.pt/perfis/ux-designer',
                         label: 'Mosaico - Profile',
                         extraInformation: 'Section stages, principles using empty alt and <code>aria-hidden="true"</code>'
                     },

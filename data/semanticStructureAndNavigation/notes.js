@@ -183,6 +183,7 @@ export const notes = {
     headings: {
         tips: [
             'Check the accessibility tree',
+            '<strong>Disable</strong> all css styles',
             'List all headings <code>VO + U</code>',
             'Next heading <code>VO + Command + H</code>',
             'Previous heading <code>VO + Shift + Command + H</code>',
