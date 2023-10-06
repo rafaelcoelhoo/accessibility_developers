@@ -1,5 +1,5 @@
 <section>
-    <h2>Example - Search</h2>
+    <h2 class="mb-3">Example - Search</h2>
     <form id="formResults" role="search" method="post" action="">
         <label for="searchInput">Courses</label>
         <input type="text" name="searchInput" id="searchInput" value="Accessibility">
@@ -11,7 +11,7 @@
     </div>
 
     <hr>
-    <h2>Example - Add item to shopping card</h2>
+    <h2 class="mb-3">Example - Add item to shopping card</h2>
 
     <div role="status" class="text-end">
         <svg role="img" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
@@ -20,20 +20,20 @@
             <circle cx="20" cy="21" r="1"></circle>
             <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
         </svg>
-        <span id="cart">0</span>
-        <span>items</span>
+        <strong id="cart">0</strong>
+        <strong>items</strong>
         <span class="visually-hidden">in Shopping Cart</span>
     </div>
 
-    <h3 class="mt-5">Courses</h3>
+    <h3 class="mt-5 mb-3">Courses</h3>
     <ul>
-        <li class="mb-3 list-group-item">
+        <li class="p-3 list-group-item">
             <span>Accessibility for developers</span>
-            <button class="btn-yellow" onclick="addToCart()">Add to cart</button>
+            <button class="btn-yellow ms-4" onclick="addToCart()">Add to cart</button>
         </li>
-        <li class="list-group-item">
+        <li class="p-3 list-group-item">
             <span>Accessibility for designers</span>
-            <button class="btn-yellow" onclick="addToCart()">Add to cart</button>
+            <button class="btn-yellow ms-4" onclick="addToCart()">Add to cart</button>
         </li>
     </ul>
 

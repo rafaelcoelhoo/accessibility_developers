@@ -24,7 +24,7 @@ router.get('/', function (req, res) {
 
     if (data) {
       optionsDetails = data.options.find(option => option.id === parameter);
-      optionsDetails.title = `Lessons ${optionsDetails.label}`;
+      optionsDetails.title = `${optionsDetails.label} Lessons`;
       renderView = "topicDetail";
     }
   }
