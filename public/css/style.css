@@ -128,11 +128,6 @@ label, .label-input {
   text-align: left;
   color: var(--color);
 }
-@media (min-width: 768px) {
-  .accordion {
-    width: 70%;
-  }
-}
 .accordion .extra-information-links {
   font-size: 0.9rem;
 }
