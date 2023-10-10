@@ -3,6 +3,7 @@ export const index = {
     content: [
         {
             title: "Accessibility Tree",
+            id: "accessibility_tree_root",
             options: [
                 {
                     hasMultipleLinks: true,
@@ -28,6 +29,7 @@ export const index = {
         },
         {
             title: "Screen Readers",
+            id: "screen_readers_root",
             options: [
                 {
                     link: "/screen-readers",
@@ -37,6 +39,7 @@ export const index = {
         },
         {
             title: "Show and hide techniques",
+            id: "show_and_hide_root",
             options: [
                 {
                     link: "/show-and-hide-elements/hide-from-all",
@@ -56,6 +59,7 @@ export const index = {
                 }]
         }, {
             title: "Focus Management",
+            id: "focus_management_root",
             options: [
                 {
                     link: "/focus-management/focus-indicator",
@@ -101,6 +105,7 @@ export const index = {
         },
         {
             title: "ARIA",
+            id: "aria_root",
             options: [
                 {
                     hasMultipleLinks: true,
@@ -307,6 +312,7 @@ export const index = {
         },
         {
             title: "Semantic Structure and Navigation",
+            id: "semantic_structure_root",
             options: [
                 {
                     link: "/semantic-structure-navigation/page-title",
@@ -452,6 +458,7 @@ export const index = {
         },
         {
             title: "Images and SVG",
+            id: "images_root",
             options: [
                 {
                     label: "Images",
@@ -510,6 +517,7 @@ export const index = {
         },
         {
             title: "Other visual considerations",
+            id: "other_visual_considerations_root",
             options: [
                 {
                     link: "/visual-considerations/reduce-motion",
@@ -547,6 +555,7 @@ export const index = {
         },
         {
             title: "Tests",
+            id: "tests_root",
             options: [
                 {
                     link: "/tests/duplicated-id",

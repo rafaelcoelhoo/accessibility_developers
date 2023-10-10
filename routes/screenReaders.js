@@ -8,7 +8,7 @@ const router = express.Router();
 
 router.get('/', function (req, res) {
   const title = 'How to use - Screen readers';
-  res.render('accessibilityTree/good/accessibilityTree', {title, notes: getDataByKey('screenReaders', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
+  res.render('accessibilityTree/good/accessibilityTree', {title, notes: getDataByKey('screenReaders', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'screen_readers_root')});
 });
 
 export {router as screenReadersRouter};

@@ -12,6 +12,7 @@ router.get('/accessibility-tree', function (req, res) {
 /* GET home page. */
 router.get('/', function (req, res) {
   const parameter = req.query.id;
+  const moduleId = req.query.moduleId;
   let renderView = "index";
   let optionsDetails = undefined;
   let isHomepage = true;
@@ -28,9 +29,17 @@ router.get('/', function (req, res) {
       renderView = "topicDetail";
     }
   }
+
+  if (moduleId) {
+    isHomepage = false;
+    optionsDetails = index.content.find(item => item && item?.id === moduleId);
+    optionsDetails.isModule = !!moduleId;
+    renderView = "module";
+  }
+
   const response = optionsDetails || index;
   response.isHomepage = isHomepage;
-  response.breadcrumb = buildBreadcrumb('', req.path, response.title)
+  response.breadcrumb = buildBreadcrumb(parameter, req.path, response.title, moduleId, true)
 
   res.render(renderView, response);
 });

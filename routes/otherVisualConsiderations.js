@@ -6,17 +6,17 @@ const router = express.Router();
 
 router.get('/reduce-motion', function (req, res) {
   const title = 'Reduce motion';
-  res.render('otherVisualConsiderations/reduceMotion', {title, notes: getDataByKey('reduceMotion', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
+  res.render('otherVisualConsiderations/reduceMotion', {title, notes: getDataByKey('reduceMotion', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'other_visual_considerations_root')});
 });
 
 router.get('/dark-mode', function (req, res) {
   const title = 'Dark mode';
-  res.render('otherVisualConsiderations/darkMode', {title, notes: getDataByKey('darkMode', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
+  res.render('otherVisualConsiderations/darkMode', {title, notes: getDataByKey('darkMode', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'other_visual_considerations_root')});
 });
 
 router.get('/target-size', function (req, res) {
   const title = 'Target size';
-  res.render('otherVisualConsiderations/targetSize', {title, notes: getDataByKey('targetSize', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
+  res.render('otherVisualConsiderations/targetSize', {title, notes: getDataByKey('targetSize', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'other_visual_considerations_root')});
 });
 
 router.get('/zoom/mobile', function (req, res) {

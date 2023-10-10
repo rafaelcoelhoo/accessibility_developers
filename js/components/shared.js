@@ -5,45 +5,54 @@ export const getDataByKey = (key, notes) => {
     return {...notes[key]};
 };
 
-export const buildBreadcrumb = (key, path, titlePage) => {
+export const buildBreadcrumb = (key, path, titlePage, rootKey, isIndex) => {
     let breadcrumb = [{
         label: "Home",
         url: `/`
     }];
 
-    /*const optionDetails = index.content
-        .map(item => item.options?.find(option => option.id === key))
-        .find(option => option !== undefined);*/
-
-    // let matchingTopics = [];
     let titleSection;
-    const options = index.content.map(item => {
-        const option = item.options?.find(option => option.id === key);
-        if (option) titleSection = item.title;
-        return option;
-    })
-    const optionDetails = options.find(option => option !== undefined);
+    let moduleId;
+    let optionDetails;
 
-/*    if (optionDetails && optionDetails.options) {
-        optionDetails.options.forEach(option => {
-            if (option.topics) {
-                const matchingTopic = option.topics.find(topic => topic.link.includes(path));
-                if (matchingTopic) {
-                    matchingTopics.push(matchingTopic);
-                }
+    if (!rootKey) {
+        const options = index.content.map(item => {
+            const option = item.options?.find(option => option.id === key);
+            if (option) {
+                titleSection = item.title;
+                moduleId = item.id;
             }
-        });
-    }*/
-    if (optionDetails) {
+
+            return option;
+        })
+        optionDetails = options.find(option => option !== undefined);
+    } else {
+        const options = index.content.find(item => item && item?.id === rootKey);
+        if (options) {
+            titleSection = options.title;
+            moduleId = options && options.id;
+        }
+    }
+    if (titleSection && moduleId) {
+        breadcrumb.push({
+            label: titleSection,
+            url: `/?moduleId=${moduleId}`,
+            currentPage: isIndex
+        })
+    }
+
+    if (optionDetails && optionDetails.label && !isIndex) {
         breadcrumb.push({
             label: `${optionDetails.label} Lessons`,
             url: `/?id=${optionDetails.id}`
         });
     }
-    breadcrumb.push({
-        label: titlePage,
-        url: `#`,
-        currentPage: true
-    })
+    if (!isIndex || (isIndex && key)) {
+        breadcrumb.push({
+            label: titlePage,
+            url: `#`,
+            currentPage: true
+        })
+    }
     return breadcrumb
 };

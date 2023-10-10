@@ -1,8 +1,8 @@
 <section class="mt-5">
-    <hr>
 
     <div id="accordionGroup" class="accordion">
         {{#if notes.tips.length }}
+            <hr>
             <details>
                 <summary>
                     <span class="accordion-icon"></span>
@@ -17,9 +17,6 @@
                 </div>
             </details>
         {{/if}}
-
-
-
 
         {{#if notes.examples.length }}
             {{#each notes.examples}}
@@ -56,7 +53,6 @@
                                             </li>
                                         {{/unless}}
                                     {{/each}}
-
                                 </ul>
                             </div>
                         </details>
@@ -65,5 +61,4 @@
             {{/each}}
         {{/if}}
     </div>
-
 </section>

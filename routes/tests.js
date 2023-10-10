@@ -6,12 +6,12 @@ const router = express.Router();
 
 router.get('/duplicated-id', function (req, res) {
   const title = 'Duplicated Ids';
-  res.render('tests/duplicatedIds', {title, notes: getDataByKey('duplicatedIds', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
+  res.render('tests/duplicatedIds', {title, notes: getDataByKey('duplicatedIds', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'tests_root')});
 });
 
 router.get('/accesslint', function (req, res) {
   const title = 'Accesslint';
-  res.render('tests/accessLint', {title, notes: getDataByKey('accessLint', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
+  res.render('tests/accessLint', {title, notes: getDataByKey('accessLint', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'tests_root')});
 });
 
 export {router as testsRouter};

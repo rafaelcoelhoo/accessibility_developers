@@ -1,0 +1,16 @@
+<section class="index-page">
+    <h2>Lessons</h2>
+<ul class="ms-5 mb-5">
+
+    {{#each options}}
+            {{#unless hide}}
+                {{#if hasMultipleLinks}}
+                    <li class="border-bottom border-dark list-links"><a href="/?id={{id}}">{{label}}</a></li>
+                {{else}}
+                    <li class="border-bottom border-dark list-links"><a href="{{link}}">{{label}}</a></li>
+                {{/if}}
+            {{/unless}}
+
+{{/each}}
+</ul>
+</section>

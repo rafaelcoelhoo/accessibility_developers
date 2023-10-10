@@ -7,12 +7,12 @@ const router = express.Router();
 
 router.get('/page-title', function (req, res) {
   const title = 'Page Title';
-  res.render('semanticStructureAndNavigation/pageTitle', {title, notes: getDataByKey('pageTitle', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
+  res.render('semanticStructureAndNavigation/pageTitle', {title, notes: getDataByKey('pageTitle', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'semantic_structure_root')});
 });
 
 router.get('/languages', function (req, res) {
   const title = 'Languages';
-  res.render('semanticStructureAndNavigation/languages', {title, notes: getDataByKey('languages', notes), breadcrumb: buildBreadcrumb('', req.path, title)});
+  res.render('semanticStructureAndNavigation/languages', {title, notes: getDataByKey('languages', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'semantic_structure_root')});
 });
 
 router.get('/landmarks/initial', function (req, res) {
@@ -26,12 +26,12 @@ router.get('/landmarks/solution', function (req, res) {
 });
 
 router.get('/headings/problem', function (req, res) {
-  const title = 'Headings - Amazing Animals';
+  const title = 'Headings - Problem';
   res.render('semanticStructureAndNavigation/headings/problem', {title, notes: getDataByKey('headings', notes), breadcrumb: buildBreadcrumb('headings', req.path, title)});
 });
 
 router.get('/headings/solution', function (req, res) {
-  const title = 'Headings - Amazing Animals';
+  const title = 'Headings - Solution';
   res.render('semanticStructureAndNavigation/headings/solution', {title, breadcrumb: buildBreadcrumb('headings', req.path, title)});
 });
 

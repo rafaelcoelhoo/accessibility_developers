@@ -282,15 +282,9 @@ export const notes = {
                         extraInformation: 'Page contents and destination link without <code>tabindex="-1"</code>'
                     },
                     {
-                        url: 'https://my.vodafone.pt/main.html',
-                        label: 'Vodafone',
-                        extraInformation: 'Menu options not focusable, using <code>a</code> without <code>href</code> attribute'
-                    },
-                    {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
                         label: 'CGD',
-                        extraInformation: 'Search without href',
-                        hide: true
+                        extraInformation: 'Search without <code>href</code> attribute',
                     },
                     {
                         url: 'https://www.vinted.pt/',
@@ -333,7 +327,7 @@ export const notes = {
                     {
                         url: 'https://www.ikea.com/pt/pt/p/ektorp-sofa-3-lugares-totebo-bege-claro-s49320043/',
                         label: 'Ikea',
-                        extraInformation: 'Send to a group without an accessible name, show skip to main content and skip images'
+                        extraInformation: 'Send to a group without an accessible name, show skip to main content and <strong>skip images</strong>'
                     },
                 ]
             },
