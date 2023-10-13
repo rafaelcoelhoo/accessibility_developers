@@ -69,7 +69,10 @@ export const notes = {
                     {
                         url: 'https://www.w3.org/TR/css-ui-4/#propdef-cursor',
                         label: 'W3 - Cursor documentation',
-                        extraInformation: 'The cursor is a pointer that indicates a link. <br> - Authors should use pointer on links and may use on other interactive elements.'
+                        extraInformation: [
+                            'The cursor is a pointer that indicates a link',
+                            'Authors should use pointer on links and may use on other interactive elements'
+                        ]
                     },
                 ],
             },
@@ -290,7 +293,10 @@ export const notes = {
                     {
                         url: 'https://www.cgd.pt/Precario/Pages/Precario.aspx',
                         label: 'CGD',
-                        extraInformation: 'Other clients accordion <br> - See the Event Listener for element with class <code>title-accordion_v2</code> '
+                        extraInformation: [
+                            'Other clients accordion',
+                            'See the Event Listener for element with class <code>title-accordion_v2</code>'
+                        ]
                     },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
@@ -330,16 +336,6 @@ export const notes = {
     aria_live_examples: {
         tips: [],
         examples: [
-            {
-                sectionName: 'Additional Resources',
-                listOfUrls: [
-                    {
-                        url: 'https://thepaciellogroup.github.io/WAI-ARIA-Usage/WAI-ARIA_usage.html',
-                        label: 'Aria usage - Bookmark <br> - Run also on MouthPad',
-                        hide: true
-                    },
-                ],
-            },
             {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
@@ -427,7 +423,10 @@ export const notes = {
                     {
                         url: 'https://www.worten.pt/cliente/conta#/myLogin',
                         label: 'Worten',
-                        extraInformation: 'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback and the time that is visible <br> - Invalid email error message it is not associated to the input field',
+                        extraInformation: [
+                            'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback and the time that is visible',
+                            'Invalid email error message it is not associated to the input field'
+                        ],
                         hide: true
                     },
                     {

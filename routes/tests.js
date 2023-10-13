@@ -9,9 +9,9 @@ router.get('/duplicated-id', function (req, res) {
   res.render('tests/duplicatedIds', {title, notes: getDataByKey('duplicatedIds', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'tests_root')});
 });
 
-router.get('/accesslint', function (req, res) {
-  const title = 'Accesslint';
-  res.render('tests/accessLint', {title, notes: getDataByKey('accessLint', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'tests_root')});
+router.get('/keyboardNavigation', function (req, res) {
+  const title = 'Keyboard navigation';
+  res.render('tests/keyboardNavigation', {title, notes: getDataByKey('keyboardNavigation', notes), breadcrumb: buildBreadcrumb('', req.path, title, 'tests_root')});
 });
 
 export {router as testsRouter};

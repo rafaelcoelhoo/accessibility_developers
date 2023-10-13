@@ -220,6 +220,20 @@ export const notes = {
             },
         ],
     },
+    complexImages: {
+        tips: ['The support is still not good enough for <code>aria-details</code>'],
+        examples: [
+            {
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://a11ysupport.io/tech/aria/aria-details_attribute',
+                        label: 'Aria support for assistive technologies'
+                    },
+                ],
+            },
+        ],
+    },
     svgSource: {
         tips: [
             'Have a look at the accessibility tree',
@@ -258,11 +272,6 @@ export const notes = {
                         label: 'Medium',
                         extraInformation: 'Notifications icon using <code>aria-label</code> but missing the <code>role</code>',
                         hide: true
-                    },
-                    {
-                        url: 'https://web.dev/',
-                        label: 'Web dev',
-                        extraInformation: 'Link homepage'
                     },
                 ],
             },

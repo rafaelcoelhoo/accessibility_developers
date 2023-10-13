@@ -72,7 +72,10 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/principios/10',
                         label: 'Mosaico',
-                        extraInformation: 'Primary language and parts of page - Section (Related areas in Mosaico) <br> - Add lang attibute to see the difference'
+                        extraInformation: [
+                            'Primary language and parts of page - Section (Related areas in Mosaico)',
+                            'Add lang attribute to see the difference'
+                        ]
                     },
                     {
                         url: 'https://www.coverflex.com/en-pt',

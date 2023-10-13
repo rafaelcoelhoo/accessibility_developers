@@ -2,7 +2,8 @@
     <h2>Using <code>alt</code> attribute and <code>aria-describedby</code></h2>
     <img class="bars-img" src="./../../img/bars.svg" role="img"
          alt="Bar chart with the favorite fruit for students."
-         aria-describedby="description1">
+         aria-describedby="description1"
+         aria-details="img-detail-link">
     <div id="description1">
         <p>The results for the survey to discover what is the favorite fruit for the students are:
         <ul class="ps-5">
@@ -19,9 +20,10 @@
 
     <h2>Using <code>alt</code> and link to a long description on a new page</h2>
     <img class="bars-img" src="./../../img/bars.svg" role="img"
-         alt="Bar chart with the favorite fruit for students. Extended description below chart.">
+         alt="Bar chart with the favorite fruit for students. Extended description below chart."
+         aria-details="img-detail-link">
     <div class="center">
-        <a href="/images/long-description">Detailed description of the chart.</a>
+        <a href="/images/long-description" id="img-detail-link">Detailed description of the chart.</a>
     </div>
 
     <hr>
@@ -31,7 +33,8 @@
         <img    class="bars-img"
                 src="./../../img/bars.svg"
                 role="img"
-                alt="Bar chart with the favorite fruit for students. Extended description below chart.">
+                alt="Bar chart with the favorite fruit for students. Extended description below chart."
+                aria-details="complex-image-details">
         <figcaption>
             <details id="complex-image-details">
                 <summary>Detailed description of the chart</summary>
@@ -50,5 +53,4 @@
         </figcaption>
     </figure>
 
-    <hr>
 </div>

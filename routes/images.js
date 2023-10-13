@@ -21,7 +21,7 @@ router.get('/clickable', function (req, res) {
 
 router.get('/complex', function (req, res) {
   const title = 'Complex Images';
-  res.render('imagesAndSVG/images/complexImages', {title, notes: getDataByKey('', notes), breadcrumb: buildBreadcrumb('images', req.path, title)});
+  res.render('imagesAndSVG/images/complexImages', {title, notes: getDataByKey('complexImages', notes), breadcrumb: buildBreadcrumb('images', req.path, title)});
 });
 
 router.get('/text', function (req, res) {

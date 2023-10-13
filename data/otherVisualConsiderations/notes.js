@@ -255,7 +255,10 @@ export const notes = {
                     {
                         url: 'https://www.w3.org/',
                         label: 'W3',
-                        extraInformation: 'Social media icon on Footer and Menu option on Search <br> - Change padding to margin to see the impact'
+                        extraInformation: [
+                            'Social media icon on Footer and Menu option on Search',
+                            'Change padding to margin to see the impact'
+                        ]
                     },
                     {
                         url: 'https://www.boia.org/blog',

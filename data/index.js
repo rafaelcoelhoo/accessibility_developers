@@ -562,8 +562,8 @@ export const index = {
                     label: "Duplicated ids"
                 },
                 {
-                    link: "/tests/accesslint",
-                    label: "AccessLint"
+                    link: "/tests/keyboardNavigation",
+                    label: "Keyboard navigation"
                 },
                 {
                     link: "/audit/websites",

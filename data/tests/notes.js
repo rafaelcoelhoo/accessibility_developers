@@ -22,26 +22,26 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/pesquisar?query=acc',
                         label: 'Mosaico',
-                        extraInformation: 'Mobile and desktop use the same component and same ids, therefore the desktop filters do not have a label'
+                        extraInformation: 'Mobile and desktop use the same component and same ids, therefore the desktop filters do not have a label',
+                        hide: true
                     },
                 ],
             },
         ],
     },
-    accessLint: {
+    keyboardNavigation: {
         tips: [],
         examples: [
             {
                 sectionName: 'Page Examples',
                 listOfUrls: [
                     {
-                        url: 'http://localhost:3001/tests/duplicated-id',
-                        label: 'Duplicated ids'
-                    },
-                    {
-                        url: 'http://localhost:3001/aria/checkbox/initial',
-                        label: 'Checkboxes - Initial',
-                        extraInformation: 'Do not detect any issue and there are'
+                        url: 'http://localhost:3001/aria/links/initial',
+                        label: 'Links - Initial',
+                        extraInformation: [
+                            'Run ARC Toolkit plugin',
+                            'Do not detect any issue with the keyboard navigation'
+                        ]
                     },
                 ],
             },

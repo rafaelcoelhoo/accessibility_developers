@@ -47,9 +47,21 @@
                                                     </svg>
                                                 </a>
                                                 {{#if extraInformation }}
-                                                    <p class="m-0 ps-4 extra-information-links">
-                                                        - {{{extraInformation}}}</p>
+                                                    {{#if (isArray extraInformation)}}
+                                                        <ul>
+                                                        {{#each extraInformation as |info|}}
+                                                            <li class="m-0 ps-4 p-0 extra-information-links d-block">
+                                                            - {{{info}}}
+                                                        </li>
+                                                        {{/each}}
+                                                        </ul>
+                                                    {{else}}
+                                                        <span class="m-0 ps-4 extra-information-links d-block">
+                                                            - {{{extraInformation}}}</span>
+                                                    {{/if}}
                                                 {{/if}}
+
+
                                             </li>
                                         {{/unless}}
                                     {{/each}}

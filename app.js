@@ -45,6 +45,11 @@ hbs.registerHelper('anyNotDisabled', function(listOfUrls, options) {
     return options.inverse(this);
 });
 
+hbs.registerHelper('isArray', function(value) {
+    return Array.isArray(value);
+});
+
+
 app.use('/accessibility-tree', accessibilityTreeRouter);
 app.use('/show-and-hide-elements', showAndHideElementsRouter);
 app.use('/focus-management', focusManagementRouter);

@@ -55,7 +55,10 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/pesquisar?query=acc',
                         label: 'Mosaico - Contrast',
-                        extraInformation: 'Remove all filters button do not pass the minimum contrast, check with the CCA app <br> - Focus styles are coming from bootstrap, <code>btn</code> class',
+                        extraInformation: [
+                            'Remove all filters button do not pass the minimum contrast, check with the CCA app',
+                            'Focus styles are coming from bootstrap, <code>btn</code> class'
+                        ],
                         hide: true
                     },
 
@@ -114,7 +117,10 @@ export const notes = {
                     {
                         url: 'https://www.gov.uk/',
                         label: 'Gov UK',
-                        extraInformation: '<code>tabindex=-1</code> on Is this page useful <br> - Use the rotor to reach the button "Yes"'
+                        extraInformation: [
+                            '<code>tabindex=-1</code> on "Is this page useful"',
+                            'Use the rotor to reach the button "Yes"'
+                        ]
                     },
                 ],
             },
@@ -262,7 +268,10 @@ export const notes = {
                     {
                         url: 'https://www.justdial.com/Mumbai/ods?city=Mumbai&area=&cid=jd_topbanner&jdtracker=jd_internal_desk-banner',
                         label: 'Just Dial',
-                        extraInformation: 'Open in incognito mode - Location modal (close button and focus management) <br> - Not all users use the mouse and can see the screen, the background content is accessible by keyboard users and screen reader users',
+                        extraInformation: [
+                            'Open in incognito mode - Location modal (close button and focus management)',
+                            'Not all users use the mouse and can see the screen, the background content is accessible by keyboard users and screen reader users'
+                        ],
                         hide: true
                     },
                     {
@@ -304,8 +313,10 @@ export const notes = {
                     {
                         url: 'https://my.vodafone.pt/main.html',
                         label: 'Vodafone',
-                        extraInformation: 'Hamburger menu, it is not possible to close the modal with keyboard - screen less than 970px' +
-                            '<br> - It is also not possible to click on any link as all of them are not keyboard accessible',
+                        extraInformation: [
+                            'Hamburger menu, it is not possible to close the modal with keyboard - screen less than 970px',
+                            'It is also not possible to click on any link as all of them are not keyboard accessible'
+                        ],
                         hide: true
                     },
                     {

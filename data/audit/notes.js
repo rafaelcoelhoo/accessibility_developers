@@ -10,10 +10,12 @@ export const notes = {
                     {
                         url: 'https://www.libertyseguros.pt/PublicWebsite/',
                         label: 'Liberty insurance',
-                        extraInformation: 'Homepage ' +
-                            '<br> - Personal area type a invalid email to see just a color indication when something is invalid ' +
-                            '<br> - No Landmarks' +
-                            '<br> - No Headings'
+                        extraInformation: [
+                            'Homepage',
+                            'Personal area type add an invalid email to see just a color indication when something is invalid',
+                            'No Landmarks',
+                            'No Headings',
+                        ]
                     },
                     {
                         url: 'https://medium.com/',
@@ -34,25 +36,37 @@ export const notes = {
                     {
                         url: 'https://wearemultitudes.org/#content5',
                         label: 'We are Multitudes',
-                        extraInformation: 'Run ARC Toolkit before and after activating the overlay <br> Pause animations make lose some content',
+                        extraInformation: [
+                            'Run ARC Toolkit before and after activating the overlay',
+                            'Pause animations make lose some content'
+                        ],
                         hide: true
                     },
                     {
                         url: 'https://shop.hbo.com/',
                         label: 'HBO',
-                        extraInformation: 'Run axe DevTools before and after activating the overlay <br> Activate Keyboard Navigation option',
+                        extraInformation: [
+                            'Run axe DevTools before and after activating the overlay',
+                            'Activate Keyboard Navigation option'
+                        ],
                         hide: true
                     },
                     {
                         url: 'https://www.abbott.com/',
                         label: 'Abbott',
-                        extraInformation: 'Run axe DevTools before and after activating the overlay <br> Activate Keyboard Navigation option',
+                        extraInformation: [
+                            'Run axe DevTools before and after activating the overlay',
+                            'Activate Keyboard Navigation option'
+                        ],
                         hide: true
                     },
                     {
                         url: 'https://shop.hulu.com/',
                         label: 'Shop Hulu',
-                        extraInformation: 'Run axe DevTools before and after activating the overlay <br> Activate Keyboard Navigation option',
+                        extraInformation: [
+                            'Run axe DevTools before and after activating the overlay',
+                            'Activate Keyboard Navigation option'
+                        ],
                         hide: true
                     }
                 ],
