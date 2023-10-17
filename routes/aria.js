@@ -79,14 +79,15 @@ router.get('/accessible-names/solution', function (req, res) {
   res.render('ARIA/accessibleNames/solution', {title, notes: getDataByKey('accessibleNames', notes), breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
 });
 
-router.get('/practical-accessible-names/initial', function (req, res) {
-  const title = 'Real example - Initial';
-  res.render('ARIA/accessibleNamesExercise/initial', {title, breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
+
+router.get('/accessible-names/exercise/initial', function (req, res) {
+  const title = 'Exercise - Initial';
+  res.render('ARIA/accessibleNames/exercise/initial', {title, notes: getDataByKey('accessibleNamesExercise', notes), breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
 });
 
-router.get('/practical-accessible-names/solution', function (req, res) {
-  const title = 'Real example - Solution';
-  res.render('ARIA/accessibleNamesExercise/solution', {title, breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
+router.get('/accessible-names/exercise/solution', function (req, res) {
+  const title = 'Exercise - Solution';
+  res.render('ARIA/accessibleNames/exercise/solution', {title, breadcrumb: buildBreadcrumb('accessible_names', req.path, title)});
 });
 
 router.get('/aria-live/initial', function (req, res) {

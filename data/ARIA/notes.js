@@ -380,6 +380,17 @@ export const notes = {
         ],
         examples: [],
     },
+    accessibleNamesExercise: {
+        tips: [
+            'Add <code>id="label"</code> to the <code>&lt;input&gt;</code> element with a class of <code>&lt;input&gt;</code>',
+            'Add <code>for="label"</code> to the <code>&lt;label&gt;</code> element with a class of <code>help-text</code>',
+            'Add <code>id="help"</code> to the <code>&lt;span&gt;</code>  element with a class of <code>help-text</code>',
+            'Add <code>id="error"</code> to the <code>&lt;span&gt;</code>  element with a class of <code>error-message</code>',
+            'Add <code>aria-describedby="help error"</code> to the <code>input&gt;</code> element',
+            'View the accessible name/description in the accessibility tree'
+        ],
+        examples: [],
+    },
     accessibleNames: {
         tips: ['Show voiceOver rotor to see the names for controls'],
         examples: [

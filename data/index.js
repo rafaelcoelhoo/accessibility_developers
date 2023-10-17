@@ -56,7 +56,28 @@ export const index = {
                 {
                     link: "/show-and-hide-elements/examples",
                     label: "Live examples"
-                }]
+                },
+                {
+                    label: "Exercise - Using hidden content from sight",
+                    hasMultipleLinks: true,
+                    id: "show_and_hide_root_exercise",
+                    options: [
+                        {
+                            label: "Exercise",
+                            topics: [
+                                {
+                                    link: "/show-and-hide-elements/exercise/initial",
+                                    label: "Exercise - Initial"
+                                },
+                                {
+                                    link: "/show-and-hide-elements/exercise/solution",
+                                    label: "Exercise - Solution"
+                                }
+                            ]
+                        }
+                    ]
+                },
+            ]
         }, {
             title: "Focus Management",
             id: "focus_management_root",
@@ -126,19 +147,18 @@ export const index = {
                             ]
                         },
                         {
-                            label: "Real example",
+                            label: "Exercise",
                             topics: [
                                 {
-                                    link: "/aria/practical-accessible-names/initial",
+                                    link: "/aria/accessible-names/exercise/initial",
                                     label: "Initial"
                                 },
                                 {
-                                    link: "/aria/practical-accessible-names/solution",
+                                    link: "/aria/accessible-names/exercise/solution",
                                     label: "Solution"
                                 }
                             ]
                         },
-
                     ],
                 },
                 {

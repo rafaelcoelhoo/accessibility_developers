@@ -6,6 +6,14 @@ export const notes = {
             'Navigate by elements',
         ],
     },
+    hideAndShowElementsExercise: {
+        tips: [
+            'Add a <code>&lt;span&gt;</code> with class <code>visually-hidden</code> to the <code>&lt;del&gt;</code> element',
+            'Add to this new <code>&lt;span&gt;</code> the text "Price was: "',
+            'Add a <code>&lt;span&gt;</code> with class <code>visually-hidden</code> to the <code>&lt;ins&gt;</code> element',
+            'Add to this new <code>&lt;span&gt;</code> the text "Price: "'
+        ],
+    },
     hideAndShowElementsExamples: {
         tips: [],
         examples: [
