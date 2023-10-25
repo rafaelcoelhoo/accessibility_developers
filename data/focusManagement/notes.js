@@ -222,6 +222,10 @@ export const notes = {
                         url: 'https://www.w3schools.com/',
                         label: 'W3Schools - Menu items order'
                     },
+                    {
+                        url: 'https://www.dfs.co.uk/furniture/dining-tables-and-chairs',
+                        label: 'DFS'
+                    },
                 ],
             },
         ],
@@ -278,6 +282,12 @@ export const notes = {
                         url: 'https://blog.outletbaby.com.br/',
                         label: 'Outlet baby',
                         extraInformation: 'Open in incognito mode, we need to tab till the end of the page to jump in to the modal',
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.asus.com/pt/content/glidex/',
+                        label: 'Asus',
+                        extraInformation: 'Open in incognito mode, cookies modal it is not keeping the focus within the modal',
                         hide: true
                     },
                 ],

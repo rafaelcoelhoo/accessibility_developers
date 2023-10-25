@@ -399,8 +399,13 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://www.accessibilityassociation.org/s/',
-                        label: ' International Association of Accessibility Professionals',
+                        label: 'International Association of Accessibility Professionals',
                         extraInformation: 'Accessible name does not start with the same text we have visually (Learn more)',
+                    },
+                    {
+                        url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2020/sobre-portugal-2020/',
+                        label: 'Transparência - Sobre o Plano',
+                        extraInformation: 'See table',
                     },
                     {
                         url: 'https://saboreiaavida.nestle.pt/produtos/kitkat-snack-de-chocolate',

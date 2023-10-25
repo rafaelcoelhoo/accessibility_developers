@@ -381,6 +381,12 @@ h4 {
 .accessibility-tree strong::before {
   content: " [Important:] ";
 }
+.accessibility-tree .list-style-none {
+  list-style: none;
+}
+.accessibility-tree .drinks li {
+  padding: 0;
+}
 
 .show-and-hide .invisible {
   max-height: 0;

@@ -67,11 +67,11 @@ export const index = {
                             topics: [
                                 {
                                     link: "/show-and-hide-elements/exercise/initial",
-                                    label: "Exercise - Initial"
+                                    label: "Initial"
                                 },
                                 {
                                     link: "/show-and-hide-elements/exercise/solution",
-                                    label: "Exercise - Solution"
+                                    label: "Solution"
                                 }
                             ]
                         }

@@ -8,6 +8,19 @@ export const notes = {
         ],
         examples: [
             {
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://nextjs.org/docs/pages/api-reference/components/head',
+                        label: 'Next.js - Head component',
+                    },
+                    {
+                        url: 'https://angular.io/guide/router#setting-the-page-title',
+                        label: 'Angular - title property - Version 14',
+                    },
+                ],
+            },
+            {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {

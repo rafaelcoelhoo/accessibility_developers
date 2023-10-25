@@ -9,6 +9,7 @@ export const notes = {
             'Open voiceOver help - <code>VO + H</code>',
             'Start reading automatically - <code>VO + A</code>',
             'Navigate by Headings - <code>VO + Command + H</code>',
+            'Navigate by lists - <code>VO + Command + X</code>',
             'Navigate to the next Graphic - <code>VO + Command + G</code>',
             'Navigate to the next Link - <code>VO + Command + L</code>',
             'Navigate to the next Form - <code>VO + Command + J</code>',
