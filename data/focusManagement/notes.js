@@ -160,6 +160,11 @@ export const notes = {
                         extraInformation: 'Disable checkbox but not for keyboard users/screen reader users'
                     },
                     {
+                        url: 'https://my.advancecare.com/registo?language=pt-PT',
+                        label: 'AdvanceCare',
+                        extraInformation: 'Checkboxes with images and see accessibility tree'
+                    },
+                    {
                         url: 'https://www.maxi-cosi.pt/customer/account/login/',
                         label: 'Maxi-cosi - Show password',
                         hide: true
@@ -212,8 +217,10 @@ export const notes = {
             'The DOM is the source of true for tab order',
             'Although it is possible to change the order of elements by CSS, you have to be very careful with this, because it will change the order in which assistive technologies provide information, because the order of the DOM is what will matter',
             'Changing the order it is not predictable for users',
+            'Show Order Viewer - Accessibility tab',
             'Check on firefox the tab order option',
-            'Meaningful Sequence Level A'],
+            'Meaningful Sequence Level A'
+        ],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
