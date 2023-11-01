@@ -1,5 +1,5 @@
-<section>
-    <h2 class="mb-3">Polite</h2>
+<section class="live-announcements">
+    <h2 class="mb-3"><code>role:"status"</code></h2>
     <div id="polite-live-region" role="status" class="alert alert-success d-none"></div>
     <button class="polite-button btn-yellow">
         Show success message
@@ -7,11 +7,29 @@
 
     <hr>
 
-    <h2 class="mb-3">Assertive</h2>
+    <h2 class="mb-3"><code>role:"alert"</code></h2>
     <div id="assertive-live-region" role="alert" class="alert alert-danger d-none"></div>
     <button class="assertive-button btn-yellow">
         Show error message
     </button>
+
+    <hr>
+
+    <h2 class="mb-3"><code>role="log"</code></h2>
+    <div class="chat-container" role="log" aria-label="Chat log" aria-atomic="true">
+        <div class="user-message">
+            User: Hello, Bot! How are you today?
+        </div>
+        <div class="bot-message">
+            Bot: Hi there! I'm just a virtual assistant, but I'm doing well. How can I assist you today?
+        </div>
+
+    </div>
+    <div class="d-flex mt-3 align-items-center gap-3 flex-wrap">
+        <label for="user-input">User:</label>
+        <input type="text" name="user" id="user-input">
+        <button class="btn-yellow" onclick="sendMessage()">Send</button>
+    </div>
 
 </section>
 
@@ -44,5 +62,18 @@
             assertiveExample('assertive-live-region');
         });
     })();
+
+
+    function sendMessage() {
+        const userInput = document.getElementById("user-input").value;
+        const chatContainer = document.querySelector(".chat-container");
+        const userMessage = document.createElement("div");
+        userMessage.className = "user-message";
+        userMessage.textContent = "User: " + userInput;
+        chatContainer.appendChild(userMessage);
+        document.getElementById("user-input").value = "";
+    }
+
+
 </script>
 

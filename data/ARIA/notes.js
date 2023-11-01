@@ -377,8 +377,28 @@ export const notes = {
         tips: [
             '<code>role: status</code> have an implicit <code>aria-live: polite</code>',
             '<code>role: alert</code> have an implicit <code>aria-live: assertive</code>',
+            '<code>role: log</code> have an implicit <code>aria-live: polite</code>',
+            'Add <code>aria-atomic="true"</code> to <code>role="log"</code>'
         ],
-        examples: [],
+        examples: [
+            {
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://material.angular.io/cdk/a11y/overview#liveannouncer',
+                        label: 'Angular - Material CDK A11y',
+                    },
+                    {
+                        url: 'https://jinjiang.dev/vue-a11y-utils/#live-utils',
+                        label: 'Vue A11y Utils',
+                    },
+                    {
+                        url: 'https://www.npmjs.com/package/react-a11y-announcer',
+                        label: 'react-a11y-announcer',
+                    },
+                ],
+            },
+        ],
     },
     accessibleNamesExercise: {
         tips: [

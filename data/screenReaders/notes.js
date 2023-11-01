@@ -3,7 +3,7 @@ export const notes = {
         tips: [
             'Enable keyboard navigation on Mac preferences',
             'Enable Safari keyboard accessibility',
-            'Change voiceOver settings (speed, voice, verbosity)',
+            'Change voiceOver settings (speed, voice)',
             'Open VoiceOver training',
             'Start (or Stop) - <code>Command + F5</code>',
             'Open voiceOver help - <code>VO + H</code>',
@@ -18,7 +18,8 @@ export const notes = {
             'Navigate by rotor - <code>VO + U</code>',
             'Read word by letters - <code>VO + Shift + Down Arrow</code> then <code>VO + Shift + Right Arrow</code>',
             'Pause reading - <code>Control</code>',
-            'Check the difference between input type text and type password',
+            'Check the difference between input <strong>type text and type password</strong>',
+            'Check the difference between how <strong>links are announced</strong> on Safari and Chrome'
         ],
         examples: [
             {
