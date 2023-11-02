@@ -61,6 +61,7 @@ export const index = {
                     label: "Exercise - Using hidden content from sight",
                     hasMultipleLinks: true,
                     id: "show_and_hide_root_exercise",
+                    hide: true,
                     options: [
                         {
                             label: "Exercise",
