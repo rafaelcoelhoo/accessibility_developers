@@ -25,10 +25,7 @@ export const notes = {
             {
                 sectionName: 'Additional Resources',
                 listOfUrls: [
-                    {
-                        url: 'https://www.tpgi.com/screen-readers-support-for-text-level-html-semantics/',
-                        label: 'TPGI - Screen reader support for text level HTML semantics',
-                    },
+
                     {
                         url: 'https://www.youtube.com/watch?v=kJKQmTumFP0&t=58s',
                         label: 'Dragon Naturally Speaking',

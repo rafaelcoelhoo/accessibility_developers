@@ -36,6 +36,10 @@ body {
   color: var(--color) !important;
 }
 
+.list-style-none {
+  list-style: none;
+}
+
 ul {
   margin: 0 !important;
   padding: 0 !important;
@@ -380,9 +384,6 @@ h4 {
 }
 .accessibility-tree strong::before {
   content: " [Important:] ";
-}
-.accessibility-tree .list-style-none {
-  list-style: none;
 }
 .accessibility-tree .drinks li {
   padding: 0;

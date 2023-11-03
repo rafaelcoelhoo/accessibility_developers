@@ -584,7 +584,8 @@ export const index = {
                 },
                 {
                     link: "/tests/keyboardNavigation",
-                    label: "Keyboard navigation"
+                    label: "Keyboard navigation",
+                    hide: true
                 },
                 {
                     link: "/audit/websites",

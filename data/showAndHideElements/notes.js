@@ -6,6 +6,24 @@ export const notes = {
             'Navigate by elements',
         ],
     },
+    hideAndShowFromSight: {
+        tips: [
+            'Check accessibility tree',
+            'Navigate by tab',
+            'Navigate by elements',
+        ],
+        examples: [
+            {
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://www.tpgi.com/screen-readers-support-for-text-level-html-semantics/',
+                        label: 'TPGI - Screen reader support for text level HTML semantics',
+                    },
+                ]
+            }
+            ]
+    },
     hideAndShowElementsExercise: {
         tips: [
             'Add a <code>&lt;span&gt;</code> with class <code>visually-hidden</code> to the <code>&lt;del&gt;</code> element',

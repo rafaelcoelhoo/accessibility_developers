@@ -18,7 +18,7 @@ router.get('/hide-from-at', function (req, res) {
 
 router.get('/hide-visually', function (req, res) {
   const title = 'Hide from sight';
-  res.render('showAndHideElements/hideVisually', {title, notes: getDataByKey("hideAndShowElements", notes), breadcrumb: buildBreadcrumb('', req.path, title, 'show_and_hide_root')});
+  res.render('showAndHideElements/hideVisually', {title, notes: getDataByKey("hideAndShowFromSight", notes), breadcrumb: buildBreadcrumb('', req.path, title, 'show_and_hide_root')});
 });
 
 router.get('/examples', function (req, res) {

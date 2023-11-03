@@ -119,7 +119,7 @@ export const notes = {
                         label: 'Gov UK',
                         extraInformation: [
                             '<code>tabindex=-1</code> on "Is this page useful"',
-                            'Use the rotor to reach the button "Yes"'
+                            'Just use the keyboard navigation to see the importance of <code>tabindex=-1</code>',
                         ]
                     },
                 ],

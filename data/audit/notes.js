@@ -11,7 +11,7 @@ export const notes = {
                         url: 'https://www.libertyseguros.pt/PublicWebsite/',
                         label: 'Liberty insurance',
                         extraInformation: [
-                            'Homepage',
+                            'Links with <code>tabindex="-1"</code>',
                             'Personal area type add an invalid email to see just a color indication when something is invalid',
                             'No Landmarks',
                             'No Headings',
