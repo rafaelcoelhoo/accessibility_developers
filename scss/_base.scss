@@ -54,6 +54,13 @@ ul {
 	}
 }
 
+.wallpaper {
+	width: 100%;
+	@media (min-width: 768px) {
+		width: auto;
+	}
+}
+
 .d-block {
 	display: block;
 }

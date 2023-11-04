@@ -7,7 +7,7 @@
   "scripts": {
     "build:img": "imagemin ./img/* --out-dir=./public/img",
     "build:scss": "sass ./scss/style.scss ./public/css/style.css --style=expanded --source-map",
-    "build:darkscss": "sass ./scss/_otherVisualConsiderations.scss ./public/css/otherVisualConsiderations.css --style=expanded --source-map",
+    "build:darkscss": "sass ./scss/darkMode.scss ./public/css/darkMode.css --style=expanded --source-map",
     "build:js": "rollup -c",
     "build": "npm-run-all --parallel build:*",
     "dev": "npm-run-all --parallel start \"build:* -- --watch\"",

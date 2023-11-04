@@ -378,6 +378,8 @@ export const notes = {
             '<code>role: status</code> have an implicit <code>aria-live: polite</code>',
             '<code>role: alert</code> have an implicit <code>aria-live: assertive</code>',
             '<code>role: log</code> have an implicit <code>aria-live: polite</code>',
+            '<code>aria-atomic="true"</code> present the entire changed region as a whole',
+            '<code>aria-atomic="false"</code> present only the changed node or nodes',
             'Add <code>aria-atomic="true"</code> to <code>role="log"</code>'
         ],
         examples: [

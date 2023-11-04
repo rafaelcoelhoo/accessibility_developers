@@ -55,6 +55,11 @@ export const notes = {
                         extraInformation: 'Caixadirecta menu option is using the height property to control the submenu,(<code>direct-wrapper</code>)'
                     },
                     {
+                        url: 'https://www.worten.pt/promocoes',
+                        label: 'Worten',
+                        extraInformation: 'Products menu using opacity'
+                    },
+                    {
                         url: 'https://academia.ama.gov.pt/',
                         label: 'Academia AMA - Sidebar',
                         extraInformation: 'Hamburger menu - Content at the end of the page hidden with off screen',

@@ -67,7 +67,8 @@ export const notes = {
     },
     languages: {
         tips: [
-            'The language attribute helps on the quotation marks according each country'
+            'Primary language and parts of the page',
+            'Change lang attribute from en to es in paragraph'
         ],
         examples: [
             {

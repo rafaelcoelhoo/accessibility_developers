@@ -1,0 +1,12 @@
+@media (prefers-color-scheme: dark) {
+  img:not([src$=".svg"]) {
+    filter: brightness(60%);
+  }
+
+  :root {
+    --backgroundColor: black;
+    --color: white;
+  }
+}
+
+/*# sourceMappingURL=darkMode.css.map */

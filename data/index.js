@@ -580,7 +580,8 @@ export const index = {
             options: [
                 {
                     link: "/tests/duplicated-id",
-                    label: "Duplicated ids"
+                    label: "Duplicated ids",
+                    hide: true
                 },
                 {
                     link: "/tests/keyboardNavigation",

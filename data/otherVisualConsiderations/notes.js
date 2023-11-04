@@ -1,7 +1,7 @@
 export const notes = {
     reduceMotion: {
         tips: [
-            'Turn on the reduce motion (operating system versus browser emulating)',
+            'Turn on the reduce motion (operating system versus browser rendering)',
             'Check the reduce motion on CSS with the media query <code>prefers-reduced-motion</code>',
             'Check the reduce motion applied on javascript',
             //'Show stylus plugin for bysix website'
@@ -181,7 +181,10 @@ export const notes = {
                     {
                         url: 'https://www.novobanco.pt/particulares',
                         label: 'Novo Banco',
-                        extraInformation: 'Just some content is scaling and using fixed box height (section: Need help?)'
+                        extraInformation: [
+                            'Just some content is scaling and using fixed box height (section: Need help?)',
+                            'Zoom Text only'
+                        ]
                     },
                 ],
             },
@@ -191,7 +194,10 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
                         label: 'Mosaico',
-                        extraInformation: 'Scaling properly'
+                        extraInformation: [
+                            'Scaling properly',
+                            'Zoom Text only'
+                        ]
                     },
                     {
                         url: 'https://web.dev/about/',

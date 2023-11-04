@@ -15,6 +15,7 @@ export const notes = {
                             'Personal area type add an invalid email to see just a color indication when something is invalid',
                             'No Landmarks',
                             'No Headings',
+                            'Headings with CSS'
                         ]
                     },
                     {
