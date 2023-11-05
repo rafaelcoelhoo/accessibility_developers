@@ -295,7 +295,6 @@ export const notes = {
                         label: 'CGD',
                         extraInformation: [
                             'Other clients accordion',
-                            'See the Event Listener for element with class <code>title-accordion_v2</code>'
                         ]
                     },
                     {
@@ -414,7 +413,7 @@ export const notes = {
         examples: [],
     },
     accessibleNames: {
-        tips: ['Show voiceOver rotor to see the names for controls'],
+        tips: ['Turn on VoiceOver to see how these elements are announced'],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',

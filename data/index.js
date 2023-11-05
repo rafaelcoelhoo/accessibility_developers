@@ -149,6 +149,7 @@ export const index = {
                         },
                         {
                             label: "Exercise",
+                            hide: true,
                             topics: [
                                 {
                                     link: "/aria/accessible-names/exercise/initial",
