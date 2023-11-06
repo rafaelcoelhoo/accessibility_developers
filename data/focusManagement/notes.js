@@ -6,6 +6,7 @@ export const notes = {
             'Comment/Uncomment css styles for <code>:focus</code> versus <code>:focus-visible</code>',
             'If we are using the mouse and lose track of which element is selected, at any time we can click on a key for the focus indicator to appear.',
             'Log expression <code>document.activeElement</code>',
+            'Show "What has focus" bookmark',
             'See this log on Coverflex website, hover expression result',
         ],
         examples: [
@@ -15,6 +16,10 @@ export const notes = {
                     {
                         url: 'https://github.com/WICG/focus-visible ',
                         label: 'Focus-visible polyfill'
+                    },
+                    {
+                        url: 'https://codepen.io/svinkle/pen/WgYRxq',
+                        label: 'What has focus'
                     },
                 ]
             },
