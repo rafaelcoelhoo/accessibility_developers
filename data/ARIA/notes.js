@@ -440,6 +440,11 @@ export const notes = {
                         extraInformation: 'Filters using the same <code>aria-label</code> (Typology, bathroom, Energetic certificate)',
                     },
                     {
+                        url: 'https://www.santander.pt/credito-habitacao/simulador-credito-habitacao',
+                        label: 'Santander',
+                        extraInformation: 'Acquisition checkbox without accessible names',
+                    },
+                    {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
                         label: 'CGD',
                         extraInformation: 'Close button on CaixaDirecta panel is just a "x" without an explicit label of the functionality',

@@ -250,7 +250,7 @@ export const notes = {
             'Send it back to the triggering element when the user closes the dialog',
             '<code>inert</code> - remove an element from the tab order, and from the accessibility tree',
             '<code>aria-hidden: true</code> - remove an element from the accessibility tree but not from the tab order',
-            '<code>aria-modal: true</code> - navigation is limited to the area itself and the background (the ancestors and siblings of the modal) is hidden',
+            '<code>aria-modal: true</code> - avoid assistive technology users from navigating out of the modal (e.g. using cursor, using heading navigation).',
         ],
         examples: [
             {
