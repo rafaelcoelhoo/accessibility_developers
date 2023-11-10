@@ -7,7 +7,7 @@ export const notes = {
             'If we are using the mouse and lose track of which element is selected, at any time we can click on a key for the focus indicator to appear.',
             'Log expression <code>document.activeElement</code>',
             'Show "What has focus" bookmark',
-            'See this log on Coverflex website, hover expression result',
+            'See this log on Público website, hover expression result',
         ],
         examples: [
             {
@@ -34,7 +34,14 @@ export const notes = {
                     {
                         url: 'https://www.coverflex.com/pt',
                         label: 'Coverflex',
-                        extraInformation: '<code>:focus-visible</code> is being override by custom <code>focus</code> styles'
+                        extraInformation: '<code>:focus-visible</code> is being override by custom <code>focus</code> styles',
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.publico.pt/antonio-costa',
+                        label: 'Público',
+                        extraInformation: '<code>:focus-visible</code> is being override by custom <code>focus</code> styles',
+                        hide: true
                     },
                     {
                         url: 'https://feed.continente.pt/',
@@ -279,7 +286,15 @@ export const notes = {
                     {
                         url: 'https://www.tedbaker.com/uk',
                         label: 'Ted Baker - Cookies',
-                        extraInformation: 'Open in incognito mode to see the cookies modal, it is not keeping the focus within the modal'
+                        extraInformation: 'Open in incognito mode to see the cookies modal, it is not keeping the <code>focus</code> within the modal'
+                    },
+                    {
+                        url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
+                        label: 'CGD',
+                        extraInformation: [
+                            'Open in incognito mode to see the cookies modal, it is not keeping the <code>cursor</code> within the modal',
+                            'Missing <code>aria-modal="true"</code>'
+                        ]
                     },
                     {
                         url: 'https://www.justdial.com/Mumbai/ods?city=Mumbai&area=&cid=jd_topbanner&jdtracker=jd_internal_desk-banner',

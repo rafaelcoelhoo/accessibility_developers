@@ -83,6 +83,11 @@ export const notes = {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
+                        url: 'https://www.publico.pt/antonio-costa',
+                        label: 'Público',
+                        extraInformation: 'Menu container using <code>display-none</code>'
+                    },
+                    {
                         url: 'https://www.apple.com/shop/accessories/all',
                         label: 'Apple',
                         extraInformation: 'Search accessories reset button text on input'
