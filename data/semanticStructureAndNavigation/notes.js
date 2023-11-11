@@ -161,7 +161,7 @@ export const notes = {
                     {
                         url: 'https://eportugal.gov.pt/contactos',
                         label: 'ePortugal',
-                        extraInformation: 'Two main landmark'
+                        extraInformation: 'Two <code>main</code> landmark'
                     },
                     {
                         url: 'https://www.santander.pt/credito-habitacao/simulador-credito-habitacao',
@@ -171,7 +171,12 @@ export const notes = {
                     {
                         url: 'https://pt.tommy.com/terms-and-conditions',
                         label: 'Tommy Hilfiger',
-                        extraInformation: 'Two navigation without accessible name'
+                        extraInformation: 'Two <code>navigation</code> without accessible name'
+                    },
+                    {
+                        url: 'https://pt.tommy.com/terms-and-conditions',
+                        label: 'https://www.blissapplications.com/about-us',
+                        extraInformation: '<code>header</code> and <code>footer</code> inside <code>main</code>'
                     },
                     {
                         url: 'https://mosaico.gov.pt/etapas',
@@ -210,26 +215,32 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
-                        url: 'https://mosaico.gov.pt/homepage',
-                        label: 'Mosaico - Homepage',
-                        extraInformation: 'Not meaningfully headings (1. 2.)',
-                        hide: true
-                    },
-                    {
-                        url: 'https://mosaico.gov.pt/perfis/ux-ui-designer',
+                        url: 'https://mosaico.gov.pt/perfis/ux-designer',
                         label: 'Mosaico - Designer',
                         extraInformation: 'Missing headings (Stages, principles)',
                         hide: true
                     },
                     {
+                        url: 'https://www.blissapplications.com/about-us',
+                        label: 'Bliss - About us',
+                        extraInformation: 'Missing headings',
+                    },
+                    {
+                        url: 'https://www.42porto.com/candidatura/',
+                        label: '42 Porto',
+                        extraInformation: 'No headings',
+                    },
+                    {
                         url: 'https://help.medium.com/hc/en-us/articles/360053078253',
                         label: 'Medium',
-                        extraInformation: 'Not hierarchical headings '
+                        extraInformation: 'Not hierarchical headings',
+                        hide: true
                     },
                     {
                         url: 'https://www.starbucksathome.com/pt/artigo/sobre-nos',
                         label: 'Starbucks',
-                        extraInformation: 'Heading only visually'
+                        extraInformation: 'Heading only visually',
+                        hide: true
                     },
                     {
                         url: 'https://www.ipv.pt/esav/candidaturas-esav/',

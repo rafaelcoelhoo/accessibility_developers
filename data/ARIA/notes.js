@@ -20,6 +20,10 @@ export const notes = {
                         extraInformation: 'Create account and login, screen smaller than 960px'
                     },
                     {
+                        url: 'https://ind.millenniumbcp.pt/pt/negocios/solucoes/Pages/alertas.aspx',
+                        label: 'BCP',
+                    },
+                    {
                         url: 'https://www.purina.co.uk/dog/dog-food',
                         label: 'Purina',
                         extraInformation: 'Open Lightbox'
@@ -427,6 +431,12 @@ export const notes = {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2020/sobre-portugal-2020/',
                         label: 'Transparência - Sobre o Plano',
                         extraInformation: 'See table',
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.blissapplications.com/',
+                        label: 'Bliss',
+                        extraInformation: 'Logo Bliss',
                     },
                     {
                         url: 'https://saboreiaavida.nestle.pt/produtos/kitkat-snack-de-chocolate',
