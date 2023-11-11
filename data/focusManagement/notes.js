@@ -41,7 +41,6 @@ export const notes = {
                         url: 'https://www.publico.pt/antonio-costa',
                         label: 'Público',
                         extraInformation: '<code>:focus-visible</code> is being override by custom <code>focus</code> styles',
-                        hide: true
                     },
                     {
                         url: 'https://feed.continente.pt/',

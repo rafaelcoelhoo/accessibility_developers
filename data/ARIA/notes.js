@@ -339,6 +339,36 @@ export const notes = {
     aria_live_examples: {
         tips: [],
         examples: [
+
+        ],
+    },
+    aria_live: {
+        tips: [
+            '<code>role: status</code> have an implicit <code>aria-live: polite</code>',
+            '<code>role: alert</code> have an implicit <code>aria-live: assertive</code>',
+            '<code>role: log</code> have an implicit <code>aria-live: polite</code>',
+            '<code>aria-atomic="true"</code> present the entire changed region as a whole',
+            '<code>aria-atomic="false"</code> present only the changed node or nodes',
+            'Add <code>aria-atomic="true"</code> to <code>role="log"</code>'
+        ],
+        examples: [
+            {
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://material.angular.io/cdk/a11y/overview#liveannouncer',
+                        label: 'Angular - Material CDK A11y',
+                    },
+                    {
+                        url: 'https://jinjiang.dev/vue-a11y-utils/#live-utils',
+                        label: 'Vue A11y Utils',
+                    },
+                    {
+                        url: 'https://www.npmjs.com/package/react-a11y-announcer',
+                        label: 'react-a11y-announcer',
+                    },
+                ],
+            },
             {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
@@ -371,35 +401,6 @@ export const notes = {
                         url: 'https://findajob.dwp.gov.uk/sign-in?after_login=search%3Floc%3D86383',
                         label: 'Gov UK - Login',
                         extraInformation: 'Login - Incorrect data'
-                    },
-                ],
-            },
-        ],
-    },
-    aria_live: {
-        tips: [
-            '<code>role: status</code> have an implicit <code>aria-live: polite</code>',
-            '<code>role: alert</code> have an implicit <code>aria-live: assertive</code>',
-            '<code>role: log</code> have an implicit <code>aria-live: polite</code>',
-            '<code>aria-atomic="true"</code> present the entire changed region as a whole',
-            '<code>aria-atomic="false"</code> present only the changed node or nodes',
-            'Add <code>aria-atomic="true"</code> to <code>role="log"</code>'
-        ],
-        examples: [
-            {
-                sectionName: 'Additional Resources',
-                listOfUrls: [
-                    {
-                        url: 'https://material.angular.io/cdk/a11y/overview#liveannouncer',
-                        label: 'Angular - Material CDK A11y',
-                    },
-                    {
-                        url: 'https://jinjiang.dev/vue-a11y-utils/#live-utils',
-                        label: 'Vue A11y Utils',
-                    },
-                    {
-                        url: 'https://www.npmjs.com/package/react-a11y-announcer',
-                        label: 'react-a11y-announcer',
                     },
                 ],
             },

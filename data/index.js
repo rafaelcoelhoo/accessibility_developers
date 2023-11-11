@@ -324,7 +324,8 @@ export const index = {
                                 },
                                 {
                                     link: "/aria/aria-live/examples",
-                                    label: "Examples"
+                                    label: "Examples",
+                                    hide: true
                                 }
                             ]
                         }
