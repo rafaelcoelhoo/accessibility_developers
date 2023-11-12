@@ -42,16 +42,16 @@ export const index = {
             id: "show_and_hide_root",
             options: [
                 {
-                    link: "/show-and-hide-elements/hide-from-all",
-                    label: "Hide from all"
-                },
-                {
                     link: "/show-and-hide-elements/hide-visually",
                     label: "Hide from sight"
                 },
                 {
                     link: "/show-and-hide-elements/hide-from-at",
                     label: "Hide from assistive technologies"
+                },
+                {
+                    link: "/show-and-hide-elements/hide-from-all",
+                    label: "Hide from all"
                 },
                 {
                     link: "/show-and-hide-elements/examples",

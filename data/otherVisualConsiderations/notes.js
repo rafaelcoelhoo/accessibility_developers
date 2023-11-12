@@ -121,7 +121,8 @@ export const notes = {
     },
     zoom: {
         tips: [
-            'See viewport tags'
+            'See viewport tags',
+            'Do not use <code>user-scalable=no</code> nor <code>maximum-scale=1</code>'
         ],
         examples: [
             {

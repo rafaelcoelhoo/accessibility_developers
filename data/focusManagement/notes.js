@@ -238,7 +238,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://www.w3schools.com/',
-                        label: 'W3Schools - Menu items order'
+                        label: 'W3Schools - Menu items order',
+                        hide: true
                     },
                     {
                         url: 'https://www.dfs.co.uk/furniture/dining-tables-and-chairs',

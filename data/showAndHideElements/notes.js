@@ -57,7 +57,10 @@ export const notes = {
                     {
                         url: 'https://www.worten.pt/promocoes',
                         label: 'Worten',
-                        extraInformation: 'Products menu using opacity'
+                        extraInformation: [
+                            'Products menu using opacity',
+                            'Just Accessibility Tree'
+                        ]
                     },
                     {
                         url: 'https://academia.ama.gov.pt/',
@@ -104,7 +107,8 @@ export const notes = {
                         extraInformation: [
                             'The rating component is hiding the stars (but could be improved the number of reviews, as it is duplicated in the button name)',
                             'Add <code>aria-hidden</code> to the number of comments'
-                        ]
+                        ],
+                        hide: true
                     },
                     {
                         url: 'https://www.gov.uk/',
@@ -115,8 +119,7 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                         label: 'Transparência Gov',
-                        extraInformation: 'List of contents - Section with graphics',
-                        hide: true
+                        extraInformation: 'Title section with SVG',
                     },
                     {
                         url: 'https://www.scottohara.me/',
