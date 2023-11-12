@@ -418,7 +418,10 @@ export const notes = {
         examples: [],
     },
     accessibleNames: {
-        tips: ['Turn on VoiceOver to see how these elements are announced'],
+        tips: [
+            'Turn on VoiceOver to see how these elements are announced',
+            'Translate to Deutsch'
+        ],
         examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
