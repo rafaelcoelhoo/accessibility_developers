@@ -8,14 +8,8 @@
         </svg>
     </button>
 
-    <a href="https://lisbondigitalschool.com/" target="_blank">Lisbon Digital School
-        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
-             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-             class="feather feather-external-link">
-            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-            <polyline points="15 3 21 3 21 9"></polyline>
-            <line x1="10" y1="14" x2="21" y2="3"></line>
-        </svg>
+    <a href="#" aria-label="See more about our courses">
+        See more
     </a>
     <hr>
 
@@ -59,7 +53,7 @@
         <p id="pwd-detail">The password must have 10 characters</p>
     </form>
 
-    <form action="#" class="accessible-names-exercise">
+    <form action="#" class="accessible-names-exercise mb-5">
         <div class="form-group">
             <label class="d-block" for="label">Phone</label>
             <span class="help-text" id="help">Include area code</span>
@@ -68,6 +62,16 @@
         </div>
     </form>
 
+    <!-- id: open_new_window  -->
+    <a href="https://lisbondigitalschool.com/" target="_blank" >Lisbon Digital School
+        <svg role="img" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+             class="feather feather-external-link" aria-hidden="true">
+            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+            <polyline points="15 3 21 3 21 9"></polyline>
+            <line x1="10" y1="14" x2="21" y2="3"></line>
+        </svg>
+    </a>
 
 
 
@@ -75,13 +79,14 @@
     <h2>All mixed - See name order</h2>
 
     <button class="btn-transparent" aria-label="Menu aria-label" aria-labelledby="menu-id">
-        <span class="visually-hidden-custom" id="menu-id">Menu visually hidden</span>
+        <span class="visually-hidden-custom">Menu visually hidden</span>
         <svg viewBox="0 0 100 80" width="40" height="40" role="img" aria-hidden="true">
             <rect width="100" height="20"></rect>
             <rect y="30" width="100" height="20"></rect>
             <rect y="60" width="100" height="20"></rect>
         </svg>
     </button>
+    <p class="d-none" id="menu-id">Menu - aria-labelledby</p>
 
     <button class="mt-3 btn-transparent d-block">
         <img src="./../../img/search.svg" alt="What">
@@ -96,8 +101,8 @@
     <hr>
 
     <h2>Mismatch between name and label</h2>
-    <a href="https://lisbondigitalschool.com/" target="_blank" aria-label="Click to see more about our school">
-        Visit our school
+    <a href="https://lisbondigitalschool.com/" target="_blank" aria-label="Click to see more about our courses">
+        See more
     </a>
 
     <hr>
