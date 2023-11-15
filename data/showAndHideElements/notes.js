@@ -41,12 +41,12 @@ export const notes = {
                     {
                         url: 'https://portugaldigital.gov.pt/',
                         label: 'Portugal Digital',
-                        extraInformation: 'Menu with extra labels on search option, using <code>sr-only</code> unnecessary'
+                        extraInformation: 'Menu with extra labels on the search option, using <code>sr-only</code> when it should be <code>display: none</code>'
                     },
                     {
                         url: 'https://my.vodafone.pt/main.html',
                         label: 'Vodafone',
-                        extraInformation: 'Menu with duplicated labels on search option, using <code>visually-hidden</code> unnecessary',
+                        extraInformation: 'Menu with duplicated labels on the search option, using <code>visually-hidden</code> unnecessary',
                         hide: true
                     },
                     {

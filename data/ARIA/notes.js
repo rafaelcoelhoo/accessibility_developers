@@ -424,6 +424,15 @@ export const notes = {
         ],
         examples: [
             {
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://www.nngroup.com/articles/form-design-placeholders/',
+                        label: 'Placeholder -  Nielsen Norman Group',
+                    },
+                ],
+            },
+            {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
