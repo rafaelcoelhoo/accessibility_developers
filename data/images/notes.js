@@ -108,7 +108,8 @@ export const notes = {
                     {
                         url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
                         label: 'Ikea',
-                        extraInformation: 'Rating Stars are using <code>role="img"</code> with <code>aria-label</code>'
+                        extraInformation: 'Rating Stars are using <code>role="img"</code> with <code>aria-label</code>',
+                        hide: true
                     },
                     {
                         url: 'https://www.americanexpress.com/us/credit-cards/',
@@ -176,6 +177,7 @@ export const notes = {
         tips: [
             'Font scaling',
             'Page zooming',
+            'Copy image text',
             'Translate the page using Google Translate plugin',
         ],
         examples: [
@@ -185,7 +187,8 @@ export const notes = {
                     {
                         url: 'https://www.b-simple.pt/en/',
                         label: 'B-Simple',
-                        extraInformation: '"Who we thank section" - Images with not alt'
+                        extraInformation: '"Who we thank section" - Images with not alt',
+                        hide: true
                     },
                     {
                         url: 'https://www.peppasauce.love/',

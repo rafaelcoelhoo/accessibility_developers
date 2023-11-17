@@ -174,8 +174,8 @@ export const notes = {
                         extraInformation: 'Two <code>navigation</code> without accessible name'
                     },
                     {
-                        url: 'https://pt.tommy.com/terms-and-conditions',
-                        label: 'https://www.blissapplications.com/about-us',
+                        url: 'https://www.blissapplications.com/about-us',
+                        label: 'Bliss - About Us',
                         extraInformation: '<code>header</code> and <code>footer</code> inside <code>main</code>'
                     },
                     {
@@ -283,7 +283,6 @@ export const notes = {
             'Add <code>tabindex: -1</code> to the content itself (in this case the heading)',
             'Check cursor navigation before adding <code>tabindex: -1</code>',
             'Use descriptive text links',
-            "Add an accessible name for the social images links"
         ],
         examples: [
             {
