@@ -144,6 +144,11 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
+                        url: 'https://www.prozis.com/pt/pt',
+                        label: 'Prozis',
+                        extraInformation: 'Login - Divs working as buttons',
+                    },
+                    {
                         url: 'https://www.aboutamazon.es/?language=pt',
                         label: 'Amazon',
                         extraInformation: 'Follow us option not focusable, just expand on hover',
