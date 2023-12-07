@@ -226,6 +226,11 @@ export const notes = {
                         extraInformation: 'Missing headings',
                     },
                     {
+                        url: 'https://vml.com/',
+                        label: 'VML',
+                        extraInformation: 'Not hierarchical headings',
+                    },
+                    {
                         url: 'https://www.42porto.com/candidatura/',
                         label: '42 Porto',
                         extraInformation: 'No headings',
