@@ -188,6 +188,12 @@
   }
 }
 
+.wcag {
+  a[aria-current="page"] {
+    border-bottom: 4px solid
+  }
+}
+
 .custom-layout {
   .breadcrumb-section {
     margin-top: 0 !important;

@@ -595,6 +595,16 @@ export const index = {
                     label: "Audit"
                 },
             ]
+        },
+        {
+            title: "WCAG",
+            id: "wcag",
+            options: [
+                {
+                    link: "/WCAG/consistent-help/world",
+                    label: "3.2.6 Consistent Help (A)",
+                },
+            ]
         }
     ]
 };
