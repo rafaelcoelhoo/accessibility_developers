@@ -108,7 +108,6 @@ export const notes = {
                             'The rating component is hiding the stars (but could be improved the number of reviews, as it is duplicated in the button name)',
                             'Add <code>aria-hidden</code> to the number of comments'
                         ],
-                        hide: true
                     },
                     {
                         url: 'https://www.gov.uk/',

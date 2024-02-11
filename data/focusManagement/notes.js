@@ -72,6 +72,11 @@ export const notes = {
                         ],
                         hide: true
                     },
+                    {
+                        url: 'https://makeitfable.com/',
+                        label: 'Fable',
+                        extraInformation: 'Show high contrast mode'
+                    },
 
                 ],
             },
@@ -79,14 +84,17 @@ export const notes = {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
-                        url: 'https://www.gov.uk/',
-                        label: 'Gov UK',
-                        hide: true
+                        url: 'https://www.usa.gov/',
+                        label: 'USA Gov',
                     },
                     {
-                        url: 'https://makeitfable.com/',
-                        label: 'Fable'
-                    }
+                        url: 'https://www.gov.uk/',
+                        label: 'Gov UK',
+                        extraInformation: [
+                            'Show high contrast mode',
+                            "Transparent outline"
+                        ],
+                    },
                 ],
             },
         ],
@@ -113,12 +121,16 @@ export const notes = {
                         url: 'https://eportugal.gov.pt/contactos',
                         label: 'ePortugal',
                         extraInformation: 'Positive tabindex form',
-                        hide: true
                     },
                     {
                         url: 'https://www.worten.pt/cliente/conta#/myLogin/',
                         label: 'Worten',
                         extraInformation: 'Show password button with <code>tabindex=-1</code>'
+                    },
+                    {
+                        url: 'https://www.myrefinishportal.com/us/en/',
+                        label: 'Akzo',
+                        extraInformation: 'Menu options with <code>tabindex=-1</code>'
                     },
                 ],
             },
@@ -146,7 +158,7 @@ export const notes = {
                     {
                         url: 'https://www.prozis.com/pt/pt',
                         label: 'Prozis',
-                        extraInformation: 'Login - Divs working as buttons',
+                        extraInformation: ['Login - Divs working as buttons', 'Menus just with divs'],
                     },
                     {
                         url: 'https://www.aboutamazon.es/?language=pt',
@@ -250,6 +262,10 @@ export const notes = {
                         url: 'https://www.dfs.co.uk/furniture/dining-tables-and-chairs',
                         label: 'DFS'
                     },
+                    {
+                        url: 'https://www.myrefinishportal.com/us/en/sikkens.html',
+                        label: 'Akzo'
+                    },
                 ],
             },
         ],
@@ -314,7 +330,6 @@ export const notes = {
                         url: 'https://blog.outletbaby.com.br/',
                         label: 'Outlet baby',
                         extraInformation: 'Open in incognito mode, we need to tab till the end of the page to jump in to the modal',
-                        hide: true
                     },
                     {
                         url: 'https://www.asus.com/pt/content/glidex/',
