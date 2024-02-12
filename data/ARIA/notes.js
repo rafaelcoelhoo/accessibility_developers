@@ -378,6 +378,16 @@ export const notes = {
                         label: 'Tommy Hilfiger',
                         extraInformation: 'Add item with and without selected size'
                     },
+                    {
+                        url: 'https://www.worten.pt/produtos/bundle-portatil-hp-14-ep0001np-desk2721e-sleev-14-intel-n200-ram-4gb-128-gb-ufs-7826159',
+                        label: 'Worten',
+                        extraInformation: 'Add item'
+                    },
+                    {
+                        url: 'https://www.timberland.pt/shop/pt/tbl-pt/t-shirt-wind-water-earth-and-sky-para-homem-em-branco-a27j8100',
+                        label: 'Timberland',
+                        extraInformation: 'Add item'
+                    },
                 ],
             },
             {

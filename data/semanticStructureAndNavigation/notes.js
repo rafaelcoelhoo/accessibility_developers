@@ -123,7 +123,6 @@ export const notes = {
                         url: 'https://www.apple.com/choose-country-region/',
                         label: 'Apple',
                         extraInformation: 'Primary language',
-                        hide: true
                     },
                     {
                         url: 'https://www.w3.org/',
@@ -166,6 +165,11 @@ export const notes = {
                     {
                         url: 'https://www.santander.pt/credito-habitacao/simulador-credito-habitacao',
                         label: 'Santander',
+                        extraInformation: 'No landmarks'
+                    },
+                    {
+                        url: 'https://www.prozis.com/pt/pt/checkout/index',
+                        label: 'Prozis',
                         extraInformation: 'No landmarks'
                     },
                     {
@@ -226,20 +230,19 @@ export const notes = {
                         extraInformation: 'Missing headings',
                     },
                     {
-                        url: 'https://vml.com/',
-                        label: 'VML',
-                        extraInformation: 'Not hierarchical headings',
-                    },
-                    {
                         url: 'https://www.42porto.com/candidatura/',
                         label: '42 Porto',
                         extraInformation: 'No headings',
                     },
                     {
+                        url: 'https://vml.com/',
+                        label: 'VML',
+                        extraInformation: 'Not hierarchical headings',
+                    },
+                    {
                         url: 'https://help.medium.com/hc/en-us/articles/360053078253',
                         label: 'Medium',
                         extraInformation: 'Not hierarchical headings',
-                        hide: true
                     },
                     {
                         url: 'https://www.starbucksathome.com/pt/artigo/sobre-nos',
@@ -351,15 +354,11 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
-                        url: 'https://mosaico.gov.pt/etapas',
-                        label: 'Mosaico',
-                        extraInformation: 'Broken skip link',
-                        hide: true
-                    },
-                    {
                         url: 'https://www.ikea.com/pt/pt/p/ektorp-sofa-3-lugares-totebo-bege-claro-s49320043/',
                         label: 'Ikea',
-                        extraInformation: 'Send to a group without an accessible name, show skip to main content and <strong>skip images</strong>'
+                        extraInformation:
+                            ['Send to a group without an accessible name',
+                            'show skip to main content and <strong>skip images</strong>']
                     },
                 ]
             },
@@ -421,7 +420,6 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/municipios/indicadores-por-municipio/dinamica-economica/',
                         label: 'Mais Transparência - Economic Dynamics',
-                        hide: true
                     },
                 ]
             }
