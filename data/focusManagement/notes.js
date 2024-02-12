@@ -77,6 +77,11 @@ export const notes = {
                         label: 'Fable',
                         extraInformation: 'Show high contrast mode'
                     },
+                    {
+                        url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2030/sobre-portugal-2030/',
+                        label: 'Mais Transparência',
+                        extraInformation: 'Focus obscured <code>scroll-padding-top</code>'
+                    },
 
                 ],
             },
