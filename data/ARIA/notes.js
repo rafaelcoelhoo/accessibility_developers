@@ -103,7 +103,6 @@ export const notes = {
                         url: 'https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
                         label: 'OLX',
                         extraInformation: 'Filter typology using just <code>role:"button"</code>',
-                        hide: true
                     },
                 ],
             },
@@ -113,7 +112,6 @@ export const notes = {
                     {
                         url: 'https://www.google.com/search?q=tempo+porto&rlz=1C5GCEM_enPT1024PT1024&sxsrf=AB5stBjyDtddD1W7zAzuz0wd0-aghH4N8g%3A1690060926866&ei=fki8ZOikNJO7kdUPtcGWgAs&oq=tempo+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnRlbXBvICoCCAEyChAjGIoFGCcYnQIyBBAjGCcyBxAjGIoFGCcyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIoFGLEDGIMBGMkDMggQABiABBiSAzIIEAAYigUYkgMyCxAAGIAEGLEDGIMBSKUNUIcBWIcBcAF4AZABAJgBggKgAYICqgEDMi0xuAEByAEA-AEBwgIHECMYsAMYJ8ICChAAGEcY1gQYsAPCAhAQLhiKBRjIAxiwAxhD2AEB4gMEGAAgQYgGAZAGC7oGBAgBGAg&sclient=gws-wiz-serp',
                         label: 'Google - Dropdown filters',
-                        hide: true
                     },
                     {
                         url: 'https://feathericons.com/',
@@ -127,7 +125,6 @@ export const notes = {
                     {
                         url: 'https://www.augmental.tech/faq',
                         label: 'MouthPad - FAQ',
-                        hide: true
                     },
                 ],
             },
@@ -321,7 +318,6 @@ export const notes = {
                     {
                         url: 'https://www.accessibilityassociation.org/s/',
                         label: 'International Association of Accessibility Professionals',
-                        hide: true
                     },
                     {
                         url: 'https://www.novobanco.pt/ajuda-contactos',
@@ -492,13 +488,11 @@ export const notes = {
                             'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback and the time that is visible',
                             'Invalid email error message it is not associated to the input field'
                         ],
-                        hide: true
                     },
                     {
                         url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
                         label: 'Mosaico',
                         extraInformation: 'Search (screen small than 1200px) (Add class visually-hidden)',
-                        hide: true
                     },
                     {
                         url: 'https://www.purina.co.uk/dog/dog-food/dry',
@@ -515,12 +509,16 @@ export const notes = {
                         url: 'https://www.apple.com/apple-events/',
                         label: 'Apple',
                         extraInformation: 'Explore the preview and learn more links',
-                        hide: true
                     },
                     {
                         url: 'https://www.accessarmada.com/services/',
                         label: 'Access Armada',
                         extraInformation: 'Learn more links with more context programmatically'
+                    },
+                    {
+                        url: 'https://findajob.dwp.gov.uk/sign-in',
+                        label: 'Gov UK',
+                        extraInformation: 'Accessible names up to date with the error messages'
                     },
                     {
                         url: 'https://www.ikea.com/pt/pt/p/godmorgon-armario-p-lavatorio-c-2-gavetas-brilh-branco-30180995/',
