@@ -55,6 +55,10 @@ export const notes = {
                         label: 'Ablebits',
                         extraInformation: 'Open in incognito mode - Cookies modal'
                     },
+                    {
+                        url: 'https://www.financecareers.civilservice.gov.uk/how-to-join-us/',
+                        label: 'Government Finance Function',
+                    },
                 ],
             },
         ],
@@ -112,6 +116,7 @@ export const notes = {
                     {
                         url: 'https://www.google.com/search?q=tempo+porto&rlz=1C5GCEM_enPT1024PT1024&sxsrf=AB5stBjyDtddD1W7zAzuz0wd0-aghH4N8g%3A1690060926866&ei=fki8ZOikNJO7kdUPtcGWgAs&oq=tempo+&gs_lp=Egxnd3Mtd2l6LXNlcnAiBnRlbXBvICoCCAEyChAjGIoFGCcYnQIyBBAjGCcyBxAjGIoFGCcyCxAAGIAEGLEDGIMBMgsQABiABBixAxiDATILEAAYgAQYsQMYgwEyDhAAGIoFGLEDGIMBGMkDMggQABiABBiSAzIIEAAYigUYkgMyCxAAGIAEGLEDGIMBSKUNUIcBWIcBcAF4AZABAJgBggKgAYICqgEDMi0xuAEByAEA-AEBwgIHECMYsAMYJ8ICChAAGEcY1gQYsAPCAhAQLhiKBRjIAxiwAxhD2AEB4gMEGAAgQYgGAZAGC7oGBAgBGAg&sclient=gws-wiz-serp',
                         label: 'Google - Dropdown filters',
+                        hide: true
                     },
                     {
                         url: 'https://feathericons.com/',
@@ -296,6 +301,13 @@ export const notes = {
                         label: 'CGD',
                         extraInformation: [
                             'Other clients accordion',
+                        ]
+                    },
+                    {
+                        url: 'https://expresso.pt/',
+                        label: 'Expresso',
+                        extraInformation: [
+                            'Login',
                         ]
                     },
                     {

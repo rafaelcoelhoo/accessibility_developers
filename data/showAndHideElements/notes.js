@@ -58,8 +58,16 @@ export const notes = {
                         url: 'https://www.worten.pt/promocoes',
                         label: 'Worten',
                         extraInformation: [
+                            'Test with screen reader',
                             'Products menu using opacity',
                             'Just Accessibility Tree'
+                        ]
+                    },
+                    {
+                        url: 'https://www.libertyseguros.pt/liberty-sobre-rodas',
+                        label: 'Liberty',
+                        extraInformation: [
+                            'Menu options using keyboard'
                         ]
                     },
                     {

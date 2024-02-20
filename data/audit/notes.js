@@ -16,7 +16,8 @@ export const notes = {
                             'No Landmarks',
                             'No Headings',
                             'Headings with CSS'
-                        ]
+                        ],
+                        hide: true
                     },
                     {
                         url: 'https://medium.com/',
@@ -33,6 +34,14 @@ export const notes = {
                         label: 'Continente',
                         extraInformation: 'Menu on hover and menu options not focusable - See <strong>Event Listener</strong> tab and open the mouseHover event',
                         hide: true
+                    },
+                    {
+                        url: 'https://casa.galp.pt/planos-eletricidade-e-gas?gad_source=1&gclid=CjwKCAiAlcyuBhBnEiwAOGZ2S9RgULxxV2jhrY3EHbZ7NK2CzozXFGQTWmMg4UsW5QU444fR-jlKQhoCqCIQAvD_BwE',
+                        label: 'Galp',
+                    },
+                    {
+                        url: 'https://www.publico.pt/antonio-costa',
+                        label: 'Público',
                     },
                     {
                         url: 'https://wearemultitudes.org/#content5',
