@@ -9,14 +9,22 @@ export const notes = {
         ],
         examples: [
             {
-                sectionName: 'Live example',
+                sectionName: 'Examples for Accessibility Enhancement',
+                listOfUrls: [
+                    {
+                        url: 'https://www.prozis.com/pt/pt/customer-service/message-new',
+                        label: 'Prozis',
+                    },
+                    ]
+            },
+            {
+                sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/tema/',
                         label: 'Transparência Gov',
-                        hide: true
-                    }
-                ],
+                    },
+                ]
             }
         ],
     },
