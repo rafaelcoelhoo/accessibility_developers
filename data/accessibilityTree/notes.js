@@ -12,8 +12,8 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
-                        url: 'https://www.prozis.com/pt/pt/customer-service/message-new',
-                        label: 'Prozis',
+                        url: 'https://www.42porto.com/candidatura/',
+                        label: '42 Porto',
                     },
                     ]
             },

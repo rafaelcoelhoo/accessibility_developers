@@ -65,7 +65,7 @@ ul li a {
   display: block;
 }
 
-footer a {
+footer a, .fake-footer a {
   width: fit-content;
 }
 
@@ -396,6 +396,14 @@ h4 {
 }
 .accessibility-tree .drinks li {
   padding: 0;
+}
+
+.fake-h1 {
+  font-size: 2.5rem;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  line-height: 1.2;
 }
 
 .show-and-hide .invisible {

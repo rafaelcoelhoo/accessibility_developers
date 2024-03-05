@@ -14,7 +14,7 @@ router.get('/good', function (req, res) {
 
 router.get('/bad', function (req, res) {
   const title = 'Accessibility Tree - Problem';
-  res.render('accessibilityTree/bad/accessibilityTree', {title, notes: getDataByKey('accessibilityTree', notes), breadcrumb: buildBreadcrumb('accessibility_tree', req.path, title)});
+  res.render('accessibilityTree/bad/accessibilityTree', {layout: false, title, notes: getDataByKey('accessibilityTree', notes), breadcrumb: buildBreadcrumb('accessibility_tree', req.path, title)});
 });
 
 export {router as accessibilityTreeRouter};
