@@ -60,6 +60,7 @@ export const notes = {
         tips: [
             'Navigate by images - <code>VO + Command + G</code>',
             'Have a look at the accessibility tree',
+            'Break scr attribute to see the alt text in the screen, this does not happen for aria'
         ],
         examples: [
             {
