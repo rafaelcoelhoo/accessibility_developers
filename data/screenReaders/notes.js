@@ -20,7 +20,9 @@ export const notes = {
             'Read word by letters - <code>VO + Shift + Down Arrow</code> then <code>VO + Shift + Right Arrow</code>',
             'Pause reading - <code>Control</code>',
             'Check the difference between input <strong>type text and type password</strong>',
-            'Check the difference between how <strong>lists are announced</strong> on Safari and Chrome'
+            'Check the difference between how <strong>lists are announced</strong> on Safari and Chrome',
+            'Add <code>list-style-type: ""</code>',
+            'Add aria attributes to the list'
         ],
         examples: [
             {

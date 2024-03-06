@@ -59,7 +59,7 @@ export const notes = {
                         label: 'Worten',
                         extraInformation: [
                             'Test with screen reader',
-                            'Products menu using opacity',
+                            'Products menu using transform',
                             'Just Accessibility Tree'
                         ]
                     },
