@@ -4,7 +4,7 @@ export const notes = {
             'Turn on the reduce motion (operating system versus browser rendering)',
             'Check the reduce motion on CSS with the media query <code>prefers-reduced-motion</code>',
             'Check the reduce motion applied on javascript',
-            //'Show stylus plugin for bysix website'
+            'Show stylus plugin for bysix and Digital of things website'
         ],
         examples: [
             {
