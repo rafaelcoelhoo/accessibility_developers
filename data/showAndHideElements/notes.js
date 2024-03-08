@@ -71,6 +71,13 @@ export const notes = {
                         ]
                     },
                     {
+                        url: 'https://www.worten.pt/produtos/aspirador-robo-irobot-roomba-j7-grafite-7450143',
+                        label: 'Worten Robot',
+                        extraInformation: [
+                            'Prices using screen reader'
+                        ]
+                    },
+                    {
                         url: 'https://academia.ama.gov.pt/',
                         label: 'Academia AMA - Sidebar',
                         extraInformation: 'Hamburger menu - Content at the end of the page hidden with off screen',
@@ -96,6 +103,12 @@ export const notes = {
                     {
                         url: 'https://www.publico.pt/antonio-costa',
                         label: 'Público',
+                        extraInformation: 'Menu container using <code>display-none</code>',
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.gov.uk/',
+                        label: 'Gov UK',
                         extraInformation: 'Menu container using <code>display-none</code>'
                     },
                     {

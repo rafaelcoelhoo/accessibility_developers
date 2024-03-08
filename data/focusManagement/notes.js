@@ -234,7 +234,10 @@ export const notes = {
                     {
                         url: 'https://www.apple.com/shop/accessories/all',
                         label: 'Apple',
-                        extraInformation: 'Search accessories - Clear button'
+                        extraInformation: [
+                            'Search accessories - Clear button',
+                            'Menu options with arrows'
+                        ]
                     },
                     {
                         url: 'https://www.accessarmada.com/blog/',

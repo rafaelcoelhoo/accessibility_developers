@@ -2,10 +2,11 @@ export const notes = {
     accessibilityTree: {
         tips: [
             'Analyse Accessibility Tree in Google Chrome Dev Tools',
-            'Show Order Viewer for lists - Accessibility tab',
+            'Show Order Viewer for lists - And change the order - List inside another',
             'Compare both accessibility trees',
             'See real time changes - Change text/Change input type',
-            'See Accessibility Tree in Firefox Dev Tools - Inspect Accessibility Properties'
+            'See Accessibility Tree in Firefox Dev Tools - Inspect Accessibility Properties',
+            'Show empty div'
         ],
         examples: [
             {
