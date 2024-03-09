@@ -406,6 +406,16 @@ export const notes = {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
+                        url: 'https://www.clarks.com/en-us/wallabee-boat/26175755-p',
+                        label: 'Clarks - Item',
+                        extraInformation: 'Add an item without choosing a size'
+                    },
+                    {
+                        url: 'https://www.clarks.com/en-us/cart',
+                        label: 'Clarks - Cart',
+                        extraInformation: ' Add one more product and remove on'
+                    },
+                    {
                         url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camara-de-seguranca-xiaomi-smart-camera-c300-2k-pan-tilt-security-wi-fi-bhr6540gl-6934177796296',
                         label: 'PCDIGA',
                         extraInformation: 'Add item working with aria live, but poor modal focus management'
@@ -541,6 +551,11 @@ export const notes = {
                         url: 'https://findajob.dwp.gov.uk/sign-in',
                         label: 'Gov UK',
                         extraInformation: 'Accessible names up to date with the error messages'
+                    },
+                    {
+                        url: 'https://www.tpgarc.com/?_ga=2.112075527.2000362566.1710000387-990031577.1695913126',
+                        label: 'TPGi',
+                        extraInformation: 'Wrong credentials'
                     },
                     {
                         url: 'https://www.ikea.com/pt/pt/p/godmorgon-armario-p-lavatorio-c-2-gavetas-brilh-branco-30180995/',

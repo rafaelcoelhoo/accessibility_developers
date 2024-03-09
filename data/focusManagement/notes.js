@@ -21,6 +21,14 @@ export const notes = {
                         url: 'https://codepen.io/svinkle/pen/WgYRxq',
                         label: 'What has focus'
                     },
+                    {
+                        url: 'https://www.sarasoueidan.com/blog/focus-indicators/',
+                        label: 'Sara Soueidan - Non text contrast'
+                    },
+                    {
+                        url: 'https://www.tpgi.com/when-i-get-that-low-contrast-feeling-i-need-non-textual-healing/#sectionHeading1',
+                        label: 'TPGi - Non text contrast'
+                    },
                 ]
             },
             {
@@ -148,6 +156,12 @@ export const notes = {
                         extraInformation: [
                             '<code>tabindex=-1</code> on "Is this page useful"',
                             'Just use the keyboard navigation to see the importance of <code>tabindex=-1</code>',
+                        ]
+                    },{
+                        url: 'https://transparencia.gov.pt/pt/',
+                        label: 'Transparência Gov',
+                        extraInformation: [
+                            'Modal with <code>tabindex=-1</code>',
                         ]
                     },
                 ],
