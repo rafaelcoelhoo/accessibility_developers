@@ -112,7 +112,7 @@ export const notes = {
                     {
                         url: 'https://info.portaldasfinancas.gov.pt/pt/docs/Conteudos_1pagina/Pages/portuguese-tax-system.aspx',
                         label: 'Finances',
-                        extraInformation: 'Language for parts of page'
+                        extraInformation: ['Language for parts of page', 'Add <code>lang="en"</code>'],
                     },
                 ],
             },
@@ -393,6 +393,11 @@ export const notes = {
                         url: 'https://getbootstrap.com/docs/5.3/content/tables/#table-borders',
                         label: 'Bootstrap',
                         extraInformation: 'No captions but well structure tables',
+                    },
+                    {
+                        url: 'https://www.myrefinishportal.com/us/en/cookie-policy',
+                        label: 'Akzo',
+                        extraInformation: 'Table layout',
                     },
                     {
                         url: 'https://zippyonline.com/pt/edredao-para-cama-120x60cm--essential-blue-zy-baby/80140797.html',

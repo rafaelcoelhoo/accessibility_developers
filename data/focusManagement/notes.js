@@ -332,11 +332,12 @@ export const notes = {
                         extraInformation: 'Open in incognito mode to see the cookies modal, it is not keeping the <code>focus</code> within the modal'
                     },
                     {
-                        url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
-                        label: 'CGD',
+                        url: 'https://www.nike.com/pt/en/w/womens-gifts-performance-3b0ufz3k7dgz5e1x6',
+                        label: 'Nike',
                         extraInformation: [
                             'Open in incognito mode to see the cookies modal, it is not keeping the <code>cursor</code> within the modal',
-                            'Missing <code>aria-modal="true"</code>'
+                            'Missing <code>aria-modal="true"</code>',
+                            'Add <code>aria-modal="true"</code>'
                         ]
                     },
                     {

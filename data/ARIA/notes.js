@@ -234,7 +234,10 @@ export const notes = {
                     {
                         url: 'https://interfaceingame.com/games/?themes=medieval',
                         label: 'Interface in game',
-                        extraInformation: 'Checkbox from CSS'
+                        extraInformation: ['Checkbox from CSS',
+                            'Remove class <code>display: none</code> and add <code>opacity</code>',
+                            'Add aria attributes to the label'
+                        ]
                     },
                 ],
             }

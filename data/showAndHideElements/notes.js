@@ -107,6 +107,11 @@ export const notes = {
                         hide: true
                     },
                     {
+                        url: 'https://www.walmart.com/ip/Reebok-Lite-Plus-3-Women-s-Shoes/1866504669?athAsset=eyJhdGhjcGlkIjoiMTg2NjUwNDY2OSIsImF0aHN0aWQiOiJDUzAyMCJ9&athena=true',
+                        label: 'Walmart',
+                        extraInformation: 'Price was'
+                    },
+                    {
                         url: 'https://www.gov.uk/',
                         label: 'Gov UK',
                         extraInformation: 'Menu container using <code>display-none</code>'
