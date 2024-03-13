@@ -123,6 +123,7 @@ export const notes = {
                         url: 'https://www.apple.com/choose-country-region/',
                         label: 'Apple',
                         extraInformation: 'Primary language',
+                        hide: true,
                     },
                     {
                         url: 'https://www.w3.org/',
@@ -238,6 +239,7 @@ export const notes = {
                         url: 'https://vml.com/',
                         label: 'VML',
                         extraInformation: 'Not hierarchical headings',
+                        hide: true
                     },
                     {
                         url: 'https://help.medium.com/hc/en-us/articles/360053078253',

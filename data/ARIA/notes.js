@@ -304,7 +304,8 @@ export const notes = {
                         label: 'CGD',
                         extraInformation: [
                             'Other clients accordion',
-                        ]
+                        ],
+                        hide: true
                     },
                     {
                         url: 'https://expresso.pt/',
@@ -426,7 +427,7 @@ export const notes = {
                     {
                         url: 'https://www.gov.uk/search/all?keywords=Taxes&level_one_taxon=d6c2de5d-ef90-45d1-82d4-5f2438369eea&order=relevance',
                         label: 'Gov UK - Search',
-                        extraInformation: 'Change filter topic'
+                        extraInformation: ['Change filter topic', 'Using <code>aria-live="assertive"</code>']
                     },
                     {
                         url: 'https://findajob.dwp.gov.uk/sign-in?after_login=search%3Floc%3D86383',
@@ -517,17 +518,17 @@ export const notes = {
                         hide: true
                     },
                     {
+                        url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
+                        label: 'Mosaico',
+                        extraInformation: 'Search (screen small than 1200px) (Add class visually-hidden)',
+                    },
+                    {
                         url: 'https://www.worten.pt/cliente/conta#/myLogin',
                         label: 'Worten',
                         extraInformation: [
                             'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback and the time that is visible',
                             'Invalid email error message it is not associated to the input field'
                         ],
-                    },
-                    {
-                        url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
-                        label: 'Mosaico',
-                        extraInformation: 'Search (screen small than 1200px) (Add class visually-hidden)',
                     },
                     {
                         url: 'https://www.purina.co.uk/dog/dog-food/dry',
@@ -541,6 +542,16 @@ export const notes = {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
+                        url: 'https://www.walmart.com/account/login?vid=oaoh&tid=0&returnUrl=%2F',
+                        label: 'Walmart',
+                        extraInformation: 'Wrong email'
+                    },
+                    {
+                        url: 'https://findajob.dwp.gov.uk/sign-in',
+                        label: 'Gov UK',
+                        extraInformation: 'Accessible names up to date with the error messages'
+                    },
+                    {
                         url: 'https://www.apple.com/apple-events/',
                         label: 'Apple',
                         extraInformation: 'Explore the preview and learn more links',
@@ -549,16 +560,6 @@ export const notes = {
                         url: 'https://www.accessarmada.com/services/',
                         label: 'Access Armada',
                         extraInformation: 'Learn more links with more context programmatically'
-                    },
-                    {
-                        url: 'https://findajob.dwp.gov.uk/sign-in',
-                        label: 'Gov UK',
-                        extraInformation: 'Accessible names up to date with the error messages'
-                    },
-                    {
-                        url: 'https://www.tpgarc.com/?_ga=2.112075527.2000362566.1710000387-990031577.1695913126',
-                        label: 'TPGi',
-                        extraInformation: 'Wrong credentials'
                     },
                     {
                         url: 'https://www.ikea.com/pt/pt/p/godmorgon-armario-p-lavatorio-c-2-gavetas-brilh-branco-30180995/',
