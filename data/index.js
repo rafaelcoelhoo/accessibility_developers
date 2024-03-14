@@ -583,12 +583,10 @@ export const index = {
                 {
                     link: "/tests/duplicated-id",
                     label: "Duplicated ids",
-                    hide: true
                 },
                 {
                     link: "/tests/keyboardNavigation",
                     label: "Keyboard navigation",
-                    hide: true
                 },
                 {
                     link: "/audit/websites",

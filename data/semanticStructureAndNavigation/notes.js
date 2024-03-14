@@ -229,6 +229,7 @@ export const notes = {
                         url: 'https://www.blissapplications.com/about-us',
                         label: 'Bliss - About us',
                         extraInformation: 'Missing headings',
+                        hide: true
                     },
                     {
                         url: 'https://www.42porto.com/candidatura/',
