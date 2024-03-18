@@ -419,6 +419,7 @@ export const index = {
                     label: "Tables",
                     hasMultipleLinks: true,
                     id: "tables",
+                    hide: true,
                     options: [
                         {
                             label: "Tables",

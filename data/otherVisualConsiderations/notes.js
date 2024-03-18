@@ -3,7 +3,6 @@ export const notes = {
         tips: [
             'Turn on the reduce motion (operating system versus browser rendering)',
             'Check the reduce motion on CSS with the media query <code>prefers-reduced-motion</code>',
-            'Check the reduce motion applied on javascript',
             'Show stylus plugin for bysix and Digital of things website'
         ],
         examples: [
@@ -69,10 +68,11 @@ export const notes = {
     darkMode: {
         tips: [
             'Turn on the dark/light mode (operating system versus browser emulating)',
-            '<code>media="(prefers-color-scheme: dark)"</code> attribute on <code>source</code> elements only respect device settings',
-            'Show <code>updateSourceMedia</code> function to see how can we use the source element with custom theme switcher',
-            'Show filter on images',
-            '<code>currentColor</code> on SVG works for dark/light mode, either for system preference as manual options'
+            '<code>prefers-color-scheme</code> CSS media query'
+            //'<code>media="(prefers-color-scheme: dark)"</code> attribute on <code>source</code> elements only respect device settings',
+            //'Show <code>updateSourceMedia</code> function to see how can we use the source element with custom theme switcher',
+            //'Show filter on images',
+            //'<code>currentColor</code> on SVG works for dark/light mode, either for system preference as manual options'
         ],
         examples: [
             {
@@ -83,11 +83,6 @@ export const notes = {
                         label: 'Diário da República',
                         extraInformation: 'Missing dark mode response',
                         hide: true
-                    },
-                    {
-                        url: 'https://www.acessibilidade.gov.pt/#',
-                        label: 'Accessibility Gov',
-                        extraInformation: 'Color contrast of "SimpleX" word on dark mode'
                     },
                 ],
             },
@@ -177,7 +172,7 @@ export const notes = {
                     {
                         url: 'https://www.cgd.pt/Particulares/Contas/Abertura-conta/Pages/Abertura-conta.aspx',
                         label: 'CGD',
-                        extraInformation: 'Not scale at all'
+                        extraInformation: ['Not scale at all', 'Zoom Text only']
                     },
                     {
                         url: 'https://www.novobanco.pt/particulares',
