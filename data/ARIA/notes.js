@@ -397,12 +397,19 @@ export const notes = {
                     {
                         url: 'https://www.worten.pt/produtos/bundle-portatil-hp-14-ep0001np-desk2721e-sleev-14-intel-n200-ram-4gb-128-gb-ufs-7826159',
                         label: 'Worten',
-                        extraInformation: 'Add item'
+                        extraInformation: 'Add item',
+                        hide: true
                     },
                     {
                         url: 'https://www.timberland.pt/shop/pt/tbl-pt/t-shirt-wind-water-earth-and-sky-para-homem-em-branco-a27j8100',
                         label: 'Timberland',
-                        extraInformation: 'Add item'
+                        extraInformation: 'Add item',
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.optimumnutrition.com/en-us',
+                        label: 'Optimum Nutrition',
+                        extraInformation: 'Newsletter',
                     },
                 ],
             },
@@ -420,7 +427,7 @@ export const notes = {
                         extraInformation: ' Add one more product and remove on'
                     },
                     {
-                        url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camara-de-seguranca-xiaomi-smart-camera-c300-2k-pan-tilt-security-wi-fi-bhr6540gl-6934177796296',
+                        url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camaras-de-seguranca-tp-link-tapo-c420s2-2k-outdoor-ip65-security-wi-fi-hub-tapo-c420s2-4897098688052',
                         label: 'PCDIGA',
                         extraInformation: 'Add item working with aria live, but poor modal focus management'
                     },

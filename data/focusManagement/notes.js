@@ -212,6 +212,11 @@ export const notes = {
                         extraInformation: 'Checkboxes with images and see accessibility tree'
                     },
                     {
+                        url: 'https://www.radiopopular.pt/produto/combinado-lg-gbp62dsxcc',
+                        label: 'Radio Popular',
+                        extraInformation: 'Add to cart'
+                    },
+                    {
                         url: 'https://www.maxi-cosi.pt/customer/account/login/',
                         label: 'Maxi-cosi - Show password',
                         hide: true
