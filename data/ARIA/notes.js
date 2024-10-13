@@ -452,7 +452,6 @@ export const notes = {
     accessibleNames: {
         tips: [
             'Turn on VoiceOver to see how these elements are announced',
-            'Translate to Deutsch'
         ],
         examples: [
             {
@@ -471,6 +470,7 @@ export const notes = {
                         url: 'https://www.accessibilityassociation.org/s/',
                         label: 'International Association of Accessibility Professionals',
                         extraInformation: 'Accessible name does not start with the same text we have visually (Learn more)',
+                        hide: true
                     },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2020/sobre-portugal-2020/',
@@ -498,6 +498,7 @@ export const notes = {
                         url: 'https://www.santander.pt/credito-habitacao/simulador-credito-habitacao',
                         label: 'Santander',
                         extraInformation: 'Acquisition checkbox without accessible names',
+                        hide: true
                     },
                     {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
@@ -549,7 +550,8 @@ export const notes = {
                     {
                         url: 'https://findajob.dwp.gov.uk/sign-in',
                         label: 'Gov UK',
-                        extraInformation: 'Accessible names up to date with the error messages'
+                        extraInformation: 'Accessible names up to date with the error messages',
+                        hide: true
                     },
                     {
                         url: 'https://www.apple.com/apple-events/',

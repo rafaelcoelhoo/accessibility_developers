@@ -74,7 +74,7 @@ export const notes = {
                         url: 'https://www.worten.pt/produtos/aspirador-robo-irobot-roomba-j7-grafite-7450143',
                         label: 'Worten Robot',
                         extraInformation: [
-                            'Prices using screen reader'
+                            'Prices using screen reader - Safari'
                         ]
                     },
                     {

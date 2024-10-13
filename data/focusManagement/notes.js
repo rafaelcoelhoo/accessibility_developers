@@ -88,7 +88,7 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2030/sobre-portugal-2030/',
                         label: 'Mais Transparência',
-                        extraInformation: 'Focus obscured <code>scroll-padding-top</code>'
+                        extraInformation: 'Focus obscured <code>scroll-padding-top</code> in the <code>html</code>'
                     },
 
                 ],
@@ -325,11 +325,6 @@ export const notes = {
                         url: 'https://my.vodafone.pt/main.html',
                         label: 'Vodafone',
                         extraInformation: 'Hamburger menu is not keeping the focus within the modal - screen less than 970px'
-                    },
-                    {
-                        url: 'https://www.tedbaker.com/uk',
-                        label: 'Ted Baker - Cookies',
-                        extraInformation: 'Open in incognito mode to see the cookies modal, it is not keeping the <code>focus</code> within the modal'
                     },
                     {
                         url: 'https://www.nike.com/pt/en/w/womens-gifts-performance-3b0ufz3k7dgz5e1x6',
