@@ -41,7 +41,8 @@ export const notes = {
                     {
                         url: 'https://portugaldigital.gov.pt/',
                         label: 'Portugal Digital',
-                        extraInformation: 'Menu with extra labels on the search option, using <code>sr-only</code> when it should be <code>display: none</code>'
+                        extraInformation: 'Menu with extra labels on the search option, using <code>sr-only</code> when it should be <code>display: none</code>',
+                        hide: true
                     },
                     {
                         url: 'https://my.vodafone.pt/main.html',

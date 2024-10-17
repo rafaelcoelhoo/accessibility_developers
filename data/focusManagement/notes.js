@@ -1,7 +1,10 @@
 export const notes = {
     focus: {
         tips: [
+            'Keyboard mobile',
+            'EAA - Focus on high contrast modes',
             'Impact of <code>outline: 0</code>',
+            'Check browser default styles',
             'Search for class <code>focus-outline</code>',
             'Comment/Uncomment css styles for <code>:focus</code> versus <code>:focus-visible</code>',
             'If we are using the mouse and lose track of which element is selected, at any time we can click on a key for the focus indicator to appear.',
@@ -118,7 +121,17 @@ export const notes = {
             '<code>.focus()</code> to normal paragraph will not send the focus',
             'Buttons and links already have an implicit <code>tabindex: 0</code>',
         ],
-        examples: [],
+        examples: [
+            {
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://appt.org/en/articles/native-versus-cross-frameworks-accessible-apps#8-focus-order',
+                        label: 'Tabindex - Mobile equivalent',
+                    }
+                ],
+            },
+        ],
     },
     tabindexExample: {
         tips: [

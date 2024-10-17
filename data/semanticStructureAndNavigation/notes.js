@@ -26,6 +26,7 @@ export const notes = {
                     {
                         url: 'https://www.esev.ipv.pt/posgrad.aspx',
                         label: 'ESEV',
+                        hide: true
                     },
                     {
                         url: 'https://www.amazon.es/?language=pt_PT',
@@ -45,8 +46,7 @@ export const notes = {
                     },
                     {
                         url: 'https://www.estgv.ipv.pt/estgv/?',
-                        label: 'ESTGV',
-                        hide: true
+                        label: 'ESTGV'
                     },
                 ],
             },
@@ -68,7 +68,8 @@ export const notes = {
     languages: {
         tips: [
             'Primary language and parts of the page',
-            'Change lang attribute from en to es in paragraph'
+            'Change lang attribute from en to es in paragraph',
+            'Change lang attribute for the page level'
         ],
         examples: [
             {

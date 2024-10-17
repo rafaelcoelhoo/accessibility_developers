@@ -82,6 +82,10 @@ export const notes = {
                             'Authors should use pointer on links and may use on other interactive elements'
                         ]
                     },
+                    {
+                        url: 'https://appt.org/en/articles/native-versus-cross-frameworks-accessible-apps#5-role',
+                        label: 'Role - Mobile equivalent',
+                    },
                 ],
             },
             {
@@ -291,6 +295,15 @@ export const notes = {
         ],
         examples: [
             {
+                sectionName: 'Additional Resources',
+                listOfUrls: [
+                    {
+                        url: 'https://appt.org/en/articles/native-versus-cross-frameworks-accessible-apps#7-state',
+                        label: 'States -  Mobile Equivalent',
+                    }
+                ],
+            },
+            {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
@@ -360,7 +373,7 @@ export const notes = {
             '<code>role: alert</code> have an implicit <code>aria-live: assertive</code>',
             '<code>role: log</code> have an implicit <code>aria-live: polite</code>',
             '<code>aria-atomic="true"</code> present the entire changed region as a whole',
-            '<code>aria-atomic="false"</code> present only the changed node or nodes',
+            '<code>aria-atomic="false"</code> present only the changed node or nodes (default)',
             'Add <code>aria-atomic="true"</code> to <code>role="log"</code>'
         ],
         examples: [
@@ -378,6 +391,10 @@ export const notes = {
                     {
                         url: 'https://www.npmjs.com/package/react-a11y-announcer',
                         label: 'react-a11y-announcer',
+                    },
+                    {
+                        url: 'https://appt.org/en/articles/native-versus-cross-frameworks-accessible-apps#10-status-messages',
+                        label: 'Live regions - Mobile equivalent',
                     },
                 ],
             },
@@ -467,6 +484,10 @@ export const notes = {
                     {
                         url: 'https://www.nngroup.com/articles/form-design-placeholders/',
                         label: 'Placeholder -  Nielsen Norman Group',
+                    },
+                    {
+                        url: 'https://appt.org/en/articles/native-versus-cross-frameworks-accessible-apps#4-name',
+                        label: 'Names - Mobile equivalents',
                     },
                 ],
             },
