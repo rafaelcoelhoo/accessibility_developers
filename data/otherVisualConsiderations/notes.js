@@ -3,7 +3,8 @@ export const notes = {
         tips: [
             'Turn on the reduce motion (operating system versus browser rendering)',
             'Check the reduce motion on CSS with the media query <code>prefers-reduced-motion</code>',
-            'Show stylus plugin for bysix and Digital of things website'
+            'Check <code>scrolling-text-1</code>',
+            // 'Show stylus plugin for bysix and Digital of things website'
         ],
         examples: [
             {
@@ -22,7 +23,8 @@ export const notes = {
                     {
                         url: 'https://www.bysix.com/',
                         label: 'Bysix',
-                        extraInformation: 'Buttons animations'
+                        extraInformation: 'Buttons animations',
+                        hide: true
                     },
                     {
                         url: 'https://wearemultitudes.org/#content5',
@@ -33,7 +35,8 @@ export const notes = {
                     {
                         url: 'https://digitalofthings.studio/',
                         label: 'Digital of things',
-                        extraInformation: 'Text scrolling'
+                        extraInformation: 'Text scrolling',
+                        hide: true
                     },
                     {
                         url: 'https://www.42lisboa.com/',
@@ -126,6 +129,7 @@ export const notes = {
                     {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
                         label: 'CGD',
+                        hide: true
                     },
                     {
                         url: 'https://app.seg-social.pt/sso/cookies?service=https%3A%2F%2Fapp.seg-social.pt%2Fptss%2Fcaslogin',
@@ -154,10 +158,10 @@ export const notes = {
         tips: [
             'Browser zooming',
             'Font scaling',
-            'Use Stylus localhost code, to change the line-height of class <code>fixed-card</code>',
-            '<code>.fixed-card {\n' +
+            // 'Use Stylus localhost code, to change the line-height of class <code>fixed-card</code>',
+            /*'<code>.fixed-card {\n' +
             '    line-height: 2;\n' +
-            '}</code>'
+            '}</code>'*/
         ],
         examples: [
             {
@@ -172,14 +176,17 @@ export const notes = {
                     {
                         url: 'https://www.cgd.pt/Particulares/Contas/Abertura-conta/Pages/Abertura-conta.aspx',
                         label: 'CGD',
-                        extraInformation: ['Not scale at all', 'Zoom Text only']
+                        extraInformation: ['Not scale at all',
+                        'Zoom Text only'
+                        ],
+                        hide: true
                     },
                     {
                         url: 'https://www.novobanco.pt/particulares',
                         label: 'Novo Banco',
                         extraInformation: [
                             'Just some content is scaling and using fixed box height (section: Need help?)',
-                            'Zoom Text only'
+                            // 'Zoom Text only'
                         ]
                     },
                 ],
@@ -192,7 +199,7 @@ export const notes = {
                         label: 'Mosaico',
                         extraInformation: [
                             'Scaling properly',
-                            'Zoom Text only'
+                            //'Zoom Text only'
                         ]
                     },
                     {
@@ -208,11 +215,11 @@ export const notes = {
     targetSize: {
         tips: [
             'Importance of using padding and not margin for this behavior',
-            'Check Visually hidden texts',
-            'Use 24x24 cursor bookmark (2.5.8 Target Size (Minimum))',
-            'Use 44x44 cursor bookmark (2.5.5 Target Size)',
-            'Use target size bookmark (2.5.8 Target Size (Minimum))',
-            'Check <code>aria-current</code>',
+            // 'Check Visually hidden texts',
+            // 'Use 24x24 cursor bookmark (2.5.8 Target Size (Minimum))',
+            // 'Use 44x44 cursor bookmark (2.5.5 Target Size)',
+            // 'Use target size bookmark (2.5.8 Target Size (Minimum))',
+            // 'Check <code>aria-current</code>',
         ],
         examples: [
             {
@@ -221,10 +228,12 @@ export const notes = {
                     {
                         url: 'https://codepen.io/aardrian/pen/eYZWNyv',
                         label: '44 x 44 Cursor',
+                        hide: true
                     },
                     {
                         url: 'https://codepen.io/aardrian/pen/eYyjNVg',
                         label: '24 x 24 Cursor',
+                        hide: true
                     },
                 ],
             },

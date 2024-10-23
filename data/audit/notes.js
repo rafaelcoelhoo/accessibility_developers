@@ -37,7 +37,17 @@ export const notes = {
                     {
                         url: 'https://www.bancobpi.pt/particulares/credito/credito-habitacao/comprar-casa',
                         label: 'BPI',
-                    },                    {
+                        hide: true
+                    },
+                    {
+                        url: 'https://cliente.cofidis.pt/Login',
+                        label: 'Login - Cofidis'
+                    },
+                    {
+                        url: 'https://www.cofidis.pt/contactos',
+                        label: 'Contactos - Cofidis'
+                    },
+                    {
                         url: 'https://casa.galp.pt/planos-eletricidade-e-gas?gad_source=1&gclid=CjwKCAiAlcyuBhBnEiwAOGZ2S9RgULxxV2jhrY3EHbZ7NK2CzozXFGQTWmMg4UsW5QU444fR-jlKQhoCqCIQAvD_BwE',
                         label: 'Galp',
                         hide: true

@@ -393,6 +393,7 @@ export const index = {
                     options: [
                         {
                             label: "Links",
+                            hide: true,
                             topics: [
                                 {
                                     link: "/semantic-structure-navigation/links/initial",
@@ -507,7 +508,8 @@ export const index = {
                                 },
                                 {
                                     link: "/images/complex",
-                                    label: "Complex images"
+                                    label: "Complex images",
+                                    hide: true
                                 },
                                 {
                                     link: "/images/text",
@@ -584,10 +586,12 @@ export const index = {
                 {
                     link: "/tests/duplicated-id",
                     label: "Duplicated ids",
+                    hide: true
                 },
                 {
                     link: "/tests/keyboardNavigation",
                     label: "Keyboard navigation",
+                    hide: true
                 },
                 {
                     link: "/audit/websites",

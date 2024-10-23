@@ -412,6 +412,11 @@ export const notes = {
                         extraInformation: 'Add item with and without selected size'
                     },
                     {
+                        url: 'https://www.lionofporches.com/pt/masculino/camisas/camisa-denim-slim-fit_p175695.html?gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P-odiKl6HTaGzy1dcqVCOlLmFLdMGYA9B1OzvyhKFCqQTANyE4WIwIaAjQmEALw_wcB',
+                        label: 'Lion of Porches',
+                        extraInformation: 'Add item with and without selected size'
+                    },
+                    {
                         url: 'https://www.worten.pt/produtos/bundle-portatil-hp-14-ep0001np-desk2721e-sleev-14-intel-n200-ram-4gb-128-gb-ufs-7826159',
                         label: 'Worten',
                         extraInformation: 'Add item',

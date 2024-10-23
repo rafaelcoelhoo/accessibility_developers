@@ -162,7 +162,8 @@ export const notes = {
                     {
                         url: 'https://eportugal.gov.pt/contactos',
                         label: 'ePortugal',
-                        extraInformation: 'Two <code>main</code> landmark'
+                        extraInformation: 'Two <code>main</code> landmark',
+                        hide: true
                     },
                     {
                         url: 'https://www.santander.pt/credito-habitacao/simulador-credito-habitacao',
@@ -172,12 +173,14 @@ export const notes = {
                     {
                         url: 'https://www.prozis.com/pt/pt/checkout/index',
                         label: 'Prozis',
-                        extraInformation: 'No landmarks'
+                        extraInformation: 'No landmarks',
+                        hide: true
                     },
                     {
                         url: 'https://pt.tommy.com/terms-and-conditions',
                         label: 'Tommy Hilfiger',
-                        extraInformation: 'Two <code>navigation</code> without accessible name'
+                        extraInformation: 'Two <code>navigation</code> without accessible name',
+                        hide: true
                     },
                     {
                         url: 'https://www.blissapplications.com/about-us',
@@ -247,6 +250,7 @@ export const notes = {
                         url: 'https://help.medium.com/hc/en-us/articles/360053078253',
                         label: 'Medium',
                         extraInformation: 'Not hierarchical headings',
+                        hide: true
                     },
                     {
                         url: 'https://www.starbucksathome.com/pt/artigo/sobre-nos',
@@ -312,13 +316,13 @@ export const notes = {
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                         label: 'Transparência',
-                        extraInformation: 'Page contents and destination link without <code>tabindex="-1"</code>',
-                        hide: true
+                        extraInformation: 'Page contents and destination link without <code>tabindex="-1"</code>'
                     },
                     {
                         url: 'https://web.dev/learn/html/links/',
                         label: 'Web Dev',
-                        extraInformation: 'Page contents and destination link without <code>tabindex="-1"</code>'
+                        extraInformation: 'Page contents and destination link without <code>tabindex="-1"</code>',
+                        hide: true
                     },
                     {
                         url: 'https://www.cgd.pt/Particulares/Pages/Particulares_v2.aspx',
