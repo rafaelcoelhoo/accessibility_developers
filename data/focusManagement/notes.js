@@ -84,9 +84,9 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://makeitfable.com/',
-                        label: 'Fable',
-                        extraInformation: 'Show high contrast mode'
+                        url: 'https://www.nomensa.com/',
+                        label: 'Nomensa',
+                        extraInformation: 'Show high contrast mode',
                     },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2030/sobre-portugal-2030/',
@@ -147,16 +147,24 @@ export const notes = {
                         url: 'https://eportugal.gov.pt/contactos',
                         label: 'ePortugal',
                         extraInformation: 'Positive tabindex form',
+                        hide: true
                     },
                     {
                         url: 'https://www.worten.pt/cliente/conta#/myLogin/',
                         label: 'Worten',
-                        extraInformation: 'Show password button with <code>tabindex=-1</code>'
+                        extraInformation: 'Show password button with <code>tabindex=-1</code>',
+                        hide: true
                     },
                     {
                         url: 'https://www.myrefinishportal.com/us/en/',
                         label: 'Akzo',
-                        extraInformation: 'Menu options with <code>tabindex=-1</code>'
+                        extraInformation: 'Menu options with <code>tabindex=-1</code>',
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.wacoallingerie.com/row/en/',
+                        label: 'WACOAL',
+                        extraInformation: 'Sub-Menu options with <code>tabindex=0</code>',
                     },
                 ],
             },

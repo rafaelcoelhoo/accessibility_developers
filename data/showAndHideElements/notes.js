@@ -42,7 +42,7 @@ export const notes = {
                         url: 'https://portugaldigital.gov.pt/',
                         label: 'Portugal Digital',
                         extraInformation: 'Menu with extra labels on the search option, using <code>sr-only</code> when it should be <code>display: none</code>',
-                        hide: true
+                        hide: false
                     },
                     {
                         url: 'https://my.vodafone.pt/main.html',
@@ -62,7 +62,8 @@ export const notes = {
                             'Test with screen reader',
                             'Products menu using transform',
                             'Just Accessibility Tree'
-                        ]
+                        ],
+                        hide: true
                     },
                     {
                         url: 'https://www.libertyseguros.pt/liberty-sobre-rodas',
@@ -81,8 +82,7 @@ export const notes = {
                     {
                         url: 'https://academia.ama.gov.pt/',
                         label: 'Academia AMA - Sidebar',
-                        extraInformation: 'Hamburger menu - Content at the end of the page hidden with off screen',
-                        hide: true
+                        extraInformation: 'Hamburger menu - Content at the end of the page hidden with off screen'
                     },
                     {
                         url: 'https://www.portovivosru.pt/',
@@ -108,7 +108,7 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.walmart.com/ip/Reebok-Lite-Plus-3-Women-s-Shoes/1866504669?athAsset=eyJhdGhjcGlkIjoiMTg2NjUwNDY2OSIsImF0aHN0aWQiOiJDUzAyMCJ9&athena=true',
+                        url: 'https://www.walmart.com/ip/Disney-Toddler-Girl-Bluey-Bingo-High-Top-Sneakers/5301686668?classType=VARIANT&athbdg=L1103',
                         label: 'Walmart',
                         extraInformation: 'Price was'
                     },
