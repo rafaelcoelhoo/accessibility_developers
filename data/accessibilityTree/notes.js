@@ -13,8 +13,8 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
-                        url: 'https://www.42porto.com/candidatura/',
-                        label: '42 Porto',
+                        url: 'https://www.prozis.com/pt/pt/customer-service/check-order-status',
+                        label: 'Prozis',
                     },
                     ]
             },

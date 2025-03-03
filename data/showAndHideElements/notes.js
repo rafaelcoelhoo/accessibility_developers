@@ -39,6 +39,11 @@ export const notes = {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
                     {
+                        url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
+                        label: 'Mosaico',
+                        extraInformation: 'Search (screen small than 1200px) (Add class visually-hidden)',
+                    },
+                    {
                         url: 'https://portugaldigital.gov.pt/',
                         label: 'Portugal Digital',
                         extraInformation: 'Menu with extra labels on the search option, using <code>sr-only</code> when it should be <code>display: none</code>',
@@ -82,7 +87,8 @@ export const notes = {
                     {
                         url: 'https://academia.ama.gov.pt/',
                         label: 'Academia AMA - Sidebar',
-                        extraInformation: 'Hamburger menu - Content at the end of the page hidden with off screen'
+                        extraInformation: 'Hamburger menu - Content at the end of the page hidden with off screen',
+                        hide: true
                     },
                     {
                         url: 'https://www.portovivosru.pt/',

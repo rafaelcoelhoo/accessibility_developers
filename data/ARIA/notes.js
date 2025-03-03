@@ -552,15 +552,9 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
-                        label: 'Mosaico',
-                        extraInformation: 'Search (screen small than 1200px) (Add class visually-hidden)',
-                    },
-                    {
-                        url: 'https://www.worten.pt/cliente/conta#/myLogin',
-                        label: 'Worten',
+                        url: 'https://autenticacao.fidelidade.pt/Autenticacao/Desktop.aspx?client_id=mje3KuvqF56sKY6&redirect_uri=https%3a%2f%2fwww.my.fidelidade.pt%2fcanw_auth%2fSSOEntryPage.aspx&response_type=code&state=0e20afe8-0c5b-44c2-80a0-63d13848fd00',
+                        label: 'My Fidelidade',
                         extraInformation: [
-                            'Login using incorrect email format (ie: just a letter), will affect the zoom of the feedback and the time that is visible',
                             'Invalid email error message it is not associated to the input field'
                         ],
                     },
