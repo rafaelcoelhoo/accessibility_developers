@@ -84,14 +84,15 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.nomensa.com/',
+                        url: 'https://www.nomensa.com/contact-us/',
                         label: 'Nomensa',
                         extraInformation: 'Show high contrast mode',
                     },
                     {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/pt2030/sobre-portugal-2030/',
                         label: 'Mais Transparência',
-                        extraInformation: 'Focus obscured <code>scroll-padding-top</code> in the <code>html</code>'
+                        extraInformation: 'Focus obscured <code>scroll-padding-top</code> in the <code>html</code>',
+                        hide: true
                     },
 
                 ],
@@ -162,7 +163,7 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.wacoallingerie.com/row/en/',
+                        url: 'https://www.wacoallingerie.com/row/en/size-guide/',
                         label: 'WACOAL',
                         extraInformation: 'Sub-Menu options with <code>tabindex=0</code>',
                     },
@@ -374,6 +375,7 @@ export const notes = {
                         url: 'https://blog.outletbaby.com.br/',
                         label: 'Outlet baby',
                         extraInformation: 'Open in incognito mode, we need to tab till the end of the page to jump in to the modal',
+                        hide: true
                     },
                     {
                         url: 'https://www.asus.com/pt/content/glidex/',

@@ -75,7 +75,8 @@ export const notes = {
                         label: 'Liberty',
                         extraInformation: [
                             'Menu options using keyboard'
-                        ]
+                        ],
+                        hide: true
                     },
                     {
                         url: 'https://www.worten.pt/produtos/pack-portatil-hp-14-ep0001np-desk2721e-sleev-14-intel-n200-ram-4gb-128-gb-ufs-7826159',
@@ -152,6 +153,7 @@ export const notes = {
                         url: 'https://transparencia.gov.pt/pt/fundos-europeus/prr/sobre-o-plano/',
                         label: 'Transparência Gov',
                         extraInformation: 'Title section with SVG',
+                        hide: true
                     },
                     {
                         url: 'https://www.scottohara.me/',

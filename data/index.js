@@ -80,7 +80,7 @@ export const index = {
                 },
             ]
         }, {
-            title: "Focus Management",
+            title: "Focus Management / Keyboard Accessibility",
             id: "focus_management_root",
             options: [
                 {
