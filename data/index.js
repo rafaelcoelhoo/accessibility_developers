@@ -227,6 +227,7 @@ export const index = {
                     hasMultipleLinks: true,
                     id: "aria_checkbox",
                     label: "Checkbox",
+                    hide: true,
                     options: [
                         {
                             label: "Checkbox",

@@ -147,8 +147,7 @@ export const notes = {
                     },
                     {
                         url: 'https://medium.com/about',
-                        label: 'Medium',
-                        hide: true
+                        label: 'Medium'
                     },
                 ],
             },

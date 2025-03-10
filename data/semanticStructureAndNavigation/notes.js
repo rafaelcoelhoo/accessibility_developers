@@ -236,8 +236,8 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.42porto.com/candidatura/',
-                        label: '42 Porto',
+                        url: 'https://www.timberland.pt/pt-pt/ajuda/condicoes-de-entrega',
+                        label: 'Timberland',
                         extraInformation: 'No headings',
                     },
                     {
@@ -259,10 +259,9 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.ipv.pt/esav/candidaturas-esav/',
-                        label: 'IPV',
-                        extraInformation: 'Heading only visually and wrong headings tags for the main heading of the page',
-                        hide: true
+                        url: 'https://esav.ipv.pt/estudar/pos-graduacao-em-agropecuaria-sustentavel/',
+                        label: 'ESAV',
+                        extraInformation: 'Not hierarchical headings'
                     },
                 ],
             },{
@@ -276,7 +275,8 @@ export const notes = {
                     {
                         url: 'https://www.whitehouse.gov/priorities/',
                         label: 'The White House',
-                        extraInformation: 'Same heading level with different styles (Stay Connected)'
+                        extraInformation: 'Same heading level with different styles (Stay Connected)',
+                        hide: true
                     },
                     {
                         url: 'https://usablenet.com/about-us',
@@ -284,10 +284,8 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.ikea.com/pt/pt/p/malm-comoda-c-6-gavetas-branco-60403584/?gclid=Cj0KCQiA14WdBhD8ARIsANao07ioMEBJ-1pkEmU5Of_YdoiWpSFqGITg3visx1LJltRd4GVBrsxolooaArNqEALw_wcB',
-                        label: 'Ikea',
-                        extraInformation: 'Section product details accordion, Heading using aria, with <code>role="heading"</code> and <code>aria-level="2"</code>',
-                        hide: true
+                        url: 'https://www.gov.uk/',
+                        label: 'Gov UK',
                     },
                 ],
             },

@@ -80,7 +80,8 @@ export const notes = {
                         extraInformation: [
                             'The cursor is a pointer that indicates a link',
                             'Authors should use pointer on links and may use on other interactive elements'
-                        ]
+                        ],
+                        hide: true
                     },
                     {
                         url: 'https://appt.org/en/articles/native-versus-cross-frameworks-accessible-apps#5-role',
@@ -347,6 +348,7 @@ export const notes = {
                     {
                         url: 'https://www.accessibilityassociation.org/s/',
                         label: 'International Association of Accessibility Professionals',
+                        hide: true
                     },
                     {
                         url: 'https://www.novobanco.pt/ajuda-contactos',
@@ -409,10 +411,11 @@ export const notes = {
                     {
                         url: 'https://pt.tommy.com/tommy-hilfiger-x-vacation-flag-embroidery-t-shirt-mw0mw33438ybl',
                         label: 'Tommy Hilfiger',
-                        extraInformation: 'Add item with and without selected size'
+                        extraInformation: 'Add item with and without selected size',
+                        hide: true
                     },
                     {
-                        url: 'https://www.lionofporches.com/pt/masculino/camisas/camisa-denim-slim-fit_p175695.html?gad_source=1&gclid=Cj0KCQjw99e4BhDiARIsAISE7P-odiKl6HTaGzy1dcqVCOlLmFLdMGYA9B1OzvyhKFCqQTANyE4WIwIaAjQmEALw_wcB',
+                        url: 'https://www.lionofporches.com/pt/masculino/camisas/camisa_p223190.html?id=3239&cat=0&pc=1',
                         label: 'Lion of Porches',
                         extraInformation: 'Add item with and without selected size'
                     },
@@ -439,14 +442,15 @@ export const notes = {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
-                        url: 'https://www.clarks.com/en-us/wallabee-boat/26175755-p',
+                        url: 'https://www.clarks.com/en-us/monahan-plain/26179978-p',
                         label: 'Clarks - Item',
                         extraInformation: 'Add an item without choosing a size'
                     },
                     {
                         url: 'https://www.clarks.com/en-us/cart',
                         label: 'Clarks - Cart',
-                        extraInformation: ' Add one more product and remove on'
+                        extraInformation: ' Add one more product and remove on',
+                        hide: true
                     },
                     {
                         url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camaras-de-seguranca-tp-link-tapo-c420s2-2k-outdoor-ip65-security-wi-fi-hub-tapo-c420s2-4897098688052',
@@ -456,7 +460,8 @@ export const notes = {
                     {
                         url: 'https://www.gov.uk/search/all?keywords=Taxes&level_one_taxon=d6c2de5d-ef90-45d1-82d4-5f2438369eea&order=relevance',
                         label: 'Gov UK - Search',
-                        extraInformation: ['Change filter topic', 'Using <code>aria-live="assertive"</code>']
+                        extraInformation: ['Change filter topic', 'Using <code>aria-live="assertive"</code>'],
+                        hide: true
                     },
                     {
                         url: 'https://findajob.dwp.gov.uk/sign-in?after_login=search%3Floc%3D86383',
