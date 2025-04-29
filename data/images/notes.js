@@ -192,6 +192,15 @@ export const notes = {
                         hide: true
                     },
                     {
+                        url: 'https://www.optimumnutrition.com/en-us/Products/Pre-Workout/GOLD-STANDARD%C2%AE-Pre-Workout/p/gold-standard-pre-workout',
+                        label: 'Optimum Nutrition',
+                    },
+                    {
+                        url: 'https://www.lindt.fr/lindt-signature-maitre-chocolatier-paques',
+                        label: 'Lindt',
+                        hide: true
+                    },
+                    {
                         url: 'https://www.peppasauce.love/',
                         label: 'Peppa sauce',
                         extraInformation: 'Footer image (Mama Joyce Peppa Sauce)',

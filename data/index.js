@@ -1,5 +1,5 @@
 export const index = {
-    title: 'Accessibility for developers',
+    title: 'Digital Accessibility',
     content: [
         {
             title: "Accessibility Tree",
@@ -552,7 +552,8 @@ export const index = {
                 },
                 {
                     link: "/visual-considerations/dark-mode",
-                    label: "Dark mode"
+                    label: "Dark mode",
+                    hide: true
                 },
                 {
                     label: "Zoom",

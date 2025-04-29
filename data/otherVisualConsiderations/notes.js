@@ -227,12 +227,18 @@ export const notes = {
                     {
                         url: 'https://codepen.io/aardrian/pen/eYZWNyv',
                         label: '44 x 44 Cursor',
-                        hide: true
                     },
                     {
                         url: 'https://codepen.io/aardrian/pen/eYyjNVg',
                         label: '24 x 24 Cursor',
-                        hide: true
+                    },
+                    {
+                        url: 'https://cdpn.io/pen/debug/YzdwWZw',
+                        label: 'target size Bookmarklet',
+                    },
+                    {
+                        url: 'https://www.w3.org/WAI/WCAG22/Understanding/target-size-minimum',
+                        label: 'WCAG SC 2.5.8',
                     },
                 ],
             },

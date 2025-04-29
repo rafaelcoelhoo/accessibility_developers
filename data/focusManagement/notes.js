@@ -163,10 +163,10 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.wacoallingerie.com/row/en/size-guide/',
-                        label: 'WACOAL',
-                        extraInformation: 'Sub-Menu options with <code>tabindex=0</code>',
-                    },
+                        url: 'https://www.lindt.co.uk/',
+                        label: 'Lindt',
+                        extraInformation: 'Navigation with <code>tabindex=-0</code>'
+                    }
                 ],
             },
             {
@@ -199,7 +199,7 @@ export const notes = {
                     {
                         url: 'https://www.prozis.com/pt/pt',
                         label: 'Prozis',
-                        extraInformation: ['Login - Divs working as buttons', 'Menus just with divs'],
+                        extraInformation: ['Login - Divs working as buttons', 'Menus just with divs', 'Hover text'],
                     },
                     {
                         url: 'https://www.aboutamazon.es/?language=pt',
@@ -279,6 +279,10 @@ export const notes = {
                             'Search accessories - Clear button',
                             'Menu options with arrows'
                         ]
+                    },
+                    {
+                        url: 'https://www.ebay.com/',
+                        label: 'ebay',
                     },
                     {
                         url: 'https://www.accessarmada.com/blog/',

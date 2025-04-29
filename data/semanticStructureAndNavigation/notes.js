@@ -261,7 +261,8 @@ export const notes = {
                     {
                         url: 'https://esav.ipv.pt/estudar/pos-graduacao-em-agropecuaria-sustentavel/',
                         label: 'ESAV',
-                        extraInformation: 'Not hierarchical headings'
+                        extraInformation: 'Not hierarchical headings',
+                        hide: true
                     },
                 ],
             },{
@@ -359,6 +360,10 @@ export const notes = {
             {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
+                    {
+                        url: 'https://pt.tommy.com/sale',
+                        label: 'Tommy Hilfiger'
+                    },
                     {
                         url: 'https://www.ikea.com/pt/pt/p/ektorp-sofa-3-lugares-totebo-bege-claro-s49320043/',
                         label: 'Ikea',
