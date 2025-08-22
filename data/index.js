@@ -1,5 +1,5 @@
 export const index = {
-    title: 'Digital Accessibility',
+    title: 'Accessibility for developers',
     content: [
         {
             title: "Accessibility Tree",

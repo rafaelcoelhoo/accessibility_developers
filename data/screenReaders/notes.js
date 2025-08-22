@@ -29,7 +29,10 @@ export const notes = {
             {
                 sectionName: 'Additional Resources',
                 listOfUrls: [
-
+                    {
+                        url: 'https://www.w3.org/WAI/perspective-videos/',
+                        label: 'How People with Disabilities Use the Web'
+                    },
                     {
                         url: 'https://www.youtube.com/watch?v=kJKQmTumFP0&t=58s',
                         label: 'Dragon Naturally Speaking',
