@@ -415,7 +415,7 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.lionofporches.com/pt/masculino/camisas/camisa_p223190.html?id=3239&cat=0&pc=1',
+                        url: 'https://www.lionofporches.com/pt/masculino/camisas/camisa-regular-fit-as-riscas_p232118.html?id=665&cat=642&pc=1',
                         label: 'Lion of Porches',
                         extraInformation: 'Add item with and without selected size'
                     },
@@ -453,7 +453,7 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camaras-de-seguranca-tp-link-tapo-c420s2-2k-outdoor-ip65-security-wi-fi-hub-tapo-c420s2-4897098688052',
+                        url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camara-de-seguranca-tp-link-tapo-tc42-c520ws-2k-qhd-pan-tilt-outdoor-ip66-security-wi-fi-rj45-tc42-8885020627398',
                         label: 'PCDIGA',
                         extraInformation: 'Add item working with aria live, but poor modal focus management'
                     },
@@ -586,9 +586,9 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.apple.com/apple-events/',
+                        url: 'https://www.apple.com/iphone/',
                         label: 'Apple',
-                        extraInformation: 'Explore the preview and learn more links',
+                        extraInformation: 'Explore the buy and learn more links',
                     },
                     {
                         url: 'https://www.accessarmada.com/services/',

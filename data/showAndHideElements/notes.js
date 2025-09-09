@@ -11,6 +11,7 @@ export const notes = {
             'Check accessibility tree',
             'Navigate by tab',
             'Navigate by elements',
+            'Replace the <code>del</code> with a <code>span</code> with class "text-decoration-line-through" and remove the text "Price was: "',
         ],
         examples: [
             {
@@ -19,6 +20,14 @@ export const notes = {
                     {
                         url: 'https://www.tpgi.com/screen-readers-support-for-text-level-html-semantics/',
                         label: 'TPGI - Screen reader support for text level HTML semantics',
+                    },
+                    {
+                        url: 'https://github.com/TetraLogical/screen-reader-HTML-support/blob/main/README.md',
+                        label: 'screen-reader-HTML-support',
+                    },
+                    {
+                        url: 'https://html5accessibility.com/stuff/2025/09/08/screenreader-html-support-look-up-app/',
+                        label: 'Screenreader HTML support look up app',
                     },
                 ]
             }
@@ -41,10 +50,10 @@ export const notes = {
                     {
                         url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
                         label: 'Mosaico',
-                        extraInformation: 'Search (screen small than 1200px) (Add class visually-hidden)',
+                        extraInformation: 'Search (screen smaller than 1200px and bigger than 760px) (Add class visually-hidden)',
                     },
                     {
-                        url: 'https://portugaldigital.gov.pt/',
+                        url: 'https://web.archive.org/web/20250414005646/https://portugaldigital.gov.pt/',
                         label: 'Portugal Digital',
                         extraInformation: 'Menu with extra labels on the search option, using <code>sr-only</code> when it should be <code>display: none</code>',
                         hide: false
@@ -83,6 +92,22 @@ export const notes = {
                         label: 'Worten Robot',
                         extraInformation: [
                             'Prices using screen reader - Safari'
+                        ],
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.volagratis.com/s/tsx/?businessProfileId=VACANZEVOLAGRATISIT&source=widget_tsx_map&searchId=t17573381355085b6a&bfSubSource=S04PDV10S04RR01&destination=G-REG-9336&highlightHotelId=1453&dateFrom=2025-10-03&dateTo=2025-10-04&adults=2&searchMode=HO&pageType=search&vcSearchId=378507650',
+                        label: 'Vola Gratis',
+                        extraInformation: [
+                            'Prices using screen reader, Open the Product Detail Page for one in promotion'
+                        ],
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camara-de-seguranca-tp-link-tapo-tc42-c520ws-2k-qhd-pan-tilt-outdoor-ip66-security-wi-fi-rj45-tc42-8885020627398',
+                        label: 'PCDiga',
+                        extraInformation: [
+                            'Prices and discount value using screen reader'
                         ]
                     },
                     {
@@ -115,7 +140,7 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.walmart.com/ip/Disney-Toddler-Girl-Bluey-Bingo-High-Top-Sneakers/5301686668?classType=VARIANT&athbdg=L1103',
+                        url: 'https://www.walmart.com/ip/Character-Toddler-Snug-Fit-Two-Piece-Sleep-Set-Sizes-12M-5T/5113233948?classType=VARIANT&athbdg=L1700',
                         label: 'Walmart',
                         extraInformation: 'Price was'
                     },

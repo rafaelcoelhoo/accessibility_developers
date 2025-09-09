@@ -221,7 +221,17 @@ export const notes = {
                     {
                         url: 'https://feed.continente.pt/',
                         label: 'Continente',
-                        extraInformation: 'Menu on hover and menu options not focusable - See <strong>Event Listener</strong> tab and open the mouseHover event'
+                        extraInformation: 'Menu on hover and menu options not focusable - See <strong>Event Listener</strong> tab and open the mouseHover event',
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.prozis.com/pt/pt/',
+                        label: 'Prozis - Cards',
+                        extraInformation: 'Hover over the cards to view the product name'
+                    },
+                    {
+                        url: 'https://www.optimumnutrition.com/en-us/shop-by-goal',
+                        label: 'Optimum Nutrition - Navigation',
                     },
                     {
                         url: 'https://mosaico.gov.pt/pesquisar?query=acc',

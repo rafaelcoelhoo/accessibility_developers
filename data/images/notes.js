@@ -35,6 +35,11 @@ export const notes = {
                         label: 'Mosaico - Profile',
                         extraInformation: 'Section stages, principles using empty alt and <code>aria-hidden="true"</code>'
                     },
+                    {
+                        url: 'https://www.lastminute.com/s/tsx/7484507?pageType=hotelDetail&destination=153870&dateFrom=2025-09-29&dateTo=2025-10-03&origin=LON&searchMode=DP&sort=recommended&source=csw&bfSubSource=S01HPV10S10RR02&businessProfileId=HOLIDAYSLASTMINUTECOUK&adults=2&searchId=t1757411805568a27c&vcSearchId=455200039&departureIntervals=20250929-20251003&extReferenceId=t1757411805568a27c&extReferenceType=TSX&clickId=oss_t1757411810960a27ct17&transportId=684684483646736384SCHv01-927808097',
+                        label: 'Vola Gratis',
+                        extraInformation: 'Facilities section'
+                    },
                 ],
             },
             {
