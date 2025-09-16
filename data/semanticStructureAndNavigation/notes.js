@@ -46,7 +46,12 @@ export const notes = {
                     },
                     {
                         url: 'https://www.estgv.ipv.pt/estgv/?',
-                        label: 'ESTGV'
+                        label: 'ESTGV',
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.lindt.co.uk/',
+                        label: 'Lindt UK - Checkoutß',
                     },
                 ],
             },
