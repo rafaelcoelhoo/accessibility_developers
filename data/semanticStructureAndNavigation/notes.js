@@ -51,7 +51,7 @@ export const notes = {
                     },
                     {
                         url: 'https://www.lindt.co.uk/',
-                        label: 'Lindt UK - Checkoutß',
+                        label: 'Lindt UK - Checkout',
                     },
                 ],
             },
@@ -237,13 +237,13 @@ export const notes = {
                     {
                         url: 'https://www.blissapplications.com/about-us',
                         label: 'Bliss - About us',
-                        extraInformation: 'Missing headings',
-                        hide: true
+                        extraInformation: 'Missing headings, headings not properly hidden'
                     },
                     {
                         url: 'https://www.timberland.pt/pt-pt/ajuda/condicoes-de-entrega',
                         label: 'Timberland',
                         extraInformation: 'No headings',
+                        hide: true
                     },
                     {
                         url: 'https://vml.com/',
@@ -374,7 +374,8 @@ export const notes = {
                         label: 'Ikea',
                         extraInformation:
                             ['Send to a group without an accessible name',
-                            'show skip to main content and <strong>skip images</strong>']
+                            'show skip to main content and <strong>skip images</strong>'],
+                        hide: true
                     },
                 ]
             },

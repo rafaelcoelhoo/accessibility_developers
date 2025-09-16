@@ -117,7 +117,8 @@ export const index = {
                 },
                 {
                     link: "/focus-management/keyboard-trap",
-                    label: "Keyboard trap"
+                    label: "Keyboard trap",
+                    hide: true
                 },
                 {
                     link: "/focus-management/keyboard",

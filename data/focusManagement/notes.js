@@ -227,7 +227,8 @@ export const notes = {
                     {
                         url: 'https://www.prozis.com/pt/pt/',
                         label: 'Prozis - Cards',
-                        extraInformation: 'Hover over the cards to view the product name'
+                        extraInformation: 'Hover over the cards to view the product name',
+                        hide: true
                     },
                     {
                         url: 'https://www.optimumnutrition.com/en-us/shop-by-goal',
@@ -293,6 +294,7 @@ export const notes = {
                     {
                         url: 'https://www.ebay.com/',
                         label: 'ebay',
+                        hide: true
                     },
                     {
                         url: 'https://www.accessarmada.com/blog/',
@@ -327,7 +329,8 @@ export const notes = {
                     },
                     {
                         url: 'https://www.myrefinishportal.com/us/en/sikkens.html',
-                        label: 'Akzo'
+                        label: 'Akzo',
+                        hide: true
                     },
                 ],
             },
@@ -349,7 +352,8 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://github.com/WICG/inert',
-                        label: 'inert Polyfill'
+                        label: 'inert Polyfill',
+                        hide: true
                     },
                 ],
             },
