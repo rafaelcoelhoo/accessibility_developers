@@ -9,7 +9,6 @@ export const notes = {
             'Comment/Uncomment css styles for <code>:focus</code> versus <code>:focus-visible</code>',
             'If we are using the mouse and lose track of which element is selected, at any time we can click on a key for the focus indicator to appear.',
             'Log expression <code>document.activeElement</code>',
-            'Show "What has focus" bookmark',
             'See this log on Público website, hover expression result',
         ],
         examples: [
@@ -18,11 +17,13 @@ export const notes = {
                 listOfUrls: [
                     {
                         url: 'https://github.com/WICG/focus-visible ',
-                        label: 'Focus-visible polyfill'
+                        label: 'Focus-visible polyfill',
+                        hide: true
                     },
                     {
                         url: 'https://codepen.io/svinkle/pen/WgYRxq',
-                        label: 'What has focus'
+                        label: 'What has focus',
+                        hide: true
                     },
                     {
                         url: 'https://www.sarasoueidan.com/blog/focus-indicators/',
@@ -132,15 +133,6 @@ export const notes = {
                     }
                 ],
             },
-        ],
-    },
-    tabindexExample: {
-        tips: [
-            'Show advantage of <code>tabindex="-1"</code> on screen reader',
-            'Remove the <code>tabindex="-1"</code> from file <code>tabIndexContentExample</code> file to see the impact',
-            'Without <code>tabindex="-1"</code> the heading is not announced'
-        ],
-        examples: [
             {
                 sectionName: 'Examples for Accessibility Enhancement',
                 listOfUrls: [
@@ -165,7 +157,7 @@ export const notes = {
                     {
                         url: 'https://www.lindt.co.uk/',
                         label: 'Lindt',
-                        extraInformation: 'Navigation with <code>tabindex=-0</code>'
+                        extraInformation: ['Navigation with <code>tabindex=-0</code>', 'Careers link with <code>tabindex=-0</code>']
                     }
                 ],
             },
@@ -179,15 +171,30 @@ export const notes = {
                             '<code>tabindex=-1</code> on "Is this page useful"',
                             'Just use the keyboard navigation to see the importance of <code>tabindex=-1</code>',
                         ]
-                    },{
+                    },
+                    {
                         url: 'https://transparencia.gov.pt/pt/',
                         label: 'Transparência Gov',
                         extraInformation: [
                             'Modal with <code>tabindex=-1</code>',
                         ]
                     },
+                    {
+                        url: 'https://www.lindt.co.uk/',
+                        label: 'Lindt',
+                        extraInformation: [
+                            'Menu mobile',
+                        ]
+                    },
                 ],
             },
+        ],
+    },
+    tabindexExample: {
+        tips: [
+            'Show advantage of <code>tabindex="-1"</code> on screen reader',
+            'Remove the <code>tabindex="-1"</code> from file <code>tabIndexContentExample</code> file to see the impact',
+            'Without <code>tabindex="-1"</code> the heading is not announced'
         ],
     },
     keyboardAccessibility: {

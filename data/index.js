@@ -101,7 +101,8 @@ export const index = {
                                 },
                                 {
                                     link: "/focus-management/tabindex-example",
-                                    label: "Tabindex -1 example"
+                                    label: "Tabindex -1 example",
+                                    hide: true
                                 }
                             ]
                         }

@@ -51,12 +51,12 @@ export const notes = {
                         url: 'https://mosaico.gov.pt/servicos-publicos-digitais',
                         label: 'Mosaico',
                         extraInformation: 'Search (screen smaller than 1200px and bigger than 760px) (Add class visually-hidden)',
+                        hide: true
                     },
                     {
                         url: 'https://web.archive.org/web/20250414005646/https://portugaldigital.gov.pt/',
                         label: 'Portugal Digital',
                         extraInformation: 'Menu with extra labels on the search option, using <code>sr-only</code> when it should be <code>display: none</code>',
-                        hide: true
                     },
                     {
                         url: 'https://my.vodafone.pt/main.html',
