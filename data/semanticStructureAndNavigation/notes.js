@@ -83,6 +83,7 @@ export const notes = {
                     {
                         url: 'https://www.arclab.com/en/kb/htmlcss/lang-attribute-2-letter-language-country-codes.html',
                         label: 'List of codes',
+                        hide: true
                     },
                 ],
             },
@@ -119,6 +120,7 @@ export const notes = {
                         url: 'https://info.portaldasfinancas.gov.pt/pt/docs/Conteudos_1pagina/Pages/portuguese-tax-system.aspx',
                         label: 'Finances',
                         extraInformation: ['Language for parts of page', 'Add <code>lang="en"</code>'],
+                        hide: true
                     },
                 ],
             },
@@ -173,7 +175,8 @@ export const notes = {
                     {
                         url: 'https://www.santander.pt/credito-habitacao/simulador-credito-habitacao',
                         label: 'Santander',
-                        extraInformation: 'No landmarks'
+                        extraInformation: 'No landmarks',
+                        hide: true
                     },
                     {
                         url: 'https://www.prozis.com/pt/pt/checkout/index',
@@ -368,23 +371,20 @@ export const notes = {
                     {
                         url: 'https://pt.tommy.com/sale',
                         label: 'Tommy Hilfiger'
-                    },
-                    {
-                        url: 'https://www.ikea.com/pt/pt/p/ektorp-sofa-3-lugares-totebo-bege-claro-s49320043/',
-                        label: 'Ikea',
-                        extraInformation:
-                            ['Send to a group without an accessible name',
-                            'show skip to main content and <strong>skip images</strong>'],
-                        hide: true
-                    },
+                    }
                 ]
             },
             {
                 sectionName: 'Accessible Examples',
                 listOfUrls: [
                     {
+                        url: 'https://www.ikea.com/pt/pt/p/ektorp-sofa-3-lugares-totebo-bege-claro-s49320043/',
+                        label: 'Ikea',
+                    },
+                    {
                         url: 'https://abilitynet.org.uk/how-contact-us',
                         label: 'AbilityNet',
+                        hide: true
                     },
                 ]
             }

@@ -36,9 +36,10 @@ export const notes = {
                         extraInformation: 'Section stages, principles using empty alt and <code>aria-hidden="true"</code>'
                     },
                     {
-                        url: 'https://www.lastminute.com/s/tsx/7484507?pageType=hotelDetail&destination=153870&dateFrom=2025-09-29&dateTo=2025-10-03&origin=LON&searchMode=DP&sort=recommended&source=csw&bfSubSource=S01HPV10S10RR02&businessProfileId=HOLIDAYSLASTMINUTECOUK&adults=2&searchId=t1757411805568a27c&vcSearchId=455200039&departureIntervals=20250929-20251003&extReferenceId=t1757411805568a27c&extReferenceType=TSX&clickId=oss_t1757411810960a27ct17&transportId=684684483646736384SCHv01-927808097',
+                        url: 'https://www.lastminute.com/s/tsx/7484507?businessProfileId=HOLIDAYSLASTMINUTECOUK&source=widget_tsx_map&searchId=t1758808033639a27c&bfSubSource=S10RRV10S10RR01&destination=153870&dateFrom=2026-01-15&dateTo=2026-01-16&adults=2&origin=LON&searchMode=DP&pageType=hotelDetail&vcSearchId=484601194&departureIntervals=20260115-20260116&extReferenceId=t1758808033639a27c&extReferenceType=TSX&clickId=oss_t1758808045701a27ct17&transportId=690557068506142720SCHv01790234742',
                         label: 'Vola Gratis',
-                        extraInformation: 'Facilities section'
+                        extraInformation: 'Facilities section',
+                        hide: true
                     },
                 ],
             },

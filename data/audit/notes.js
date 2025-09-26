@@ -40,12 +40,8 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://cliente.cofidis.pt/Login',
-                        label: 'Login - Cofidis'
-                    },
-                    {
-                        url: 'https://www.cofidis.pt/contactos',
-                        label: 'Contactos - Cofidis'
+                        url: 'https://www.dunelm.com/info/help/payment',
+                        label: 'Dunelm'
                     },
                     {
                         url: 'https://casa.galp.pt/planos-eletricidade-e-gas?gad_source=1&gclid=CjwKCAiAlcyuBhBnEiwAOGZ2S9RgULxxV2jhrY3EHbZ7NK2CzozXFGQTWmMg4UsW5QU444fR-jlKQhoCqCIQAvD_BwE',
