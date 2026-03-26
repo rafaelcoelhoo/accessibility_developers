@@ -21,17 +21,14 @@
 
   &.focus-outline {
 
-    //Swap the comment from :focus to :focus-visible and see the differences
-    // Comment both, to get the global focus indicator style
-
     :focus-visible {
       //outline: -webkit-focus-ring-color auto 5px;
-      outline: 0;
+      // outline: 0;
     }
 
     :focus {
       //outline: -webkit-focus-ring-color auto 5px;
-      //outline: 3px solid #d33a2c;
+      outline: 3px solid #d33a2c;
     }
 
     .btn-yellow {

@@ -41,7 +41,12 @@ export const notes = {
                     },
                     {
                         url: 'https://www.dunelm.com/info/help/payment',
-                        label: 'Dunelm'
+                        label: 'Dunelm',
+                        hide: true
+                    },
+                       {
+                        url: 'https://www.castroelectronica.pt/pt/ajuda/entregas',
+                        label: 'Castro Electrónica',
                     },
                     {
                         url: 'https://casa.galp.pt/planos-eletricidade-e-gas?gad_source=1&gclid=CjwKCAiAlcyuBhBnEiwAOGZ2S9RgULxxV2jhrY3EHbZ7NK2CzozXFGQTWmMg4UsW5QU444fR-jlKQhoCqCIQAvD_BwE',

@@ -479,8 +479,8 @@ h4 {
   box-shadow: 0 0 8px #BBB;
   border-bottom: 1px solid #AAA;
 }
-.focus-management.focus-outline :focus-visible {
-  outline: 0;
+.focus-management.focus-outline :focus {
+  outline: 3px solid #d33a2c;
 }
 .focus-management.focus-outline .btn-yellow:hover, .focus-management.focus-outline .show-and-hide .toogle:hover, .show-and-hide .focus-management.focus-outline .toogle:hover, .focus-management.focus-outline .btn-yellow:focus, .focus-management.focus-outline .show-and-hide .toogle:focus, .show-and-hide .focus-management.focus-outline .toogle:focus {
   background: #FCC303;
@@ -707,6 +707,7 @@ h4 {
   left: -4px;
   content: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16' style='forced-color-adjust: auto;'%3E%3Crect x='2' y='2' height='13' width='13' rx='2' stroke='currentcolor' stroke-width='1' fill-opacity='0' /%3E%3C/svg%3E");
 }
+.aria-checkbox .checkbox.is-checked::before,
 .aria-checkbox .checkbox[aria-checked=true]::before {
   position: relative;
   top: 1px;

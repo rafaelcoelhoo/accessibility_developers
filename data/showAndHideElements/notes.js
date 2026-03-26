@@ -20,14 +20,15 @@ export const notes = {
                     {
                         url: 'https://www.tpgi.com/screen-readers-support-for-text-level-html-semantics/',
                         label: 'TPGI - Screen reader support for text level HTML semantics',
+                        hide: true
                     },
                     {
                         url: 'https://github.com/TetraLogical/screen-reader-HTML-support/blob/main/README.md',
-                        label: 'screen-reader-HTML-support',
+                        label: 'Screen-reader-HTML-support',
                     },
                     {
-                        url: 'https://html5accessibility.com/stuff/2025/09/08/screenreader-html-support-look-up-app/',
-                        label: 'Screenreader HTML support look up app',
+                        url: 'https://tetralogical.github.io/screen-reader-HTML-support/lookup/lookup.html',
+                        label: 'Screen-reader HTML support look up app',
                     },
                 ]
             }
@@ -104,8 +105,16 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camara-de-seguranca-tp-link-tapo-tc42-c520ws-2k-qhd-pan-tilt-outdoor-ip66-security-wi-fi-rj45-tc42-8885020627398',
+                        url: 'https://www.pcdiga.com/imagem-e-som/televisores/televisores/televisao-smart-tv-hisense-series-e7q-2025-75-189cm-qled-4k-uhd-vidaa-75e7q-6942351418995',
                         label: 'PCDiga',
+                        extraInformation: [
+                            'Prices and discount value using screen reader'
+                        ],
+                        hide: true
+                    },
+                                        {
+                        url: 'https://www.castroelectronica.pt/pt/product/lampada-led-e27-branco-6500k-132w--energizer',
+                        label: 'Castro Eletrónica',
                         extraInformation: [
                             'Prices and discount value using screen reader'
                         ]

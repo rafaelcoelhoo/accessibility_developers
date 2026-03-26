@@ -45,9 +45,8 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.estgv.ipv.pt/estgv/?',
+                        url: 'https://web.archive.org/web/20250714082503/https://www.estgv.ipv.pt/estgv/?v=10025',
                         label: 'ESTGV',
-                        hide: true
                     },
                     {
                         url: 'https://www.lindt.co.uk/',
@@ -117,9 +116,16 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://info.portaldasfinancas.gov.pt/pt/docs/Conteudos_1pagina/Pages/portuguese-tax-system.aspx',
+                        url: 'https://info.portaldasfinancas.gov.pt/en/tax-information/Pages/default.aspx',
                         label: 'Finances',
-                        extraInformation: ['Language for parts of page', 'Add <code>lang="en"</code>'],
+                        extraInformation: ['Primary language']                    
+                    },
+                                        {
+                        url: 'https://autenticacao.fidelidade.pt/Autenticacao/Desktop.aspx?client_id=mje3KuvqF56sKY6&redirect_uri=https%3a%2f%2fwww.my.fidelidade.pt%2fcanw_auth%2fSSOEntryPage.aspx&response_type=code&state=0e20afe8-0c5b-44c2-80a0-63d13848fd00',
+                        label: 'My Fidelidade',
+                        extraInformation: [
+                            'Primary language'
+                        ],
                         hide: true
                     },
                 ],
@@ -130,8 +136,7 @@ export const notes = {
                     {
                         url: 'https://www.apple.com/choose-country-region/',
                         label: 'Apple',
-                        extraInformation: 'Primary language',
-                        hide: true,
+                        extraInformation: ['Primary language', 'Language for parts of page'],
                     },
                     {
                         url: 'https://www.w3.org/',
@@ -187,11 +192,11 @@ export const notes = {
                     {
                         url: 'https://pt.tommy.com/terms-and-conditions',
                         label: 'Tommy Hilfiger',
-                        extraInformation: 'Two <code>navigation</code> without accessible name',
+                        extraInformation: 'Two <code>navigation</code> without accessible name, and using navigation word as aria-label',
                         hide: true
                     },
                     {
-                        url: 'https://www.blissapplications.com/about-us',
+                        url: 'https://web.archive.org/web/20251109062130/https://www.blissapplications.com/about-us',
                         label: 'Bliss - About Us',
                         extraInformation: '<code>header</code> and <code>footer</code> inside <code>main</code>'
                     },
@@ -380,11 +385,11 @@ export const notes = {
                     {
                         url: 'https://www.ikea.com/pt/pt/p/ektorp-sofa-3-lugares-totebo-bege-claro-s49320043/',
                         label: 'Ikea',
+                        hide: true
                     },
                     {
                         url: 'https://abilitynet.org.uk/how-contact-us',
                         label: 'AbilityNet',
-                        hide: true
                     },
                 ]
             }

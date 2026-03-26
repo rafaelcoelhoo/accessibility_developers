@@ -39,9 +39,21 @@
     (function () {
         function politeExample(id) {
             const liveContainer = document.getElementById(id);
-            liveContainer.innerHTML = '';
-            liveContainer.append('Congratulations! You clicked the button successfully.');
-            liveContainer.classList.toggle('d-none');
+            
+            if (liveContainer.classList.contains('d-none')) {
+                // Clear content first
+                liveContainer.innerHTML = '';
+                // Show the element
+                liveContainer.classList.remove('d-none');
+                // Then update content to trigger live region
+                setTimeout(() => {
+                    liveContainer.append('Congratulations! You clicked the button successfully.');
+                }, 10);
+            } else {
+                // Hide the element and clear content
+                liveContainer.classList.add('d-none');
+                liveContainer.innerHTML = '';
+            }
         }
 
         const politeButton = document.querySelector('.polite-button');
@@ -53,9 +65,21 @@
         // Assertive example
         function assertiveExample(id) {
             const liveContainer = document.getElementById(id);
-            liveContainer.innerHTML = '';
-            liveContainer.append('Error: You did something wrong.');
-            liveContainer.classList.toggle('d-none');
+            
+            if (liveContainer.classList.contains('d-none')) {
+                // Clear content first
+                liveContainer.innerHTML = '';
+                // Show the element
+                liveContainer.classList.remove('d-none');
+                // Then update content to trigger live region
+                setTimeout(() => {
+                    liveContainer.append('Error: You did something wrong.');
+                }, 10);
+            } else {
+                // Hide the element and clear content
+                liveContainer.classList.add('d-none');
+                liveContainer.innerHTML = '';
+            }
         }
 
         const assertiveButton = document.querySelector('.assertive-button');
@@ -74,5 +98,6 @@
         chatContainer.appendChild(userMessage);
         document.getElementById("user-input").value = "";
     }
+
 
 </script>

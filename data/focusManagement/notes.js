@@ -85,7 +85,7 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.nomensa.com/contact-us/',
+                        url: 'https://web.archive.org/web/20250813175830/https://www.nomensa.com/contact-us/',
                         label: 'Nomensa',
                         extraInformation: 'Show high contrast mode',
                     },
@@ -155,10 +155,15 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.lindt.co.uk/',
-                        label: 'Lindt',
+                        url: 'https://www.lindt.pl/?srsltid=AfmBOoquMAgC7c9msOXx1Xf-6xPGyaZLnSouFKzTKOVaMznzONv0QBai',
+                        label: 'Lindt PL',
                         extraInformation: ['Navigation with <code>tabindex=-0</code>', 'Careers link with <code>tabindex=-0</code>']
-                    }
+                    },
+                    {
+                        url: 'https://www.lindt.co.uk/ ',
+                        label: 'Lindt UK',
+                        extraInformation: 'Cookies - footer',
+                    },
                 ],
             },
             {
@@ -177,7 +182,8 @@ export const notes = {
                         label: 'Transparência Gov',
                         extraInformation: [
                             'Modal with <code>tabindex=-1</code>',
-                        ]
+                        ],
+                        hide: true
                     },
                     {
                         url: 'https://www.lindt.co.uk/',
@@ -249,7 +255,8 @@ export const notes = {
                     {
                         url: 'https://my.advancecare.com/registo?language=pt-PT',
                         label: 'AdvanceCare',
-                        extraInformation: 'Checkboxes with images and see accessibility tree'
+                        extraInformation: 'Checkboxes with images and see accessibility tree',
+                        hide: true
                     },
                     {
                         url: 'https://www.radiopopular.pt/produto/combinado-lg-gbp62dsxcc',

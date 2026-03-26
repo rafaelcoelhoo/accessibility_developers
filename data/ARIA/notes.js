@@ -109,7 +109,7 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
+                        url: 'https://web.archive.org/web/20250820185456/https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
                         label: 'OLX',
                         extraInformation: 'Filter typology using just <code>role:"button"</code>',
                     },
@@ -242,7 +242,8 @@ export const notes = {
                         extraInformation: ['Checkbox from CSS',
                             'Remove class <code>display: none</code> and add <code>opacity</code>',
                             'Add aria attributes to the label'
-                        ]
+                        ],
+                        hide: true
                     },
                 ],
             }
@@ -409,15 +410,15 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://pt.tommy.com/tommy-hilfiger-x-vacation-flag-embroidery-t-shirt-mw0mw33438ybl',
+                        url: 'https://pt.tommy.com/jersey-logo-t-shirt-mw0mw42365ybr',
                         label: 'Tommy Hilfiger',
                         extraInformation: 'Add item with and without selected size',
-                        hide: true
                     },
                     {
                         url: 'https://www.lionofporches.com/pt/masculino/camisas/camisa-regular-fit-as-riscas_p232118.html?id=665&cat=642&pc=1',
                         label: 'Lion of Porches',
-                        extraInformation: 'Add item with and without selected size'
+                        extraInformation: 'Add item with and without selected size',
+                        hide: true
                     },
                     {
                         url: 'https://www.worten.pt/produtos/bundle-portatil-hp-14-ep0001np-desk2721e-sleev-14-intel-n200-ram-4gb-128-gb-ufs-7826159',
@@ -435,6 +436,12 @@ export const notes = {
                         url: 'https://www.optimumnutrition.com/en-us',
                         label: 'Optimum Nutrition',
                         extraInformation: 'Newsletter',
+                        hide: true
+                    },
+                    {
+                        url: 'https://accounts.nike.com/lookup?client_id=4fd2d5e7db76e0f85a6bb56721bd51df&redirect_uri=https://www.nike.com/auth/login&response_type=code&scope=openid%20nike.digital%20profile%20email%20phone%20flow%20country&state=13f1504ee2b74fc094ab0e346498013b&ui_locales=pt-PT&code_challenge=mxpL4w0YjlCrB4OAFlmVukbETcOhX3Z9vHgYLKoCqcc&code_challenge_method=S256',
+                        label: 'Nike',
+                        extraInformation: 'Open incognito mode',
                     },
                 ],
             },
@@ -455,7 +462,8 @@ export const notes = {
                     {
                         url: 'https://www.pcdiga.com/casa-e-ar-livre/smart-home-e-iluminacao/camaras-de-seguranca/camara-de-seguranca-tp-link-tapo-tc42-c520ws-2k-qhd-pan-tilt-outdoor-ip66-security-wi-fi-rj45-tc42-8885020627398',
                         label: 'PCDIGA',
-                        extraInformation: 'Add item working with aria live, but poor modal focus management'
+                        extraInformation: 'Add item working with aria live, but poor modal focus management',
+                        hide: true
                     },
                     {
                         url: 'https://www.gov.uk/search/all?keywords=Taxes&level_one_taxon=d6c2de5d-ef90-45d1-82d4-5f2438369eea&order=relevance',
@@ -499,6 +507,10 @@ export const notes = {
                         url: 'https://appt.org/en/articles/native-versus-cross-frameworks-accessible-apps#4-name',
                         label: 'Names - Mobile equivalents',
                     },
+                    {
+                        url: 'https://adrianroselli.com/2019/11/aria-label-does-not-translate.html',
+                        label: 'aria-label does not translate',
+                    },
                 ],
             },
             {
@@ -528,7 +540,7 @@ export const notes = {
                         hide: true
                     },
                     {
-                        url: 'https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
+                        url: 'https://web.archive.org/web/20250820185456/https://www.olx.pt/imoveis/casas-moradias-para-arrendar-vender/moradias-venda/',
                         label: 'OLX',
                         extraInformation: 'Filters using the same <code>aria-label</code> (Typology, bathroom, Energetic certificate)',
                     },

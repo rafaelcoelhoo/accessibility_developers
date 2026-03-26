@@ -200,6 +200,11 @@ export const notes = {
                     {
                         url: 'https://www.optimumnutrition.com/en-us/Products/Pre-Workout/GOLD-STANDARD%C2%AE-Pre-Workout/p/gold-standard-pre-workout',
                         label: 'Optimum Nutrition',
+                        hide: true
+                    },
+                    {
+                        url: 'https://www.radiopopular.pt/sustentabilidade-e-consumo-consciente/?utm_source=RPonline&utm_medium=Sustentabilidade&utm_campaign=topohomepage&utm_id=Sustentabilidadetopohomepage',
+                        label: 'Radio Popular',
                     },
                     {
                         url: 'https://www.lindt.fr/lindt-signature-maitre-chocolatier-paques',

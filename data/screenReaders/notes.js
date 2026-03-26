@@ -39,6 +39,10 @@ export const notes = {
                         extraInformation: 'What is this, grid, number options, voice commands (56 seconds to 2,55 minutes)'
                     },
                     {
+                        url: 'https://www.youtube.com/watch?v=ZeQa7bnZwNo',
+                        label: 'Voice Control - IOS',
+                    },
+                    {
                         url: 'https://www.youtube.com/watch?v=EEN79RRvKqE&t=4s',
                         label: 'ZoomText'
                     },

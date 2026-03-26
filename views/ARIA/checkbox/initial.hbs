@@ -1,13 +1,13 @@
 <div class="aria-checkbox">
     <h2>Choose some colors</h2>
 
-    <div class="checkbox" aria-checked="false">
+    <div class="checkbox" >
         Green
     </div>
-    <div class="checkbox" aria-checked="false">
+    <div class="checkbox" >
         Red
     </div>
-    <div class="checkbox" aria-checked="false">
+    <div class="checkbox">
         White
     </div>
 
@@ -17,18 +17,24 @@
 
     (function () {
         const checkboxes = document.querySelectorAll('.checkbox');
+        const toggleVisualState = checkbox => {
+            const isChecked = checkbox.classList.toggle('is-checked');
+
+            if (checkbox.hasAttribute('aria-checked')) {
+                checkbox.setAttribute('aria-checked', isChecked ? 'true' : 'false');
+            }
+        };
 
         checkboxes.forEach(check => {
 
             // For mouse
             check.addEventListener('click', function () {
-                const expanded = this.getAttribute("aria-checked");
-                expanded === "true" ? this.setAttribute("aria-checked", "false") : this.setAttribute("aria-checked", "true");
+                toggleVisualState(this);
             });
 
-            // For keyboard
+   /*         // For keyboard
 
-/*            check.addEventListener('keydown', function (e) {
+           check.addEventListener('keydown', function (e) {
                     if (e.key === ' ') e.preventDefault();
                 });
 
@@ -36,10 +42,11 @@
                 e.preventDefault();
                 e.stopPropagation();
                 if (e.key === ' ') {
-                const expanded = this.getAttribute("aria-checked");
-                expanded === "true" ? this.setAttribute("aria-checked", "false") : this.setAttribute("aria-checked", "true");
+                    toggleVisualState(this);
                 }
-            });*/
+            });
+             */
         })
+       
     })()
 </script>
